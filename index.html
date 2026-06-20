@@ -2239,11 +2239,13 @@ const visualQuestionsPool = [
 ];
 
 function shuffleQuestionOptions(q) {
+  if (!q || !q.o || !Array.isArray(q.o) || q.a === undefined) return q;
   let qCopy = JSON.parse(JSON.stringify(q));
   let originalOptions = qCopy.o;
   let correctAnswerText = originalOptions[qCopy.a];
   
-  let indices = [0, 1, 2, 3].sort(() => Math.random() - 0.5);
+  let indices = Array.from({length: originalOptions.length}, (_, i) => i);
+  indices.sort(() => Math.random() - 0.5);
   qCopy.o = indices.map(i => originalOptions[i]);
   qCopy.a = qCopy.o.indexOf(correctAnswerText);
   
@@ -3803,8 +3805,9 @@ function loadQuestion(lvl, isRisk = false) {
       qData = qData[randomIdx];
     }
     // Single question object case
-    correctAnswer = qData.a;
-    setupQuestionUI(qData, lvl);
+    let shuffledQData = shuffleQuestionOptions(qData);
+    correctAnswer = shuffledQData.a;
+    setupQuestionUI(shuffledQData, lvl);
     return;
   }
   // Fallback to default pool[1] if specific category data missing
@@ -3816,8 +3819,9 @@ function loadQuestion(lvl, isRisk = false) {
     } else {
       qData = fallbackData;
     }
-    correctAnswer = qData.a;
-    setupQuestionUI(qData, lvl);
+    let shuffledFallback = shuffleQuestionOptions(qData);
+    correctAnswer = shuffledFallback.a;
+    setupQuestionUI(shuffledFallback, lvl);
     return;
   }
   alert(`Fehler: Keine Fragen für ${countryName} Level ${lvl}!`);
@@ -4907,7 +4911,9 @@ function openRapidFireQuestion() {
     rapidFireIndex = 0;
   }
   
-  const qData = rapidFireQuestions[rapidFireIndex];
+  const rawQ = rapidFireQuestions[rapidFireIndex];
+  currentQuestionData = shuffleQuestionOptions(rawQ);
+  const qData = currentQuestionData;
   correctAnswer = qData.a;
   jokerUsed = false;
   rescueActive = false;
@@ -5088,7 +5094,7 @@ function checkRapidFire(idx) {
   document.getElementById('joker-arsenal').style.display = 'none';
   document.getElementById('revive-btn').style.display = 'none';
   
-  const qData = (gameMode === 'flags') ? currentFlagQuestion : rapidFireQuestions[rapidFireIndex];
+  const qData = (gameMode === 'flags') ? currentFlagQuestion : currentQuestionData;
   
   // Explanation Visibility Logic
   if (gameMode === 'flags' || gameMode === 'timeattack') {
@@ -5610,4 +5616,6 @@ window.addEventListener("click", function(e) {
 </script>
 </body>
 </html>
+
+
 
