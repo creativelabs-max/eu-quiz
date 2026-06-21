@@ -14,34 +14,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 </script>
+<!-- Firebase SDK (Compat) -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg-gradient: radial-gradient(circle at 50% 50%, #08071a 0%, #020208 100%);
-    --bg-solid: #03020a;
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --card-border: rgba(255, 255, 255, 0.07);
-    --card-hover: rgba(255, 255, 255, 0.07);
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent: #06b6d4; 
-    --accent-alt: #8b5cf6; 
-    --accent-glow: rgba(6, 182, 212, 0.15);
-    --gold: #fbbf24;
-    --silver: #cbd5e1;
-    --bronze: #d97706;
-    --success: #10b981;
-    --error: #f43f5e;
-    --shadow-color: rgba(0, 0, 0, 0.6);
-    --p1-height: 160px;
-    --p2-height: 120px;
-    --p3-height: 85px;
-  }
-
-  body.light-mode {
     --bg-gradient: radial-gradient(circle at 50% 50%, #f1f5f9 0%, #cbd5e1 100%);
     --bg-solid: #e2e8f0;
     --card-bg: rgba(255, 255, 255, 0.7);
@@ -58,6 +39,28 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     --success: #059669;
     --error: #e11d48;
     --shadow-color: rgba(15, 23, 42, 0.1);
+    --p1-height: 160px;
+    --p2-height: 120px;
+    --p3-height: 85px;
+  }
+
+  body.dark-mode {
+    --bg-gradient: radial-gradient(circle at 50% 50%, #08071a 0%, #020208 100%);
+    --bg-solid: #03020a;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.07);
+    --card-hover: rgba(255, 255, 255, 0.07);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #06b6d4; 
+    --accent-alt: #8b5cf6; 
+    --accent-glow: rgba(6, 182, 212, 0.15);
+    --gold: #fbbf24;
+    --silver: #cbd5e1;
+    --bronze: #d97706;
+    --success: #10b981;
+    --error: #f43f5e;
+    --shadow-color: rgba(0, 0, 0, 0.6);
   }
 
   * {
@@ -138,11 +141,11 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--card-border);
-    background: rgba(3, 2, 10, 0.2);
+    background: rgba(241, 245, 249, 0.3);
   }
 
-  body.light-mode .top-bar {
-    background: rgba(241, 245, 249, 0.3);
+  body.dark-mode .top-bar {
+    background: rgba(3, 2, 10, 0.2);
   }
 
   .brand {
@@ -283,7 +286,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   }
 
   .category-card {
-    background: rgba(255,255,255,0.02);
+    background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 16px;
     padding: 20px;
@@ -295,19 +298,19 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     text-align: left;
   }
   
-  body.light-mode .category-card {
-    background: rgba(255,255,255,0.5);
+  body.dark-mode .category-card {
+    background: rgba(255,255,255,0.03);
   }
 
   .category-card:hover {
     border-color: var(--accent);
-    background: rgba(255,255,255,0.06);
+    background: var(--card-hover);
     transform: translateX(4px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px var(--shadow-color);
   }
 
-  body.light-mode .category-card:hover {
-    background: rgba(255,255,255,0.8);
+  body.dark-mode .category-card:hover {
+    background: rgba(255,255,255,0.06);
   }
 
   .category-num {
@@ -352,7 +355,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   }
 
   input[type="text"], input[type="number"] { 
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(255, 255, 255, 0.6); 
     border: 1px solid var(--card-border); 
     color: var(--text-primary); 
     padding: 14px; 
@@ -364,17 +367,17 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     font-family: inherit;
   }
   
-  body.light-mode input[type="text"], body.light-mode input[type="number"] {
-    background: rgba(255, 255, 255, 0.6);
+  body.dark-mode input[type="text"], body.dark-mode input[type="number"] {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   input[type="text"]:focus, input[type="number"]:focus {
     border-color: var(--accent);
     box-shadow: 0 0 10px var(--accent-glow);
-    background: rgba(0, 0, 0, 0.3);
-  }
-  body.light-mode input[type="text"]:focus, body.light-mode input[type="number"]:focus {
     background: rgba(255, 255, 255, 0.9);
+  }
+  body.dark-mode input[type="text"]:focus, body.dark-mode input[type="number"]:focus {
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .team-input-row {
@@ -480,7 +483,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     border-color: var(--accent); 
     background: var(--card-hover); 
     transform: scale(1.05) translateY(-4px); 
-    box-shadow: 0 15px 30px rgba(6, 182, 212, 0.22);
+    box-shadow: 0 12px 24px rgba(15,23,42,0.08);
   }
 
   .card:active {
@@ -488,8 +491,8 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  body.light-mode .card:hover {
-    box-shadow: 0 12px 24px rgba(15,23,42,0.08);
+  body.dark-mode .card:hover {
+    box-shadow: 0 15px 30px rgba(6, 182, 212, 0.22);
   }
 
   .card.played-out { 
@@ -598,7 +601,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     align-items: center;
     padding: 16px 24px;
     border-radius: 14px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(255,255,255,0.5);
     border: 1px solid var(--card-border);
     color: var(--text-primary);
     cursor: pointer;
@@ -607,19 +610,19 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
-  body.light-mode .btn-diff {
-    background: rgba(255,255,255,0.5);
+  body.dark-mode .btn-diff {
+    background: rgba(255,255,255,0.02);
   }
 
   .btn-diff:hover:not(:disabled) {
-    background: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.8);
     border-color: var(--accent);
     transform: translateX(4px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   }
 
-  body.light-mode .btn-diff:hover:not(:disabled) {
-    background: rgba(255,255,255,0.8);
+  body.dark-mode .btn-diff:hover:not(:disabled) {
+    background: rgba(255,255,255,0.06);
   }
 
   .btn-diff:disabled {
@@ -639,7 +642,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   }
 
   .option { 
-    background: rgba(255, 255, 255, 0.02); 
+    background: rgba(255, 255, 255, 0.4); 
     border: 1px solid var(--card-border); 
     padding: 16px 20px; 
     margin: 12px 0; 
@@ -654,18 +657,18 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
   
-  body.light-mode .option {
-    background: rgba(255,255,255,0.4);
+  body.dark-mode .option {
+    background: rgba(255,255,255,0.02);
   }
 
   .option:hover { 
-    background: rgba(255, 255, 255, 0.05); 
+    background: rgba(255, 255, 255, 0.8); 
     border-color: var(--accent); 
     transform: scale(1.01);
   }
 
-  body.light-mode .option:hover {
-    background: rgba(255,255,255,0.8);
+  body.dark-mode .option:hover {
+    background: rgba(255, 255, 255, 0.05);
   }
 
   .option-badge {
@@ -898,13 +901,13 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     position: absolute; 
     cursor: pointer; 
     top: 0; left: 0; right: 0; bottom: 0; 
-    background-color: rgba(255,255,255,0.1); 
+    background-color: rgba(0,0,0,0.05); 
     transition: .3s; 
     border-radius: 30px; 
     border: 1px solid var(--card-border);
   }
-  body.light-mode .slider {
-    background-color: rgba(0,0,0,0.05);
+  body.dark-mode .slider {
+    background-color: rgba(255,255,255,0.1);
   }
   .slider:before { 
     position: absolute; 
@@ -945,26 +948,26 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 
   /* --- Ultimate Upgrade Premium CSS Styles --- */
 
-  /* Completed flag golden star */
-  .gold-star {
+  /* Completed flag silver star */
+  .silver-star {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: rgba(251, 191, 36, 0.2);
-    border: 1px solid var(--gold);
+    background: rgba(226, 232, 240, 0.25);
+    border: 1px solid #cbd5e1;
     border-radius: 50%;
     width: 26px;
     height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+    box-shadow: 0 0 10px rgba(226, 232, 240, 0.4);
     animation: pulseStar 1.8s infinite alternate ease-in-out;
     z-index: 5;
   }
   @keyframes pulseStar {
     0% { transform: scale(1); }
-    100% { transform: scale(1.15); box-shadow: 0 0 16px rgba(251, 191, 36, 0.7); }
+    100% { transform: scale(1.15); box-shadow: 0 0 16px rgba(226, 232, 240, 0.7); }
   }
 
   /* Card played-out premium adjustments */
@@ -996,16 +999,26 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 
   /* Option card wrong/correct rescue effects */
   .option.wrong {
-    background: rgba(244, 63, 94, 0.15) !important;
+    background: var(--error) !important;
     border-color: var(--error) !important;
-    color: var(--error) !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
     animation: shakeWrong 0.4s cubic-bezier(.36,.07,.19,.97) both;
   }
+  .option.wrong .option-badge {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+  }
   .option.correct {
-    background: rgba(16, 185, 129, 0.15) !important;
+    background: var(--success) !important;
     border-color: var(--success) !important;
-    color: var(--success) !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
     animation: pulseCorrect 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .option.correct .option-badge {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
   }
 
   @keyframes shakeWrong {
@@ -1202,13 +1215,13 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
       width: 4px;
       height: 4px;
     }
-    .gold-star {
+    .silver-star {
       width: 18px;
       height: 18px;
       top: 4px;
       right: 4px;
     }
-    .gold-star svg {
+    .silver-star svg {
       width: 10px;
       height: 10px;
     }
@@ -1246,6 +1259,206 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   .btn-main:active, .btn-diff:active, .option:active {
     transform: scale(0.96);
     transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Multiplayer CSS styles */
+  .mp-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .mp-lobby-code {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--gold);
+    letter-spacing: 5px;
+    background: rgba(251, 191, 36, 0.1);
+    padding: 10px 30px;
+    border-radius: 16px;
+    border: 1px dashed var(--gold);
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+    margin: 15px 0;
+    display: inline-block;
+  }
+  .mp-players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .mp-player-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInScale 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  @keyframes fadeInScale {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes floatLeftPhone {
+    0%, 100% { transform: translateY(0) rotate(-15deg); }
+    50% { transform: translateY(-6px) rotate(-12deg); }
+  }
+  @keyframes floatRightPhone {
+    0%, 100% { transform: translateY(0) rotate(12deg); }
+    50% { transform: translateY(-6px) rotate(15deg); }
+  }
+  .mp-host-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+    margin-right: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  /* Controller layout */
+  .mp-controller-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    height: 60vh;
+    max-height: 500px;
+    margin-top: 20px;
+  }
+  .mp-btn-option {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.1s, box-shadow 0.2s;
+  }
+  .mp-btn-option:active {
+    transform: scale(0.95);
+  }
+  .mp-btn-red {
+    background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+  }
+  .mp-btn-blue {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  }
+  .mp-btn-yellow {
+    background: linear-gradient(135deg, #eab308 0%, #a16207 100%);
+    box-shadow: 0 4px 15px rgba(234, 179, 8, 0.4);
+  }
+  .mp-btn-green {
+    background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+  }
+  .mp-btn-shape {
+    font-size: 3.5rem;
+    opacity: 0.8;
+  }
+  
+  /* MP Stats Chart */
+  .mp-stats-bar-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 15px;
+  }
+  .mp-stats-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .mp-stats-bar {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    min-height: 5px;
+  }
+  .mp-stats-label {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  /* Leaderboard details */
+  .mp-leaderboard-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .mp-leaderboard-row.podium-1 {
+    border-color: var(--gold);
+    background: rgba(251, 191, 36, 0.05);
+  }
+  .mp-leaderboard-rank {
+    width: 30px;
+    font-weight: 800;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .mp-leaderboard-name {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .mp-leaderboard-score {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--accent);
+  }
+
+  .loader-circle {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--card-border);
+    border-top: 4px solid var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 </style>
 </head>
@@ -1302,7 +1515,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
     </button>
     <button class="btn-main" style="margin-top: 15px; border-color: var(--gold); color: var(--gold);" onclick="openRanksDialog()">
-      🏆 Ränge & Erfolge
+      🏆 Erfolge & Ruhmeshalle
     </button>
   </div>
 </div>
@@ -1335,11 +1548,11 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
           <p>Der erste Fehler führt zum Game Over. Wie viele Fragen schaffst du in Folge?</p>
         </div>
       </div>
-      <div class="category-card" style="opacity: 0.35; cursor: not-allowed; filter: grayscale(0.6); pointer-events: none;">
-        <div class="category-num" style="background: linear-gradient(135deg, #4b5563, #1f2937);">👥</div>
+      <div class="category-card" onclick="selectMode('multiplayer')">
+        <div class="category-num" style="background: linear-gradient(135deg, var(--accent), var(--accent-alt));">👥</div>
         <div class="category-details">
-          <h3>Multiplayer</h3>
-          <p>Kommt mit Version 3.0: Tritt live gegen deine Klasse an und nutze dein Smartphone als Controller!</p>
+          <h3>Echtzeit-Multiplayer</h3>
+          <p>Tritt live gegen andere Mitspieler an und nutzt eure eigenen Geräte als Controller!</p>
         </div>
       </div>
     </div>
@@ -1355,20 +1568,11 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   <div class="card-box" style="text-align: left;">
     <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); text-align: center; font-size: 2rem; margin-top: 0; font-weight: 700;">Spielregeln</h2>
     <ul style="line-height: 1.8; color: var(--text-primary); opacity: 0.9; font-size: 0.95rem; padding-left: 20px;">
-        <li style="margin-bottom: 8px;"><b>27 Länder & 405 Fragen</b>: Jedes Land hat 15 Fragen (5 Themen × 3 Level).</li>
-        <li style="margin-bottom: 8px;"><b>Einmalige Wahl</b>: Ein gespieltes Level ist für alle Teams dauerhaft gesperrt.</li>
-        <li style="margin-bottom: 8px;"><b>Joker-Arsenal</b>: Jedes Team kann jeden Joker-Typ genau 2-mal verwenden (max. 6-mal gesamt). Jeder Joker kann pro Frage max. einmal genutzt werden.
-          <ul style="font-size: 0.85rem; opacity: 0.8; margin-top: 4px; padding-left: 15px;">
-            <li>Level I: Keine Joker erlaubt.</li>
-            <li>Level II: Nur 50:50 und Retter-Joker erlaubt.</li>
-            <li>Level III (Standard): Alle Joker erlaubt.</li>
-            <li>Level III (Risiko): Nur 50:50 Joker erlaubt.</li>
-          </ul>
-        </li>
-        <li style="margin-bottom: 8px;"><b>Duell-Timer</b>: (Optional) Beantworte Fragen unter Zeitdruck, bevor der Buzzer ertönt!</li>
-        <li style="margin-bottom: 8px;"><b>Risiko-Fragen</b>: Bei der Auswahl von Level III wird das Team gefragt, ob es auf Risiko (+6 / -3 Punkte) oder normal (+3 Punkte) spielen möchte.</li>
-        <li style="margin-bottom: 8px;"><b>Meilensteine & Taktik (Land meistern)</b>: Wenn ein einzelnes Team alle 3 Level eines Landes richtig beantwortet, erhält es bei der letzten Frage dieses Landes <b>doppelte Punkte</b> und einen <b>goldenen Stern</b>. Wenn jedoch ein anderes Team ein Level dieses Landes "wegschnappt" oder falsch beantwortet, verfällt der Bonus für dieses Land.</li>
-        <li style="margin-bottom: 8px;"><b>Turnier-Modus</b>: Die Hall of Fame speichert alle Sitzungsergebnisse für fortlaufende Duelle.</li>
+        <li style="margin-bottom: 8px;"><b>Ziel</b>: Sammelt als Team die meisten Punkte durch das Beantworten von Fragen zu EU-Ländern.</li>
+        <li style="margin-bottom: 8px;"><b>Ablauf</b>: Wählt abwechselnd ein Land auf der Karte und eine Schwierigkeitsstufe (Level I, II oder III) aus. Ein bereits gespieltes Level ist gesperrt.</li>
+        <li style="margin-bottom: 8px;"><b>Joker (-1 Punkt)</b>: Jedes Team hat je 2x 50:50, Klassen-Umfrage und Retter-Joker. Der Einsatz eines Jokers zieht sofort **1 Punkt** von eurem Score ab (Level I: Keine Joker, Level II: Nur 50:50 & Retter-Joker, Level III: Alle Joker).</li>
+        <li style="margin-bottom: 8px;"><b>Risiko-Frage (Level III)</b>: Wählt zwischen Risiko (+6 / -3 Punkte, negative Punkte möglich!) oder normal (+3 Punkte).</li>
+        <li style="margin-bottom: 8px;"><b>Land meistern</b>: Sobald alle 3 Level eines Landes richtig beantwortet wurden, bekommt das Land einen **silbernen Stern**.</li>
     </ul>
     <div style="text-align: center; margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
         <button class="btn-main" style="border-color: rgba(255,255,255,0.15);" onclick="goBackFromRules()">
@@ -1553,8 +1757,361 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
       </button>
     </div>
   </div>
+  </div>
 </div>
 
+<!-- Screen: Multiplayer Role Select -->
+<div id="mp-role-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 600px; width: 100%;">
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); font-size: 2rem; margin-top:0; font-weight: 700; text-align: center;">Echtzeit-Multiplayer</h2>
+    
+    <!-- Custom Infographic -->
+    <div class="mp-visual-infographic" style="position: relative; height: 120px; display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+      <!-- The main screen -->
+      <div style="width: 140px; height: 80px; background: rgba(255,255,255,0.03); border: 2px solid var(--accent); border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(8px);">
+        <div style="font-size: 0.6rem; font-weight: 800; color: var(--gold); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 3px;">EU QUIZ - HOST</div>
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--text-primary); letter-spacing: 1px;">1234</div>
+        <div style="display: flex; gap: 3px; height: 12px; align-items: flex-end;">
+          <div style="width: 4px; height: 6px; background: #ef4444; border-radius: 1px;"></div>
+          <div style="width: 4px; height: 10px; background: #3b82f6; border-radius: 1px;"></div>
+          <div style="width: 4px; height: 8px; background: #eab308; border-radius: 1px;"></div>
+          <div style="width: 4px; height: 12px; background: #22c55e; border-radius: 1px;"></div>
+        </div>
+      </div>
+      <!-- Overlapping mobile screen 1 -->
+      <div style="position: absolute; width: 45px; height: 80px; background: rgba(255,255,255,0.05); border: 1.5px solid var(--accent-alt); border-radius: 8px; left: calc(50% - 100px); top: 30px; transform: rotate(-15deg); display: flex; flex-direction: column; justify-content: space-around; align-items: center; padding: 4px; box-shadow: 0 10px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px); animation: floatLeftPhone 4s ease-in-out infinite;">
+        <div style="width: 12px; height: 2px; background: rgba(255,255,255,0.2); border-radius: 1px;"></div>
+        <div style="font-size: 1rem; font-weight: 900; color: #3b82f6; font-family: 'Space Grotesk', sans-serif;">B</div>
+        <div style="width: 6px; height: 6px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%;"></div>
+      </div>
+      <!-- Overlapping mobile screen 2 -->
+      <div style="position: absolute; width: 45px; height: 80px; background: rgba(255,255,255,0.05); border: 1.5px solid var(--success); border-radius: 8px; right: calc(50% - 100px); top: 25px; transform: rotate(12deg); display: flex; flex-direction: column; justify-content: space-around; align-items: center; padding: 4px; box-shadow: 0 10px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px); animation: floatRightPhone 4s ease-in-out infinite;">
+        <div style="width: 12px; height: 2px; background: rgba(255,255,255,0.2); border-radius: 1px;"></div>
+        <div style="font-size: 1rem; font-weight: 900; color: #22c55e; font-family: 'Space Grotesk', sans-serif;">D</div>
+        <div style="width: 6px; height: 6px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%;"></div>
+      </div>
+    </div>
+
+    <!-- Instruction Card -->
+    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); border-radius: 12px; padding: 20px; text-align: left; margin-bottom: 25px; line-height: 1.6; font-size: 0.95rem;">
+      <h3 style="margin-top: 0; color: var(--gold); font-size: 1.1rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        📖 Anleitung: So funktioniert's
+      </h3>
+      <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; opacity: 0.85;">
+        <li><b>Runde hosten:</b> Startet das Spiel auf einem großen Bildschirm (z. B. Beamer, Smartboard oder TV) für alle Mitspieler sichtbar.</li>
+        <li><b>Mit Code beitreten:</b> Die Spieler rufen das Quiz auf ihrem eigenen Gerät (z. B. Smartphone, Tablet oder Laptop) auf und geben den 4-stelligen Raumcode sowie einen Spitznamen ein.</li>
+        <li><b>Antworten abgeben:</b> Die Fragen werden auf dem Hauptbildschirm angezeigt, während die eigenen Geräte als Controller (mit den Tasten A, B, C, D) dienen. Wer schneller richtig tippt, bekommt mehr Punkte!</li>
+      </ol>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+      <button class="btn-main" style="border-color: var(--accent); padding: 18px 24px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: 'Space Grotesk', sans-serif;" onclick="mpInitHost()">
+        🖥️ Runde hosten
+      </button>
+      <button class="btn-main" style="border-color: var(--accent-alt); padding: 18px 24px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: 'Space Grotesk', sans-serif;" onclick="mpShowJoinScreen()">
+        🎮 Mit Code beitreten
+      </button>
+      
+      <button class="btn-main" style="margin-top: 15px; border-color: rgba(255,255,255,0.15);" onclick="mpBackToModeSelect()">
+        Zurück
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Firebase Config Wizard -->
+<div id="mp-config-modal" class="screen" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 10000; justify-content: center; align-items: center; padding: 20px;">
+  <div class="card-box" style="max-width: 550px; background: #0b0a14; border: 1px solid var(--accent); width: 100%;">
+    <h3 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); margin-top: 0; font-size: 1.5rem;">Firebase Konfiguration</h3>
+    <p style="font-size: 0.85rem; opacity: 0.8; line-height: 1.5; text-align: left; margin-bottom: 15px;">
+      Um Echtzeit-Multiplayer zu spielen, erstelle ein kostenloses <b>Firebase Realtime Database</b>-Projekt und füge das Web-Config-JSON hier ein. Sie wird nur lokal in deinem Browser gespeichert.
+    </p>
+    
+    <textarea id="mp-config-input" placeholder='{"apiKey": "AIzaSy...", "authDomain": "...", "databaseURL": "...", "projectId": "..."}' style="width: 100%; height: 150px; background: rgba(0,0,0,0.4); border: 1px solid var(--card-border); border-radius: 8px; color: var(--text-primary); font-family: monospace; font-size: 0.8rem; padding: 10px; resize: none; margin-bottom: 15px; outline: none;"></textarea>
+    
+    <div style="display: flex; gap: 10px; width: 100%;">
+      <button class="btn-main" style="flex: 1; border-color: var(--success); color: var(--success);" onclick="mpSaveConfig()">Speichern</button>
+      <button class="btn-main" style="flex: 1;" onclick="mpCloseConfigModal()">Abbrechen</button>
+    </div>
+    <div id="mp-config-status" style="margin-top: 15px; font-size: 0.85rem; display: none; text-align: center;"></div>
+  </div>
+</div>
+
+<!-- Screen: Host Lobby -->
+<div id="mp-host-lobby-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 800px; width: 100%;">
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); margin-top: 0; text-align: center;">Multiplayer Lobby</h2>
+    <p style="opacity: 0.7; margin-bottom: 5px; text-align: center;">Rufe das Quiz auf deinem Handy auf und trete diesem Code bei:</p>
+    
+    <div style="text-align: center;">
+      <div class="mp-lobby-code" id="mp-host-code-display">----</div>
+    </div>
+    
+    <div style="margin: 20px 0; background: rgba(255,255,255,0.01); border: 1px solid var(--card-border); border-radius: 12px; padding: 15px; text-align: center;">
+      <h4 style="margin-top:0; color: var(--accent-alt); font-weight:700; margin-bottom: 10px;">Spieleinstellungen:</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; font-size: 0.95rem;">
+        <div>
+          Fragenanzahl: 
+          <select id="mp-host-setting-qcount" style="background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); border-radius: 6px; color: var(--text-primary); padding: 4px 8px; font-family: inherit; font-weight: 600;">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15" selected>15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+          </select>
+        </div>
+        <div>
+          Zeitlimit: 
+          <select id="mp-host-setting-timelimit" style="background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); border-radius: 6px; color: var(--text-primary); padding: 4px 8px; font-family: inherit; font-weight: 600;">
+            <option value="15">15s</option>
+            <option value="20">20s</option>
+            <option value="30" selected>30s</option>
+            <option value="45">45s</option>
+            <option value="60">60s</option>
+            <option value="90">90s</option>
+            <option value="120">2 Min</option>
+            <option value="180">3 Min</option>
+            <option value="240">4 Min</option>
+            <option value="300">5 Min</option>
+          </select>
+        </div>
+        <div>
+          Kategorie: 
+          <select id="mp-host-setting-category" style="background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); border-radius: 6px; color: var(--text-primary); padding: 4px 8px; font-family: inherit; font-weight: 600;">
+            <option value="all" selected>Gemischt (Alle)</option>
+            <option value="1">Geschichte & Verträge</option>
+            <option value="2">Geografie & Städte</option>
+            <option value="3">Institutionen & Politik</option>
+            <option value="4">Kultur & Symbole</option>
+            <option value="5">Wirtschaft & Euro</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <h3 style="text-align: left; margin-bottom: 5px; font-size: 1.1rem; border-bottom: 1px solid var(--card-border); padding-bottom: 8px;">
+      Spieler in der Lobby (<span id="mp-host-player-count">0</span>):
+    </h3>
+    
+    <div class="mp-players-grid" id="mp-host-players-list">
+      <!-- Dynamically filled -->
+    </div>
+    
+    <div style="display: flex; gap: 15px; margin-top: 30px; width: 100%;">
+      <button class="btn-main" id="mp-host-start-btn" style="flex: 1; border-color: var(--success); color: var(--success);" onclick="mpHostStartGame()" disabled>
+        Spiel Starten
+      </button>
+      <button class="btn-main" style="border-color: var(--error); color: var(--error);" onclick="mpHostCancel()">
+        Lobby abbrechen
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Player Join -->
+<div id="mp-player-join-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 500px; width: 100%;">
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); margin-top:0; text-align: center;">Spiel beitreten</h2>
+    <p style="opacity: 0.7; margin-bottom: 20px; text-align: center;">Gib den 4-stelligen Raumcode und deinen Namen ein.</p>
+    
+    <div class="input-group" style="margin-bottom: 15px;">
+      <label class="input-label" for="mp-join-code">Raumcode (4 Ziffern)</label>
+      <input type="text" id="mp-join-code" pattern="[0-9]*" inputmode="numeric" maxlength="4" placeholder="z.B. 1234" style="text-align: center; font-size: 1.5rem; letter-spacing: 5px; font-weight:700;">
+    </div>
+    <div class="input-group" style="margin-bottom: 25px;">
+      <label class="input-label" for="mp-join-name">Dein Name / Spitzname</label>
+      <input type="text" id="mp-join-name" maxlength="15" placeholder="z.B. Max">
+    </div>
+    
+    <div id="mp-join-err" style="color: var(--error); margin-bottom: 15px; display: none; font-size: 0.9rem; text-align: center; font-weight: 600;"></div>
+    
+    <div style="display: flex; gap: 15px; width: 100%;">
+      <button class="btn-main" style="flex: 1; border-color: var(--success); color: var(--success);" onclick="mpPlayerJoin()">Beitreten</button>
+      <button class="btn-main" style="flex: 1;" onclick="mpPlayerCancelJoin()">Zurück</button>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Player Lobby (Waiting) -->
+<div id="mp-player-lobby-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 500px; text-align: center; width: 100%;">
+    <div class="loader-circle" style="margin: 0 auto 20px auto; border-top-color: var(--accent-alt);"></div>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); margin-top:0;">Erfolgreich beigetreten!</h2>
+    <p style="font-size: 1.4rem; font-weight: 700; color: var(--gold); margin: 10px 0;" id="mp-player-lobby-name">Name</p>
+    <p style="opacity: 0.8;">Warte darauf, dass der Host das Spiel startet...</p>
+    <div style="margin-top: 30px; font-size: 1rem; opacity: 0.6;">Raumcode: <b style="letter-spacing:2px; font-size:1.2rem; color:var(--accent);" id="mp-player-lobby-code">----</b></div>
+  </div>
+</div>
+
+<!-- Screen: Host Game Active -->
+<div id="mp-host-game-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 900px; width: 100%;">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; margin-bottom: 20px;">
+      <span style="font-size: 0.95rem; color: var(--text-secondary);">Frage <b id="mp-host-qindex">1</b> von <b id="mp-host-total-q">15</b></span>
+      <span style="font-size: 0.95rem; color: var(--accent-alt); font-weight:700;" id="mp-host-qcategory">Kategorie</span>
+    </div>
+    
+    <h1 id="mp-host-question-text" style="font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; line-height: 1.4; margin-bottom: 30px; min-height: 80px; text-align: center;">Fragetext...</h1>
+    
+    <!-- Big timer block -->
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 30px;">
+      <div id="mp-host-timer-circle" style="width: 100px; height: 100px; border-radius: 50%; border: 6px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent); transition: border-color 0.3s;">
+        30
+      </div>
+    </div>
+    
+    <div class="options-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; width: 100%;">
+      <div class="option" id="mp-host-opt-0" style="padding: 20px; font-size: 1.1rem; border-color: rgba(239, 68, 68, 0.4); border-width: 2px; cursor: default; display: flex; align-items: center;">
+        <span class="mp-host-badge" style="background:#ef4444;">A</span> <span class="opt-text">Option A</span>
+      </div>
+      <div class="option" id="mp-host-opt-1" style="padding: 20px; font-size: 1.1rem; border-color: rgba(59, 130, 246, 0.4); border-width: 2px; cursor: default; display: flex; align-items: center;">
+        <span class="mp-host-badge" style="background:#3b82f6;">B</span> <span class="opt-text">Option B</span>
+      </div>
+      <div class="option" id="mp-host-opt-2" style="padding: 20px; font-size: 1.1rem; border-color: rgba(234, 179, 8, 0.4); border-width: 2px; cursor: default; display: flex; align-items: center;">
+        <span class="mp-host-badge" style="background:#eab308;">C</span> <span class="opt-text">Option C</span>
+      </div>
+      <div class="option" id="mp-host-opt-3" style="padding: 20px; font-size: 1.1rem; border-color: rgba(34, 197, 94, 0.4); border-width: 2px; cursor: default; display: flex; align-items: center;">
+        <span class="mp-host-badge" style="background:#22c55e;">D</span> <span class="opt-text">Option D</span>
+      </div>
+    </div>
+    
+    <div style="margin-top: 25px; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <span style="font-size: 1rem; color: var(--text-secondary);">Antworten abgegeben: <b id="mp-host-answers-count">0</b> / <b id="mp-host-total-players">0</b></span>
+      <button class="btn-main" id="mp-host-skip-btn" style="border-color: var(--accent);" onclick="mpHostSkipQuestion()">Überspringen</button>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Player Game Active (Controller) -->
+<div id="mp-player-game-screen" class="screen" style="display:none; padding: 10px; width: 100%;">
+  <div class="card-box" style="max-width: 500px; width: 100%; padding: 15px; min-height: 80vh; display: flex; flex-direction: column; justify-content: space-between;">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid var(--card-border); padding-bottom: 10px;">
+      <span style="font-weight: 700; color: var(--gold);" id="mp-player-game-name">Name</span>
+      <span style="font-family: 'Space Grotesk', sans-serif;" id="mp-player-game-score">0 Punkte</span>
+    </div>
+    
+    <!-- Waiting Overlay inside controller -->
+    <div id="mp-controller-wait" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; margin: 40px 0;">
+      <div class="loader-circle" style="border-top-color: var(--accent);"></div>
+      <p style="font-weight: 600; opacity: 0.8; text-align: center;" id="mp-controller-wait-text">Schaue auf den Bildschirm für die Frage...</p>
+    </div>
+    
+    <!-- Action buttons grid -->
+    <div id="mp-controller-buttons" class="mp-controller-grid" style="display: none;">
+      <button class="mp-btn-option mp-btn-red" onclick="mpPlayerSubmitAnswer(0)">
+        <span class="mp-btn-shape">A</span>
+      </button>
+      <button class="mp-btn-option mp-btn-blue" onclick="mpPlayerSubmitAnswer(1)">
+        <span class="mp-btn-shape">B</span>
+      </button>
+      <button class="mp-btn-option mp-btn-yellow" onclick="mpPlayerSubmitAnswer(2)">
+        <span class="mp-btn-shape">C</span>
+      </button>
+      <button class="mp-btn-option mp-btn-green" onclick="mpPlayerSubmitAnswer(3)">
+        <span class="mp-btn-shape">D</span>
+      </button>
+    </div>
+    
+    <div style="text-align: center; font-size: 0.85rem; opacity: 0.5; margin-top: 15px;">
+      Gekoppelt mit Raum <b id="mp-player-game-code" style="color: var(--accent);">----</b>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Host Reveal Question Result -->
+<div id="mp-host-reveal-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 900px; width: 100%;">
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--gold); margin-top:0; text-align: center;">Antwort-Statistik</h2>
+    <h3 id="mp-host-reveal-question" style="font-size: 1.35rem; margin-bottom: 25px; line-height: 1.4; text-align: center;">Frage...</h3>
+    
+    <div class="mp-stats-bar-container">
+      <div class="mp-stats-column">
+        <div class="mp-stats-bar mp-btn-red" id="mp-stats-bar-0" style="height: 5%;"></div>
+        <div class="mp-stats-label" style="color:#ef4444; font-family:'Space Grotesk',sans-serif; font-weight:800;">A</div>
+      </div>
+      <div class="mp-stats-column">
+        <div class="mp-stats-bar mp-btn-blue" id="mp-stats-bar-1" style="height: 5%;"></div>
+        <div class="mp-stats-label" style="color:#3b82f6; font-family:'Space Grotesk',sans-serif; font-weight:800;">B</div>
+      </div>
+      <div class="mp-stats-column">
+        <div class="mp-stats-bar mp-btn-yellow" id="mp-stats-bar-2" style="height: 5%;"></div>
+        <div class="mp-stats-label" style="color:#eab308; font-family:'Space Grotesk',sans-serif; font-weight:800;">C</div>
+      </div>
+      <div class="mp-stats-column">
+        <div class="mp-stats-bar mp-btn-green" id="mp-stats-bar-3" style="height: 5%;"></div>
+        <div class="mp-stats-label" style="color:#22c55e; font-family:'Space Grotesk',sans-serif; font-weight:800;">D</div>
+      </div>
+    </div>
+    
+    <div style="margin: 25px 0; padding: 20px; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 12px; text-align: left;">
+      <h4 style="margin-top:0; color: var(--success); font-weight:700; font-size: 1rem;">Richtige Antwort:</h4>
+      <p style="font-size: 1.25rem; font-weight:700; margin: 5px 0 10px 0; color: var(--text-primary);" id="mp-host-reveal-correct-text">Text</p>
+      <p style="font-size: 0.95rem; opacity: 0.85; margin: 0; line-height: 1.5;" id="mp-host-reveal-explanation">Erklärung...</p>
+    </div>
+    
+    <div style="text-align: center;">
+      <button class="btn-main" style="border-color: var(--accent); min-width: 200px;" onclick="mpHostShowLeaderboard()">Bestenliste anzeigen</button>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Player Reveal Question Result -->
+<div id="mp-player-reveal-screen" class="screen" style="display:none; width: 100%;">
+  <div class="card-box" id="mp-player-reveal-box" style="max-width: 500px; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-width: 2px;">
+    <div id="mp-player-reveal-icon" style="font-size: 5rem; margin-bottom: 20px; animation: bounce 0.6s ease infinite alternate;">🎉</div>
+    <h1 id="mp-player-reveal-status" style="font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; margin: 0 0 10px 0; font-weight: 800;">RICHTIG!</h1>
+    <h3 id="mp-player-reveal-points" style="color: var(--gold); font-size: 1.6rem; margin: 0 0 20px 0; font-weight: 700;">+850 Punkte</h3>
+    
+    <p style="opacity: 0.8; font-size: 1.1rem; margin-bottom: 30px;">Deine Gesamtpunkte: <b id="mp-player-reveal-total" style="color: var(--accent);">0</b></p>
+    <p style="opacity: 0.5; font-size: 0.85rem;">Schaue auf die Leinwand für den Zwischenstand...</p>
+  </div>
+</div>
+
+<!-- Screen: Host Leaderboard -->
+<div id="mp-host-leaderboard-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 800px; width: 100%;">
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); margin-top:0; font-size: 2.5rem; font-weight:800; text-align: center;">Bestenliste</h2>
+    <p style="opacity: 0.7; margin-bottom: 25px; text-align: center;">Zwischenstand nach dieser Runde:</p>
+    
+    <div id="mp-host-leaderboard-list" style="width: 100%; display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px;">
+      <!-- Dynamically filled -->
+    </div>
+    
+    <div style="text-align: center;">
+      <button class="btn-main" id="mp-host-next-btn" style="border-color: var(--success); color: var(--success); min-width: 200px;" onclick="mpHostNextQuestion()">Nächste Frage</button>
+    </div>
+  </div>
+</div>
+
+<!-- Screen: Host Finish / Game End -->
+<div id="mp-host-finish-screen" class="screen" style="display:none;">
+  <div class="card-box" style="max-width: 800px; width: 100%;">
+    <div class="winner-spotlight">
+      <svg class="trophy-svg" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+        <path d="M4 22h16" />
+        <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34" />
+        <path d="M12 2a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8z" />
+      </svg>
+    </div>
+    <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 3.5rem; margin-bottom: 0; background: linear-gradient(to bottom, var(--gold), #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; text-align: center; letter-spacing: -1px;">DAS PODIUM</h1>
+    
+    <div class="podium-container" id="mp-host-podium" style="margin-top: 30px;">
+      <!-- Dynamically filled podium -->
+    </div>
+    
+    <div class="ranks-list" id="mp-host-other-ranks" style="margin-top: 30px;">
+      <!-- Ranks 4+ -->
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+      <button class="btn-main" style="border-color: rgba(255,255,255,0.2); min-width: 200px;" onclick="mpHostCloseGame()">
+        Hauptmenü
+      </button>
+    </div>
+  </div>
+</div>
 <!-- Game Interruption Button -->
 <button id="end-game-btn" class="btn-main btn-danger finish-btn-fixed" onclick="endGame()">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
@@ -1657,37 +2214,9 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 <!-- Screen 7.5: Global Ranks & Achievements Dialog Overlay -->
 <dialog id="ranks-dialog">
   <div class="quiz-box" style="max-width: 600px; text-align: left; max-height: 80vh; overflow-y: auto;">
-    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--gold); margin-top: 0; font-size: 1.8rem; font-weight: 800; text-align: center;">🏆 Ränge & Erfolge</h2>
-    <p style="opacity: 0.7; font-size: 0.9rem; text-align: center; margin-bottom: 25px;">Deine persistenten Errungenschaften, Karriere-Ränge und Turniersiege.</p>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--gold); margin-top: 0; font-size: 1.8rem; font-weight: 800; text-align: center;">🏆 Erfolge & Ruhmeshalle</h2>
+    <p style="opacity: 0.7; font-size: 0.9rem; text-align: center; margin-bottom: 25px;">Deine persistenten Errungenschaften und Turniersiege.</p>
     
-    <!-- Section 1: Career Ranks -->
-    <div style="margin-bottom: 30px;">
-      <h3 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); border-bottom: 1px solid var(--card-border); padding-bottom: 8px; margin-bottom: 15px; font-size: 1.1rem; font-weight: 700;">🎖️ Karriere-Ränge</h3>
-      <p style="font-size: 0.82rem; opacity: 0.6; margin-top: -8px; margin-bottom: 15px;">Ränge werden basierend auf den im Einzelspieler (Zeit-Angriff, Sudden Death) erzielten Punkten vergeben:</p>
-      <div style="display: flex; flex-direction: column; gap: 8px;">
-        <div style="display: flex; justify-content: space-between; padding: 10px 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); border-radius: 8px; font-size: 0.85rem;">
-          <strong style="color: var(--gold);">Kommissionspräsident 👑</strong>
-          <span>&ge; 35 Punkte</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 10px 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); border-radius: 8px; font-size: 0.85rem;">
-          <strong style="color: var(--accent);">EU-Kommissar 💼</strong>
-          <span>25 - 34 Punkte</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 10px 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); border-radius: 8px; font-size: 0.85rem;">
-          <strong style="color: var(--accent-alt);">Europa-Abgeordneter 🏛️</strong>
-          <span>15 - 24 Punkte</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 10px 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); border-radius: 8px; font-size: 0.85rem;">
-          <strong>EU-Referent 🖋️</strong>
-          <span>5 - 14 Punkte</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; padding: 10px 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--card-border); border-radius: 8px; font-size: 0.85rem; opacity: 0.7;">
-          <span>EU-Praktikant 📋</span>
-          <span>&lt; 5 Punkte</span>
-        </div>
-      </div>
-    </div>
-
     <!-- Section 2: Achievements -->
     <div style="margin-bottom: 30px;">
       <h3 style="font-family: 'Space Grotesk', sans-serif; color: var(--gold); border-bottom: 1px solid var(--card-border); padding-bottom: 8px; margin-bottom: 15px; font-size: 1.1rem; font-weight: 700;">🏆 Deine Errungenschaften</h3>
@@ -3493,7 +4022,7 @@ const pool = {
 
 
 function toggleTheme() { 
-  document.body.classList.toggle('light-mode'); 
+  document.body.classList.toggle('dark-mode'); 
   sounds.playClick();
 }
 
@@ -3708,8 +4237,7 @@ function renderGrid() {
   g.innerHTML = countries.map((c, i) => {
     const allPlayed = c.p[1] && c.p[2] && c.p[3];
     const allCorrect = c.correct && c.correct[1] && c.correct[2] && c.correct[3];
-    const sameTeam = allCorrect && (c.teamCorrect[1] !== null && c.teamCorrect[1] === c.teamCorrect[2] && c.teamCorrect[2] === c.teamCorrect[3]);
-    const starHTML = sameTeam ? `<div class="gold-star" title="Land komplett von einem Team gemeistert!"><svg viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>` : '';
+    const starHTML = allCorrect ? `<div class="silver-star" title="Land komplett richtig beantwortet!"><svg viewBox="0 0 24 24" fill="#cbd5e1" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>` : '';
     const dotsHTML = `
       <div class="level-dots">
         <span class="dot ${c.p[1]?'played':''}" title="Level I"></span>
@@ -3813,8 +4341,16 @@ function startTimer() {
       sounds.playBuzzer();
       document.getElementById('joker-arsenal').style.display = 'none';
       closeClassJoker();
-      document.querySelectorAll('.option').forEach(o => { o.style.pointerEvents = 'none'; o.style.opacity = '0.5'; });
-      document.querySelectorAll('.option')[correctAnswer].classList.add('correct');
+      const opts = document.querySelectorAll('#options-container .option');
+      opts.forEach((o, i) => {
+        o.style.pointerEvents = 'none';
+        if (i !== correctAnswer) {
+          o.style.opacity = '0.5';
+        }
+      });
+      if (opts[correctAnswer]) {
+        opts[correctAnswer].classList.add('correct');
+      }
       
       countries[currentCIdx].p[currentLvl] = 1;
       countries[currentCIdx].correct[currentLvl] = 0;
@@ -3822,7 +4358,7 @@ function startTimer() {
       const infoEl = document.getElementById('txt-turn-info');
       if (riskActive) {
         const penalty = 3;
-        teams[activeTeam].score = Math.max(0, teams[activeTeam].score - penalty);
+        teams[activeTeam].score = teams[activeTeam].score - penalty;
         infoEl.innerText = `⏱ Zeit abgelaufen! ALLES ODER NICHTS VERLOREN! -${penalty} Punkte für ${teams[activeTeam].name}!`;
         infoEl.style.color = 'var(--error)';
       } else {
@@ -3976,7 +4512,7 @@ function evaluateMapClick(idx) {
   } else {
     if (riskActive) {
       const penalty = 3;
-      teams[activeTeam].score = Math.max(0, teams[activeTeam].score - penalty);
+      teams[activeTeam].score = teams[activeTeam].score - penalty;
       feedbackText += ` -${penalty} Punkte für ${teams[activeTeam].name}!`;
     }
     countries[currentCIdx].p[currentLvl] = 1;
@@ -4057,11 +4593,11 @@ function setupQuestionUI(qData, lvl) {
   
   const jcl = document.getElementById('joker-class');
   jcl.style.display = (allowClass && team.jokers.class > 0) ? 'inline-flex' : 'none';
-  jcl.innerText = `Klassen-Umfrage (${team.jokers.class}x)`;
+  jcl.innerText = `Klassen-Umfrage (${team.jokers.class}x) (-1pt)`;
   
   const jre = document.getElementById('joker-rescue');
   jre.style.display = (allowRescue && team.jokers.rescue > 0) ? 'inline-flex' : 'none';
-  jre.innerText = `Retter-Joker (${team.jokers.rescue}x)`;
+  jre.innerText = `Retter-Joker (${team.jokers.rescue}x) (-1pt)`;
 
   // Alles oder Nichts visual indicator (Level III only)
   const riskContainer = document.getElementById('risk-container');
@@ -4089,6 +4625,7 @@ function use5050() {
   sounds.playJoker();
   jokerUsed = true;
   teams[activeTeam].jokers.fiftyFifty--;
+  teams[activeTeam].score--;
   let indices = [0,1,2,3].filter(i => i !== correctAnswer).sort(() => Math.random()-0.5);
   [document.getElementById(`opt-${indices[0]}`), document.getElementById(`opt-${indices[1]}`)].forEach(el => {
     if (el) el.classList.add('glitch-out');
@@ -4102,10 +4639,12 @@ function use5050() {
 function useClassJoker() {
   if (teams[activeTeam].jokers.class <= 0) return;
   sounds.playJoker();
+  jokerUsed = true;
   teams[activeTeam].jokers.class--;
+  teams[activeTeam].score--;
   
   const btn = document.getElementById('joker-class');
-  btn.innerText = `Klassen-Umfrage (${teams[activeTeam].jokers.class}x)`;
+  btn.innerText = `Klassen-Umfrage (${teams[activeTeam].jokers.class}x) (-1pt)`;
   btn.style.display = 'none';
   
   const probCorrect = currentLvl === 1 ? 0.85 : (currentLvl === 2 ? 0.65 : 0.35);
@@ -4146,11 +4685,13 @@ function closeClassJoker() {
 function useRescueJoker() {
   if (teams[activeTeam].jokers.rescue <= 0) return;
   sounds.playRescue();
+  jokerUsed = true;
   teams[activeTeam].jokers.rescue--;
+  teams[activeTeam].score--;
   rescueActive = true;
   
   const btn = document.getElementById('joker-rescue');
-  btn.innerText = `Retter-Joker (${teams[activeTeam].jokers.rescue}x)`;
+  btn.innerText = `Retter-Joker (${teams[activeTeam].jokers.rescue}x) (-1pt)`;
   btn.style.display = 'none';
   
   const infoEl = document.getElementById('txt-turn-info');
@@ -4193,7 +4734,7 @@ function showCampaignExplanation() {
 }
 
 function check(idx) {
-  const opts = document.querySelectorAll('.option');
+  const opts = document.querySelectorAll('#options-container .option');
   
   // Collapse class opinion chart automatically when option is selected
   closeClassJoker();
@@ -4219,7 +4760,6 @@ function check(idx) {
 
     let pts = currentLvl;
     if (riskActive) pts = 6; // Number of points
-    if (jokerUsed) pts = pts / 2; // Rescue/halved points
     
     let completedBySameTeam = false;
     if (isMasteredNow && !wasMasteredBefore) {
@@ -4237,7 +4777,7 @@ function check(idx) {
       document.getElementById('txt-turn-info').innerText = `🏆 ALLES ODER NICHTS GEWONNEN! +6 Punkte für ${teams[activeTeam].name}!`;
       document.getElementById('txt-turn-info').style.color = 'var(--gold)';
     } else if (completedBySameTeam) {
-      document.getElementById('txt-turn-info').innerText = `⭐ LAND KOMPLETT GEMEISTERT! Doppelte Punkte (+${pts} PTS) & Goldener Stern für ${teams[activeTeam].name}!`;
+      document.getElementById('txt-turn-info').innerText = `⭐ LAND REIN VOM TEAM GEMEISTERT! Doppelte Punkte (+${pts} PTS) für ${teams[activeTeam].name}!`;
       document.getElementById('txt-turn-info').style.color = 'var(--gold)';
     }
     
@@ -4252,7 +4792,7 @@ function check(idx) {
       opts[idx].style.pointerEvents = 'none';
       jokerUsed = true;
       const infoEl = document.getElementById('txt-turn-info');
-      infoEl.innerText = '❌ Falsch! Noch eine Chance – rate nochmal! (halbe Punkte)';
+      infoEl.innerText = '❌ Falsch! Retter-Joker aktiv – rate nochmal!';
       infoEl.style.color = 'var(--error)';
     } else {
       stopTimer();
@@ -4267,7 +4807,7 @@ function check(idx) {
 
       if (riskActive) {
         const penalty = 3; // Alles oder Nichts penalty
-        teams[activeTeam].score = Math.max(0, teams[activeTeam].score - penalty);
+        teams[activeTeam].score = teams[activeTeam].score - penalty;
         document.getElementById('txt-turn-info').innerText = `💸 ALLES ODER NICHTS VERLOREN! -${penalty} Punkte für ${teams[activeTeam].name}!`;
         document.getElementById('txt-turn-info').style.color = 'var(--error)';
       }
@@ -4528,6 +5068,8 @@ function selectMode(mode) {
   
   if (mode === 'campaign') {
     document.getElementById('instr-screen').style.display = 'flex';
+  } else if (mode === 'multiplayer') {
+    document.getElementById('mp-role-screen').style.display = 'flex';
   } else {
     let title = "";
     let rules = "";
@@ -5145,7 +5687,7 @@ function openFlagsQuestion() {
 }
 
 function checkRapidFire(idx) {
-  const opts = document.querySelectorAll('.option');
+  const opts = document.querySelectorAll('#options-container .option');
   document.getElementById('joker-arsenal').style.display = 'none';
   document.getElementById('revive-btn').style.display = 'none';
   
@@ -5562,6 +6104,768 @@ function getExplanation(qText, correctAnswerText) {
   
   return `Wusstest du schon? Die richtige Antwort lautet: <strong>${correctAnswerText}</strong>.`;
 }
+
+// ==========================================
+// REAL-TIME MULTIPLAYER SYSTEM (FIREBASE)
+// ==========================================
+let mpDatabase = null;
+let mpRoomCode = null;
+let mpPlayerId = null;
+let mpIsHost = false;
+let mpRoomRef = null;
+let mpTimerInterval = null;
+let mpQuestionList = [];
+let mpActiveQuestion = null;
+let mpActiveTimerDuration = 30;
+let mpTimerStart = 0;
+let mpCurrentQuestionIndex = 0;
+
+function initFirebase() {
+  if (mpDatabase) return true;
+  let configStr = localStorage.getItem('mp_firebase_config');
+  if (!configStr) {
+    const defaultConfig = {
+      apiKey: "AIzaSyDa0giAamnQoCyAMHTZdA4OtKuXHzXTOfo",
+      authDomain: "eu-quiz-16aa5.firebaseapp.com",
+      databaseURL: "https://eu-quiz-16aa5-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "eu-quiz-16aa5",
+      storageBucket: "eu-quiz-16aa5.firebasestorage.app",
+      messagingSenderId: "979679807669",
+      appId: "1:979679807669:web:5c4c0b720256e8d278d6fc"
+    };
+    configStr = JSON.stringify(defaultConfig);
+  }
+  try {
+    const config = JSON.parse(configStr);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config);
+    }
+    mpDatabase = firebase.database();
+    return true;
+  } catch (e) {
+    console.error("Firebase Init Error:", e);
+    return false;
+  }
+}
+
+function mpBackToModeSelect() {
+  sounds.playClick();
+  document.getElementById('mp-role-screen').style.display = 'none';
+  document.getElementById('mode-screen').style.display = 'flex';
+}
+
+function mpShowConfigModal() {
+  sounds.playClick();
+  const config = localStorage.getItem('mp_firebase_config') || "";
+  document.getElementById('mp-config-input').value = config;
+  document.getElementById('mp-config-status').style.display = 'none';
+  document.getElementById('mp-config-modal').style.display = 'flex';
+}
+
+function mpCloseConfigModal() {
+  sounds.playClick();
+  document.getElementById('mp-config-modal').style.display = 'none';
+}
+
+function mpSaveConfig() {
+  sounds.playClick();
+  const input = document.getElementById('mp-config-input').value.trim();
+  const status = document.getElementById('mp-config-status');
+  status.style.display = 'block';
+  
+  if (input === "") {
+    localStorage.removeItem('mp_firebase_config');
+    status.innerText = "Konfiguration gelöscht.";
+    status.style.color = "var(--text-secondary)";
+    setTimeout(mpCloseConfigModal, 1000);
+    return;
+  }
+  
+  try {
+    const config = JSON.parse(input);
+    if (!config.databaseURL || !config.apiKey || !config.projectId) {
+      throw new Error("Fehlende Pflichtfelder (apiKey, databaseURL, projectId).");
+    }
+    localStorage.setItem('mp_firebase_config', JSON.stringify(config, null, 2));
+    status.innerText = "Erfolgreich gespeichert! Firebase initialisiert.";
+    status.style.color = "var(--success)";
+    mpDatabase = null; // Force re-init on next call
+    initFirebase();
+    setTimeout(mpCloseConfigModal, 1000);
+  } catch (e) {
+    status.innerText = "Ungültiges JSON oder fehlende Felder: " + e.message;
+    status.style.color = "var(--error)";
+    sounds.playError();
+  }
+}
+
+// Host Actions
+function mpInitHost() {
+  sounds.playClick();
+  if (!initFirebase()) {
+    mpShowConfigModal();
+    const status = document.getElementById('mp-config-status');
+    status.style.display = 'block';
+    status.innerText = "Bitte zuerst Firebase konfigurieren!";
+    status.style.color = "var(--error)";
+    return;
+  }
+  
+  // Generate random 4-digit code
+  const code = Math.floor(1000 + Math.random() * 9000).toString();
+  mpRoomCode = code;
+  mpIsHost = true;
+  mpPlayerId = null;
+  mpCurrentQuestionIndex = 0;
+  
+  document.getElementById('mp-host-code-display').innerText = code;
+  document.getElementById('mp-role-screen').style.display = 'none';
+  document.getElementById('mp-host-lobby-screen').style.display = 'flex';
+  
+  mpRoomRef = mpDatabase.ref('rooms/' + code);
+  
+  // Generate a random pool of 15 questions
+  mpQuestionList = mpGenerateSessionQuestions(15);
+  
+  mpRoomRef.set({
+    state: 'lobby',
+    hostId: Date.now().toString(36) + Math.random().toString(36).substr(2, 5),
+    settings: {
+      questionCount: mpQuestionList.length,
+      timeLimit: 30
+    },
+    currentQuestionIndex: -1
+  });
+  
+  // Automatically remove room if host disconnects
+  mpRoomRef.onDisconnect().remove();
+  
+  // Set dropdown defaults in lobby UI
+  document.getElementById('mp-host-setting-qcount').value = "15";
+  document.getElementById('mp-host-setting-timelimit').value = "30";
+  document.getElementById('mp-host-setting-category').value = "all";
+  
+  // Listen for joined players
+  mpRoomRef.child('players').on('value', snapshot => {
+    const players = snapshot.val() || {};
+    const plist = document.getElementById('mp-host-players-list');
+    plist.innerHTML = "";
+    
+    let pcount = 0;
+    for (let pid in players) {
+      pcount++;
+      const p = players[pid];
+      const pcard = document.createElement('div');
+      pcard.className = 'mp-player-card';
+      pcard.innerText = p.name;
+      plist.appendChild(pcard);
+    }
+    
+    document.getElementById('mp-host-player-count').innerText = pcount;
+    document.getElementById('mp-host-start-btn').disabled = (pcount < 1);
+  });
+}
+
+function mpHostCancel() {
+  sounds.playClick();
+  if (mpRoomRef) {
+    mpRoomRef.off();
+    mpRoomRef.remove();
+  }
+  document.getElementById('mp-host-lobby-screen').style.display = 'none';
+  document.getElementById('mp-role-screen').style.display = 'flex';
+}
+
+function mpHostStartGame() {
+  sounds.playSuccess();
+  if (!mpRoomRef) return;
+  
+  // Read current settings from select fields
+  const qCount = parseInt(document.getElementById('mp-host-setting-qcount').value) || 15;
+  const timeLimit = parseInt(document.getElementById('mp-host-setting-timelimit').value) || 30;
+  const cat = document.getElementById('mp-host-setting-category').value || "all";
+  
+  mpQuestionList = mpGenerateSessionQuestions(qCount, cat);
+  mpActiveTimerDuration = timeLimit;
+  
+  mpRoomRef.update({
+    currentQuestionIndex: 0,
+    settings: {
+      questionCount: mpQuestionList.length,
+      timeLimit: timeLimit,
+      category: cat
+    }
+  });
+  
+  mpHostLoadQuestion(0);
+}
+
+function mpHostLoadQuestion(index) {
+  if (index >= mpQuestionList.length) {
+    mpHostFinishGame();
+    return;
+  }
+  
+  mpCurrentQuestionIndex = index;
+  const rawQ = mpQuestionList[index];
+  const qData = shuffleQuestionOptions(rawQ);
+  mpActiveQuestion = qData;
+  
+  // Read time limit from settings dropdown
+  const timeLimit = parseInt(document.getElementById('mp-host-setting-timelimit').value) || 30;
+  mpActiveTimerDuration = timeLimit;
+  mpTimerStart = Date.now();
+  
+  // 1. Fetch players once to prepare atomic updates for all of them
+  mpRoomRef.child('players').once('value', snapshot => {
+    const players = snapshot.val() || {};
+    const updates = {
+      state: 'question',
+      currentQuestionIndex: index,
+      timerStart: mpTimerStart,
+      currentQuestion: {
+        q: qData.q,
+        o: qData.o,
+        a: qData.a,
+        categoryName: mpGetCategoryName(rawQ.category)
+      }
+    };
+    
+    for (let pid in players) {
+      updates[`players/${pid}/answer`] = null;
+      updates[`players/${pid}/answerTime`] = 0;
+    }
+    
+    // 2. Perform the atomic update
+    mpRoomRef.update(updates).then(() => {
+      // Setup host UI
+      document.getElementById('mp-host-qindex').innerText = index + 1;
+      document.getElementById('mp-host-total-q').innerText = mpQuestionList.length;
+      document.getElementById('mp-host-qcategory').innerText = mpGetCategoryName(rawQ.category);
+      document.getElementById('mp-host-question-text').innerHTML = qData.q;
+      
+      for (let i = 0; i < 4; i++) {
+        const optDiv = document.getElementById('mp-host-opt-' + i);
+        optDiv.querySelector('.opt-text').innerText = qData.o[i];
+        optDiv.style.background = 'var(--card-bg)';
+        optDiv.style.borderColor = 'var(--card-border)';
+      }
+      
+      document.getElementById('mp-host-lobby-screen').style.display = 'none';
+      document.getElementById('mp-host-reveal-screen').style.display = 'none';
+      document.getElementById('mp-host-leaderboard-screen').style.display = 'none';
+      document.getElementById('mp-host-game-screen').style.display = 'flex';
+      
+      sounds.setMusicState('question');
+      
+      let timeLeft = mpActiveTimerDuration;
+      const timerCircle = document.getElementById('mp-host-timer-circle');
+      timerCircle.innerText = timeLeft;
+      timerCircle.style.borderColor = 'var(--accent)';
+      timerCircle.style.color = 'var(--accent)';
+      
+      if (mpTimerInterval) clearInterval(mpTimerInterval);
+      
+      // 3. Now listen for answers (since they are guaranteed to be reset atomically with state: 'question')
+      mpRoomRef.child('players').on('value', snapshot => {
+        const playersVal = snapshot.val() || {};
+        let total = 0;
+        let answered = 0;
+        for (let pid in playersVal) {
+          total++;
+          if (playersVal[pid].answer !== null && playersVal[pid].answer !== undefined) {
+            answered++;
+          }
+        }
+        document.getElementById('mp-host-answers-count').innerText = answered;
+        document.getElementById('mp-host-total-players').innerText = total;
+        
+        if (total > 0 && answered === total) {
+          mpHostRevealAnswer();
+        }
+      });
+      
+      mpTimerInterval = setInterval(() => {
+        timeLeft--;
+        timerCircle.innerText = timeLeft;
+        
+        if (timeLeft <= 5) {
+          timerCircle.style.color = 'var(--error)';
+          timerCircle.style.borderColor = 'var(--error)';
+          sounds.playTimerTick();
+        }
+        
+        if (timeLeft <= 0) {
+          mpHostRevealAnswer();
+        }
+      }, 1000);
+    });
+  });
+}
+
+function mpHostSkipQuestion() {
+  sounds.playClick();
+  mpHostRevealAnswer();
+}
+
+function mpHostRevealAnswer() {
+  if (mpTimerInterval) clearInterval(mpTimerInterval);
+  mpRoomRef.child('players').off('value'); 
+  
+  sounds.setMusicState('lobby');
+  
+  const correctIdx = mpActiveQuestion.a;
+  const correctText = mpActiveQuestion.o[correctIdx];
+  const explanation = mpGetExplanation(mpActiveQuestion, correctText);
+  
+  for (let i = 0; i < 4; i++) {
+    const optDiv = document.getElementById('mp-host-opt-' + i);
+    if (i === correctIdx) {
+      optDiv.style.background = 'rgba(16, 185, 129, 0.15)';
+      optDiv.style.borderColor = 'var(--success)';
+    } else {
+      optDiv.style.background = 'rgba(244, 63, 94, 0.05)';
+      optDiv.style.borderColor = 'rgba(244, 63, 94, 0.2)';
+    }
+  }
+  
+  // Calculate points
+  mpRoomRef.child('players').once('value', snapshot => {
+    const players = snapshot.val() || {};
+    const updates = {};
+    const stats = [0, 0, 0, 0];
+    
+    let playCorrectSound = false;
+    
+    for (let pid in players) {
+      const p = players[pid];
+      const isCorrect = (p.answer === correctIdx);
+      let pointsGained = 0;
+      
+      if (p.answer !== null && p.answer >= 0 && p.answer < 4) {
+        stats[p.answer]++;
+      }
+      
+      if (isCorrect) {
+        playCorrectSound = true;
+        const basePoints = 500;
+        const answerTime = p.answerTime || (mpTimerStart + mpActiveTimerDuration * 1000);
+        const elapsed = Math.max(0, answerTime - mpTimerStart);
+        const durationMs = mpActiveTimerDuration * 1000;
+        const ratio = Math.max(0, 1 - elapsed / durationMs);
+        const speedBonus = Math.floor(ratio * 500);
+        pointsGained = basePoints + speedBonus;
+      }
+      
+      updates[`players/${pid}/score`] = (p.score || 0) + pointsGained;
+      updates[`players/${pid}/lastCorrect`] = isCorrect;
+      updates[`players/${pid}/lastPointsGained`] = pointsGained;
+    }
+    
+    mpRoomRef.update(updates);
+    mpRoomRef.update({ state: 'reveal' });
+    
+    if (playCorrectSound) {
+      sounds.playSuccess();
+    } else {
+      sounds.playError();
+    }
+    
+    const totalAnswers = stats.reduce((a, b) => a + b, 0) || 1;
+    for (let i = 0; i < 4; i++) {
+      const percent = Math.max(5, Math.floor((stats[i] / totalAnswers) * 100));
+      document.getElementById('mp-stats-bar-' + i).style.height = percent + '%';
+    }
+  });
+  
+  document.getElementById('mp-host-reveal-question').innerHTML = mpActiveQuestion.q;
+  document.getElementById('mp-host-reveal-correct-text').innerText = correctText;
+  
+  const explEl = document.getElementById('mp-host-reveal-explanation');
+  if (explanation && !explanation.startsWith("Wusstest du schon?")) {
+    explEl.innerHTML = explanation;
+    explEl.style.display = 'block';
+  } else {
+    explEl.innerHTML = "";
+    explEl.style.display = 'none';
+  }
+  
+  document.getElementById('mp-host-game-screen').style.display = 'none';
+  document.getElementById('mp-host-reveal-screen').style.display = 'flex';
+}
+
+function mpHostShowLeaderboard() {
+  sounds.playClick();
+  
+  mpRoomRef.update({ state: 'leaderboard' });
+  
+  mpRoomRef.child('players').once('value', snapshot => {
+    const players = snapshot.val() || {};
+    const plist = [];
+    for (let pid in players) {
+      plist.push({ id: pid, name: players[pid].name, score: players[pid].score || 0 });
+    }
+    
+    plist.sort((a, b) => b.score - a.score);
+    
+    const lboard = document.getElementById('mp-host-leaderboard-list');
+    lboard.innerHTML = "";
+    
+    plist.slice(0, 5).forEach((p, idx) => {
+      const row = document.createElement('div');
+      row.className = 'mp-leaderboard-row' + (idx === 0 ? ' podium-1' : '');
+      row.innerHTML = `
+        <div class="mp-leaderboard-rank">#${idx + 1}</div>
+        <div class="mp-leaderboard-name">${p.name}</div>
+        <div class="mp-leaderboard-score">${p.score} pts</div>
+      `;
+      lboard.appendChild(row);
+    });
+    
+    const isLast = (mpCurrentQuestionIndex === mpQuestionList.length - 1);
+    const nextBtn = document.getElementById('mp-host-next-btn');
+    if (isLast) {
+      nextBtn.innerText = "Podium / Siegerehrung";
+      nextBtn.style.borderColor = 'var(--gold)';
+      nextBtn.style.color = 'var(--gold)';
+    } else {
+      nextBtn.innerText = "Nächste Frage";
+      nextBtn.style.borderColor = 'var(--success)';
+      nextBtn.style.color = 'var(--success)';
+    }
+  });
+  
+  document.getElementById('mp-host-reveal-screen').style.display = 'none';
+  document.getElementById('mp-host-leaderboard-screen').style.display = 'flex';
+}
+
+function mpHostNextQuestion() {
+  sounds.playClick();
+  mpHostLoadQuestion(mpCurrentQuestionIndex + 1);
+}
+
+function mpHostFinishGame() {
+  if (mpTimerInterval) clearInterval(mpTimerInterval);
+  
+  mpRoomRef.update({ state: 'finished' });
+  
+  mpRoomRef.child('players').once('value', snapshot => {
+    const players = snapshot.val() || {};
+    const plist = [];
+    for (let pid in players) {
+      plist.push({ name: players[pid].name, score: players[pid].score || 0 });
+    }
+    
+    plist.sort((a, b) => b.score - a.score);
+    
+    const podiumArea = document.getElementById('mp-host-podium');
+    podiumArea.innerHTML = "";
+    
+    const order = [1, 0, 2]; // Render 2nd place (index 1), then 1st place (index 0), then 3rd place (index 2)
+    podiumArea.innerHTML = order.map(pos => {
+      const p = plist[pos];
+      if (!p) return '';
+      const cls = pos === 0 ? 'p-1' : (pos === 1 ? 'p-2' : 'p-3');
+      const crown = pos === 0 ? '<div class="crown-icon">👑</div>' : '';
+      return `<div class="podium-step ${cls}">
+        ${crown}
+        <div class="podium-name" title="${p.name}">${p.name}</div>
+        <div class="step-bar">${pos + 1}</div>
+        <div style="margin-top:10px;font-weight:bold;font-size:1.1rem;font-family:'Space Grotesk',sans-serif;">${p.score} PTS</div>
+      </div>`;
+    }).join('');
+    
+    setTimeout(() => document.querySelectorAll('#mp-host-podium .podium-step').forEach(el => el.classList.add('animate')), 100);
+    
+    const otherRanks = document.getElementById('mp-host-other-ranks');
+    otherRanks.innerHTML = "";
+    
+    if (plist.length > 3) {
+      plist.slice(3).forEach((p, idx) => {
+        const row = document.createElement('div');
+        row.style.display = 'flex';
+        row.style.justifyContent = 'space-between';
+        row.style.padding = '8px 15px';
+        row.style.background = 'rgba(255,255,255,0.02)';
+        row.style.border = '1px solid var(--card-border)';
+        row.style.borderRadius = '8px';
+        row.style.marginBottom = '6px';
+        row.innerHTML = `
+          <span><b>#${idx + 4}</b> ${p.name}</span>
+          <span style="color:var(--accent);">${p.score} pts</span>
+        `;
+        otherRanks.appendChild(row);
+      });
+    }
+  });
+  
+  document.getElementById('mp-host-game-screen').style.display = 'none';
+  document.getElementById('mp-host-reveal-screen').style.display = 'none';
+  document.getElementById('mp-host-leaderboard-screen').style.display = 'none';
+  document.getElementById('mp-host-finish-screen').style.display = 'flex';
+}
+
+function mpHostCloseGame() {
+  sounds.playClick();
+  if (mpRoomRef) {
+    mpRoomRef.off();
+    mpRoomRef.remove();
+  }
+  document.getElementById('mp-host-finish-screen').style.display = 'none';
+  document.getElementById('mode-screen').style.display = 'flex';
+}
+
+// Player Actions
+function mpShowJoinScreen() {
+  sounds.playClick();
+  if (!initFirebase()) {
+    mpShowConfigModal();
+    const status = document.getElementById('mp-config-status');
+    status.style.display = 'block';
+    status.innerText = "Bitte zuerst Firebase konfigurieren!";
+    status.style.color = "var(--error)";
+    return;
+  }
+  
+  document.getElementById('mp-join-code').value = "";
+  document.getElementById('mp-join-name').value = "";
+  document.getElementById('mp-join-err').style.display = 'none';
+  
+  document.getElementById('mp-role-screen').style.display = 'none';
+  document.getElementById('mp-player-join-screen').style.display = 'flex';
+}
+
+function mpPlayerCancelJoin() {
+  sounds.playClick();
+  document.getElementById('mp-player-join-screen').style.display = 'none';
+  document.getElementById('mp-role-screen').style.display = 'flex';
+}
+
+function mpPlayerJoin() {
+  sounds.playClick();
+  const code = document.getElementById('mp-join-code').value.trim();
+  const name = document.getElementById('mp-join-name').value.trim();
+  const err = document.getElementById('mp-join-err');
+  
+  if (code.length !== 4 || isNaN(code)) {
+    err.innerText = "Bitte einen gültigen 4-stelligen Raumcode eingeben.";
+    err.style.display = 'block';
+    sounds.playError();
+    return;
+  }
+  
+  if (name.length < 2) {
+    err.innerText = "Bitte einen Spitznamen mit mindestens 2 Zeichen eingeben.";
+    err.style.display = 'block';
+    sounds.playError();
+    return;
+  }
+  
+  err.style.display = 'none';
+  
+  const roomRef = mpDatabase.ref('rooms/' + code);
+  roomRef.once('value', snapshot => {
+    if (!snapshot.exists()) {
+      err.innerText = "Raum nicht gefunden. Bitte Code prüfen.";
+      err.style.display = 'block';
+      sounds.playError();
+      return;
+    }
+    
+    const room = snapshot.val();
+    if (room.state !== 'lobby') {
+      err.innerText = "Das Spiel läuft bereits oder ist beendet.";
+      err.style.display = 'block';
+      sounds.playError();
+      return;
+    }
+    
+    const players = room.players || {};
+    for (let pid in players) {
+      if (players[pid].name.toLowerCase() === name.toLowerCase()) {
+        err.innerText = "Dieser Name ist in diesem Raum bereits vergeben.";
+        err.style.display = 'block';
+        sounds.playError();
+        return;
+      }
+    }
+    
+    const pid = Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
+    mpPlayerId = pid;
+    mpRoomCode = code;
+    mpIsHost = false;
+    mpRoomRef = roomRef;
+    
+    const playerRef = roomRef.child('players/' + pid);
+    playerRef.set({
+      name: name,
+      score: 0,
+      answer: null,
+      answerTime: 0,
+      lastCorrect: false
+    });
+    
+    playerRef.onDisconnect().remove();
+    
+    document.getElementById('mp-player-lobby-name').innerText = name;
+    document.getElementById('mp-player-lobby-code').innerText = code;
+    document.getElementById('mp-player-join-screen').style.display = 'none';
+    document.getElementById('mp-player-lobby-screen').style.display = 'flex';
+    
+    sounds.playSuccess();
+    
+    mpRoomRef.on('value', snap => {
+      if (!snap.exists()) {
+        alert("Der Raum wurde vom Host geschlossen.");
+        mpPlayerResetAll();
+        return;
+      }
+      
+      const r = snap.val();
+      const p = (r.players && r.players[mpPlayerId]) ? r.players[mpPlayerId] : null;
+      
+      if (!p) {
+        alert("Verbindung zum Raum verloren.");
+        mpPlayerResetAll();
+        return;
+      }
+      
+      if (r.state === 'lobby') {
+        // In Lobby waiting state
+      } else if (r.state === 'question') {
+        document.getElementById('mp-player-lobby-screen').style.display = 'none';
+        document.getElementById('mp-player-reveal-screen').style.display = 'none';
+        
+        document.getElementById('mp-player-game-name').innerText = p.name;
+        document.getElementById('mp-player-game-score').innerText = (p.score || 0) + " Punkte";
+        document.getElementById('mp-player-game-code').innerText = mpRoomCode;
+        
+        document.getElementById('mp-controller-wait').style.display = 'none';
+        document.getElementById('mp-controller-buttons').style.display = 'grid';
+        
+        document.getElementById('mp-player-game-screen').style.display = 'flex';
+      } else if (r.state === 'reveal') {
+        const isCorrect = p.lastCorrect;
+        const pts = p.lastPointsGained || 0;
+        
+        const box = document.getElementById('mp-player-reveal-box');
+        const icon = document.getElementById('mp-player-reveal-icon');
+        const status = document.getElementById('mp-player-reveal-status');
+        const points = document.getElementById('mp-player-reveal-points');
+        const total = document.getElementById('mp-player-reveal-total');
+        
+        if (isCorrect) {
+          box.style.background = 'rgba(16, 185, 129, 0.1)';
+          box.style.borderColor = 'var(--success)';
+          icon.innerText = "🎉";
+          status.innerText = "RICHTIG!";
+          status.style.color = "var(--success)";
+          points.innerText = `+${pts} Punkte`;
+          points.style.display = 'block';
+        } else {
+          box.style.background = 'rgba(244, 63, 94, 0.1)';
+          box.style.borderColor = 'var(--error)';
+          icon.innerText = "❌";
+          status.innerText = "FALSCH";
+          status.style.color = "var(--error)";
+          points.style.display = 'none';
+        }
+        
+        total.innerText = p.score || 0;
+        
+        document.getElementById('mp-player-game-screen').style.display = 'none';
+        document.getElementById('mp-player-reveal-screen').style.display = 'flex';
+      } else if (r.state === 'leaderboard') {
+        document.getElementById('mp-player-game-screen').style.display = 'none';
+        document.getElementById('mp-player-reveal-screen').style.display = 'none';
+        
+        document.getElementById('mp-controller-wait-text').innerText = "Schau auf den Beamer für den Zwischenstand...";
+        document.getElementById('mp-controller-wait').style.display = 'flex';
+        document.getElementById('mp-controller-buttons').style.display = 'none';
+        document.getElementById('mp-player-game-screen').style.display = 'flex';
+      } else if (r.state === 'finished') {
+        alert("Das Spiel ist vorbei!");
+        mpPlayerResetAll();
+      }
+    });
+  });
+}
+
+function mpPlayerSubmitAnswer(index) {
+  sounds.playClick();
+  if (!mpRoomRef || !mpPlayerId) return;
+  
+  document.getElementById('mp-controller-buttons').style.display = 'none';
+  document.getElementById('mp-controller-wait-text').innerText = "Antwort gesendet! Warte auf andere Spieler...";
+  document.getElementById('mp-controller-wait').style.display = 'flex';
+  
+  const pRef = mpRoomRef.child('players/' + mpPlayerId);
+  pRef.update({
+    answer: index,
+    answerTime: Date.now()
+  });
+}
+
+function mpPlayerResetAll() {
+  if (mpRoomRef) {
+    mpRoomRef.off();
+  }
+  mpRoomCode = null;
+  mpPlayerId = null;
+  mpRoomRef = null;
+  
+  document.getElementById('mp-player-lobby-screen').style.display = 'none';
+  document.getElementById('mp-player-game-screen').style.display = 'none';
+  document.getElementById('mp-player-reveal-screen').style.display = 'none';
+  document.getElementById('mp-player-join-screen').style.display = 'none';
+  
+  document.getElementById('mode-screen').style.display = 'flex';
+}
+
+// Helpers
+function mpGetCategoryName(catId) {
+  const cats = {
+    1: "Geschichte & Verträge",
+    2: "Geografie & Städte",
+    3: "Institutionen & Politik",
+    4: "Kultur & Symbole",
+    5: "Wirtschaft & Euro"
+  };
+  return cats[catId] || "Allgemein";
+}
+
+function mpGenerateSessionQuestions(count, categoryFilter = 'all') {
+  const list = [];
+  for (let catId in pool) {
+    if (categoryFilter !== 'all' && catId.toString() !== categoryFilter.toString()) continue;
+    const category = pool[catId];
+    for (let country in category) {
+      const diffs = category[country];
+      for (let diffId in diffs) {
+        const item = diffs[diffId];
+        if (Array.isArray(item)) {
+          item.forEach(q => {
+            list.push({ ...q, category: parseInt(catId), country: country });
+          });
+        } else if (item && item.q) {
+          list.push({ ...item, category: parseInt(catId), country: country });
+        }
+      }
+    }
+  }
+  
+  list.sort(() => Math.random() - 0.5);
+  return list.slice(0, count);
+}
+
+function mpGetExplanation(qData, correctAnswerText) {
+  if (qData.exp) return qData.exp;
+  const qText = qData.q;
+  if (typeof getExplanation === 'function') {
+    return getExplanation(qText, correctAnswerText);
+  }
+  return `Die richtige Antwort lautet: <strong>${correctAnswerText}</strong>.`;
+}
 </script>
 
 <hr style="margin-top: 50px; border: 0; border-top: 1px solid #333;">
@@ -5609,7 +6913,9 @@ const datenschutzText = `
     <p>Diese Website wird auf Servern von GitHub Inc. (USA) bereitgestellt. GitHub erfasst automatisch Logfiles (u.a. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriff). Dies ist technisch notwendig. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
     <h3 style="color: #fff;">3. Google Analytics 4</h3>
     <p>Diese Website nutzt Google Analytics 4 der Google Ireland Limited. Die Datenverarbeitung erfolgt ausschließlich auf Grundlage Ihrer ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO via Cookiebot-Banner. Haben Sie keine Einwilligung erteilt, wird das Tracking blockiert. Die IP-Anonymisierung ist aktiv. Die Daten werden nach 2 Monaten automatisch gelöscht.</p>
-    <h3 style="color: #fff;">4. Ihre Rechte</h3>
+    <h3 style="color: #fff;">4. Firebase Realtime Database (Echtzeit-Multiplayer)</h3>
+    <p>Für den Echtzeit-Multiplayer-Modus nutzt diese Website Firebase Realtime Database, einen Dienst der Google Ireland Limited. Hierbei werden temporäre Spieldaten (wie der gewählte Raumcode, die selbst gewählten Spitznamen der Spieler sowie die abgegebenen Antworten) verarbeitet, um das synchrone Gameplay zu ermöglichen. Diese Daten werden ausschließlich temporär verarbeitet und nach Löschen der Spiel-Lobby wieder aus der Datenbank entfernt. Die Zugangsdaten zur Datenbank (Firebase-Konfiguration) werden vom Hoster eingegeben und ausschließlich lokal im Browser (localStorage) auf dessen Gerät gespeichert. Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung interaktiver Gruppen-Lernfunktionen).</p>
+    <h3 style="color: #fff;">5. Ihre Rechte</h3>
     <p>Ihnen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Beschwerden können an die österreichische Datenschutzbehörde (DSB) gerichtet werden.</p>
 `;
 
@@ -5671,4 +6977,6 @@ window.addEventListener("click", function(e) {
 </script>
 </body>
 </html>
+
+
 
