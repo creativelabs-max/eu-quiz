@@ -2581,6 +2581,10 @@ class SoundEngine {
     playChordNote(783.99, 0.6, 1.2); 
     playChordNote(1046.50, 0.6, 1.2); 
   }
+
+  playTimerTick() {
+    this.playTickTock();
+  }
 }
 
 const sounds = new SoundEngine();
@@ -3012,7 +3016,7 @@ const pool = {
     "Rumänien": {
       1: [
         {q: "Rumänien trat der EU zeitgleich bei mit:", o: ["Kroatien", "Slowenien", "Bulgarien", "Ungarn"], a: 2},
-        {q: "Welche Bedingung galt als zentrale Herausforderung vor dem EU-Beitritt?", o: ["Umweltpolitik", "Bildungssystem", "Justizreformen und Korruptionsbekämpfung", "Außenpolitik"], a: 2}
+        {q: "Welche Bedingung galt als zentrale Herausforderung vor dem EU-Beitritt Rumäniens?", o: ["Umweltpolitik", "Bildungssystem", "Justizreformen und Korruptionsbekämpfung", "Außenpolitik"], a: 2}
       ],
       2: {q: "Welche Reformen galten vor dem EU-Beitritt Rumäniens als die größte Herausforderung?", o: ["Umweltstandards", "Bildungssektor", "Justizreformen und Korruptionsbekämpfung", "Harmonisierung der Außenpolitik"], a: 2},
       3: {q: "Warum verzögerte sich der Schengen-Beitritt Rumäniens über viele Jahre?", o: ["Fehlender politischer Wille im Land", "Verfehlung der wirtschaftlichen EU-Kriterien", "Bedenken einzelner Staaten hinsichtlich Grenzmanagement und Rechtsstaatlichkeit", "Generelle Ablehnung des Schengen-Raums durch Rumänien"], a: 2}
@@ -3062,7 +3066,7 @@ const pool = {
 
     "Zypern": {
       1: {q: "Seit welchem Jahr ist Zypern Mitglied der EU?", o: ["1995", "2004", "2007", "2013"], a: 1},
-      2: {q: "Welches Ereignis führte 1974 zur dauerhaften Teilung der Insel?", o: ["Bürgerkrieg", "NATO-Intervention", "Türkische Militärintervention", "UN-Resolution"], a: 2},
+      2: {q: "Welches Ereignis führte 1974 zur dauerhaften Teilung Zyperns?", o: ["Bürgerkrieg", "NATO-Intervention", "Türkische Militärintervention", "UN-Resolution"], a: 2},
       3: [
         {q: "Welche Besonderheit betrifft Zyperns EU-Beitritt im Vergleich zu allen anderen Staaten?", o: ["Kein Eurobeitritt", "Kein Referendum", "Beitritt trotz ungelöstem Territorialkonflikt", "Später Schengen-Beitritt"], a: 2},
         {q: "Warum gilt Zypern als Präzedenzfall im EU-Erweiterungsrecht?", o: ["Erstes geteiltes Land", "Erstes Inselmitglied", "Beitritt ohne vollständige Anwendung des Acquis", "Beitritt gegen UN-Empfehlung"], a: 2}
@@ -3089,7 +3093,7 @@ const pool = {
       2: {q: "Welches hohe Gebirge erstreckt sich quer durch Bulgarien und gab der gesamten Halbinsel ihren Namen?", o: ["Balkan-Gebirge", "Rila-Gebirge", "Pirin-Gebirge", "Rhodopen"], a: 0},
       3: [
         {q: "Welche bulgarische Landesgrenze ist sicherheitspolitisch für die EU besonders relevant?", o: ["Außengrenze zur Türkei", "Grenze zu Rumänien", "Grenze zu Nordmazedonien", "Küste zum Schwarzen Meer"], a: 0},
-        {q: "Welche geografische Lage ist für die EU sicherheitspolitisch relevant?", o: ["Zugang zur Adria", "Lage im Alpenraum", "Außengrenze zur Türkei", "Nähe zur Ostsee"], a: 2}
+        {q: "Welche geografische Lage Bulgariens ist für die EU sicherheitspolitisch relevant?", o: ["Zugang zur Adria", "Lage im Alpenraum", "Außengrenze zur Türkei", "Nähe zur Ostsee"], a: 2}
       ]
     },
 
@@ -3226,7 +3230,7 @@ const pool = {
     },
 
     "Slowakei": {
-      1: {q: "Welcher Fluss bildet im Südwesten des Landes die natürliche Grenze zu Ungarn?", o: ["Donau (Dunaj)", "Waag (Váh)", "Gran (Hron)", "Eipel (Ipeľ)"], a: 0},
+      1: {q: "Welcher Fluss bildet im Südwesten der Slowakei die natürliche Grenze zu Ungarn?", o: ["Donau (Dunaj)", "Waag (Váh)", "Gran (Hron)", "Eipel (Ipeľ)"], a: 0},
       2: {q: "Wie heißt der höchste Gipfel der Hohen Tatra in der Slowakei?", o: ["Gerlachovsky stit", "Lomnicky stit", "Krivan", "Rysy"], a: 0},
       3: {q: "Welcher Fluss ist der längste Fluss, der vollständig auf slowakischem Gebiet verläuft?", o: ["Waag", "Gran", "Theiß", "March"], a: 0}
     },
@@ -3557,13 +3561,13 @@ const pool = {
     "Zypern": {
       1: {q: "Welcher Teil Zyperns wendet das EU-Recht de facto derzeit nicht an?", o: ["Der Westteil", "Die Küstenregionen", "Der nördliche Landesteil", "Die Bergregion"], a: 2},
       2: [
-        {q: "Wie lautet der offizielle rechtliche Status dieses nördlichen Gebiets aus EU-Sicht?", o: ["Es gilt als autonomer Staat", "Es gilt als assoziierter Drittstaat", "Das EU-Recht ist dort suspendiert", "Es ist kein EU-Territorium"], a: 2},
+        {q: "Wie lautet der offizielle rechtliche Status des nördlichen Landesteils von Zypern aus EU-Sicht?", o: ["Es gilt als autonomer Staat", "Es gilt als assoziierter Drittstaat", "Das EU-Recht ist dort suspendiert", "Es ist kein EU-Territorium"], a: 2},
         {q: "Welcher Teil Zyperns wendet das EU-Recht nicht an?", o: ["Westteil", "Küstenregion", "Nördlicher Landesteil", "Bergregion"], a: 2},
-        {q: "Wie lautet der rechtliche Status dieses Gebiets aus EU-Sicht?", o: ["Autonom", "Assoziiert", "EU-Recht suspendiert", "Drittstaat"], a: 2}
+        {q: "Wie lautet der rechtliche Status des nördlichen Landesteils von Zypern aus EU-Sicht?", o: ["Autonom", "Assoziiert", "EU-Recht suspendiert", "Drittstaat"], a: 2}
       ],
       3: [
         {q: "Welche EU-Grundfreiheit ist auf der Insel Zypern durch die Teilung de facto eingeschränkt?", o: ["Warenverkehr", "Kapitalverkehr", "Dienstleistungsfreiheit", "Personenfreizügigkeit"], a: 3},
-        {q: "Welche EU-Grundfreiheit ist auf der Insel faktisch eingeschränkt?", o: ["Warenverkehr", "Kapitalverkehr", "Dienstleistungsfreiheit", "Personenfreizügigkeit"], a: 3}
+        {q: "Welche EU-Grundfreiheit ist auf Zypern durch die Teilung de facto eingeschränkt?", o: ["Warenverkehr", "Kapitalverkehr", "Dienstleistungsfreiheit", "Personenfreizügigkeit"], a: 3}
       ]
     },
 
@@ -3627,7 +3631,7 @@ const pool = {
     "Irland": {
       1: [
         {q: "Welche Sprache ist neben Englisch verfassungsmäßig offizielle Amtssprache in Irland?", o: ["Walisisch", "Latein", "Gaeilge", "Schottisch-Gälisch"], a: 2},
-        {q: "Welche Sprache ist neben Englisch Amtssprache?", o: ["Walisisch", "Latein", "Gaeilge", "Schottisch"], a: 2}
+        {q: "Welche Sprache ist neben Englisch die zweite offizielle Amtssprache in Irland?", o: ["Walisisch", "Latein", "Gaeilge", "Schottisch"], a: 2}
       ],
       2: [
         {q: "Warum ist die irische Diaspora in vielen EU-Außenbeziehungen politisch relevant?", o: ["Aufgrund weltweiter Sportevents", "Wegen direkter Teilnahme an EU-Wahlen", "Durch den enormen wirtschaftlichen und politischen Einfluss in den USA", "Aufgrund der Förderung des Euros"], a: 2},
@@ -6392,7 +6396,11 @@ function mpHostLoadQuestion(index) {
         if (timeLeft <= 5) {
           timerCircle.style.color = 'var(--error)';
           timerCircle.style.borderColor = 'var(--error)';
-          sounds.playTimerTick();
+          if (typeof sounds.playTimerTick === 'function') {
+            sounds.playTimerTick();
+          } else {
+            sounds.playTickTock();
+          }
         }
         
         if (timeLeft <= 0) {
@@ -6740,8 +6748,14 @@ function mpPlayerJoin() {
         document.getElementById('mp-player-game-score').innerText = (p.score || 0) + " Punkte";
         document.getElementById('mp-player-game-code').innerText = mpRoomCode;
         
-        document.getElementById('mp-controller-wait').style.display = 'none';
-        document.getElementById('mp-controller-buttons').style.display = 'grid';
+        if (p.answer !== null && p.answer !== undefined) {
+          document.getElementById('mp-controller-buttons').style.display = 'none';
+          document.getElementById('mp-controller-wait-text').innerText = "Antwort gesendet! Warte auf andere Spieler...";
+          document.getElementById('mp-controller-wait').style.display = 'flex';
+        } else {
+          document.getElementById('mp-controller-wait').style.display = 'none';
+          document.getElementById('mp-controller-buttons').style.display = 'grid';
+        }
         
         document.getElementById('mp-player-game-screen').style.display = 'flex';
       } else if (r.state === 'reveal') {
@@ -6879,7 +6893,7 @@ function mpGetExplanation(qData, correctAnswerText) {
     </p>
     
     <div style="width: 80px; text-align: right;">
-        <a href="#" id="openVersion" style="color: #666; text-decoration: none; font-size: 12px;">Version 3.0</a>
+        <a href="#" id="openVersion" style="color: #666; text-decoration: none; font-size: 12px;">Version 2.0</a>
     </div>
 </footer>
 
@@ -6921,13 +6935,13 @@ const datenschutzText = `
 
 // HIER KANNST DU DEINE VERSIONS-TEXTE ANPASSEN
 const versionText = `
-    <h2 style="color: #fff; margin-top: 0;">Versionshinweise (v3.0)</h2>
+    <h2 style="color: #fff; margin-top: 0;">Versionshinweise (v2.0)</h2>
     <hr style="border: 0; border-top: 1px solid #444; margin-bottom: 15px;">
     
     <h3 style="color: #00bcd4; margin-bottom: 5px;">Aktuelle Version 2.0</h3>
     <p style="margin-top: 0;">
-        - Version 3.0 (22.06.2026).<br>
-        - Neu: Multiplayer, Neue Fragen, Bugfixes, Überarbeitung des gesamten Designs<br>
+        - Version 2.0 (20.06.2026).<br>
+        - Neu: Spielmodi, Ränge und Erfolge, neue Fragen für Kategorien 1;3;5, Vollbildmodus, Bugfixes.<br>
     </p>
     
     <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 5px;">Zukünftige Updates</h3>
@@ -6977,6 +6991,4 @@ window.addEventListener("click", function(e) {
 </script>
 </body>
 </html>
-
-
 
