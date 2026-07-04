@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EU Quiz - Wartungsarbeiten</title>
+<title>In Vielfalt geeint – Das interaktive Quiz - Wartungsarbeiten</title>
 
 <!-- Cookiebot -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a0b4e83a-b18e-4368-aa13-7da525487b4c" data-blockingmode="auto" type="text/javascript"></script>
@@ -383,7 +383,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   .modal-content {
     background: #ffffff;
     color: #0f172a;
-    margin: 80px auto; /* 80px space top and bottom for normal scrolling */
+    margin: 80px auto; 
     padding: 40px; 
     border: 1px solid rgba(15, 23, 42, 0.08); 
     width: 90%; 
@@ -402,6 +402,12 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
     color: #f8fafc;
     border-color: rgba(255, 255, 255, 0.07);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Modal Headings styling matching the dynamic theme */
+  .modal-content h2, .modal-content h3 {
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   @keyframes modalFadeIn {
@@ -438,7 +444,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 <div class="top-bar">
   <div class="brand">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-    EU QUIZ
+    EU Quiz
   </div>
   <div class="top-controls">
     <label class="switch" title="Design wechseln">
@@ -464,16 +470,16 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
       </svg>
     </div>
 
-    <div style="font-size: 0.85rem; opacity: 0.6; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 5px;">Europa Quiz</div>
-    <h1 class="hero-title">Wartungsarbeiten</h1>
+    <div style="font-size: 0.85rem; opacity: 0.6; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); font-weight: 700; margin-bottom: 5px;">In Vielfalt geeint</div>
+    <h1 class="hero-title">Das interaktive Quiz</h1>
 
     <div class="status-badge">
       <div class="pulse-dot"></div>
-      <span>System-Update &amp; Optimierungen</span>
+      <span>Wartungsarbeiten &amp; Optimierungen</span>
     </div>
 
     <p class="desc">
-      Wir führen aktuell wichtige Hintergrundaktualisierungen durch, um dein Spielerlebnis zu verbessern. Bitte hab ein wenig Geduld – wir sind gleich wieder für dich da!
+      Wir führen aktuell wichtige Hintergrundaktualisierungen durch, um dein Spielerlebnis zu verbessern. Bitte hab ein wenig Geduld – wir sind in 24 Stunden wieder für dich da!
     </p>
 
     <button class="btn-main" onclick="location.reload()">
@@ -525,27 +531,30 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 
   // Legal Content Texts (copied from index.html)
   const impressumText = `
-    <h2 style="margin-top: 0; font-family: 'Space Grotesk', sans-serif;">Impressum</h2>
-    <p><strong>Diensteanbieter & Medieninhaber:</strong><br>
-    Thiemo Greger & Matthias Hackl<br><br>
+    <h2>Impressum</h2>
+    <p><strong>Diensteanbieter &amp; Medieninhaber:</strong><br>
+    Leading Developer: Thiemo Greger<br>
+    Manager of Content: David Schwarz<br><br>
     <strong>Erreichbar unter der Anschrift:</strong><br>
-    BG/BRG Carnerigasse<br>
+    Carnerigasse 30-32<br>
     8010 Graz<br>Österreich</p>
-    <p><strong>Kontakt:</strong><br>E-Mail: thiemo.greger@carneri.at oder matthias.hackl@carneri.at</p>
+    <p><strong>Kontakt:</strong><br>E-Mail: thiemo.greger@carneri.at oder david.schwarz@carneri.at</p>
     <p><strong>Blattlinie:</strong><br>Diese Website und das darauf bereitgestellte Spiel wurden im Rahmen eines Schulprojekts erstellt. Die Bereitstellung erfolgt rein zu Bildungszwecken und verfolgt keinerlei kommerzielle Interessen.</p>
   `;
 
   const datenschutzText = `
-    <h2 style="margin-top: 0; font-family: 'Space Grotesk', sans-serif;">Datenschutzerklärung</h2>
+    <h2>Datenschutzerklärung</h2>
     <h3>1. Allgemeine Hinweise</h3>
     <p>Verantwortlich für die Datenverarbeitung auf dieser Website sind die oben im Impressum genannten Diensteanbieter. Diese Website und ihr Inhalt richten sich ausschließlich an Nutzer mit Wohnsitz oder Aufenthalt in Europa.</p>
     <h3>2. Hosting durch GitHub Pages</h3>
-    <p>Diese Website wird auf Servern von GitHub Inc. (USA) bereitgestellt. GitHub erfasst automatisch Logfiles (u.a. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriff). Dies ist technisch notwendig. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
+    <p>Diese Website wird auf Servern von GitHub Inc. (USA) bereitgestellt. GitHub erfasst automatisch Logfiles (u.a. IP-Adresse, Browsertyp, Datum und Uhrzeit des Zugriff). Dies ist technisch notwendig. GitHub is unter dem EU-US Data Privacy Framework zertifiziert.</p>
     <h3>3. Google Analytics 4</h3>
     <p>Diese Website nutzt Google Analytics 4 der Google Ireland Limited. Die Datenverarbeitung erfolgt ausschließlich auf Grundlage Ihrer ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO via Cookiebot-Banner. Haben Sie keine Einwilligung erteilt, wird das Tracking blockiert. Die IP-Anonymisierung ist aktiv. Die Daten werden nach 2 Monaten automatisch gelöscht.</p>
-    <h3>4. Firebase Realtime Database (Echtzeit-Multiplayer)</h3>
-    <p>Für den Echtzeit-Multiplayer-Modus nutzt diese Website Firebase Realtime Database, einen Dienst der Google Ireland Limited. Hierbei werden temporäre Spieldaten (wie der gewählte Raumcode, die selbst gewählten Spitznamen der Spieler sowie die abgegebenen Antworten) verarbeitet, um das synchrone Gameplay zu ermöglichen. Diese Daten werden ausschließlich temporär verarbeitet und nach Löschen der Spiel-Lobby wieder aus der Datenbank entfernt. Die Zugangsdaten zur Datenbank (Firebase-Konfiguration) werden vom Hoster eingegeben und ausschließlich lokal im Browser (localStorage) auf dessen Gerät gespeichert. Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung interaktiver Gruppen-Lernfunktionen).</p>
-    <h3>5. Ihre Rechte</h3>
+    <h3>4. Firebase Realtime Database (Multiplayer &amp; Matchmaking)</h3>
+    <p>Für den Echtzeit-Multiplayer und das automatische Matchmaking („Schnelles Spiel“) nutzt diese Website Firebase Realtime Database, einen Dienst der Google Ireland Limited. Hierbei werden temporäre Spieldaten (wie der Raumcode, selbst gewählte Spitznamen, abgegebene Antworten sowie Verbindungsstati) verarbeitet. Beim Matchmaking wird kurzzeitig ein Raum-Eintrag in einer Warteschlange hinterlegt, welcher sofort gelöscht wird, sobald ein zweiter Spieler beitritt oder die Verbindung abbricht. Alle Spieldaten werden nach Schließen des Raumes oder Verbindungsabbruch rückstandslos gelöscht. Die Zugangsdaten zur Datenbank (Firebase-Konfiguration) werden vom Raum-Host eingegeben und lokal auf dessen Gerät gespeichert. Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung interaktiver Spiel- und Matchmaking-Funktionen).</p>
+    <h3>5. Lokaler Speicher (localStorage)</h3>
+    <p>Um das Spielerlebnis komfortabel zu gestalten, werden bestimmte Daten lokal in Ihrem Browser (localStorage) gespeichert: z.B. Ihre freigeschalteten Erfolge (Achievements), Spiel-Einstellungen sowie ein technisches Flag (<code>eu_quiz_v5_welcomed</code>), welches dafür sorgt, dass Ihnen das Willkommens-Fenster nach dem Cookie-Banner nur einmalig angezeigt wird. Diese Daten verbleiben vollständig auf Ihrem Endgerät, werden nicht an Server übertragen und können von Ihnen jederzeit über die Browsereinstellungen gelöscht werden.</p>
+    <h3>6. Ihre Rechte</h3>
     <p>Ihnen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Beschwerden können an die österreichische Datenschutzbehörde (DSB) gerichtet werden.</p>
   `;
 
@@ -579,5 +588,3 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
 
 </body>
 </html>
-
-
