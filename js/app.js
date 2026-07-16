@@ -627,11 +627,12 @@ const datenschutzText = `
     <p>Diese Website wird auf Servern von GitHub Inc. (USA) bereitgestellt. GitHub erfasst automatisch Logfiles (u.a. IP-Adresse, Browsertyp, Datum/Uhrzeit des Zugriffs). Dies ist technisch erforderlich. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
     <h3 style="color: #fff;">3. Cookiebot & Google Analytics 4</h3>
     <p>Diese Website nutzt Google Analytics 4 der Google Ireland Limited zur statistischen Analyse der Nutzung. Die Datenverarbeitung erfolgt nur nach Ihrer Einwilligung über das Cookiebot-Banner. Ihre IP-Adresse wird anonymisiert übertragen. Sie können Ihre Einstellungen jederzeit über das Cookie-Symbol unten links anpassen.</p>
-    <h3 style="color: #fff;">4. Firebase Services (Realtime Database & Anonymous Auth)</h3>
-    <p>Für die Multiplayer-Funktionalität nutzen wir Firebase-Dienste der Google Ireland Limited:</p>
+    <h3 style="color: #fff;">4. Firebase Services (Database, Auth & Analytics)</h3>
+    <p>Für die Multiplayer-Funktionalität und App-Optimierung nutzen wir Firebase-Dienste der Google Ireland Limited:</p>
     <ul>
         <li><strong>Realtime Database:</strong> Dient der Echtzeit-Übertragung von Spielständen, Antworten und selbst gewählten Spitznamen. Alle Daten werden nach dem Verlassen des Raums gelöscht.</li>
         <li><strong>Anonymous Authentication:</strong> Meldet Sie beim Beitreten eines Multiplayer-Raums anonym an. Dabei wird eine temporäre, zufällige ID (UID) erzeugt. Es werden keine personenbezogenen Daten (wie E-Mail-Adressen, Namen oder Passwörter) erfasst oder gespeichert.</li>
+        <li><strong>Google Analytics for Firebase:</strong> Erfasst anonymisierte Nutzungsdaten und Interaktionen im Spiel (z. B. Spielmodi, Spieldauer), um das Benutzererlebnis zu verbessern und Fehler zu beheben. Dies geschieht nur nach Einwilligung über das Cookiebot-Banner (Statistik-Cookies).</li>
     </ul>
     <h3 style="color: #fff;">5. Lokaler Speicher (localStorage)</h3>
     <p>Um das Spielerlebnis komfortabel zu gestalten, werden bestimmte Daten lokal in Ihrem Browser (localStorage) gespeichert: z.B. Ihre freigeschalteten Erfolge (Achievements), Spiel-Einstellungen sowie ein technisches Flag (<code>eu_quiz_v5_welcomed</code>), welches dafür sorgt, dass Ihnen das Willkommens-Fenster nach dem Cookie-Banner nur einmalig angezeigt wird. Diese Daten verbleiben vollständig auf Ihrem Endgerät, werden nicht an Server übertragen und können von Ihnen jederzeit über die Browsereinstellungen gelöscht werden.</p>
