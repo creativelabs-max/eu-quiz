@@ -737,7 +737,8 @@ function initFirebase() {
       projectId: "eu-quiz-16aa5",
       storageBucket: "eu-quiz-16aa5.firebasestorage.app",
       messagingSenderId: "979679807669",
-      appId: "1:979679807669:web:5c4c0b720256e8d278d6fc"
+      appId: "1:979679807669:web:5c4c0b720256e8d278d6fc",
+      measurementId: "G-ENFQPLBZZ8"
     };
   }
   
@@ -747,6 +748,9 @@ function initFirebase() {
     }
     if (!firebase.apps.length) {
       firebase.initializeApp(config);
+    }
+    if (typeof firebase.analytics === 'function') {
+      firebase.analytics();
     }
     mpDatabase = firebase.database();
     
