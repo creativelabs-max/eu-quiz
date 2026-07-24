@@ -1104,6 +1104,18 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
       </div>
 
       <p id="q-text" style="font-size: 1.25rem; font-weight: 600; line-height: 1.6; margin-bottom: 25px; font-family: 'Space Grotesk', sans-serif;"></p>
+      
+      <!-- Click-to-Reveal Hint Menu -->
+      <div id="q-tip-container" style="display:none; margin-bottom: 25px;">
+        <div id="q-tip-box" style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); border-radius: 12px; padding: 12px 15px; cursor: pointer; transition: all 0.3s ease; text-align: left;" onclick="toggleQuestionTip()">
+          <div style="font-size: 0.9rem; font-weight: 700; color: var(--accent); display: flex; align-items: center; justify-content: space-between;">
+            <span>💡 Tipp anzeigen (noch <span id="q-tip-count">2</span> übrig)</span>
+            <span id="q-tip-arrow" style="font-size: 0.75rem; transition: transform 0.2s;">▼</span>
+          </div>
+          <p id="q-tip-text" style="display: none; margin-top: 10px; margin-bottom: 0; font-size: 0.85rem; opacity: 0.9; line-height: 1.5; color: var(--text-primary);"></p>
+        </div>
+      </div>
+
       <div id="options-container"></div>
       
       <!-- Educational Explanation Overlay -->
@@ -1193,38 +1205,7 @@ gtag('config', 'G-BZ7J2FT6GX', { 'anonymize_ip': true });
   </div>
 </div>
 
-<!-- Screen 15: Welcome/Update Modal for Version 5.0 -->
-<div id="welcome-modal" class="screen" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 11000; justify-content: center; align-items: center; padding: 20px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
-  <div class="card-box modal-animate-in" style="position: relative; border: 2px solid var(--accent); max-width: 600px; width: 100%; text-align: center; box-shadow: 0 20px 50px var(--shadow-color);">
-    <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--accent); font-size: 2.2rem; margin-top: 10px; font-weight: 700;">Willkommen beim EU Quiz! 🇪🇺</h2>
-    <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 25px; font-weight: 600; opacity: 0.9;">Danke, dass Sie das interaktive Quiz spielen!</p>
-    
-    <div style="background: var(--bg-solid); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; text-align: left; margin-bottom: 25px;">
-      <h3 style="font-family: 'Outfit', sans-serif; color: var(--accent-alt); font-size: 1.25rem; margin-top: 0; margin-bottom: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-        ✨ Neu in Version 5.0:
-      </h3>
-      <ul style="line-height: 1.7; color: var(--text-primary); opacity: 0.9; font-size: 0.95rem; padding-left: 20px; margin: 0;">
-        <li style="margin-bottom: 10px;"><strong>⚔️ Smartphone-Controller im Buzzer-Duell:</strong> Nutzt eure Handys als kabellose Buzzer über QR-Code-Scannen!</li>
-        <li style="margin-bottom: 10px;"><strong>🤖 Bot Klaus als Gegner:</strong> Spielt gegen den cleveren Bot Klaus mit wählbaren Schwierigkeitsgraden (Einfach bis Elite).</li>
-        <li style="margin-bottom: 10px;"><strong>🔄 Direktes Abstauben & Auslassen:</strong> Staubt Punkte beim Gegner direkt ab oder überspringt schwierige Fragen straffrei mit der Passen-Taste.</li>
-        <li style="margin-bottom: 10px;"><strong>⏱️ Einstellbare Zeitlimits:</strong> Bestimmt selbst die Bedenkzeit pro Frage (15s, 30s, 45s, 60s oder unbegrenzt).</li>
-        <li style="margin-bottom: 0;"><strong>📉 Spannende Negativ-Scores:</strong> Falsche Antworten können euren Score jetzt auch unter Null sinken lassen.</li>
-      </ul>
-    </div>
-    
-    <button class="btn-main" style="width: 100%; font-size: 1.1rem; padding: 14px 20px; border-color: var(--success); color: var(--success); margin-bottom: 20px;" onclick="closeWelcomeModal()">
-      Loslegen & Spielen!
-    </button>
-    
-    <hr style="border: 0; border-top: 1px solid var(--card-border); margin: 15px 0;">
-    
-    <div style="display: flex; justify-content: center; gap: 15px; font-size: 0.85rem; opacity: 0.7;">
-      <a href="#" onclick="openWelcomeLegal('impressum')" style="color: var(--accent); text-decoration: none; font-weight: 600;">Impressum</a>
-      <span style="color: var(--card-border);">|</span>
-      <a href="#" onclick="openWelcomeLegal('datenschutz')" style="color: var(--accent); text-decoration: none; font-weight: 600;">Datenschutzerklärung</a>
-    </div>
-  </div>
-</div>
+
 
 <div id="legalModal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); overflow-y: auto;">
     <div style="background-color: #1a1a1a; color: #ccc; margin: 5% auto; padding: 30px; border: 1px solid #444; width: 80%; max-width: 800px; border-radius: 8px; position: relative; font-size: 14px; line-height: 1.6; text-align: left; font-family: sans-serif;">
