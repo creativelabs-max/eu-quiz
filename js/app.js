@@ -161,6 +161,7 @@ let jokerUsed = false;
 let currentRound = 1;
 let maxRounds = 5;
 let activeCategory = 1;
+let tipOpenedForCurrentQuestion = false;
 
 // Premium Ultimate Variables
 let timerDuration = 0; // 0 = off, 15, 30, 45 seconds
@@ -635,7 +636,7 @@ const datenschutzText = `
         <li><strong>Google Analytics for Firebase:</strong> Erfasst anonymisierte Nutzungsdaten und Interaktionen im Spiel (z. B. Spielmodi, Spieldauer), um das Benutzererlebnis zu verbessern und Fehler zu beheben. Dies geschieht nur nach Einwilligung über das Cookiebot-Banner (Statistik-Cookies).</li>
     </ul>
     <h3 style="color: #fff;">5. Lokaler Speicher (localStorage)</h3>
-    <p>Um das Spielerlebnis komfortabel zu gestalten, werden bestimmte Daten lokal in Ihrem Browser (localStorage) gespeichert: z.B. Ihre freigeschalteten Erfolge (Achievements), Spiel-Einstellungen sowie ein technisches Flag (<code>eu_quiz_v5_welcomed</code>), welches dafür sorgt, dass Ihnen das Willkommens-Fenster nach dem Cookie-Banner nur einmalig angezeigt wird. Diese Daten verbleiben vollständig auf Ihrem Endgerät, werden nicht an Server übertragen und können von Ihnen jederzeit über die Browsereinstellungen gelöscht werden.</p>
+    <p>Um das Spielerlebnis komfortabel zu gestalten, werden bestimmte Daten lokal in Ihrem Browser (localStorage) gespeichert: z.B. Ihre freigeschalteten Erfolge (Achievements) sowie Ihre persönlichen Spiel-Einstellungen. Diese Daten verbleiben vollständig auf Ihrem Endgerät, werden nicht an Server übertragen und können von Ihnen jederzeit über die Browsereinstellungen gelöscht werden.</p>
     <h3 style="color: #fff;">6. Ihre Rechte</h3>
     <p>Ihnen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Beschwerden können an die österreichische Datenschutzbehörde (DSB) gerichtet werden.</p>
 `;
@@ -698,18 +699,8 @@ window.addEventListener("click", function(e) {
         modal.style.display = "none";
     }
 });
-// --- Version 5.0 Welcome Popup Logic ---
-function checkWelcomeModal() {
-  if (!localStorage.getItem('eu_quiz_v5_welcomed')) {
-    document.getElementById('welcome-modal').style.display = 'flex';
-  }
-}
-
-function closeWelcomeModal() {
-  sounds.playClick();
-  localStorage.setItem('eu_quiz_v5_welcomed', 'true');
-  document.getElementById('welcome-modal').style.display = 'none';
-}
+function checkWelcomeModal() {}
+function closeWelcomeModal() {}
 
 function openWelcomeLegal(type) {
   sounds.playClick();
@@ -720,10 +711,6 @@ function openWelcomeLegal(type) {
   }
   modal.style.display = "block";
 }
-
-// Hook onto Cookiebot events
-window.addEventListener('CookiebotOnAccept', checkWelcomeModal);
-window.addEventListener('CookiebotOnDecline', checkWelcomeModal);
 
 function setUiLock(locked) {
   const val = locked ? 'none' : 'auto';
@@ -737,27 +724,12 @@ function setUiLock(locked) {
   if (optionsContainer) optionsContainer.style.pointerEvents = val;
 }
 
-// Fallback in case Cookiebot is blocked or decision was already saved
 window.addEventListener('load', () => {
-  setTimeout(() => {
-    if (window.Cookiebot && window.Cookiebot.consent) {
-      if (window.Cookiebot.consent.statistics || window.Cookiebot.consent.marketing || window.Cookiebot.consent.preferences || window.Cookiebot.declined) {
-        checkWelcomeModal();
-      }
-    } else {
-      // Fallback: no Cookiebot script or blocked by extension
-      checkWelcomeModal();
-    }
-  }, 1000);
-
   // Check URL parameters for direct room code join
   const urlParams = new URLSearchParams(window.location.search);
   const roomCode = urlParams.get('room');
   if (roomCode && roomCode.length === 6 && !isNaN(roomCode)) {
     setTimeout(() => {
-      const welcome = document.getElementById('welcome-modal');
-      if (welcome) welcome.style.display = 'none';
-      
       if (typeof mpShowJoinScreenDirect === 'function') {
         mpShowJoinScreenDirect();
         const codeInput = document.getElementById('mp-join-code');
@@ -792,4 +764,39 @@ function closeDuelChoiceDialog() {
   const roleScreen = document.getElementById('duel-role-screen');
   if (roleScreen) roleScreen.style.display = 'none';
   document.getElementById('mode-screen').style.display = 'flex';
+}
+
+function toggleQuestionTip() {
+  const textEl = document.getElementById('q-tip-text');
+  const countEl = document.getElementById('q-tip-count');
+  const arrowEl = document.getElementById('q-tip-arrow');
+  const currentTeamObj = (teams && teams[activeTeam]) ? teams[activeTeam] : null;
+
+  if (!currentTeamObj) return;
+
+  if (currentTeamObj.tipsLeft === undefined) {
+    currentTeamObj.tipsLeft = 2;
+  }
+
+  if (textEl.style.display === 'block') {
+    textEl.style.display = 'none';
+    if (arrowEl) arrowEl.style.transform = 'rotate(0deg)';
+  } else {
+    if (currentTeamObj.tipsLeft > 0) {
+      if (!tipOpenedForCurrentQuestion) {
+        currentTeamObj.tipsLeft--;
+        tipOpenedForCurrentQuestion = true;
+      }
+      textEl.style.display = 'block';
+      if (arrowEl) arrowEl.style.transform = 'rotate(180deg)';
+      sounds.playClick();
+    } else {
+      sounds.playError();
+      alert("Dieses Team hat keine Tipps mehr übrig!");
+    }
+  }
+
+  if (countEl) {
+    countEl.innerText = currentTeamObj.tipsLeft;
+  }
 }
