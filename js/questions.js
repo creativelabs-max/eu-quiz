@@ -168,7 +168,7 @@ const geoQuestions = {
 
 const visualQuestionsPool = [
   {
-    "q": "Welches Brüsseler Wahrzeichen, das zur Weltausstellung 1958 gebaut wurde, zeigt ein 165-milliardenfach vergrößertes Eisenkristallgitter? ⚛️🇧🇪",
+    "q": "Welches Brüsseler Wahrzeichen zeigt ein vergrößertes Eisenkristallgitter? ⚛️🇧🇪",
     "o": [
       "Atomium",
       "Manneken Pis",
@@ -176,10 +176,10 @@ const visualQuestionsPool = [
       "Maison du Roi"
     ],
     "a": 0,
-    "exp": "Das Atomium ist ein markantes Brüsseler Wahrzeichen, das 1958 für die Weltausstellung errichtet wurde. Es stellt eine 165-milliardenfache Vergrößerung der Kristallstruktur von Eisen dar."
+    "exp": "Das Atomium stellt ein vergrößertes Eisenkristall dar."
   },
   {
-    "q": "Welcher berühmte Eisenfachwerkturm in Paris ist das globale Kulturikone Frankreichs? 🗼🇫🇷",
+    "q": "Welcher berühmte Eisenfachwerkturm in Paris ist das Wahrzeichen Frankreichs? 🗼🇫🇷",
     "o": [
       "Eiffelturm",
       "Arc de Triomphe",
@@ -187,10 +187,10 @@ const visualQuestionsPool = [
       "Notre-Dame"
     ],
     "a": 0,
-    "exp": "Der Eiffelturm wurde 1889 anlässlich der Weltausstellung zur Erinnerung an die Französische Revolution fertiggestellt."
+    "exp": "Der Eiffelturm wurde 1889 errichtet."
   },
   {
-    "q": "Welches antike Amphitheater in Rom ist das größte jemals gebaute seiner Art weltweit? 🏛️🇮🇹",
+    "q": "Welches antike Amphitheater in Rom ist das größte der Welt? 🏛️🇮🇹",
     "o": [
       "Kolosseum",
       "Pantheon",
@@ -198,21 +198,21 @@ const visualQuestionsPool = [
       "Caracalla-Thermen"
     ],
     "a": 0,
-    "exp": "Das Kolosseum ist das größte antike Amphitheater der Welt und gilt als ingenieurtechnische Meisterleistung der römischen Antike."
+    "exp": "Das Kolosseum bot Platz für über 50.000 Zuschauer."
   },
   {
-    "q": "Welche weltberühmte antike Tempelanlage liegt auf einem flachen Felsen hoch über der griechischen Stadt Athen? 🏛️🇬🇷",
+    "q": "Welche Tempelanlage liegt auf einem Felsen über Athen? 🏛️🇬🇷",
     "o": [
       "Akropolis",
-      "Parthenon-Tempel",
+      "Parthenon",
       "Olympieion",
       "Hephaistostempel"
     ],
     "a": 0,
-    "exp": "Die Akropolis von Athen ist die berühmteste Stadtfestung des antiken Griechenlands."
+    "exp": "Die Akropolis ist das Symbol der Antike."
   },
   {
-    "q": "Welcher EU-Staat is aufgrund seiner markanten geographischen Stiefelform weltweit bekannt? 👢🗺️",
+    "q": "Welcher EU-Staat hat auf der Landkarte die Form eines Stiefels? 👢🗺️",
     "o": [
       "Italien",
       "Kroatien",
@@ -220,10 +220,10 @@ const visualQuestionsPool = [
       "Spanien"
     ],
     "a": 0,
-    "exp": "Italien hat auf der Weltkarte die sehr markante Gestalt eines Stiefels, der ins Mittelmeer hineinragt."
+    "exp": "Italien hat die Form eines Stiefels."
   },
   {
-    "q": "Welcher EU-Mitgliedstaat wird wegen seiner geografischen Form im Französischen oft als 'L'Hexagone' (das Sechseck) bezeichnet? ⬡🗺️",
+    "q": "Welcher Staat wird wegen seiner sechseckigen Form 'L'Hexagone' genannt? ⬡🗺️",
     "o": [
       "Frankreich",
       "Deutschland",
@@ -231,10 +231,10 @@ const visualQuestionsPool = [
       "Spanien"
     ],
     "a": 0,
-    "exp": "Aufgrund seiner sechsseitigen Umrisse wird Frankreich liebevoll als 'L'Hexagone' bezeichnet."
+    "exp": "Wegen seiner Form wird Frankreich so genannt."
   },
   {
-    "q": "In welcher europäischen Hauptstadt steht das weltbekannte, prachtvolle neugotische Parlamentsgebäude direkt am Donauufer? 🏛️🇭🇺",
+    "q": "In welcher Hauptstadt steht das berühmte neugotische Parlamentsgebäude am Donauufer? 🏛️🇭🇺",
     "o": [
       "Budapest",
       "Wien",
@@ -242,10 +242,10 @@ const visualQuestionsPool = [
       "Bukarest"
     ],
     "a": 0,
-    "exp": "Das ungarische Parlamentsgebäude in Budapest ist eines der größten und eindrucksvollsten Gebäude Europas."
+    "exp": "Das ungarische Parlament steht in Budapest."
   },
   {
-    "q": "In welcher deutschen Stadt steht das weltbekannte klassizistische Brandenburger Tor? 🏛️🇩🇪",
+    "q": "In welcher deutschen Stadt steht das Brandenburger Tor? 🏛️🇩🇪",
     "o": [
       "Berlin",
       "München",
@@ -253,10 +253,10 @@ const visualQuestionsPool = [
       "Bonn"
     ],
     "a": 0,
-    "exp": "Das Brandenburger Tor in Berlin wurde 1791 errichtet und ist heute das Symbol der deutschen Wiedervereinigung."
+    "exp": "Das Brandenburger Tor steht in Berlin."
   },
   {
-    "q": "In welcher spanischen Metropole steht die weltberühmte, noch unvollendete Basilika Sagrada Família von Antoni Gaudí? ⛪🇪🇸",
+    "q": "In welcher Stadt steht die unvollendete Basilika Sagrada Família von Gaudí? ⛪🇪🇸",
     "o": [
       "Barcelona",
       "Madrid",
@@ -264,10 +264,10 @@ const visualQuestionsPool = [
       "Valencia"
     ],
     "a": 0,
-    "exp": "Die Sagrada Família in Barcelona ist Gaudís Lebenswerk. Ihr Bau begann 1882 und dauert bis heute an."
+    "exp": "Gaudís Lebenswerk steht in Barcelona."
   },
   {
-    "q": "Welche historische Brücke umschließt 16 Steinbögen und überquert die Moldau in Prag? 🌉🇨🇿",
+    "q": "Welche historische Brücke überquert die Moldau in Prag? 🌉🇨🇿",
     "o": [
       "Karlsbrücke",
       "Kettenbrücke",
@@ -275,10 +275,10 @@ const visualQuestionsPool = [
       "Basteibrücke"
     ],
     "a": 0,
-    "exp": "Die Karlsbrücke in Prag ist eine der ältesten Steinbrücken Europas und verbindet die Prager Altstadt mit der Kleinseite."
+    "exp": "Die Karlsbrücke liegt in Prag."
   },
   {
-    "q": "Welches duftende Wahrzeichen steht an der Mündung des Tejo in Lissabon? 🏰🇵🇹",
+    "q": "Welcher historische Wehrturm steht an der Mündung des Tejo in Lissabon? 🏰🇵🇹",
     "o": [
       "Torre de Belém",
       "Castelo de São Jorge",
@@ -286,10 +286,10 @@ const visualQuestionsPool = [
       "Pena Palast"
     ],
     "a": 0,
-    "exp": "Der Torre de Belém wurde im 16. Jahrhundert errichtet, um ankommende Schiffe zu begrüßen und Lissabon zu schützen."
+    "exp": "Der Torre de Belém steht in Lissabon."
   },
   {
-    "q": "Welche rumänische Höhenburg in Transsilvanien wird weltweit touristisch als 'Dracula-Schloss' vermarktet? 🏰🇷🇴",
+    "q": "Welche Höhenburg in Transsilvanien wird als 'Dracula-Schloss' bezeichnet? 🏰🇷🇴",
     "o": [
       "Schloss Bran",
       "Schloss Peleș",
@@ -297,10 +297,10 @@ const visualQuestionsPool = [
       "Festung Râșnov"
     ],
     "a": 0,
-    "exp": "Schloss Bran (Törzburg) ähnelt der Beschreibung des Schlosses im Roman Dracula von Bram Stoker sehr stark."
+    "exp": "Schloss Bran inspirierte die Dracula-Legenden."
   },
   {
-    "q": "Welches romantische, märchenhafte Schloss in der Slowakei gilt als eines der schönsten Schlösser Mitteleuropas? 🏰🇸🇰",
+    "q": "Welches märchenhafte Schloss in der Slowakei gilt als eines der schönsten Mitteleuropas? 🏰🇸🇰",
     "o": [
       "Schloss Bojnice",
       "Burg Spiš",
@@ -308,10 +308,10 @@ const visualQuestionsPool = [
       "Burg Devin"
     ],
     "a": 0,
-    "exp": "Schloss Bojnice (Weinitz) ist ein romantisches Schloss mit neugotischem Umbau und ein sehr beliebtes Film- und Postkartenmotiv."
+    "exp": "Schloss Bojnice liegt in der Slowakei."
   },
   {
-    "q": "Welche malerische Burg thront auf einer 130 Meter hohen Klippe direkt über dem berühmten Alpensee von Bled? 🏰🇸🇮",
+    "q": "Welche Burg thront auf einer Klippe über dem Bleder See? 🏰🇸🇮",
     "o": [
       "Burg Bled",
       "Burg Ljubljana",
@@ -319,7 +319,7 @@ const visualQuestionsPool = [
       "Burg Celje"
     ],
     "a": 0,
-    "exp": "Die Burg von Bled (Blejski grad) ist die älteste Burg Sloweniens und blickt direkt auf die kleine Insel im Bleder See."
+    "exp": "Die Burg Bled thront über dem Bleder See."
   }
 ];
 
@@ -582,1998 +582,1998 @@ const pool = {
     "Belgien": {
       "1": [
         {
-          "q": "Gehört Belgien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches historische Abkommen führte 1921 zur Gründung einer der ältesten Währungs- und Wirtschaftsunionen Europas zwischen Belgien und einem Nachbarland?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
+            "Benelux-Vertrag",
+            "Belgisch-Luxemburgische Wirtschaftsunion",
+            "Verträge von Brüssel",
+            "Maagdenburg-Abkommen"
           ],
-          "a": 0,
-          "exp": "Belgien war 1951 bei den Gründungsmitgliedern dabei."
+          "a": 1,
+          "exp": "Die BLEU wurde 1921 zwischen Belgien und Luxemburg geschlossen."
         },
         {
-          "q": "In welchem Jahr trat Belgien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
+          "q": "In welchem berühmten Brüsseler Gebäude hat die Europäische Kommission ihren offiziellen Sitz?",
           "o": [
-            "Im Jahr 1951",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Europa-Gebäude",
+            "Berlaymont-Gebäude",
+            "Justus-Lipsius-Gebäude",
+            "Lex-Gebäude"
           ],
-          "a": 0,
-          "exp": "Belgien ist seit 1951 offizieller Teil der EU."
+          "a": 1,
+          "exp": "Das Berlaymont-Gebäude ist der Hauptsitz der Kommission."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Belgien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Der Pakt von Brüssel (1948) war ein Vorläufer der NATO. Welche Gründungsländer gehörten ihm neben Großbritannien und Frankreich an?",
           "o": [
-            "Belgischer Franc",
-            "Deutsche Mark",
-            "Portugiesischer Escudo",
-            "Zypern-Pfund"
+            "Belgien, Niederlande und Luxemburg",
+            "Belgien, Deutschland und Italien",
+            "Dänemark, Norwegen und Belgien",
+            "Belgien, Irland und die Schweiz"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Belgischer Franc."
+          "exp": "Der Brüsseler Pakt wurde von den Benelux-Staaten, Frankreich und Großbritannien unterzeichnet."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Belgien?",
+          "q": "Welches EU-Land übte als erstes in der Geschichte der Gemeinschaft im Jahr 1958 unter Paul-Henri Spaak den Ratsvorsitz aus?",
           "o": [
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist"
+            "Frankreich",
+            "Deutschland",
+            "Belgien",
+            "Niederlande"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen."
+          "a": 2,
+          "exp": "Belgien übernahm 1958 den ersten Ratsvorsitz."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Belgien?",
+          "q": "Welcher europäische Vertrag von 1965 führte die Exekutivorgane der EGW, Montanunion und Atomgemeinschaft ab 1967 in Brüssel zusammen?",
           "o": [
-            "Paul-Henri Spaak (Gründervater)",
-            "Walter Hallstein (erster EU-Kommissionschef)",
-            "Václav Havel (erster tschechischer Präsident)",
-            "Ministerpräsident Viktor Orbán"
+            "Vertrag von Nizza",
+            "Fusionsvertrag",
+            "Amsterdamer Vertrag",
+            "Einheitliche Europäische Akte"
           ],
-          "a": 0,
-          "exp": "Paul-Henri Spaak (Gründervater) prägte die europäische Geschichte dieses Landes stark."
+          "a": 1,
+          "exp": "Der Fusionsvertrag vereinte die Organe der Europäischen Gemeinschaften."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher belgische Politiker war von 1995 bis 1999 der erste Präsident der Europäischen Kommission nach ihrer Reform und Stärkung durch den Vertrag von Maastricht?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Jean-Claude Juncker",
+            "Jacques Santer",
+            "Gaston Thorn",
+            "Etienne Davignon"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Jacques Santer war Kommissionspräsident von 1995 bis 1999."
         }
       ]
     },
     "Bulgarien": {
       "1": [
         {
-          "q": "Gehört Bulgarien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Abkommen von 1878 verkleinerte das im selben Jahr im Frieden von San Stefano geschaffene 'Großbulgarien' beträchtlich?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Bulgarien trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Bulgarien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2007",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Berliner Vertrag",
+            "Pariser Frieden",
+            "Londoner Protokoll",
+            "Vertrag von Bukarest"
           ],
           "a": 0,
-          "exp": "Bulgarien ist seit 2007 offizieller Teil der EU."
+          "exp": "Der Berliner Kongress revidierte den Frieden von San Stefano."
+        },
+        {
+          "q": "Welches Amt bekleidete die bulgarische EU-Kommissarin Mariya Gabriel, bevor sie in die nationale Politik zurückkehrte?",
+          "o": [
+            "EU-Kommissarin für Innovation, Forschung, Kultur, Bildung und Jugend",
+            "Hohe Vertreterin der EU für Außen- und Sicherheitspolitik",
+            "EU-Kommissarin für Wettbewerb",
+            "Präsidentin des Europäischen Rechnungshofs"
+          ],
+          "a": 0,
+          "exp": "Mariya Gabriel leitete das Ressort Innovation und Bildung."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Bulgarien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Friedensvertrag nach dem Ersten Weltkrieg regelte 1919 die Gebietsverluste Bulgariens an die Entente-Mächte?",
           "o": [
-            "Bulgarischer Lew",
-            "Luxemburgischer Franc",
-            "Dänische Krone",
-            "Portugiesischer Escudo"
+            "Vertrag von Trianon",
+            "Vertrag von Neuilly-sur-Seine",
+            "Vertrag von Sèvres",
+            "Vertrag von Saint-Germain"
           ],
-          "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Bulgarischer Lew."
+          "a": 1,
+          "exp": "Der Vertrag von Neuilly-sur-Seine regelte die Bedingungen für Bulgarien."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Bulgarien?",
+          "q": "In welchem Jahr trat Bulgarien – gemeinsam mit Rumänien – dem Schengen-Raum bei (zumindest für den Luft- und Seeverkehr)?",
           "o": [
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt"
+            "2011",
+            "2018",
+            "2024",
+            "Sie sind bis heute nicht im Schengen-Raum"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: Lew-Währung ist fest an die D-Mark/Euro gekoppelt."
+          "a": 2,
+          "exp": "Bulgarien trat im März 2024 Schengen für Luft- und Seegrenzen bei."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Bulgarien?",
+          "q": "In welchem Beitrittsvertrag von 2005 wurde die Aufnahme Bulgariens und Rumäniens in die EU zum 1. Januar 2007 besiegelt?",
           "o": [
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "Chefunterhändler Vasile Pușcaș",
-            "EU-Kommissar Erkki Liikanen",
-            "Reformer Konstantinos Karamanlis"
+            "Vertrag von Luxemburg",
+            "Vertrag von Sofia",
+            "Vertrag von Athen",
+            "Vertrag von Straßburg"
           ],
           "a": 0,
-          "exp": "Finanzpolitikerin Kristalina Georgiewa prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Beitrittsvertrag wurde 2005 in Luxemburg unterzeichnet."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Wie heißt die bulgarische Nationalwährung, die Bulgarien trotz EU-Mitgliedschaft und der Erfüllung vieler Kriterien noch behalten hat, bevor der Euro kommt?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Denar",
+            "Lew",
+            "Forint",
+            "Kuna"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Der Lew ist die Währung Bulgariens vor dem Euro-Beitritt."
         }
       ]
     },
     "Dänemark": {
       "1": [
         {
-          "q": "Gehört Dänemark zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "In welchem Vertrag von 1864 musste Dänemark nach dem Deutsch-Dänischen Krieg die Herzogtümer Schleswig, Holstein und Lauenburg abtreten?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Dänemark trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Dänemark der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1973",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Frieden von Wien",
+            "Vertrag von Prag",
+            "Kopenhagener Diktat",
+            "Abkommen von Malmö"
           ],
           "a": 0,
-          "exp": "Dänemark ist seit 1973 offizieller Teil der EU."
+          "exp": "Der Frieden von Wien beendete den Deutsch-Dänischen Krieg 1864."
+        },
+        {
+          "q": "Welches berühmte Protokoll handelte Dänemark 1992 aus, um nach dem Nein zum Vertrag von Maastricht bestimmte EU-Bereiche nicht mitmachen zu müssen?",
+          "o": [
+            "Edinburgh-Entscheidung",
+            "Kopenhagener Kriterien",
+            "Jütland-Ausnahme",
+            "Öresund-Klausel"
+          ],
+          "a": 0,
+          "exp": "Die Edinburgh-Entscheidung sicherte Dänemarks Opt-outs."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Dänemark vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Zusatzpakt sicherte Dänemark 1992 die Befreiung von der Euro-Einführung und der gemeinsamen Verteidigung zu (Opt-Outs)?",
           "o": [
-            "Dänische Krone",
-            "Niederländischer Gulden",
-            "Belgischer Franc",
-            "Österreichischer Schilling"
+            "Abkommen von Edinburgh",
+            "Protokoll von Aarhus",
+            "Kompromiss von Odense",
+            "Statut von Aalborg"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Dänische Krone."
+          "exp": "Das Abkommen von Edinburgh sicherte Dänemarks vier Opt-Outs."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Dänemark?",
+          "q": "In welchem Jahr stimmte die dänische Bevölkerung in einem Referendum schließlich dafür, das jahrzehntelange EU-Verteidigungsopt-out aufzuheben?",
           "o": [
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben"
+            "2015",
+            "2019",
+            "2022",
+            "2025"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen."
+          "a": 2,
+          "exp": "Im Juni 2022 stimmte Dänemark für das Ende des Verteidigungs-Opt-outs."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Dänemark?",
+          "q": "Welcher historische Friede beendete 1660 den Krieg zwischen Dänemark-Norwegen und Schweden und legte die bis heute gültige Grenze am Öresund fest?",
           "o": [
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen",
-            "Václav Havel (erster tschechischer Präsident)",
-            "Jan Willem Beyen (Gründervater)",
-            "EU-Kommissar Erkki Liikanen"
+            "Frieden von Roskilde",
+            "Frieden von Kopenhagen",
+            "Frieden von Lund",
+            "Frieden von Stettin"
           ],
-          "a": 0,
-          "exp": "ehemaliger Ratspräsident Anders Fogh Rasmussen prägte die europäische Geschichte dieses Landes stark."
+          "a": 1,
+          "exp": "Der Frieden von Kopenhagen bestätigte die Grenze am Öresund."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Nach wem sind die berühmten Beitrittskriterien benannt, die Kandidatenländer erfüllen müssen, bevor sie der EU beitreten dürfen?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Nach der Stadt Kopenhagen",
+            "Nach dem dänischen EU-Kommissar Poul Schlüter",
+            "Nach dem Vertrag von Odense",
+            "Nach dem Nordischen Rat"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Die Kopenhagener Kriterien wurden 1993 auf dem EU-Gipfel in Kopenhagen beschlossen."
         }
       ]
     },
     "Deutschland": {
       "1": [
         {
-          "q": "Gehört Deutschland zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches historische Regelwerk von 1648 beendete den Dreißigjährigen Krieg im Heiligen Römischen Reich Deutscher Nation?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
+            "Westfälischer Friede",
+            "Augsburger Religionsfrieden",
+            "Frieden von Utrecht",
+            "Rastatter Frieden"
           ],
           "a": 0,
-          "exp": "Deutschland war 1951 bei den Gründungsmitgliedern dabei."
+          "exp": "Der Westfälische Friede wurde in Münster und Osnabrück geschlossen."
         },
         {
-          "q": "In welchem Jahr trat Deutschland der Europäischen Union (bzw. EWG/EG) offiziell bei?",
+          "q": "In welcher deutschen Stadt hat die Europäische Zentralbank (EZB) ihren Hauptsitz?",
           "o": [
-            "Im Jahr 1951",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Berlin",
+            "Bonn",
+            "Frankfurt am Main",
+            "München"
           ],
-          "a": 0,
-          "exp": "Deutschland ist seit 1951 offizieller Teil der EU."
+          "a": 2,
+          "exp": "Die EZB steuert die Geldpolitik vom Hauptsitz Frankfurt am Main."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Deutschland vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Vertrag zwischen den beiden deutschen Staaten und den vier Siegermächten machte 1990 den Weg für die Deutsche Wiedervereinigung frei?",
           "o": [
-            "Deutsche Mark",
-            "Dänische Krone",
-            "Bulgarischer Lew",
-            "Slowakische Krone"
+            "Grundlagenvertrag",
+            "Zweiter Deutschlandvertrag",
+            "Zwei-plus-Vier-Vertrag",
+            "Potsdamer Abkommen"
           ],
-          "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Deutsche Mark."
+          "a": 2,
+          "exp": "Der Zwei-plus-Vier-Vertrag regelte die äußeren Aspekte der Wiedervereinigung."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Deutschland?",
+          "q": "Welche Stadt in Deutschland wurde für ihre besonders europafreundliche Haltung mit dem renommierten Europapreis ausgezeichnet und trägt oft den Titel 'Europastadt'?",
           "o": [
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen"
+            "Aachen",
+            "Straßburg",
+            "Kehl",
+            "Passau"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: die Europäische Zentralbank hat ihren Sitz in Frankfurt."
+          "exp": "Aachen verleiht jährlich den Internationalen Karlspreis."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Deutschland?",
+          "q": "Welcher zwischenmenschliche Versöhnungsvertrag wurde 1963 von Konrad Adenauer und Charles de Gaulle unterzeichnet?",
           "o": [
-            "Walter Hallstein (erster EU-Kommissionschef)",
-            "Václav Havel (erster tschechischer Präsident)",
-            "Außenbeauftragte Kaja Kallas",
-            "Jan Willem Beyen (Gründervater)"
+            "Elysee-Vertrag",
+            "Vertrag von Aachen",
+            "Rheinland-Pakt",
+            "Vertrag von Locarno"
           ],
           "a": 0,
-          "exp": "Walter Hallstein (erster EU-Kommissionschef) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Élysée-Vertrag begründete die deutsch-französische Freundschaft."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher deutsche Bundeskanzler schlug 1998 gemeinsam mit dem französischen Präsidenten ein Konzept für eine engere europäische Wirtschaftspolitik vor?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Helmut Kohl",
+            "Gerhard Schröder",
+            "Angela Merkel",
+            "Olaf Scholz"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Gerhard Schröder gestaltete die Einführung des Euro mit."
         }
       ]
     },
     "Estland": {
       "1": [
         {
-          "q": "Gehört Estland zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Friedensvertrag von 1920 zwischen Estland und Sowjetrussland erkannte die estnische Unabhängigkeit 'auf ewige Zeiten' an?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Estland trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Estland der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Frieden von Tartu",
+            "Vertrag von Tallinn",
+            "Frieden von Brest-Litowsk",
+            "Abkommen von Narva"
           ],
           "a": 0,
-          "exp": "Estland ist seit 2004 offizieller Teil der EU."
+          "exp": "Im Frieden von Tartu erkannte Russland Estlands Unabhängigkeit an."
+        },
+        {
+          "q": "In welcher estnischen Stadt befindet sich die wichtigste EU-Agentur für das Betriebsmanagement von IT-Großsystemen im Raum Freiheit, Sicherheit und Recht (eu-LISA)?",
+          "o": [
+            "Tartu",
+            "Tallinn",
+            "Pärnu",
+            "Narva"
+          ],
+          "a": 1,
+          "exp": "eu-LISA hat ihren Hauptsitz in Tallinn."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Estland vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welches Geheimprotokoll führte 1939 dazu, dass Estland von der Sowjetunion besetzt und annektiert wurde?",
           "o": [
-            "Estnische Krone",
-            "Irisches Pfund",
-            "Finnische Mark",
-            "Polnischen Złoty"
+            "Hitler-Stalin-Pakt",
+            "Dreimächtepakt",
+            "Zusatzerklärung von Jalta",
+            "Münchner Abkommen"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Estnische Krone."
+          "exp": "Das geheime Zusatzprotokoll teilte Osteuropa in Interessensphären."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Estland?",
+          "q": "In welchem Jahr führte Estland als erster der drei baltischen Staaten den Euro als offizielle Währung ein?",
           "o": [
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben"
+            "2007",
+            "2011",
+            "2014",
+            "2015"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: hier kann man seit 2005 sicher online über das Internet wählen."
+          "a": 1,
+          "exp": "Estland führte am 1. Januar 2011 den Euro ein."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Estland?",
+          "q": "In welcher städtischen Absichtserklärung forderten die baltischen Staaten 1989 die Aufhebung der sowjetischen Besatzung?",
           "o": [
-            "Außenbeauftragte Kaja Kallas",
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)",
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "EU-Kommissarin Helena Dalli"
+            "Deklaration von Tallinn",
+            "Baltische Karta",
+            "Rigaer Aufruf",
+            "Manifest von Pärnu"
           ],
-          "a": 0,
-          "exp": "Außenbeauftragte Kaja Kallas prägte die europäische Geschichte dieses Landes stark."
+          "a": 1,
+          "exp": "Die Baltische Karta untermauerte das Streben nach Freiheit."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welche estnische Politikerin wurde 2024 zur Hohen Vertreterin der EU für Außen- und Sicherheitspolitik nominiert bzw. gewählt?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Kersti Kaljulaid",
+            "Kaja Kallas",
+            "Marina Kaljurand",
+            "Yana Toom"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Kaja Kallas folgte auf Josep Borrell als EU-Außenbeauftragte."
         }
       ]
     },
     "Finnland": {
       "1": [
         {
-          "q": "Gehört Finnland zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Durch welchen Vertrag mit Schweden trat dieses 1809 das gesamte Gebiet Finnlands an das Russische Kaiserreich ab?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Finnland trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Finnland der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1995",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Frieden von Fredrikshamn",
+            "Vertrag von Åbo",
+            "Frieden von Nystad",
+            "Abkommen von Vasa"
           ],
           "a": 0,
-          "exp": "Finnland ist seit 1995 offizieller Teil der EU."
+          "exp": "Der Frieden von Fredrikshamn machte Finnland zum Großfürstentum im Russischen Reich."
+        },
+        {
+          "q": "Welche EU-Agentur mit Sitz in Helsinki ist für die Sicherheit von Chemikalien und den Schutz von Mensch und Umwelt zuständig?",
+          "o": [
+            "Europäische Agentur für Chemikalien",
+            "Europäische Arzneimittel-Agentur",
+            "Europäische Umweltagentur",
+            "Europäische Grenzschutzagentur"
+          ],
+          "a": 0,
+          "exp": "Die ECHA ist in Helsinki ansässig."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Finnland vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Friedensvertrag von 1947 verpflichtete Finnland nach dem Zweiten Weltkrieg zu Gebietsabtretungen (wie Karelien) an die Sowjetunion?",
           "o": [
-            "Finnische Mark",
-            "Niederländischer Gulden",
-            "Polnischen Złoty",
-            "Slowenischer Tolar"
+            "Pariser Friedensvertrag",
+            "Frieden von Moskau",
+            "Waffenstillstand von Haparanda",
+            "Vertrag von Poti"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Finnische Mark."
+          "exp": "Der Pariser Friedensvertrag von 1947 beendete den Kriegszustand."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Finnland?",
+          "q": "In welchem Jahr trat Finnland gemeinsam mit Schweden und Österreich der Europäischen Union bei?",
           "o": [
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen"
+            "1973",
+            "1986",
+            "1995",
+            "2004"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: Lappland gilt als Heimatort des Weihnachtsmanns."
+          "a": 2,
+          "exp": "Finnland trat am 1. Januar 1995 der EU bei."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Finnland?",
+          "q": "In welcher Stadt wurde 1975 die Schlussakte der Konferenz über Sicherheit und Zusammenarbeit in Europa (KSZE) unterzeichnet?",
           "o": [
-            "EU-Kommissar Erkki Liikanen",
-            "ehemaliger Präsident Glafkos Klerides",
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "Walter Hallstein (erster EU-Kommissionschef)"
+            "Tampere",
+            "Turku",
+            "Helsinki",
+            "Rovaniemi"
           ],
-          "a": 0,
-          "exp": "EU-Kommissar Erkki Liikanen prägte die europäische Geschichte dieses Landes stark."
+          "a": 2,
+          "exp": "Die Schlussakte von Helsinki war ein Meilenstein des Kalten Krieges."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher finnische Ministerpräsident vertrat sein Land 1999 beim EU-Gipfel in Köln, als die gemeinsame europäische Sicherheits- und Verteidigungspolitik beschlossen wurde?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Paavo Lipponen",
+            "Esko Aho",
+            "Matti Vanhanen",
+            "Alexander Stubb"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Paavo Lipponen war finnischer Ministerpräsident."
         }
       ]
     },
     "Frankreich": {
       "1": [
         {
-          "q": "Gehört Frankreich zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Vertrag von 1951 legte den Grundstein für das europäische Projekt durch die Gründung der Montanunion (EGKS)?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
+            "Vertrag von Rom",
+            "Pariser Vertrag",
+            "Vertrag von Maastricht",
+            "Schuman-Akte"
           ],
-          "a": 0,
-          "exp": "Frankreich war 1951 bei den Gründungsmitgliedern dabei."
+          "a": 1,
+          "exp": "Der Pariser Vertrag gründete 1951 die EGKS."
         },
         {
-          "q": "In welchem Jahr trat Frankreich der Europäischen Union (bzw. EWG/EG) offiziell bei?",
+          "q": "Welche französische Stadt ist neben Brüssel der offizielle Sitz des Europäischen Parlaments, in dem die monatlichen Plenartagungen stattfinden?",
           "o": [
-            "Im Jahr 1951",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Paris",
+            "Lyon",
+            "Straßburg",
+            "Marseille"
           ],
-          "a": 0,
-          "exp": "Frankreich ist seit 1951 offizieller Teil der EU."
+          "a": 2,
+          "exp": "Straßburg ist der verfassungsmäßige Tagungsort des EU-Parlaments."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Frankreich vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Mit welchem Abkommen beendete Frankreich 1962 den Algerienkrieg und entließ das nordafrikanische Land in die Unabhängigkeit?",
           "o": [
-            "Französischer Franc",
-            "Spanische Peseta",
-            "Slowakische Krone",
-            "Belgischer Franc"
+            "Verträge von Évian",
+            "Deklaration von Algier",
+            "Frieden von Marseille",
+            "Abkommen von Casablanca"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Französischer Franc."
+          "exp": "Die Verträge von Évian beendeten den Algerienkrieg."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Frankreich?",
+          "q": "Welcher französische Außenminister legte am 9. Mai 1950 den Grundstein für die europäische Einigung mit seiner berühmten Erklärung?",
           "o": [
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt"
+            "Aristide Briand",
+            "Robert Schuman",
+            "Jean Monnet",
+            "Pierre Mendès France"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: das Europäische Parlament hat seinen Hauptsitz in Straßburg."
+          "a": 1,
+          "exp": "Der Schuman-Plan führte zur Gründung der EGKS."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Frankreich?",
+          "q": "In welchem Schloss wurde 1919 der Friedensvertrag unterzeichnet, der den Ersten Weltkrieg mit Deutschland offiziell beendete?",
           "o": [
-            "Robert Schuman (EU-Gründervater)",
-            "Kommissionsvizepräsident Valdis Dombrovskis",
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen"
+            "Schloss Fontainebleau",
+            "Schloss Versailles",
+            "Schloss Saint-Germain",
+            "Schloss Compiègne"
           ],
-          "a": 0,
-          "exp": "Robert Schuman (EU-Gründervater) prägte die europäische Geschichte dieses Landes stark."
+          "a": 1,
+          "exp": "Der Vertrag von Versailles wurde im Spiegelsaal unterzeichnet."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "In welchem Jahr stimmten die Franzosen in einem überraschend knappen Referendum für den Vertrag von Maastricht?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "1991",
+            "1992",
+            "1993",
+            "1995"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Frankreich stimmte im September 1992 für den Vertrag."
         }
       ]
     },
     "Griechenland": {
       "1": [
         {
-          "q": "Gehört Griechenland zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Vertrag von 1832 erkannte die Unabhängigkeit Griechenlands vom Osmanischen Reich international durch die Großmächte an?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Griechenland trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Griechenland der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1981",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Vertrag von Konstantinopel",
+            "Vertrag von Adrianopel",
+            "Londoner Protokoll",
+            "Frieden von Bukarest"
           ],
           "a": 0,
-          "exp": "Griechenland ist seit 1981 offizieller Teil der EU."
+          "exp": "Der Vertrag von Konstantinopel bestätigte Griechenlands Unabhängigkeit."
+        },
+        {
+          "q": "Als wievieltes Mitgliedsland trat Griechenland 1981 der damaligen Europäischen Gemeinschaft (EG) bei?",
+          "o": [
+            "Als 7. Mitglied",
+            "Als 10. Mitglied",
+            "Als 12. Mitglied",
+            "Als 15. Mitglied"
+          ],
+          "a": 1,
+          "exp": "Griechenland wurde 1981 das 10. EG-Mitglied."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Griechenland vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "In welchem Vertrag von 1923 wurde der Bevölkerungsaustausch zwischen Griechenland und der Türkei nach dem Griechisch-Türkischen Krieg geregelt?",
           "o": [
-            "Griechische Drachme",
-            "Italienische Lira",
-            "Luxemburgischer Franc",
-            "Finnische Mark"
+            "Vertrag von Lausanne",
+            "Vertrag von Sèvres",
+            "Abkommen von Izmir",
+            "Pakt von Athen"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Griechische Drachme."
+          "exp": "Der Vertrag von Lausanne regelte den Bevölkerungsaustausch."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Griechenland?",
+          "q": "Wie hieß das gigantische finanzielle Hilfsprogramm, mit dem die Eurozone Griechenland ab 2010 vor der Staatspleite rettete?",
           "o": [
-            "trat der EU nach dem Ende der Militärdiktatur bei",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt"
+            "Griechenland-Fonds",
+            "Europäischer Rettungsschirm",
+            "Athener Stabilitätspakt",
+            "Troika-Hilfsfonds"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: trat der EU nach dem Ende der Militärdiktatur bei."
+          "a": 1,
+          "exp": "EFSF und ESM stützten Griechenlands Staatsfinanzen."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Griechenland?",
+          "q": "Welcher Friedensvertrag von 1947 sprach den Dodekanes (inklusive Rhodos) nach dem Zweiten Weltkrieg von Italien an Griechenland zu?",
           "o": [
-            "Reformer Konstantinos Karamanlis",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Alcide De Gasperi (Gründervater)",
-            "Walter Hallstein (erster EU-Kommissionschef)"
+            "Pariser Friedensvertrag",
+            "Vertrag von Rhodos",
+            "Abkommen von London",
+            "Vertrag von Genf"
           ],
           "a": 0,
-          "exp": "Reformer Konstantinos Karamanlis prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Pariser Frieden übertrug den Dodekanes an Griechenland."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welche griechische Insel war jahrelang das Epizentrum der europäischen Migrationskrise und beherbergte das umstrittene EU-Lager Moria?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Kreta",
+            "Rhodos",
+            "Lesbos",
+            "Korfu"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 2,
+          "exp": "Lesbos lag im Zentrum der Fluchtroute im Ägäischen Meer."
         }
       ]
     },
     "Irland": {
       "1": [
         {
-          "q": "Gehört Irland zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Vertrag beendete 1921 den Irischen Unabhängigkeitskrieg und schuf den Irischen Freistaat?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Irland trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Irland der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1973",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Anglo-Irischer Vertrag",
+            "Vertrag von Belfast",
+            "Abkommen von Limerick",
+            "Traktat von Dublin"
           ],
           "a": 0,
-          "exp": "Irland ist seit 1973 offizieller Teil der EU."
+          "exp": "Der Anglo-Irische Vertrag schuf den Freistaat."
+        },
+        {
+          "q": "In welchem Jahr trat Irland (zeitgleich mit dem Vereinigten Königreich und Dänemark) der EU bei?",
+          "o": [
+            "1957",
+            "1973",
+            "1981",
+            "1995"
+          ],
+          "a": 1,
+          "exp": "Irland trat 1973 der Europäischen Gemeinschaft bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Irland vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welches historische Abkommen von 1691 besiegelte die Unterwerfung der katholischen Iren unter den protestantischen König Wilhelm von Oranien?",
           "o": [
-            "Irisches Pfund",
-            "Italienische Lira",
-            "Finnische Mark",
-            "Lettischer Lats"
+            "Vertrag von Limerick",
+            "Pakt von Boyne",
+            "Edikt von Cork",
+            "Statut von Kilkenny"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Irisches Pfund."
+          "exp": "Der Vertrag von Limerick beendete den Krieg der zwei Könige."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Irland?",
+          "q": "Welcher EU-Steueraspekt und wirtschaftliche Standortvorteil ist seit Jahrzehnten ein Markenzeichen und oft heftig diskutiertes Thema in Irland?",
           "o": [
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg"
+            "Sehr hohe CO2-Steuern",
+            "Die niedrige Körperschaftsteuer für Unternehmen",
+            "Steuerfreiheit für sämtliche Exporte",
+            "Die vollständige Befreiung von der Mehrwertsteuer"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen."
+          "a": 1,
+          "exp": "Die niedrige Körperschaftsteuer lockte globale Tech-Konzerne an."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Irland?",
+          "q": "In welchem Abkommen verpflichteten sich das VK und Irland 1985 erstmals, der Republik Irland eine konsultative Rolle in Nordirland einzuräumen?",
           "o": [
-            "Kommissionspräsidenten-Kandidat Pat Cox",
-            "Klimaaktivistin Greta Thunberg",
-            "Jean-Claude Juncker (Kommissionschef)",
-            "EU-Kommissar Erkki Liikanen"
+            "Anglo-Irisches Abkommen",
+            "Karfreitagsabkommen",
+            "Abkommen von Sunningdale",
+            "Pakt von Stormont"
           ],
           "a": 0,
-          "exp": "Kommissionspräsidenten-Kandidat Pat Cox prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Das Anglo-Irische Abkommen von 1985 gab Irland Beratungsschritte."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welches berühmte irische 'Nein' bei einem EU-Referendum sorgte 2008 für eine kurze institutionelle Krise, ehe es beim zweiten Anlauf klappte?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Ablehnung des Vertrags von Lissabon",
+            "Ablehnung des Vertrags von Nizza",
+            "Ablehnung des Euro-Beitritts",
+            "Ablehnung der EU-Verfassung"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "2008 lehnten die Iren den Vertrag von Lissabon zunächst ab."
         }
       ]
     },
     "Italien": {
       "1": [
         {
-          "q": "Gehört Italien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welche Verträge von 1925 sollten die europäischen Grenzen der Nachkriegszeit nach dem Ersten Weltkrieg sichern?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
+            "Verträge von Locarno",
+            "Verträge von Rapallo",
+            "Dreimächtepakt",
+            "Pakt von Stresa"
           ],
           "a": 0,
-          "exp": "Italien war 1951 bei den Gründungsmitgliedern dabei."
+          "exp": "Die Verträge von Locarno sicherten die Westgrenzen."
         },
         {
-          "q": "In welchem Jahr trat Italien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
+          "q": "Italien gehört zu den sechs Gründungsstaaten. Wie hieß das Vorläuferbündnis, das 1951 in Paris unterzeichnet wurde?",
           "o": [
-            "Im Jahr 1951",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Europäische Wirtschaftsgemeinschaft",
+            "Europäische Gemeinschaft für Kohle und Stahl",
+            "Europäische Verteidigungsgemeinschaft",
+            "Europäische Politische Gemeinschaft"
           ],
-          "a": 0,
-          "exp": "Italien ist seit 1951 offizieller Teil der EU."
+          "a": 1,
+          "exp": "Die EGKS wurde 1951 von den sechs Gründerstaaten ins Leben gerufen."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Italien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Bündnisvertrag von 1882 verband Italien militärisch mit Deutschland und Österreich-Ungarn?",
           "o": [
-            "Italienische Lira",
-            "Finnische Mark",
-            "Österreichischer Schilling",
-            "Rumänischer Leu"
+            "Dreibund",
+            "Zweibund",
+            "Dreikaiserabkommen",
+            "Achse Rom-Berlin"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Italienische Lira."
+          "exp": "Der Dreibund verband Italien mit den Mittelmächten."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Italien?",
+          "q": "In welcher italienischen Stadt wurde 1957 der historische Vertrag zur Gründung der EWG und Euratom unterzeichnet?",
           "o": [
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "trat der EU nach dem Ende der Militärdiktatur bei",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU"
+            "Mailand",
+            "Rom",
+            "Florenz",
+            "Neapel"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: die Römischen Verträge von 1957 wurden hier unterschrieben."
+          "a": 1,
+          "exp": "Die Römischen Verträge wurden 1957 im Kapitol unterzeichnet."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Italien?",
+          "q": "In welchem Vertrag verlor Italien 1859 die Lombardei an das spätere Königreich Italien (über Frankreich)?",
           "o": [
-            "Alcide De Gasperi (Gründervater)",
-            "ehemalige EU-Kommissarin Dalia Grybauskaitė",
-            "Ministerpräsident Viktor Orbán",
-            "Klimaaktivistin Greta Thunberg"
+            "Vorfrieden von Villafranca",
+            "Vertrag von Turin",
+            "Frieden von Solferino",
+            "Pakt von Mailand"
           ],
           "a": 0,
-          "exp": "Alcide De Gasperi (Gründervater) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Vorfrieden von Villafranca beendete den Sardinischen Krieg."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher ehemalige italienische Ministerpräsident trat 1999 die Nachfolge von Jacques Santer als EU-Kommissionspräsident an?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Silvio Berlusconi",
+            "Romano Prodi",
+            "Mario Draghi",
+            "Giuliano Amato"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Romano Prodi leitete die Kommission von 1999 bis 2004."
         }
       ]
     },
     "Kroatien": {
       "1": [
         {
-          "q": "Gehört Kroatien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Friedensabkommen beendete 1995 den Kroatienkrieg und regelte die friedliche Reintegration Ostslawoniens?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Kroatien trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Kroatien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2013",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Erdut-Abkommen",
+            "Abkommen von Dayton",
+            "Vertrag von Split",
+            "Pakt von Zadar"
           ],
           "a": 0,
-          "exp": "Kroatien ist seit 2013 offizieller Teil der EU."
+          "exp": "Das Erdut-Abkommen regelte die friedliche Reintegration."
+        },
+        {
+          "q": "Mit welchem Datum wurde Kroatien offiziell das 28. Mitglied der Europäischen Union?",
+          "o": [
+            "1. Januar 2007",
+            "1. Juli 2013",
+            "1. Januar 2015",
+            "1. Januar 2020"
+          ],
+          "a": 1,
+          "exp": "Kroatien trat am 1. Juli 2013 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Kroatien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welches Abkommen führte 1939 zur Schaffung einer autonomen Banowina Kroatien innerhalb des Königreichs Jugoslawien?",
           "o": [
-            "Kroatische Kuna",
-            "Zypern-Pfund",
-            "Rumänischer Leu",
-            "Belgischer Franc"
+            "Cvetković-Maček-Abkommen",
+            "Abkommen von Vid",
+            "Pakt von Belgrad",
+            "Deklaration von Zagreb"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Kroatische Kuna."
+          "exp": "Das Cvetković-Maček-Abkommen schuf die Banowina Kroatien."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Kroatien?",
+          "q": "In welchem Jahr trat Kroatien nach erfüllten Kriterien dem engsten europäischen Raum bei: der Eurozone und dem Schengen-Raum?",
           "o": [
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland"
+            "2015",
+            "2020",
+            "2023",
+            "2025"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: ist das bisher jüngste Mitgliedsland der Europäischen Union."
+          "a": 2,
+          "exp": "Am 1. Januar 2023 führte Kroatien den Euro ein und trat Schengen bei."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Kroatien?",
+          "q": "Durch welchen Vertrag von 1920 trat das Königreich der Serben, Kroaten und Slowenen Teile Istriens und Zadar an Italien ab?",
           "o": [
-            "ehemaliger Premier Zoran Milanović",
-            "Außenbeauftragter Josep Borrell",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen",
-            "Walter Hallstein (erster EU-Kommissionschef)"
+            "Grenzvertrag von Rapallo",
+            "Vertrag von Rom",
+            "Abkommen von Fiume",
+            "Vertrag von Pula"
           ],
           "a": 0,
-          "exp": "ehemaliger Premier Zoran Milanović prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Grenzvertrag von Rapallo legte die Adria-Grenzen fest."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Wer war die kroatische Premierministerin, unter deren Führung das Land die EU-Beitrittsverhandlungen erfolgreich abschloss?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Ivo Sanader",
+            "Jadranka Kosor",
+            "Andrej Plenković",
+            "Zoran Milanović"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Jadranka Kosor schloss 2011 die Beitrittsverhandlungen ab."
         }
       ]
     },
     "Lettland": {
       "1": [
         {
-          "q": "Gehört Lettland zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Friedensvertrag beendete am 11. August 1920 den Lettischen Unabhängigkeitskrieg gegen Sowjetrussland?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Lettland trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Lettland der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Frieden von Riga",
+            "Vertrag von Liepāja",
+            "Pakt von Daugavpils",
+            "Abkommen von Brest"
           ],
           "a": 0,
-          "exp": "Lettland ist seit 2004 offizieller Teil der EU."
+          "exp": "Der Frieden von Riga sicherte Lettlands Unabhängigkeit 1920."
+        },
+        {
+          "q": "Wann hatte Lettland zum ersten Mal den Ratsvorsitz der Europäischen Union inne?",
+          "o": [
+            "Im ersten Halbjahr 2015",
+            "Im zweiten Halbjahr 2018",
+            "Im ersten Halbjahr 2020",
+            "Lettland hatte diesen noch nie"
+          ],
+          "a": 0,
+          "exp": "Lettland übernahm im 1. Halbjahr 2015 den EU-Ratsvorsitz."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Lettland vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welches multilaterale Abkommen führte 1921 zur offiziellen Aufnahme Lettlands in den Völkerbund?",
           "o": [
-            "Lettischer Lats",
-            "Tschechische Krone",
-            "Maltesische Lira",
-            "Österreichischer Schilling"
+            "Völkerbund-Akte von Genf",
+            "Vertrag von Versailles",
+            "Deklaration von Riga",
+            "Statut von Den Haag"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Lettischer Lats."
+          "exp": "Lettland wurde 1921 Mitglied des Völkerbundes."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Lettland?",
+          "q": "Welches war das genaue Jahr, in dem Lettland den Euro einführte?",
           "o": [
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik"
+            "2009",
+            "2012",
+            "2014",
+            "2016"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt."
+          "a": 2,
+          "exp": "Lettland trat am 1. Januar 2014 der Eurozone bei."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Lettland?",
+          "q": "In welchem Grenzvertrag von 2007 verzichtete Lettland endgültig auf das Gebiet Pytalowo (Abrene) zugunsten Russlands?",
           "o": [
-            "Kommissionsvizepräsident Valdis Dombrovskis",
-            "Klimaaktivistin Greta Thunberg",
-            "Paul-Henri Spaak (Gründervater)",
-            "Kommissionspräsidenten-Kandidat Pat Cox"
+            "Vertrag von Moskau",
+            "Vertrag von Riga",
+            "Grenzprotokoll von Pskow",
+            "Deklaration von St. Petersburg"
           ],
           "a": 0,
-          "exp": "Kommissionsvizepräsident Valdis Dombrovskis prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Vertrag von Moskau regelte die grenzrechtliche Situation."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher bekannte lettische Politiker und ehemalige Ministerpräsident wurde 2014 zum EU-Kommissar und später zum Exekutiv-Vizepräsidenten der EU-Kommission ernannt?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Valdis Dombrovskis",
+            "Māris Kučinskis",
+            "Krišjānis Kariņš",
+            "Edgars Rinkēvičs"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Valdis Dombrovskis bekleidete führende EU-Finanzressorts."
         }
       ]
     },
     "Litauen": {
       "1": [
         {
-          "q": "Gehört Litauen zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Vertrag begründete 1569 die reale Personalunion zwischen dem Königreich Polen und dem Großfürstentum Litauen?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Litauen trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Litauen der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Union von Lublin",
+            "Union von Krewo",
+            "Pakt von Vilnius",
+            "Vertrag von Trakai"
           ],
           "a": 0,
-          "exp": "Litauen ist seit 2004 offizieller Teil der EU."
+          "exp": "Die Union von Lublin schuf den polnisch-litauischen Staat."
+        },
+        {
+          "q": "Welche litauische Politikerin und frühere Präsidentin wurde 2009 die erste weibliche Präsidentin des Landes und war davor hochangesehene EU-Kommissarin für Finanzplanung und Budget?",
+          "o": [
+            "Inga Šimonytė",
+            "Dalia Grybauskaitė",
+            "Viktorija Čmilytė-Nielsen",
+            "Audronė Ažubalienė"
+          ],
+          "a": 1,
+          "exp": "Dalia Grybauskaitė war EU-Kommissarin und Staatsoberhaupt."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Litauen vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Friedensvertrag von 1422 nach der Schlacht bei Tannenberg legte die Grenze Litauens zum Deutschen Orden fest?",
           "o": [
-            "Litauischer Litas",
-            "Luxemburgischer Franc",
-            "Zypern-Pfund",
-            "Estnische Krone"
+            "Frieden von Melnosee",
+            "Frieden von Thorn",
+            "Vertrag von Kaunas",
+            "Abkommen von Klaipėda"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Litauischer Litas."
+          "exp": "Der Frieden von Melnosee legte die preußisch-litauische Grenze fest."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Litauen?",
+          "q": "In welchem Jahr führte Litauen als letzter der baltischen Staaten den Euro ein?",
           "o": [
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen"
+            "2011",
+            "2013",
+            "2015",
+            "2018"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: die Kurische Nehrung hat die größten Wanderdünen Europas."
+          "a": 2,
+          "exp": "Litauen wurde am 1. Januar 2015 Mitglied der Eurozone."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Litauen?",
+          "q": "Durch welchen Vertrag von 1920 erkannte Sowjetrussland Vilnius als Hauptstadt des unabhängigen Litauens an?",
           "o": [
-            "ehemalige EU-Kommissarin Dalia Grybauskaitė",
-            "Ministerpräsident Viktor Orbán",
-            "Außenbeauftragte Kaja Kallas",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen"
+            "Sowjetisch-Litauischer Friedensvertrag",
+            "Vertrag von Suwałki",
+            "Pakt von Grodno",
+            "Abkommen von Tilsit"
           ],
           "a": 0,
-          "exp": "ehemalige EU-Kommissarin Dalia Grybauskaitė prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Vertrag von 1920 erkannte Vilnius als Hauptstadt Litauens an."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welches Institut der EU hat seinen Sitz in Vilnius und widmet sich der Gleichstellung von Frauen und Männern?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Europäisches Institut für Gleichstellungsfragen",
+            "Europäische Agentur für Cybersicherheit",
+            "Europäische Arbeitsbehörde",
+            "Agentur für Grundrechte"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Das EIGE hat seinen Hauptsitz in Vilnius."
         }
       ]
     },
     "Luxemburg": {
       "1": [
         {
-          "q": "Gehört Luxemburg zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "In welchem luxemburgischen Grenzdorf wurde 1985 das Abkommen zum Abbau der Personenkontrollen an den europäischen Grenzen unterzeichnet?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
+            "Schengen",
+            "Vianden",
+            "Echternach",
+            "Remich"
           ],
           "a": 0,
-          "exp": "Luxemburg war 1951 bei den Gründungsmitgliedern dabei."
+          "exp": "Das Schengener Abkommen wurde in Schengen unterzeichnet."
         },
         {
-          "q": "In welchem Jahr trat Luxemburg der Europäischen Union (bzw. EWG/EG) offiziell bei?",
+          "q": "Luxemburg ist neben Brüssel und Straßburg der dritte offizielle Arbeitsort der EU. Welche wichtigen EU-Institutionen haben dort ihren Sitz?",
           "o": [
-            "Im Jahr 1951",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Europäischer Gerichtshof und Europäische Investitionsbank",
+            "Europäische Zentralbank und EU-Parlament",
+            "Europäischer Rechnungshof und EU-Kommission",
+            "Europol und Eurojust"
           ],
           "a": 0,
-          "exp": "Luxemburg ist seit 1951 offizieller Teil der EU."
+          "exp": "Der EuGH, der EuRH und die EIB sitzen in Luxemburg."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Luxemburg vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Erste Londoner Vertrag von 1839 spaltete das Großherzogtum Luxemburg und trat die westliche Hälfte an ein Nachbarland ab?",
           "o": [
-            "Luxemburgischer Franc",
-            "Bulgarischer Lew",
-            "Italienische Lira",
-            "Französischer Franc"
+            "Abkommen an Belgien",
+            "Abkommen an Frankreich",
+            "Pakt an Preußen",
+            "Vertrag an die Niederlande"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Luxemburgischer Franc."
+          "exp": "Der Vertrag teilte Luxemburg und trat den Westteil an Belgien ab."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Luxemburg?",
+          "q": "Wer war der langjährige luxemburgische Premierminister und EU-Kommissionspräsident, der wie kein anderer die Euro-Krise und die Ära nach der Jahrtausendwende prägte?",
           "o": [
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel"
+            "Jacques Santer",
+            "Jean-Claude Juncker",
+            "Xavier Bettel",
+            "Luc Frieden"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet."
+          "a": 1,
+          "exp": "Jean-Claude Juncker leitete von 2014 bis 2019 die Kommission."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Luxemburg?",
+          "q": "Welchem deutschen Wirtschaftsbündnis gehörte Luxemburg von 1842 bis zum Ende des Ersten Weltkriegs 1919 an?",
           "o": [
-            "Jean-Claude Juncker (Kommissionschef)",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Kommissionspräsidenten-Kandidat Pat Cox",
-            "Alcide De Gasperi (Gründervater)"
+            "Deutscher Zollverein",
+            "Norddeutscher Bund",
+            "Rheinbund",
+            "Mitteldeutscher Handelsverein"
           ],
           "a": 0,
-          "exp": "Jean-Claude Juncker (Kommissionschef) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Luxemburg war Mitglied im Deutschen Zollverein."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "In welchem Jahr trat das nach einer luxemburgischen Ortschaft benannte Schengener Abkommen in Kraft?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "1985 bzw. 1995",
+            "1992",
+            "2000",
+            "2004"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Das Schengener Abkommen wurde 1985 unterzeichnet und trat 1995 in Kraft."
         }
       ]
     },
     "Malta": {
       "1": [
         {
-          "q": "Gehört Malta zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Abkommen regelte 1972 den endgültigen Abzug der britischen Truppen und der NATO-Basis von Malta bis 1979?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Malta trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Malta der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Das Maintop-Abkommen",
+            "Vertrag von Valletta",
+            "Pakt von Mdina",
+            "Deklaration von London"
           ],
           "a": 0,
-          "exp": "Malta ist seit 2004 offizieller Teil der EU."
+          "exp": "Das Abkommen leitete das Ende der britischen Militärpräsenz ein."
+        },
+        {
+          "q": "In welchem Jahr trat der Inselstaat Malta gemeinsam mit neun anderen Ländern der Europäischen Union bei?",
+          "o": [
+            "1995",
+            "2004",
+            "2007",
+            "2013"
+          ],
+          "a": 1,
+          "exp": "Malta trat am 1. Mai 2004 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Malta vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Friedensvertrag von 1802 sah eigentlich vor, dass Malta an den Johanniterorden zurückgegeben werden sollte (was nie geschah)?",
           "o": [
-            "Maltesische Lira",
-            "Ungarischen Forint",
-            "Polnischen Złoty",
-            "Zypern-Pfund"
+            "Frieden von Amiens",
+            "Vertrag von Paris",
+            "Kongressakte von Wien",
+            "Vertrag von Campo Formio"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Maltesische Lira."
+          "exp": "Der Frieden von Amiens sah die Rückgabe an den Orden vor."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Malta?",
+          "q": "Welche wichtige EU-Agentur hat ihren Hauptsitz in Malta?",
           "o": [
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt"
+            "Europäische Agentur für Asylfragen",
+            "Europäische Fischereiförderung",
+            "Europäische Arzneimittelagentur",
+            "Europäische Raumfahrtagentur"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: ist der flächenmäßig kleinste Mitgliedsstaat der EU."
+          "exp": "Die EUAA sitzt in Valletta/Marsa."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Malta?",
+          "q": "In welchem multilateralen Vertrag trat Frankreich 1814 die Lufthoheit und Souveränität über Malta offiziell an Großbritannien ab?",
           "o": [
-            "EU-Kommissarin Helena Dalli",
-            "Paul-Henri Spaak (Gründervater)",
-            "Walter Hallstein (erster EU-Kommissionschef)",
-            "Außenbeauftragte Kaja Kallas"
+            "Erster Pariser Frieden",
+            "Vertrag von Gent",
+            "Wiener Kongress",
+            "Vertrag von Utrecht"
           ],
           "a": 0,
-          "exp": "EU-Kommissarin Helena Dalli prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Pariser Frieden sprach Malta Großbritannien zu."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "In welchem Jahr führte Malta den Euro als offizielle Währung ein?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "2004",
+            "2008",
+            "2011",
+            "2014"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Malta führte am 1. Januar 2008 den Euro ein."
         }
       ]
     },
     "Niederlande": {
       "1": [
         {
-          "q": "Gehört Niederlande zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Friedensvertrag von 1648 erkannte die Unabhängigkeit der Republik der Sieben Vereinigten Niederlande von Spanien an?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
+            "Frieden von Münster",
+            "Frieden von Breda",
+            "Frieden von Nijmegen",
+            "Frieden von Rijswijk"
           ],
           "a": 0,
-          "exp": "Niederlande war 1951 bei den Gründungsmitgliedern dabei."
+          "exp": "Der Frieden von Münster besiegelte die niederländische Unabhängigkeit."
         },
         {
-          "q": "In welchem Jahr trat Niederlande der Europäischen Union (bzw. EWG/EG) offiziell bei?",
+          "q": "Nach welcher niederländischen Stadt ist der berühmte Vertrag von 1992 benannt, mit dem die Europäische Union (EU) offiziell gegründet wurde?",
           "o": [
-            "Im Jahr 1951",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Amsterdam",
+            "Rotterdam",
+            "Maastricht",
+            "Den Haag"
           ],
-          "a": 0,
-          "exp": "Niederlande ist seit 1951 offizieller Teil der EU."
+          "a": 2,
+          "exp": "Der Vertrag von Maastricht wurde 1992 unterzeichnet."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Niederlande vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "In welcher niederländischen Stadt wurde 1992 der Vertrag über die Europäische Union (VEU) unterzeichnet?",
           "o": [
-            "Niederländischer Gulden",
-            "Luxemburgischer Franc",
-            "Ungarischen Forint",
-            "Irisches Pfund"
+            "Amsterdam",
+            "Maastricht",
+            "Rotterdam",
+            "Utrecht"
           ],
-          "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Niederländischer Gulden."
+          "a": 1,
+          "exp": "Der Vertrag von Maastricht wurde 1992 unterzeichnet."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Niederlande?",
+          "q": "Welche weltbekannte europäische Strafverfolgungsbehörde hat ihren Sitz in Den Haag (Niederlande)?",
           "o": [
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "hier kann man seit 2005 sicher online über das Internet wählen"
+            "Europol",
+            "Eurojust",
+            "Frontex",
+            "OLAF"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: ein Viertel des Landes liegt unter dem Meeresspiegel."
+          "exp": "Europol hat seinen Hauptsitz in Den Haag."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Niederlande?",
+          "q": "Welches Abkommen schlossen die Niederlande 1944 im Exil in London zur Gründung einer Zollunion mit Belgien und Luxemburg?",
           "o": [
-            "Jan Willem Beyen (Gründervater)",
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)",
-            "Klimaaktivistin Greta Thunberg",
-            "ehemaliger Premier Zoran Milanović"
+            "Benelux-Abkommen",
+            "Vertrag von Den Haag",
+            "Atlantik-Pakt",
+            "Dreiländer-Akte"
           ],
           "a": 0,
-          "exp": "Jan Willem Beyen (Gründervater) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Das Benelux-Abkommen schuf die Zollunion."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher niederländische Politiker und ehemalige Ministerpräsident wurde 2024 zum Generalsekretär der NATO ernannt?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Mark Rutte",
+            "Wim Kok",
+            "Jan Peter Balkenende",
+            "Dries van Agt"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Mark Rutte übernahm 2024 die Führung der NATO."
         }
       ]
     },
     "Österreich": {
       "1": [
         {
-          "q": "Gehört Österreich zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Diktatfrieden von 1919 besiegelte die Auflösung der Doppelmonarchie Österreich-Ungarn nach dem Ersten Weltkrieg?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Österreich trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Österreich der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1995",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Vertrag von Saint-Germain-en-Laye",
+            "Vertrag von Trianon",
+            "Frieden von Brest-Litowsk",
+            "Vertrag von Neuilly"
           ],
           "a": 0,
-          "exp": "Österreich ist seit 1995 offizieller Teil der EU."
+          "exp": "Der Vertrag von Saint-Germain löste Österreich-Ungarn auf."
+        },
+        {
+          "q": "In welchem Jahr trat Österreich nach einer erfolgreichen Volksabstimmung der Europäischen Union bei?",
+          "o": [
+            "1992",
+            "1995",
+            "1999",
+            "2004"
+          ],
+          "a": 1,
+          "exp": "Österreich trat am 1. Januar 1995 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Österreich vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welches Abkommen verpflichtete Österreich 1955 gegenüber den Besatzungsmächten zur Verankerung der Immerwährenden Neutralität?",
           "o": [
-            "Österreichischer Schilling",
-            "Dänische Krone",
-            "Irisches Pfund",
-            "Polnischen Złoty"
+            "Moskauer Memorandum",
+            "Genfer Protokolle",
+            "Wiener Übereinkommen",
+            "Staatsvertrag von Belgrad"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Österreichischer Schilling."
+          "exp": "Das Moskauer Memorandum ging dem Staatsvertrag voraus."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Österreich?",
+          "q": "Wer war der allererste österreichische EU-Kommissar nach dem Beitritt des Landes 1995?",
           "o": [
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU"
+            "Benita Ferrero-Waldner",
+            "Franz Fischler",
+            "Ursula Haubner",
+            "Maria Berger"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte."
+          "a": 1,
+          "exp": "Franz Fischler amtierte von 1995 bis 2004 als Landwirtschaftskommissar."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Österreich?",
+          "q": "In welchen Protokollen von 1922 gewährte der Völkerbund Österreich eine Völkerbundanleihe zur Sanierung der Staatsfinanzen?",
           "o": [
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)",
-            "Reformer Konstantinos Karamanlis",
-            "Klimaaktivistin Greta Thunberg",
-            "Ratspräsident Donald Tusk"
+            "Genfer Protokolle",
+            "Vertrag von Lausanne",
+            "Abkommen von Linz",
+            "Pakt von Baden"
           ],
           "a": 0,
-          "exp": "Kanzler Franz Vranitzky (Beitrittsunterzeichner) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Die Genfer Protokolle sanierten die Finanzen."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welche EU-Agentur hat ihren Sitz in Wien und ist auf Grundrechte und Menschenrechte spezialisiert?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Agentur der Europäischen Union für Grundrechte",
+            "Europäisches Patentamt",
+            "Internationale Atomenergie-Organisation",
+            "Europäische Umweltagentur"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Die FRA sitzt in Wien."
         }
       ]
     },
     "Polen": {
       "1": [
         {
-          "q": "Gehört Polen zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Abkommen von 1970 zwischen der BRD und Polen erkannte die Oder-Neiße-Linie als polnische Westgrenze an?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Polen trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Polen der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Warschauer Vertrag",
+            "Görlitzer Abkommen",
+            "Vertrag von Danzig",
+            "Potsdamer Charta"
           ],
           "a": 0,
-          "exp": "Polen ist seit 2004 offizieller Teil der EU."
+          "exp": "Der Warschauer Vertrag erkannte die Oder-Neiße-Grenze an."
+        },
+        {
+          "q": "Welche bedeutende EU-Agentur hat ihren Hauptsitz in Warschau und koordiniert den Schutz der EU-Außengrenzen?",
+          "o": [
+            "Frontex",
+            "Europol",
+            "Eurojust",
+            "Amt für Betrugsbekämpfung"
+          ],
+          "a": 0,
+          "exp": "Frontex hat seinen Hauptsitz in Warschau."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Polen vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Bündnispakt des Ostblocks wurde 1955 als Gegenstück zur NATO in der polnischen Hauptstadt gegründet?",
           "o": [
-            "Polnischen Złoty",
-            "Kroatische Kuna",
-            "Luxemburgischer Franc",
-            "Belgischer Franc"
+            "Warschauer Pakt",
+            "Roter Pakt",
+            "Osteuropäischer Bund",
+            "Rat für gegenseitige Wirtschaftshilfe"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Polnischen Złoty."
+          "exp": "Der Warschauer Pakt wurde 1955 gegründet."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Polen?",
+          "q": "In welchem Jahr trat Polen im Zuge der großen EU-Osterweiterung der Gemeinschaft bei?",
           "o": [
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat"
+            "1999",
+            "2004",
+            "2007",
+            "2011"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland."
+          "a": 1,
+          "exp": "Polen trat am 1. Mai 2004 der EU bei."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Polen?",
+          "q": "In welchem Grenzvertrag von 1921 wurden die Grenzen Polens nach dem Polnisch-Sowjetischen Krieg festgelegt?",
           "o": [
-            "Ratspräsident Donald Tusk",
-            "ehemaliger Premier Zoran Milanović",
-            "Außenbeauftragter Josep Borrell",
-            "Kommissionspräsidenten-Kandidat Pat Cox"
+            "Frieden von Riga",
+            "Vertrag von Brest-Litowsk",
+            "Vertrag von Lublin",
+            "Pakt von Suwałki"
           ],
           "a": 0,
-          "exp": "Ratspräsident Donald Tusk prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Frieden von Riga legte die Ostgrenze fest."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher polnische Ministerpräsident und spätere EU-Ratspräsident (2014–2019) prägte die europäische Politik maßgeblich mit?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Lech Wałęsa",
+            "Jarosław Kaczyński",
+            "Donald Tusk",
+            "Mateusz Morawiecki"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 2,
+          "exp": "Donald Tusk war von 2014 bis 2019 Präsident des Europäischen Rates."
         }
       ]
     },
     "Portugal": {
       "1": [
         {
-          "q": "Gehört Portugal zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher ältester noch heute gültige Bündnisvertrag der Welt wurde 1386 zwischen Portugal und England geschlossen?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Portugal trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Portugal der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1986",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Vertrag von Windsor",
+            "Allianzpakt von Lissabon",
+            "Vertrag von Tagus",
+            "Krone-Pakt von London"
           ],
           "a": 0,
-          "exp": "Portugal ist seit 1986 offizieller Teil der EU."
+          "exp": "Der Vertrag von Windsor gilt als ältestes aktives Bündnis."
+        },
+        {
+          "q": "In welcher portugiesischen Stadt fand im Jahr 2000 der historische EU-Gipfel statt, auf dem die sogenannte 'Lissabon-Strategie' beschlossen wurde?",
+          "o": [
+            "Lissabon",
+            "Porto",
+            "Coimbra",
+            "Faro"
+          ],
+          "a": 0,
+          "exp": "Der EU-Gipfel im März 2000 fand in Lissabon statt."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Portugal vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "In welcher portugiesischen Stadt wurde 2007 der Reformvertrag der Europäischen Union unterzeichnet?",
           "o": [
-            "Portugiesischer Escudo",
-            "Griechische Drachme",
-            "Italienische Lira",
-            "Slowenischer Tolar"
+            "Porto",
+            "Lissabon",
+            "Coimbra",
+            "Faro"
           ],
-          "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Portugiesischer Escudo."
+          "a": 1,
+          "exp": "Der Vertrag von Lissabon trat 2009 in Kraft."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Portugal?",
+          "q": "Welcher portugiesische Premierminister wurde 2024 zum Präsidenten des Europäischen Rates gewählt?",
           "o": [
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas"
+            "Aníbal Cavaco Silva",
+            "José Manuel Barroso",
+            "António Costa",
+            "Marcelo Rebelo de Sousa"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: die Atlantik-Inseln Azoren und Madeira gehören dazu."
+          "a": 2,
+          "exp": "António Costa wurde 2024 zum EU-Ratspräsidenten gewählt."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Portugal?",
+          "q": "Welches Abkommen teilte 1529 die Einflusssphären zwischen Portugal und Spanien auf der östlichen Hemisphäre (Pazifik) auf?",
           "o": [
-            "Kommissionschef José Manuel Barroso",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Alcide De Gasperi (Gründervater)",
-            "Klimaaktivistin Greta Thunberg"
+            "Vertrag von Saragossa",
+            "Vertrag von Tordesillas",
+            "Pakt von Macao",
+            "Akte von Goa"
           ],
           "a": 0,
-          "exp": "Kommissionschef José Manuel Barroso prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Vertrag von Saragossa ergänzte Tordesillas im Pazifik."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Wer war der langjährige portugiesische Ministerpräsident, der von 2004 bis 2014 als Präsident der Europäischen Kommission amtierte?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "José Manuel Barroso",
+            "António Guterres",
+            "Pedro Passos Coelho",
+            "Jorge Sampaio"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "José Manuel Barroso leitete zwei Amtszeiten lang die EU-Kommission."
         }
       ]
     },
     "Rumänien": {
       "1": [
         {
-          "q": "Gehört Rumänien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Vertrag besiegelte 1878 auf dem Berliner Kongress die Unabhängigkeit Rumäniens vom Osmanischen Reich?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Rumänien trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Rumänien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2007",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Berliner Vertrag",
+            "Vertrag von San Stefano",
+            "Pariser Frieden",
+            "Vertrag von Bukarest"
           ],
           "a": 0,
-          "exp": "Rumänien ist seit 2007 offizieller Teil der EU."
+          "exp": "Der Berliner Vertrag erkannte Rumäniens Unabhängigkeit an."
+        },
+        {
+          "q": "In welchem Jahr trat Rumänien gemeinsam mit Bulgarien der Europäischen Union bei?",
+          "o": [
+            "2004",
+            "2007",
+            "2011",
+            "2013"
+          ],
+          "a": 1,
+          "exp": "Rumänien trat am 1. Januar 2007 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Rumänien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "In welchem Friedensvertrag von 1920 wurden Rumänien Gebiete wie Siebenbürgen, das Banat und die Bukowina zugesprochen?",
           "o": [
-            "Rumänischer Leu",
-            "Litauischer Litas",
-            "Ungarischen Forint",
-            "Portugiesischer Escudo"
+            "Vertrag von Trianon",
+            "Vertrag von Neuilly",
+            "Frieden von Craiova",
+            "Abkommen von Iași"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Rumänischer Leu."
+          "exp": "Der Vertrag von Trianon regelte die Nachkriegsgrenzen."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Rumänien?",
+          "q": "Welche rumänische Spitzenjuristin wurde 2019 zur allerersten Europäischen Generalstaatsanwältin und Leiterin der Europäischen Staatsanwaltschaft (EPPO) ernannt?",
           "o": [
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU"
+            "Laura Codruța Kövesi",
+            "Viorica Dăncilă",
+            "Alina Gorghiu",
+            "Monica Macovei"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt."
+          "exp": "Laura Codruța Kövesi leitet die EPPO."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Rumänien?",
+          "q": "Durch welchen Vertrag von 1940 musste Rumänien die Süddobrudscha an Bulgarien abtreten?",
           "o": [
-            "Chefunterhändler Vasile Pușcaș",
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "ehemaliger Präsident Glafkos Klerides",
-            "Ministerpräsident Viktor Orbán"
+            "Vertrag von Craiova",
+            "Wiener Schiedsspruch",
+            "Pakt von Galati",
+            "Abkommen von Sofia"
           ],
           "a": 0,
-          "exp": "Chefunterhändler Vasile Pușcaș prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Vertrag von Craiova trat die Süddobrudscha an Bulgarien ab."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher wichtige EU-Gipfel zur Zukunft der EU fand 2019 in der rumänischen Stadt Sibiu statt?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Der Gipfel von Sibiu",
+            "Bukarest-Konferenz",
+            "Karpaten-Gipfel",
+            "Schwarzmeer-Forum"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Der Gipfel von Sibiu befasste sich mit der strategischen Agenda."
         }
       ]
     },
     "Schweden": {
       "1": [
         {
-          "q": "Gehört Schweden zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches historische Bündnis schloss Schweden 1397 mit Dänemark und Norwegen zur gemeinsamen Herrschaft?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Schweden trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Schweden der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1995",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Kalmarer Union",
+            "Nordischer Bund",
+            "Ostsee-Liga",
+            "Hanse-Union"
           ],
           "a": 0,
-          "exp": "Schweden ist seit 1995 offizieller Teil der EU."
+          "exp": "Die Kalmarer Union vereinte Nordeuropa."
+        },
+        {
+          "q": "In welchem Jahr trat Schweden (zeitgleich mit Finnland und Österreich) der Europäischen Union bei?",
+          "o": [
+            "1973",
+            "1986",
+            "1995",
+            "2004"
+          ],
+          "a": 2,
+          "exp": "Schweden wurde am 1. Januar 1995 EU-Mitglied."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Schweden vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Friedensvertrag beendete 1721 den Großen Nordischen Krieg und läutete das Ende Schwedens als Großmacht ein?",
           "o": [
-            "Schwedische Krone",
-            "Slowenischer Tolar",
-            "Irisches Pfund",
-            "Ungarischen Forint"
+            "Frieden von Nystad",
+            "Frieden von Altranstädt",
+            "Frieden von Traventhal",
+            "Vertrag von Stockholm"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Schwedische Krone."
+          "exp": "Der Frieden von Nystad beendete Schwedens Großmachtrolle."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Schweden?",
+          "q": "Welches bemerkenswerte Votum gab die schwedische Bevölkerung in einer Volksabstimmung im Jahr 2003 bezüglich der EU ab?",
           "o": [
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus"
+            "Sie stimmten gegen die Einführung des Euro.",
+            "Sie stimmten für den Austritt aus der EU.",
+            "Sie stimmten gegen den Verbleib im Schengen-Raum.",
+            "Sie lehnten die gemeinsame EU-Agrarpolitik ab."
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab."
+          "exp": "2003 lehnte eine Mehrheit der Schweden den Euro ab."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Schweden?",
+          "q": "Welcher Konvention von 1905 regelte die friedliche Auflösung der schwedisch-norwegischen Personalunion?",
           "o": [
-            "Klimaaktivistin Greta Thunberg",
-            "Außenbeauftragter Josep Borrell",
-            "EU-Kommissar Erkki Liikanen",
-            "Walter Hallstein (erster EU-Kommissionschef)"
+            "Konvention von Karlstad",
+            "Vertrag von Oslo",
+            "Pakt von Göteborg",
+            "Akte von Malmö"
           ],
           "a": 0,
-          "exp": "Klimaaktivistin Greta Thunberg prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Die Konvention von Karlstad löste die Union friedlich auf."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welche wichtige EU-Gesundheitsagentur hat ihren Sitz in Stockholm?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Europäisches Zentrum für die Prävention und die Kontrolle von Krankheiten",
+            "Europäische Arzneimittel-Agentur",
+            "Europäische Umweltagentur",
+            "Europäische Agentur für Lebensmittelsicherheit"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Das ECDC hat seinen Sitz in Stockholm."
         }
       ]
     },
     "Slowakei": {
       "1": [
         {
-          "q": "Gehört Slowakei zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Abkommen regelt seit 1991 die enge regionale Zusammenarbeit der Slowakei mit Polen, Ungarn und Tschechien?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Slowakei trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Slowakei der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Visegrád-Abkommen",
+            "Donauraum-Pakt",
+            "Mitteleuropäisches Abkommen",
+            "Karpaten-Konvention"
           ],
           "a": 0,
-          "exp": "Slowakei ist seit 2004 offizieller Teil der EU."
+          "exp": "Die Visegrád-Gruppe fördert die regionale Kooperation."
+        },
+        {
+          "q": "In welchem Jahr trat die Slowakei der Europäischen Union bei und in welchem Jahr führte sie den Euro ein?",
+          "o": [
+            "Beitritt 2004, Euro 2009",
+            "Beitritt 2007, Euro 2011",
+            "Beitritt 2004, Euro 2007",
+            "Beitritt 2009, Euro 2014"
+          ],
+          "a": 0,
+          "exp": "Die Slowakei trat 2004 bei und führte 2009 den Euro ein."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Slowakei vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher erste Schiedsspruch von 1938 zwang die Tschechoslowakei zur Abtretung südlicher Gebiete an Ungarn?",
           "o": [
-            "Slowakische Krone",
-            "Estnische Krone",
-            "Lettischer Lats",
-            "Irisches Pfund"
+            "Erster Wiener Schiedsspruch",
+            "Münchner Abkommen",
+            "Pakt von Bratislava",
+            "Diktat von Komárno"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Slowakische Krone."
+          "exp": "Der Erste Wiener Schiedsspruch trat Gebiete an Ungarn ab."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Slowakei?",
+          "q": "Welcher slowakische Diplomat und EU-Politiker amtierte jahrelang als Vizepräsident der EU-Kommission und war für den Green Deal zuständig?",
           "o": [
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt"
+            "Maroš Šefčovič",
+            "Ivan Korčok",
+            "Miroslav Lajčák",
+            "Eduard Heger"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: trennte sich 1993 völlig friedlich von der Tschechischen Republik."
+          "exp": "Maroš Šefčovič ist langjähriges Kommissionsmitglied."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Slowakei?",
+          "q": "In welchem Abkommen von 1945 trat die Tschechoslowakei die Karpatenukraine offiziell an die Sowjetunion ab?",
           "o": [
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "EU-Kommissar Erkki Liikanen",
-            "Václav Havel (erster tschechischer Präsident)",
-            "Jan Willem Beyen (Gründervater)"
+            "Vertrag von Moskau",
+            "Vertrag von Uschhorod",
+            "Kaschauer Programm",
+            "Prager Manifest"
           ],
           "a": 0,
-          "exp": "Politiker Alexander Dubček (Prager Frühling) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Vertrag von Moskau schloss den Übergang ab."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welche Länder bildeten gemeinsam mit der Slowakei das Fundament der Visegrád-Gruppe (V4) im Jahr 1991?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Polen, Ungarn und Tschechien",
+            "Österreich, Slowenien und Kroatien",
+            "Rumänien, Bulgarien und Griechenland",
+            "Die baltischen Staaten"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Die V4 vereint Polen, Tschechien, die Slowakei und Ungarn."
         }
       ]
     },
     "Slowenien": {
       "1": [
         {
-          "q": "Gehört Slowenien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Abkommen von 1954 teilte das Freie Territorium Triest vorübergehend zwischen Italien und Jugoslawien auf?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Slowenien trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Slowenien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Londoner Memorandum",
+            "Vertrag von Osimo",
+            "Pakt von Koper",
+            "Grenzvertrag von Gorizia"
           ],
           "a": 0,
-          "exp": "Slowenien ist seit 2004 offizieller Teil der EU."
+          "exp": "Das Londoner Memorandum regelte die Zonenverwaltung."
+        },
+        {
+          "q": "Als erstes der neuen EU-Länder aus dem ehemaligen Jugoslawien führte Slowenien im Jahr... welchen Schritt getan?",
+          "o": [
+            "Es führte 2007 den Euro ein.",
+            "Es trat 2004 der EU bei und trat sofort der Eurozone bei.",
+            "Es erfand den Schengen-Raum mit.",
+            "Es übernahm als erstes Land den EU-Ratsvorsitz im Jahr 2004."
+          ],
+          "a": 0,
+          "exp": "Slowenien führte am 1. Januar 2007 den Euro ein."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Slowenien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Vertrag von 1975 legte die Grenze zwischen Italien und Jugoslawien (heute Slowenien) endgültig völkerrechtlich fest?",
           "o": [
-            "Slowenischer Tolar",
-            "Spanische Peseta",
-            "Kroatische Kuna",
-            "Niederländischer Gulden"
+            "Vertrag von Osimo",
+            "Vertrag von Rapallo",
+            "Abkommen von Brijuni",
+            "Pakt von Portorož"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Slowenischer Tolar."
+          "exp": "Der Vertrag von Osimo bestätigte die Staatsgrenze."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Slowenien?",
+          "q": "In welchem Jahr hatte Slowenien zum ersten Mal den rotierenden Vorsitz im Rat der Europäischen Union inne?",
           "o": [
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt"
+            "Im ersten Halbjahr 2008",
+            "Im zweiten Halbjahr 2010",
+            "Im ersten Halbjahr 2013",
+            "Im zweiten Halbjahr 2015"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat."
+          "exp": "Slowenien übernahm im 1. Halbjahr 2008 den EU-Ratsvorsitz."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Slowenien?",
+          "q": "Welche Deklaration beendete am 8. Juli 1991 den Zehn-Tage-Krieg in Slowenien und fror die Unabhängigkeit für 3 Monate ein?",
           "o": [
-            "Präsidentin Nataša Pirc Musar",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Ratspräsident Donald Tusk",
-            "Jan Willem Beyen (Gründervater)"
+            "Deklaration von Brijuni",
+            "Abkommen von Brdo",
+            "Pakt von Ljubljana",
+            "Abkommen von Piran"
           ],
           "a": 0,
-          "exp": "Präsidentin Nataša Pirc Musar prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Die Deklaration von Brijuni stoppte die Kampfhandlungen."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher slowenische Philosoph und Intellektuelle mischt sich regelmäßig in europäische Diskurse über die Krise des Kapitalismus und der EU ein?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Slavoj Žižek",
+            "Milan Kučan",
+            "Danilo Türk",
+            "Janez Janša"
           ],
           "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "exp": "Slavoj Žižek ist ein weltweit bekannter Philosoph."
         }
       ]
     },
     "Spanien": {
       "1": [
         {
-          "q": "Gehört Spanien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Vertrag von 1713 beendete den Spanischen Erbfolgekrieg und sprach Gibraltar an Großbritannien ab?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Spanien trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Spanien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 1986",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Frieden von Utrecht",
+            "Vertrag von Rastatt",
+            "Frieden von Baden",
+            "Pakt von Madrid"
           ],
           "a": 0,
-          "exp": "Spanien ist seit 1986 offizieller Teil der EU."
+          "exp": "Der Frieden von Utrecht sprach Gibraltar den Briten zu."
+        },
+        {
+          "q": "In welchem Jahr traten Spanien und Portugal gleichzeitig der Europäischen Gemeinschaft (EG) bei?",
+          "o": [
+            "1981",
+            "1986",
+            "1992",
+            "1995"
+          ],
+          "a": 1,
+          "exp": "Spanien und Portugal traten am 1. Januar 1986 bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Spanien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "In welchem Pariser Frieden von 1898 verlor Spanien nach dem Spanisch-Amerikanischen Krieg seine letzten Kolonien?",
           "o": [
-            "Spanische Peseta",
-            "Lettischer Lats",
-            "Polnischen Złoty",
-            "Finnische Mark"
+            "Pariser Vertrag von 1898",
+            "Vertrag von Manila",
+            "Pakt von Havanna",
+            "Abkommen von Washington"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Spanische Peseta."
+          "exp": "Der Pariser Vertrag von 1898 beendete das Kolonialreich in Übersee."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Spanien?",
+          "q": "Welche spanische Stadt ist der offizielle Sitz der EU-Agentur für geistiges Eigentum (EUIPO)?",
           "o": [
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland"
+            "Madrid",
+            "Barcelona",
+            "Alicante",
+            "Valencia"
           ],
-          "a": 0,
-          "exp": "Interessanter Fakt: Mallorca und Ibiza gehören politisch zu diesem EU-Staat."
+          "a": 2,
+          "exp": "Das EUIPO sitzt in Alicante."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Spanien?",
+          "q": "Welches Beitrittsabkommen von 1985 besiegelte den EU-Beitritt Spaniens und Portugals zum 1. Januar 1986?",
           "o": [
-            "Außenbeauftragter Josep Borrell",
-            "Alcide De Gasperi (Gründervater)",
-            "Chefunterhändler Vasile Pușcaș",
-            "Ratspräsident Donald Tusk"
+            "Vertrag von Madrid/Lissabon",
+            "Vertrag von Sevilla",
+            "Pakt von Toledo",
+            "Abkommen von Porto"
           ],
           "a": 0,
-          "exp": "Außenbeauftragter Josep Borrell prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Beitrittsvertrag wurde 1985 feierlich unterzeichnet."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher berühmte spanische Politiker war von 2019 bis 2024 Hoher Vertreter der EU für Außen- und Sicherheitspolitik?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Javier Solana",
+            "Josep Borrell",
+            "Felipe González",
+            "Luis de Guindos"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Josep Borrell amtierte als EU-Außenbeauftragter."
         }
       ]
     },
     "Tschechien": {
       "1": [
         {
-          "q": "Gehört Tschechien zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welches Abkommen von 1938 zwang die Tschechoslowakei zur Abtretung des Sudetenlandes an das Deutsche Reich?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Tschechien trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Tschechien der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Münchner Abkommen",
+            "Vertrag von Berlin",
+            "Prager Pakt",
+            "Wiener Diktat"
           ],
           "a": 0,
-          "exp": "Tschechien ist seit 2004 offizieller Teil der EU."
+          "exp": "Das Münchner Abkommen führte zur Abtretung des Sudetenlandes."
+        },
+        {
+          "q": "In welchem Jahr trat Tschechien gemeinsam mit neun anderen Staaten der Europäischen Union bei?",
+          "o": [
+            "1999",
+            "2004",
+            "2007",
+            "2013"
+          ],
+          "a": 1,
+          "exp": "Tschechien wurde am 1. Mai 2004 EU-Mitglied."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Tschechien vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welcher Friedensvertrag beendete 1866 den Deutschen Krieg zwischen Preußen und Österreich und führte zur Auflösung des Deutschen Bundes in Prag?",
           "o": [
-            "Tschechische Krone",
-            "Irisches Pfund",
-            "Luxemburgischer Franc",
-            "Maltesische Lira"
+            "Prager Frieden",
+            "Vertrag von Olmütz",
+            "Frieden von Königgrätz",
+            "Pakt von Pilsen"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Tschechische Krone."
+          "exp": "Der Prager Frieden beendete den Krieg von 1866."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Tschechien?",
+          "q": "Welche EU-Agentur für Weltraumnavigation und das europäische Satellitennavigationssystem (Galileo) hat ihren Hauptsitz in der tschechischen Hauptstadt Prag?",
           "o": [
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas"
+            "Agentur der Europäischen Union für das Weltraumprogramm",
+            "Europäische Weltraumorganisation",
+            "Europäische Raumfahrtbehörde für Galileo",
+            "Europäisches Satellitenzentrum"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: die historische Region Böhmen macht den Hauptteil des Landes aus."
+          "exp": "Die EUSPA hat ihren Hauptsitz in Prag."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Tschechien?",
+          "q": "Welcher historische Prager Frieden von 1635 war ein Versuch, den Dreißigjährigen Krieg im Heiligen Römischen Reich vorzeitig zu beenden?",
           "o": [
-            "Václav Havel (erster tschechischer Präsident)",
-            "Alcide De Gasperi (Gründervater)",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Robert Schuman (EU-Gründervater)"
+            "Prager Frieden",
+            "Böhmischer Ausgleich",
+            "Kaiserliches Edikt",
+            "Vertrag von Leitmeritz"
           ],
           "a": 0,
-          "exp": "Václav Havel (erster tschechischer Präsident) prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Prager Frieden von 1635 versuchte den Reichsfrieden wiederherzustellen."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher tschechische Präsident (1989–1993), bekannt als früherer Dissident, war ein glühender Verfechter einer tiefen europäischen Integration und Menschenrechtspolitik?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Václav Klaus",
+            "Václav Havel",
+            "Miloš Zeman",
+            "Petr Fiala"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Václav Havel war ein berühmter Vorkämpfer der Demokratie."
         }
       ]
     },
     "Ungarn": {
       "1": [
         {
-          "q": "Gehört Ungarn zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welcher Friedensvertrag von 1920 kostete das Königreich Ungarn rund zwei Drittel seines bisherigen Territoriums?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Ungarn trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Ungarn der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Vertrag von Trianon",
+            "Vertrag von Saint-Germain",
+            "Diktat von Bratislava",
+            "Vertrag von Sèvres"
           ],
           "a": 0,
-          "exp": "Ungarn ist seit 2004 offizieller Teil der EU."
+          "exp": "Der Vertrag von Trianon regelte die Grenzen Ungarns nach 1918."
+        },
+        {
+          "q": "In welchem Jahr trat Ungarn der Europäischen Union bei?",
+          "o": [
+            "2000",
+            "2004",
+            "2007",
+            "2011"
+          ],
+          "a": 1,
+          "exp": "Ungarn trat am 1. Mai 2004 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Ungarn vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "Welches historische Dokument von 1222 beschränkte erstmals die Macht des ungarischen Königs zugunsten des Adels?",
           "o": [
-            "Ungarischen Forint",
-            "Spanische Peseta",
-            "Bulgarischer Lew",
-            "Irisches Pfund"
+            "Goldene Bulle von Ungarn",
+            "Pakt von Buda",
+            "Statut von Székesfehérvár",
+            "Charta von Pest"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Ungarischen Forint."
+          "exp": "Die Goldene Bulle von 1222 beschränkte die königliche Macht."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Ungarn?",
+          "q": "Welches Prinzip oder Verfahren der EU wurde in den letzten Jahren im Streit um Rechtsstaatlichkeit und Justizreformen besonders im Zusammenhang mit Ungarn intensiv diskutiert?",
           "o": [
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "hier kann man seit 2005 sicher online über das Internet wählen"
+            "Der Rechtsstaatsmechanismus und eingefrorene EU-Gelder",
+            "Das automatische Ausschlussverfahren für Nettozahler",
+            "Die Entziehung des EU-Ratsvorsitzes auf Lebenszeit",
+            "Die Suspendierung des Stimmrechts nach Artikel 50"
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas."
+          "exp": "Der Rechtsstaatsmechanismus bindet EU-Mittel an Rechtsstaatlichkeit."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Ungarn?",
+          "q": "Welche Konvention von 1699 beendete den Großen Türkenkrieg und sprach fast ganz Ungarn den Habsburgern zu?",
           "o": [
-            "Ministerpräsident Viktor Orbán",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen",
-            "ehemaliger Präsident Glafkos Klerides",
-            "ehemaliger Premier Zoran Milanović"
+            "Frieden von Karlowitz",
+            "Frieden von Passarowitz",
+            "Vertrag von Eisenburg",
+            "Pakt von Szeged"
           ],
           "a": 0,
-          "exp": "Ministerpräsident Viktor Orbán prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Frieden von Karlowitz beendete die osmanische Herrschaft."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "Welcher ungarische Politiker war langjähriger EU-Kommissar für Erweiterung und europäische Nachbarschaftspolitik?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "Tibor Navracsics",
+            "Olivér Várhelyi",
+            "László Kovács",
+            "Péter Szijjártó"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Olivér Várhelyi amtierte als Kommissar für Erweiterung."
         }
       ]
     },
     "Zypern": {
       "1": [
         {
-          "q": "Gehört Zypern zu den 6 Gründungsmitgliedern der EU (EGKS 1951)?",
+          "q": "Welche drei Staaten garantierten im Garantievertrag von 1960 die Unabhängigkeit und Verfassungsordnung Zyperns?",
           "o": [
-            "Ja, das Land ist Gründungsmitglied",
-            "Nein, es trat erst viel später bei",
-            "Nein, das Land gehört nicht zur EU",
-            "Nur als passiver Beobachter"
-          ],
-          "a": 1,
-          "exp": "Zypern trat erst 1973/nachfolgend der EU bei."
-        },
-        {
-          "q": "In welchem Jahr trat Zypern der Europäischen Union (bzw. EWG/EG) offiziell bei?",
-          "o": [
-            "Im Jahr 2004",
-            "Im Jahr 1995",
-            "Im Jahr 2004",
-            "Im Jahr 2013"
+            "Großbritannien, Griechenland und die Türkei",
+            "Großbritannien, Italien und Griechenland",
+            "USA, Griechenland und die Türkei",
+            "Großbritannien, Frankreich und Griechenland"
           ],
           "a": 0,
-          "exp": "Zypern ist seit 2004 offizieller Teil der EU."
+          "exp": "Großbritannien, Griechenland und die Türkei waren die Garantiemächte."
+        },
+        {
+          "q": "In welchem Jahr trat die Republik Zypern der Europäischen Union bei?",
+          "o": [
+            "2000",
+            "2004",
+            "2007",
+            "2008"
+          ],
+          "a": 1,
+          "exp": "Zypern trat am 1. Mai 2004 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche frühere Landeswährung wurde in Zypern vor dem Euro genutzt (bzw. gilt dort heute)?",
+          "q": "In welchen Abkommen von 1959 wurden die Grundlagen für die Unabhängigkeit Zyperns von Großbritannien erarbeitet?",
           "o": [
-            "Zypern-Pfund",
-            "Maltesische Lira",
-            "Irisches Pfund",
-            "Österreichischer Schilling"
+            "Zürcher und Londoner Abkommen",
+            "Genfer Konventionen",
+            "Verträge von Nikosia",
+            "Pakt von Athen"
           ],
           "a": 0,
-          "exp": "Das offizielle Zahlungsmittel vor dem Euro war: Zypern-Pfund."
+          "exp": "Die Zürcher und Londoner Abkommen schufen die Republik Zypern."
         },
         {
-          "q": "Welcher wichtige historische Meilenstein oder Fakt prägt die EU-Mitgliedschaft von Zypern?",
+          "q": "Warum gilt das EU-Recht de facto bis heute nicht im gesamten Staatsgebiet der Republik Zypern?",
           "o": [
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu"
+            "Weil der Norden der Insel seit 1974 de facto von der Türkei besetzt und nicht unter der Kontrolle der Regierung ist.",
+            "Weil Zypern eine Ausnahmegenehmigung für das gesamte Wirtschaftsrecht hat.",
+            "Weil Zypern zwar in der EU, aber nicht im Binnenmarkt ist.",
+            "Weil die Insel den Euro nie eingeführt hat."
           ],
           "a": 0,
-          "exp": "Interessanter Fakt: ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist."
+          "exp": "Das EU-Recht ist im Norden Zyperns ausgesetzt."
         }
       ],
       "3": [
         {
-          "q": "Welcher berühmte EU-Politiker / Staatsmann oder geschichtliche Gründungsakteur stammt aus Zypern?",
+          "q": "Welcher Vertrag regelt die Rechtsgrundlage der beiden britischen Militärbasen Akrotiri und Dekelia auf Zypern?",
           "o": [
-            "ehemaliger Präsident Glafkos Klerides",
-            "Alcide De Gasperi (Gründervater)",
-            "EU-Kommissar Erkki Liikanen",
-            "Robert Schuman (EU-Gründervater)"
+            "Gründungsvertrag der Republik Zypern",
+            "Commonwealth-Akte",
+            "NATO-Statut von Nikosia",
+            "Pakt von Famagusta"
           ],
           "a": 0,
-          "exp": "ehemaliger Präsident Glafkos Klerides prägte die europäische Geschichte dieses Landes stark."
+          "exp": "Der Gründungsvertrag regelte die britischen Militärstützpunkte."
         },
         {
-          "q": "Wie viele neue Mitgliedstaaten traten bei der großen EU-Osterweiterung im Jahr 2004 bei?",
+          "q": "In welchem Jahr führte Zypern den Euro als offizielle Landeswährung ein?",
           "o": [
-            "10 Länder",
-            "5 Länder",
-            "15 Länder",
-            "8 Länder"
+            "2004",
+            "2008",
+            "2010",
+            "2012"
           ],
-          "a": 0,
-          "exp": "Bei der großen Erweiterungswelle am 1. Mai 2004 traten 10 Staaten gleichzeitig bei."
+          "a": 1,
+          "exp": "Zypern führte am 1. Januar 2008 den Euro ein."
         }
       ]
     }
@@ -2582,1998 +2582,2160 @@ const pool = {
     "Belgien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Belgien?",
+          "q": "Wie heißt die Hauptstadt, die auch als Hauptsitz der Europäischen Union und der NATO gilt?",
           "o": [
+            "Rotterdam",
             "Brüssel",
-            "Sofia",
-            "Warschau",
-            "Lissabon"
+            "Antwerpen",
+            "Straßburg"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Belgien ist Brüssel."
+          "a": 1,
+          "tip": "Der Name der Stadt beginnt mit dem Buchstaben „B“.",
+          "exp": "Brüssel ist die Hauptstadt Belgiens und Sitz der wichtigsten EU-Institutionen."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Belgien?",
+          "q": "Wie heißt die Hauptstadt, die auch als Hauptsitz der Europäischen Union und der NATO gilt?",
           "o": [
-            "Brüsseler Atomium",
-            "Dracula-Schloss Bran",
-            "historische Hauptstadt Valletta",
-            "Eiffelturm in Paris"
+            "Rotterdam",
+            "Brüssel",
+            "Antwerpen",
+            "Straßburg"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Brüsseler Atomium liegt in Belgien."
+          "a": 1,
+          "tip": "Der Name der Stadt beginnt mit dem Buchstaben „B“.",
+          "exp": "Brüssel ist die Hauptstadt Belgiens und Sitz der wichtigsten EU-Institutionen."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Belgien?",
+          "q": "Diese Hafenstadt an der Schelde ist weltweit bekannt als Zentrum des historischen Diamantenhandels. Wie heißt sie?",
           "o": [
-            "Signal de Botrange (694 Meter)",
-            "Moldoveanu (2544 Meter)",
-            "Großglockner (3798 Meter)",
-            "Ponta do Pico (2351 Meter auf Azoren)"
+            "Antwerpen",
+            "Brügge",
+            "Gent",
+            "Charleroi"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Signal de Botrange (694 Meter)."
+          "tip": "Sie liegt im Norden des Landes in der Region Flandern.",
+          "exp": "Antwerpen ist weltbekannt für seinen Diamantenhandel und großen Seehafen."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Belgien am besten?",
+          "q": "Diese Hafenstadt an der Schelde ist weltweit bekannt als Zentrum des historischen Diamantenhandels. Wie heißt sie?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Antwerpen",
+            "Brügge",
+            "Gent",
+            "Charleroi"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Belgien."
+          "tip": "Sie liegt im Norden des Landes in der Region Flandern.",
+          "exp": "Antwerpen ist weltbekannt für seinen Diamantenhandel und großen Seehafen."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Belgien besonders aus?",
+          "q": "Welcher gebirgige Landstrich im Südosten ist bekannt für dichte Wälder, sanfte Hügel und Höhlensysteme?",
           "o": [
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas"
+            "Die Karpaten",
+            "Die Eifel",
+            "Die Ardennen",
+            "Der Schwarzwald"
           ],
-          "a": 0,
-          "exp": "Fakt: Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen."
+          "a": 2,
+          "tip": "Das Gebiet spielte in der Geschichte beider Weltkriege eine wichtige Rolle.",
+          "exp": "Die Ardennen erstrecken sich über den waldreichen Süden Belgiens."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Belgien?",
+          "q": "Welcher gebirgige Landstrich im Südosten ist bekannt für dichte Wälder, sanfte Hügel und Höhlensysteme?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Die Karpaten",
+            "Die Eifel",
+            "Die Ardennen",
+            "Der Schwarzwald"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 2,
+          "tip": "Das Gebiet spielte in der Geschichte beider Weltkriege eine wichtige Rolle.",
+          "exp": "Die Ardennen erstrecken sich über den waldreichen Süden Belgiens."
         }
       ]
     },
     "Bulgarien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Bulgarien?",
+          "q": "Welche Stadt liegt am Fuße des Witoscha-Gebirges und ist die Hauptstadt des Landes?",
           "o": [
+            "Plowdiw",
             "Sofia",
-            "Bratislava",
-            "Warschau",
-            "Zagreb"
+            "Warna",
+            "Burgas"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Bulgarien ist Sofia."
+          "a": 1,
+          "tip": "Der Name der Stadt bedeutet auf Griechisch „Weisheit“.",
+          "exp": "Sofia liegt im Westen Bulgariens am Fuße des Witoscha-Gebirges."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Bulgarien?",
+          "q": "Welche Stadt liegt am Fuße des Witoscha-Gebirges und ist die Hauptstadt des Landes?",
           "o": [
-            "Rila-Kloster",
-            "historische Hauptstadt Valletta",
-            "Stockholmer Schloss",
-            "Dracula-Schloss Bran"
+            "Plowdiw",
+            "Sofia",
+            "Warna",
+            "Burgas"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Rila-Kloster liegt in Bulgarien."
+          "a": 1,
+          "tip": "Der Name der Stadt bedeutet auf Griechisch „Weisheit“.",
+          "exp": "Sofia liegt im Westen Bulgariens am Fuße des Witoscha-Gebirges."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Bulgarien?",
+          "q": "Welches große Binnenmeer begrenzt das Land im Osten und lockt viele Urlaubsgäste an?",
           "o": [
-            "Musala (2925 Meter)",
-            "Kneiff (560 Meter)",
-            "Ponta do Pico (2351 Meter auf Azoren)",
-            "Kékes (1014 Meter)"
+            "Das Schwarze Meer",
+            "Das Ägäische Meer",
+            "Das Adriatische Meer",
+            "Das Kaspische Meer"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Musala (2925 Meter)."
+          "tip": "Es hat einen sehr dunklen Namen.",
+          "exp": "Die gesamte Ostgrenze Bulgariens verläuft am Schwarzen Meer."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Bulgarien am besten?",
+          "q": "Welches große Binnenmeer begrenzt das Land im Osten und lockt viele Urlaubsgäste an?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Das Schwarze Meer",
+            "Das Ägäische Meer",
+            "Das Adriatische Meer",
+            "Das Kaspische Meer"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Bulgarien."
+          "tip": "Es hat einen sehr dunklen Namen.",
+          "exp": "Die gesamte Ostgrenze Bulgariens verläuft am Schwarzen Meer."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Bulgarien besonders aus?",
+          "q": "Welches Gebirge erstreckt sich quer von West nach Ost durch das Land und gab der gesamten Halbinsel ihren Namen?",
           "o": [
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg"
+            "Das Pirin-Gebirge",
+            "Das Balkangebirge",
+            "Das Rila-Gebirge",
+            "Die Dinarischen Alpen"
           ],
-          "a": 0,
-          "exp": "Fakt: Lew-Währung ist fest an die D-Mark/Euro gekoppelt."
+          "a": 1,
+          "tip": "Man nennt die gesamte Region Südosteuropas oft nach diesem Gebirge.",
+          "exp": "Das Balkangebirge gab der Balkanhalbinsel ihren Namen."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Bulgarien?",
+          "q": "Welches Gebirge erstreckt sich quer von West nach Ost durch das Land und gab der gesamten Halbinsel ihren Namen?",
           "o": [
-            "Donau",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Das Pirin-Gebirge",
+            "Das Balkangebirge",
+            "Das Rila-Gebirge",
+            "Die Dinarischen Alpen"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Man nennt die gesamte Region Südosteuropas oft nach diesem Gebirge.",
+          "exp": "Das Balkangebirge gab der Balkanhalbinsel ihren Namen."
         }
       ]
     },
     "Dänemark": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Dänemark?",
+          "q": "Wie heißt die Hauptstadt, in der man die berühmte Statue der „Kleinen Meerjungfrau“ am Hafen besuchen kann?",
           "o": [
             "Kopenhagen",
-            "Wien",
-            "Vilnius",
-            "Luxemburg"
+            "Aarhus",
+            "Odense",
+            "Aalborg"
           ],
           "a": 0,
-          "exp": "Die Hauptstadt von Dänemark ist Kopenhagen."
+          "tip": "Die Stadt liegt auf der Insel Seeland.",
+          "exp": "Die Kleine Meerjungfrau in Kopenhagen geht auf das Märchen von H. C. Andersen zurück."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Dänemark?",
+          "q": "Wie heißt die Hauptstadt, in der man die berühmte Statue der „Kleinen Meerjungfrau“ am Hafen besuchen kann?",
           "o": [
-            "die kleine Meerjungfrau in Kopenhagen",
-            "Karlsbrücke in Prag",
-            "historische Altstadt von Dubrovnik",
-            "Bratislavaer Burg"
+            "Kopenhagen",
+            "Aarhus",
+            "Odense",
+            "Aalborg"
           ],
           "a": 0,
-          "exp": "Das Wahrzeichen die kleine Meerjungfrau in Kopenhagen liegt in Dänemark."
+          "tip": "Die Stadt liegt auf der Insel Seeland.",
+          "exp": "Die Kleine Meerjungfrau in Kopenhagen geht auf das Märchen von H. C. Andersen zurück."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Dänemark?",
+          "q": "Wie heißt die große Halbinsel, die den festländischen Teil des Staates bildet und im Süden direkt an Deutschland grenzt?",
           "o": [
-            "Møllehøj (170 Meter)",
-            "Ponta do Pico (2351 Meter auf Azoren)",
-            "Olymp (1952 Meter)",
-            "Kebnekaise (2096 Meter)"
+            "Fünen",
+            "Seeland",
+            "Jütland",
+            "Skåne"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Møllehøj (170 Meter)."
+          "a": 2,
+          "tip": "Sie trennt die Nordsee von der Ostsee.",
+          "exp": "Jütland verbindet Dänemark mit dem europäischen Festland."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Dänemark am besten?",
+          "q": "Wie heißt die große Halbinsel, die den festländischen Teil des Staates bildet und im Süden direkt an Deutschland grenzt?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Fünen",
+            "Seeland",
+            "Jütland",
+            "Skåne"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Dänemark."
+          "a": 2,
+          "tip": "Sie trennt die Nordsee von der Ostsee.",
+          "exp": "Jütland verbindet Dänemark mit dem europäischen Festland."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Dänemark besonders aus?",
+          "q": "Welche riesige arktische Insel gehört politisch als autonomes Gebiet zu diesem Staat?",
           "o": [
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg"
+            "Island",
+            "Grönland",
+            "Spitzbergen",
+            "Bornholm"
           ],
-          "a": 0,
-          "exp": "Fakt: besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen."
+          "a": 1,
+          "tip": "Es ist die größte Insel der Erde.",
+          "exp": "Grönland ist politisch Teil des dänischen Königreichs, aber weitgehend autonom."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Dänemark?",
+          "q": "Welche riesige arktische Insel gehört politisch als autonomes Gebiet zu diesem Staat?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Island",
+            "Grönland",
+            "Spitzbergen",
+            "Bornholm"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Es ist die größte Insel der Erde.",
+          "exp": "Grönland ist politisch Teil des dänischen Königreichs, aber weitgehend autonom."
         }
       ]
     },
     "Deutschland": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Deutschland?",
+          "q": "Wie heißt die bundesweite Hauptstadt, die durch das Brandenburger Tor und den Fernsehturm berühmt ist?",
           "o": [
+            "München",
             "Berlin",
-            "Amsterdam",
-            "Valletta",
-            "Budapest"
+            "Hamburg",
+            "Köln"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Deutschland ist Berlin."
+          "a": 1,
+          "tip": "Sie war im Kalten Krieg durch eine Mauer geteilt.",
+          "exp": "Berlin wurde 1990 mit der Wiedervereinigung wieder Gesamt-Hauptstadt."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Deutschland?",
+          "q": "Wie heißt die bundesweite Hauptstadt, die durch das Brandenburger Tor und den Fernsehturm berühmt ist?",
           "o": [
-            "Brandenburger Tor in Berlin",
-            "Dracula-Schloss Bran",
-            "schiefe Turm von Pisa",
-            "historische Altstadt von Dubrovnik"
+            "München",
+            "Berlin",
+            "Hamburg",
+            "Köln"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Brandenburger Tor in Berlin liegt in Deutschland."
+          "a": 1,
+          "tip": "Sie war im Kalten Krieg durch eine Mauer geteilt.",
+          "exp": "Berlin wurde 1990 mit der Wiedervereinigung wieder Gesamt-Hauptstadt."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Deutschland?",
+          "q": "Welcher Fluss entspringt im Schwarzwald und fließt quer durch Mitteleuropa bis ins Schwarze Meer?",
           "o": [
-            "Zugspitze (2962 Meter)",
-            "Teide (3718 Meter auf Teneriffa)",
-            "Kebnekaise (2096 Meter)",
-            "Møllehøj (170 Meter)"
+            "Der Rhein",
+            "Die Elbe",
+            "Die Donau",
+            "Die Weser"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Zugspitze (2962 Meter)."
+          "a": 2,
+          "tip": "Es ist der zweitlängste Fluss Europas und fließt auch durch Österreich.",
+          "exp": "Die Donau entspringt im Schwarzwald und mündet im Schwarzen Meer."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Deutschland am besten?",
+          "q": "Welcher Fluss entspringt im Schwarzwald und fließt quer durch Mitteleuropa bis ins Schwarze Meer?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Der Rhein",
+            "Die Elbe",
+            "Die Donau",
+            "Die Weser"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Deutschland."
+          "a": 2,
+          "tip": "Es ist der zweitlängste Fluss Europas und fließt auch durch Österreich.",
+          "exp": "Die Donau entspringt im Schwarzwald und mündet im Schwarzen Meer."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Deutschland besonders aus?",
+          "q": "Welches Mittelgebirge beherbergt den Brocken als seinen höchsten Berg?",
           "o": [
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen"
+            "Der Harz",
+            "Der Thüringer Wald",
+            "Der Taunus",
+            "Der Schwarzwald"
           ],
           "a": 0,
-          "exp": "Fakt: die Europäische Zentralbank hat ihren Sitz in Frankfurt."
+          "tip": "Der Name hat nur vier Buchstaben.",
+          "exp": "Der Harz liegt im Norden Deutschlands, der Brocken ist 1141 Meter hoch."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Deutschland?",
+          "q": "Welches Mittelgebirge beherbergt den Brocken als seinen höchsten Berg?",
           "o": [
-            "Rhein",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Der Harz",
+            "Der Thüringer Wald",
+            "Der Taunus",
+            "Der Schwarzwald"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Der Name hat nur vier Buchstaben.",
+          "exp": "Der Harz liegt im Norden Deutschlands, der Brocken ist 1141 Meter hoch."
         }
       ]
     },
     "Estland": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Estland?",
+          "q": "Wie heißt die nördlichste Hauptstadt der drei baltischen Staaten, die direkt am Finnischen Meerbusen liegt?",
           "o": [
+            "Riga",
+            "Vilnius",
             "Tallinn",
-            "Nikosia",
-            "Ljubljana",
-            "Luxemburg"
+            "Helsinki"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Estland ist Tallinn."
+          "a": 2,
+          "tip": "Die gut erhaltene mittelalterliche Altstadt ist weltberühmt.",
+          "exp": "Tallinn besitzt eine der besterhaltenen Altstädte Nordeuropas."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Estland?",
+          "q": "Wie heißt die nördlichste Hauptstadt der drei baltischen Staaten, die direkt am Finnischen Meerbusen liegt?",
           "o": [
-            "mittelalterliche Altstadt von Tallinn",
-            "Brandenburger Tor in Berlin",
-            "Athener Akropolis",
-            "Krakauer Wawel-Schloss"
+            "Riga",
+            "Vilnius",
+            "Tallinn",
+            "Helsinki"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen mittelalterliche Altstadt von Tallinn liegt in Estland."
+          "a": 2,
+          "tip": "Die gut erhaltene mittelalterliche Altstadt ist weltberühmt.",
+          "exp": "Tallinn besitzt eine der besterhaltenen Altstädte Nordeuropas."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Estland?",
+          "q": "Welche Ostseeinsel gehört zu diesem Staat und ist zugleich seine größte Insel?",
           "o": [
-            "Suur Munamägi (318 Meter)",
-            "Olymp (1952 Meter)",
-            "Ta' Dmejrek (253 Meter)",
-            "Kebnekaise (2096 Meter)"
+            "Saaremaa",
+            "Gotland",
+            "Dagö",
+            "Åland"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Suur Munamägi (318 Meter)."
+          "tip": "Der Name beginnt mit dem Buchstaben „S“.",
+          "exp": "Saaremaa ist die größte estnische Insel vor der Westküste."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Estland am besten?",
+          "q": "Welche Ostseeinsel gehört zu diesem Staat und ist zugleich seine größte Insel?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Saaremaa",
+            "Gotland",
+            "Dagö",
+            "Åland"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Estland."
+          "tip": "Der Name beginnt mit dem Buchstaben „S“.",
+          "exp": "Saaremaa ist die größte estnische Insel vor der Westküste."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Estland besonders aus?",
+          "q": "Wie heißt der riesige Grenzsee im Osten, der das Land von Russland trennt?",
           "o": [
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel"
+            "Ladogasee",
+            "Peipussee",
+            "Onegasee",
+            "Vänernsee"
           ],
-          "a": 0,
-          "exp": "Fakt: hier kann man seit 2005 sicher online über das Internet wählen."
+          "a": 1,
+          "tip": "Er ist der fünftgrößte See Europas.",
+          "exp": "Der Peipussee bildet die natürliche Grenze zu Russland."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Estland?",
+          "q": "Wie heißt der riesige Grenzsee im Osten, der das Land von Russland trennt?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Ladogasee",
+            "Peipussee",
+            "Onegasee",
+            "Vänernsee"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Er ist der fünftgrößte See Europas.",
+          "exp": "Der Peipussee bildet die natürliche Grenze zu Russland."
         }
       ]
     },
     "Finnland": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Finnland?",
+          "q": "Wie heißt die Hauptstadt im Süden des Landes, die für ihren weißen Dom am Senatsplatz bekannt ist?",
           "o": [
             "Helsinki",
-            "Lissabon",
-            "Tallinn",
-            "Wien"
+            "Tampere",
+            "Turku",
+            "Espoo"
           ],
           "a": 0,
-          "exp": "Die Hauptstadt von Finnland ist Helsinki."
+          "tip": "Sie liegt direkt gegenüber von Tallinn an der Ostsee.",
+          "exp": "Helsinki ist die größte Stadt und Hauptstadt Finnlands."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Finnland?",
+          "q": "Wie heißt die Hauptstadt im Süden des Landes, die für ihren weißen Dom am Senatsplatz bekannt ist?",
           "o": [
-            "Dom von Helsinki",
-            "Krakauer Wawel-Schloss",
-            "Karlsbrücke in Prag",
-            "Stockholmer Schloss"
+            "Helsinki",
+            "Tampere",
+            "Turku",
+            "Espoo"
           ],
           "a": 0,
-          "exp": "Das Wahrzeichen Dom von Helsinki liegt in Finnland."
+          "tip": "Sie liegt direkt gegenüber von Tallinn an der Ostsee.",
+          "exp": "Helsinki ist die größte Stadt und Hauptstadt Finnlands."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Finnland?",
+          "q": "Wie heißt die nördlichste Region des Landes, die für Polarlichter, Mitternachtssonne und Rentiere bekannt ist?",
           "o": [
-            "Haltitunturi (1324 Meter)",
-            "Musala (2925 Meter)",
-            "Møllehøj (170 Meter)",
-            "Schneekoppe (1603 Meter)"
+            "Karelien",
+            "Lappland",
+            "Savolen",
+            "Ostbottnien"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Haltitunturi (1324 Meter)."
+          "a": 1,
+          "tip": "Hier wohnt laut der Sage der Weihnachtsmann.",
+          "exp": "Lappland erstreckt sich über den Norden des Landes."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Finnland am besten?",
+          "q": "Wie heißt die nördlichste Region des Landes, die für Polarlichter, Mitternachtssonne und Rentiere bekannt ist?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Karelien",
+            "Lappland",
+            "Savolen",
+            "Ostbottnien"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Finnland."
+          "a": 1,
+          "tip": "Hier wohnt laut der Sage der Weihnachtsmann.",
+          "exp": "Lappland erstreckt sich über den Norden des Landes."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Finnland besonders aus?",
+          "q": "Welches riesige zusammenhängende Seensystem bildet das größte Binnengewässer des Landes?",
           "o": [
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu"
+            "Der Saimaa-See",
+            "Der Inarisee",
+            "Der Päijänne-See",
+            "Der Oulujärvi"
           ],
           "a": 0,
-          "exp": "Fakt: Lappland gilt als Heimatort des Weihnachtsmanns."
+          "tip": "Hier lebt eine seltene Süßwasser-Ringelrobbe.",
+          "exp": "Das Saimaa-Seengebiet beheimatet die vom Aussterben bedrohte Saimaa-Ringelrobbe."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Finnland?",
+          "q": "Welches riesige zusammenhängende Seensystem bildet das größte Binnengewässer des Landes?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Der Saimaa-See",
+            "Der Inarisee",
+            "Der Päijänne-See",
+            "Der Oulujärvi"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Hier lebt eine seltene Süßwasser-Ringelrobbe.",
+          "exp": "Das Saimaa-Seengebiet beheimatet die vom Aussterben bedrohte Saimaa-Ringelrobbe."
         }
       ]
     },
     "Frankreich": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Frankreich?",
+          "q": "Wie heißt die weltberühmte Hauptstadt an der Seine mit dem Eiffelturm?",
           "o": [
+            "Lyon",
             "Paris",
-            "Luxemburg",
-            "Bukarest",
-            "Vilnius"
+            "Marseille",
+            "Bordeaux"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Frankreich ist Paris."
+          "a": 1,
+          "tip": "Sie wird auch oft die „Stadt der Liebe“ genannt.",
+          "exp": "Paris ist das politische, wirtschaftliche und kulturelle Zentrum Frankreichs."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Frankreich?",
+          "q": "Wie heißt die weltberühmte Hauptstadt an der Seine mit dem Eiffelturm?",
           "o": [
-            "Eiffelturm in Paris",
-            "Wasserburg Trakai",
-            "die kleine Meerjungfrau in Kopenhagen",
-            "Rila-Kloster"
+            "Lyon",
+            "Paris",
+            "Marseille",
+            "Bordeaux"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Eiffelturm in Paris liegt in Frankreich."
+          "a": 1,
+          "tip": "Sie wird auch oft die „Stadt der Liebe“ genannt.",
+          "exp": "Paris ist das politische, wirtschaftliche und kulturelle Zentrum Frankreichs."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Frankreich?",
+          "q": "Welcher höchste Berg der Alpen liegt an der Grenze zu Italien?",
           "o": [
-            "Mont Blanc (4807 Meter)",
-            "Gaiziņkalns (311 Meter)",
-            "Moldoveanu (2544 Meter)",
-            "Møllehøj (170 Meter)"
+            "Das Matterhorn",
+            "Der Mont Blanc",
+            "Die Zugspitze",
+            "Der Großglockner"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Mont Blanc (4807 Meter)."
+          "a": 1,
+          "tip": "Übersetzt bedeutet der Name „Weißer Berg“.",
+          "exp": "Der Mont Blanc ist mit 4805 Metern der höchste Berg der Alpen."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Frankreich am besten?",
+          "q": "Welcher höchste Berg der Alpen liegt an der Grenze zu Italien?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Das Matterhorn",
+            "Der Mont Blanc",
+            "Die Zugspitze",
+            "Der Großglockner"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Frankreich."
+          "a": 1,
+          "tip": "Übersetzt bedeutet der Name „Weißer Berg“.",
+          "exp": "Der Mont Blanc ist mit 4805 Metern der höchste Berg der Alpen."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Frankreich besonders aus?",
+          "q": "Wie heißt die große Mittelmeerinsel, die zu diesem Staat gehört und auf der Napoleon Bonaparte geboren wurde?",
           "o": [
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "hier kann man seit 2005 sicher online über das Internet wählen"
+            "Sardinien",
+            "Sizilien",
+            "Korsika",
+            "Malta"
           ],
-          "a": 0,
-          "exp": "Fakt: das Europäische Parlament hat seinen Hauptsitz in Straßburg."
+          "a": 2,
+          "tip": "Sie liegt direkt nördlich der italienischen Insel Sardinien.",
+          "exp": "Napoleon wurde 1769 in Ajaccio auf Korsika geboren."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Frankreich?",
+          "q": "Wie heißt die große Mittelmeerinsel, die zu diesem Staat gehört und auf der Napoleon Bonaparte geboren wurde?",
           "o": [
-            "Rhein",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Sardinien",
+            "Sizilien",
+            "Korsika",
+            "Malta"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 2,
+          "tip": "Sie liegt direkt nördlich der italienischen Insel Sardinien.",
+          "exp": "Napoleon wurde 1769 in Ajaccio auf Korsika geboren."
         }
       ]
     },
     "Griechenland": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Griechenland?",
+          "q": "Wie heißt die historische Hauptstadt, die für die antike Tempelanlage der Akropolis berühmt ist?",
           "o": [
             "Athen",
-            "Brüssel",
-            "Berlin",
-            "Zagreb"
+            "Thessaloniki",
+            "Patras",
+            "Heraklion"
           ],
           "a": 0,
-          "exp": "Die Hauptstadt von Griechenland ist Athen."
+          "tip": "Sie gilt als die Wiege der Demokratie.",
+          "exp": "Athen ist eine der ältesten Städte Europas und die griechische Hauptstadt."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Griechenland?",
+          "q": "Wie heißt die historische Hauptstadt, die für die antike Tempelanlage der Akropolis berühmt ist?",
           "o": [
-            "Athener Akropolis",
-            "Sagrada Família in Barcelona",
-            "Brüsseler Atomium",
-            "Brandenburger Tor in Berlin"
+            "Athen",
+            "Thessaloniki",
+            "Patras",
+            "Heraklion"
           ],
           "a": 0,
-          "exp": "Das Wahrzeichen Athener Akropolis liegt in Griechenland."
+          "tip": "Sie gilt als die Wiege der Demokratie.",
+          "exp": "Athen ist eine der ältesten Städte Europas und die griechische Hauptstadt."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Griechenland?",
+          "q": "Welche ist die größte Insel des Landes, die das Ägäische Meer vom Libyschen Meer trennt?",
           "o": [
-            "Olymp (2917 Meter)",
-            "Zugspitze (2962 Meter)",
-            "Musala (2925 Meter)",
-            "Ponta do Pico (2351 Meter auf Azoren)"
+            "Rhodos",
+            "Kreta",
+            "Korfu",
+            "Kos"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Olymp (2917 Meter)."
+          "a": 1,
+          "tip": "In der Antike war sie der Mittelpunkt der minoischen Kultur.",
+          "exp": "Kreta ist das größte griechische Eiland und die fünftgrößte Insel im Mittelmeer."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Griechenland am besten?",
+          "q": "Welche ist die größte Insel des Landes, die das Ägäische Meer vom Libyschen Meer trennt?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Rhodos",
+            "Kreta",
+            "Korfu",
+            "Kos"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Griechenland."
+          "a": 1,
+          "tip": "In der Antike war sie der Mittelpunkt der minoischen Kultur.",
+          "exp": "Kreta ist das größte griechische Eiland und die fünftgrößte Insel im Mittelmeer."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Griechenland besonders aus?",
+          "q": "Welches Gebirgsmassiv gilt laut der antiken Mythologie als Sitz der Götter und bildet zugleich die höchste Erhebung des Landes?",
           "o": [
-            "trat der EU nach dem Ende der Militärdiktatur bei",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "Lappland gilt als Heimatort des Weihnachtsmanns"
+            "Der Parnass",
+            "Der Olymp",
+            "Der Athos",
+            "Das Taygetos-Gebirge"
           ],
-          "a": 0,
-          "exp": "Fakt: trat der EU nach dem Ende der Militärdiktatur bei."
+          "a": 1,
+          "tip": "Das Wort steckt auch im Namen der berühmtesten Sportveranstaltung der Welt.",
+          "exp": "Der Olymp ist mit 2917 Metern der höchste Berg Griechenlands."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Griechenland?",
+          "q": "Welches Gebirgsmassiv gilt laut der antiken Mythologie als Sitz der Götter und bildet zugleich die höchste Erhebung des Landes?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Der Parnass",
+            "Der Olymp",
+            "Der Athos",
+            "Das Taygetos-Gebirge"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Das Wort steckt auch im Namen der berühmtesten Sportveranstaltung der Welt.",
+          "exp": "Der Olymp ist mit 2917 Metern der höchste Berg Griechenlands."
         }
       ]
     },
     "Irland": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Irland?",
+          "q": "Wie heißt die Hauptstadt an der Ostküste, durch die der Fluss Liffey fließt?",
           "o": [
+            "Cork",
             "Dublin",
-            "Ljubljana",
-            "Athen",
-            "Zagreb"
+            "Galway",
+            "Belfast"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Irland ist Dublin."
+          "a": 1,
+          "tip": "Sie ist weltbekannt für ihr Altstadtviertel Temple Bar.",
+          "exp": "Dublin liegt an der Mündung des Flusses Liffey in die Irische See."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Irland?",
+          "q": "Wie heißt die Hauptstadt an der Ostküste, durch die der Fluss Liffey fließt?",
           "o": [
-            "die Klippen von Moher (Cliffs of Moher)",
-            "Karlsbrücke in Prag",
-            "Stockholmer Schloss",
-            "Sagrada Família in Barcelona"
+            "Cork",
+            "Dublin",
+            "Galway",
+            "Belfast"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen die Klippen von Moher (Cliffs of Moher) liegt in Irland."
+          "a": 1,
+          "tip": "Sie ist weltbekannt für ihr Altstadtviertel Temple Bar.",
+          "exp": "Dublin liegt an der Mündung des Flusses Liffey in die Irische See."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Irland?",
+          "q": "Welcher ist der längste Fluss des Landes, der das Innere der Insel von Nord nach Süd durchquert?",
           "o": [
-            "Carrauntoohil (1039 Meter)",
-            "Gaiziņkalns (311 Meter)",
-            "Rysy (2499 Meter)",
-            "Teide (3718 Meter auf Teneriffa)"
+            "Der Shannon",
+            "Der Boyne",
+            "Der Barrow",
+            "Der Lee"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Carrauntoohil (1039 Meter)."
+          "tip": "Der Name beginnt mit dem Buchstaben „S“.",
+          "exp": "Der River Shannon ist mit 360 Kilometern der längste Fluss Irlands."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Irland am besten?",
+          "q": "Welcher ist der längste Fluss des Landes, der das Innere der Insel von Nord nach Süd durchquert?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Der Shannon",
+            "Der Boyne",
+            "Der Barrow",
+            "Der Lee"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Irland."
+          "tip": "Der Name beginnt mit dem Buchstaben „S“.",
+          "exp": "Der River Shannon ist mit 360 Kilometern der längste Fluss Irlands."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Irland besonders aus?",
+          "q": "Wie heißen die spektakulären, über 200 Meter steil im Atlantik abfallenden Steilklippen an der Westküste?",
           "o": [
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "trat der EU nach dem Ende der Militärdiktatur bei",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU"
+            "Cliffs of Moher",
+            "Giant’s Causeway",
+            "Slieve League",
+            "Dun Aengus"
           ],
           "a": 0,
-          "exp": "Fakt: muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen."
+          "tip": "Das Wort „Moher“ steckt im Namen.",
+          "exp": "Die Cliffs of Moher gehören zu den bekanntesten Klippen Europas."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Irland?",
+          "q": "Wie heißen die spektakulären, über 200 Meter steil im Atlantik abfallenden Steilklippen an der Westküste?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Cliffs of Moher",
+            "Giant’s Causeway",
+            "Slieve League",
+            "Dun Aengus"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Das Wort „Moher“ steckt im Namen.",
+          "exp": "Die Cliffs of Moher gehören zu den bekanntesten Klippen Europas."
         }
       ]
     },
     "Italien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Italien?",
+          "q": "Wie heißt die Hauptstadt, in deren Zentrum das antike Kolosseum steht?",
           "o": [
+            "Mailand",
             "Rom",
-            "Nikosia",
-            "Dublin",
-            "Paris"
+            "Neapel",
+            "Florenz"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Italien ist Rom."
+          "a": 1,
+          "tip": "Man nennt sie seit der Antike auch die „Ewige Stadt“.",
+          "exp": "Rom blickt auf eine über 2700-jährige Geschichte zurück."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Italien?",
+          "q": "Wie heißt die Hauptstadt, in deren Zentrum das antike Kolosseum steht?",
           "o": [
-            "schiefe Turm von Pisa",
-            "Rigaer Dom",
-            "malerische Bleder See mit der Kircheninsel",
-            "Eiffelturm in Paris"
+            "Mailand",
+            "Rom",
+            "Neapel",
+            "Florenz"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen schiefe Turm von Pisa liegt in Italien."
+          "a": 1,
+          "tip": "Man nennt sie seit der Antike auch die „Ewige Stadt“.",
+          "exp": "Rom blickt auf eine über 2700-jährige Geschichte zurück."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Italien?",
+          "q": "Welcher aktive Vulkan liegt am Golf von Neapel und verschüttete im Jahr 79 n. Chr. die Stadt Pompeji?",
           "o": [
-            "Mont Blanc (Grenze zu Frankreich)",
-            "Dinara (1831 Meter)",
-            "Kebnekaise (2096 Meter)",
-            "Aukštojas (294 Meter)"
+            "Der Ätna",
+            "Der Vesuv",
+            "Der Stromboli",
+            "Der Vulcano"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Mont Blanc (Grenze zu Frankreich)."
+          "a": 1,
+          "tip": "Er liegt auf dem europäischen Festland, nicht auf einer Insel.",
+          "exp": "Der Vesuv ist der einzige aktive Vulkan auf dem europäischen Festland."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Italien am besten?",
+          "q": "Welcher aktive Vulkan liegt am Golf von Neapel und verschüttete im Jahr 79 n. Chr. die Stadt Pompeji?",
           "o": [
-            "Flachland & Hügel",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Der Ätna",
+            "Der Vesuv",
+            "Der Stromboli",
+            "Der Vulcano"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Italien."
+          "a": 1,
+          "tip": "Er liegt auf dem europäischen Festland, nicht auf einer Insel.",
+          "exp": "Der Vesuv ist der einzige aktive Vulkan auf dem europäischen Festland."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Italien besonders aus?",
+          "q": "Welcher ist der längste Fluss des Landes, der die fruchtbare Ebene im Norden durchfließt?",
           "o": [
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg"
+            "Der Po",
+            "Der Tiber",
+            "Der Arno",
+            "Die Etsch"
           ],
           "a": 0,
-          "exp": "Fakt: die Römischen Verträge von 1957 wurden hier unterschrieben."
+          "tip": "Der Name hat nur zwei Buchstaben.",
+          "exp": "Der Po mündet nach 652 Kilometern in die Adria."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Italien?",
+          "q": "Welcher ist der längste Fluss des Landes, der die fruchtbare Ebene im Norden durchfließt?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Der Po",
+            "Der Tiber",
+            "Der Arno",
+            "Die Etsch"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Der Name hat nur zwei Buchstaben.",
+          "exp": "Der Po mündet nach 652 Kilometern in die Adria."
         }
       ]
     },
     "Kroatien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Kroatien?",
+          "q": "Wie heißt die Hauptstadt im Landesinneren, die nördlich des Flusses Save liegt?",
           "o": [
+            "Split",
             "Zagreb",
-            "Lissabon",
-            "Berlin",
-            "Paris"
+            "Dubrovnik",
+            "Rijeka"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Kroatien ist Zagreb."
+          "a": 1,
+          "tip": "Sie ist die größte Stadt des Landes.",
+          "exp": "Zagreb ist die Hauptstadt und das Kulturzentrum Kroatiens."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Kroatien?",
+          "q": "Wie heißt die Hauptstadt im Landesinneren, die nördlich des Flusses Save liegt?",
           "o": [
-            "historische Altstadt von Dubrovnik",
-            "Dracula-Schloss Bran",
-            "malerische Bleder See mit der Kircheninsel",
-            "schiefe Turm von Pisa"
+            "Split",
+            "Zagreb",
+            "Dubrovnik",
+            "Rijeka"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen historische Altstadt von Dubrovnik liegt in Kroatien."
+          "a": 1,
+          "tip": "Sie ist die größte Stadt des Landes.",
+          "exp": "Zagreb ist die Hauptstadt und das Kulturzentrum Kroatiens."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Kroatien?",
+          "q": "Welche historische Festungsstadt ganz im Süden der Küste wird oft als „Perle der Adria“ bezeichnet?",
           "o": [
-            "Dinara (1831 Meter)",
-            "Haltitunturi (1324 Meter)",
-            "Aukštojas (294 Meter)",
-            "Olymp (1952 Meter)"
+            "Zadar",
+            "Pula",
+            "Dubrovnik",
+            "Šibenik"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Dinara (1831 Meter)."
+          "a": 2,
+          "tip": "Ihre massive begehbare Stadtmauer ist weltweit berühmt.",
+          "exp": "Dubrovniks historische Altstadt gehört zum UNESCO-Weltkulturerbe."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Kroatien am besten?",
+          "q": "Welche historische Festungsstadt ganz im Süden der Küste wird oft als „Perle der Adria“ bezeichnet?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Zadar",
+            "Pula",
+            "Dubrovnik",
+            "Šibenik"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Kroatien."
+          "a": 2,
+          "tip": "Ihre massive begehbare Stadtmauer ist weltweit berühmt.",
+          "exp": "Dubrovniks historische Altstadt gehört zum UNESCO-Weltkulturerbe."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Kroatien besonders aus?",
+          "q": "Wie heißt der bekannte Nationalpark im Landesinneren mit seinen 16 kaskadenartig verbundenen Seen?",
           "o": [
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab"
+            "Plitvizer Seen",
+            "Krka-Nationalpark",
+            "Paklenica",
+            "Kornaten"
           ],
           "a": 0,
-          "exp": "Fakt: ist das bisher jüngste Mitgliedsland der Europäischen Union."
+          "tip": "Hier wurden früher die Karl-May-Klassiker wie Winnetou gedreht.",
+          "exp": "Der Nationalpark Plitvizer Seen zeichnet sich durch glasklare Wasserfälle aus."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Kroatien?",
+          "q": "Wie heißt der bekannte Nationalpark im Landesinneren mit seinen 16 kaskadenartig verbundenen Seen?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Plitvizer Seen",
+            "Krka-Nationalpark",
+            "Paklenica",
+            "Kornaten"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Hier wurden früher die Karl-May-Klassiker wie Winnetou gedreht.",
+          "exp": "Der Nationalpark Plitvizer Seen zeichnet sich durch glasklare Wasserfälle aus."
         }
       ]
     },
     "Lettland": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Lettland?",
+          "q": "Wie heißt die Hauptstadt, die an der Mündung der Düna in die Ostsee liegt?",
           "o": [
+            "Tallinn",
             "Riga",
-            "Madrid",
-            "Stockholm",
-            "Tallinn"
+            "Vilnius",
+            "Liepāja"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Lettland ist Riga."
+          "a": 1,
+          "tip": "Sie ist die einwohnerreichste Stadt des gesamten Baltikums.",
+          "exp": "Riga ist berühmt für seine gut erhaltene Jugendstil-Architektur."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Lettland?",
+          "q": "Wie heißt die Hauptstadt, die an der Mündung der Düna in die Ostsee liegt?",
           "o": [
-            "Rigaer Dom",
-            "Kasematten von Luxemburg",
-            "Stockholmer Schloss",
-            "Parlamentsgebäude in Budapest"
+            "Tallinn",
+            "Riga",
+            "Vilnius",
+            "Liepāja"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Rigaer Dom liegt in Lettland."
+          "a": 1,
+          "tip": "Sie ist die einwohnerreichste Stadt des gesamten Baltikums.",
+          "exp": "Riga ist berühmt für seine gut erhaltene Jugendstil-Architektur."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Lettland?",
+          "q": "Welches große Meeresbecken der Ostsee grenzt im Nordwesten direkt an die Küste des Landes?",
           "o": [
-            "Gaiziņkalns (311 Meter)",
-            "Gerlachovský štít (2655 Meter)",
-            "Haltitunturi (1324 Meter)",
-            "Kékes (1014 Meter)"
+            "Der Finnische Meerbusen",
+            "Der Rigaische Meerbusen",
+            "Das Kattegat",
+            "Das Bottenmeer"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Gaiziņkalns (311 Meter)."
+          "a": 1,
+          "tip": "Die Meeresbucht ist nach der Hauptstadt benannt.",
+          "exp": "Der Rigaische Meerbusen (Rigaer Bucht) ist eine Bucht der Ostsee."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Lettland am besten?",
+          "q": "Welches große Meeresbecken der Ostsee grenzt im Nordwesten direkt an die Küste des Landes?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Der Finnische Meerbusen",
+            "Der Rigaische Meerbusen",
+            "Das Kattegat",
+            "Das Bottenmeer"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Lettland."
+          "a": 1,
+          "tip": "Die Meeresbucht ist nach der Hauptstadt benannt.",
+          "exp": "Der Rigaische Meerbusen (Rigaer Bucht) ist eine Bucht der Ostsee."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Lettland besonders aus?",
+          "q": "Wie heißt der bekannte Ostsee-Kurort nahe der Hauptstadt, der für seinen kilometerlangen Sandstrand und Holzvillen bekannt ist?",
           "o": [
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik"
+            "Jūrmala",
+            "Ventspils",
+            "Jelgava",
+            "Daugavpils"
           ],
           "a": 0,
-          "exp": "Fakt: die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt."
+          "tip": "Der Name beginnt mit dem Buchstaben „J“.",
+          "exp": "Jūrmala ist der größte Badeort in den baltischen Staaten."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Lettland?",
+          "q": "Wie heißt der bekannte Ostsee-Kurort nahe der Hauptstadt, der für seinen kilometerlangen Sandstrand und Holzvillen bekannt ist?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Jūrmala",
+            "Ventspils",
+            "Jelgava",
+            "Daugavpils"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Der Name beginnt mit dem Buchstaben „J“.",
+          "exp": "Jūrmala ist der größte Badeort in den baltischen Staaten."
         }
       ]
     },
     "Litauen": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Litauen?",
+          "q": "Wie heißt die Hauptstadt im Südosten des Landes, die für ihre riesige barocke Altstadt bekannt ist?",
           "o": [
+            "Kaunas",
             "Vilnius",
-            "Dublin",
-            "Sofia",
-            "Riga"
+            "Klaipėda",
+            "Šiauliai"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Litauen ist Vilnius."
+          "a": 1,
+          "tip": "Sie ist die einzige baltische Hauptstadt, die nicht direkt am Meer liegt.",
+          "exp": "Vilnius ist bekannt für seine über 40 Barockkirchen."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Litauen?",
+          "q": "Wie heißt die Hauptstadt im Südosten des Landes, die für ihre riesige barocke Altstadt bekannt ist?",
           "o": [
-            "Wasserburg Trakai",
-            "Rila-Kloster",
-            "Kasematten von Luxemburg",
-            "die Klippen von Moher (Cliffs of Moher)"
+            "Kaunas",
+            "Vilnius",
+            "Klaipėda",
+            "Šiauliai"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Wasserburg Trakai liegt in Litauen."
+          "a": 1,
+          "tip": "Sie ist die einzige baltische Hauptstadt, die nicht direkt am Meer liegt.",
+          "exp": "Vilnius ist bekannt für seine über 40 Barockkirchen."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Litauen?",
+          "q": "Welche langgestreckte Sand-Landzunge trennt das Haff von der offenen Ostsee?",
           "o": [
-            "Aukštojas (294 Meter)",
-            "Mont Blanc (Grenze zu Frankreich)",
-            "Moldoveanu (2544 Meter)",
-            "Møllehøj (170 Meter)"
+            "Kurische Nehrung",
+            "Frische Nehrung",
+            "Halbinsel Hel",
+            "Darß"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Aukštojas (294 Meter)."
+          "tip": "Sie ist bekannt für ihre riesigen Wanderdünen.",
+          "exp": "Die Kurische Nehrung wird von Litauen und Russland geteilt."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Litauen am besten?",
+          "q": "Welche langgestreckte Sand-Landzunge trennt das Haff von der offenen Ostsee?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Kurische Nehrung",
+            "Frische Nehrung",
+            "Halbinsel Hel",
+            "Darß"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Litauen."
+          "tip": "Sie ist bekannt für ihre riesigen Wanderdünen.",
+          "exp": "Die Kurische Nehrung wird von Litauen und Russland geteilt."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Litauen besonders aus?",
+          "q": "Welches ist der längste und wasserreichste Fluss des Landes, der bei Klaipėda in die Ostsee mündet?",
           "o": [
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen"
+            "Die Memel",
+            "Die Düna",
+            "Die Weichsel",
+            "Die Neris"
           ],
           "a": 0,
-          "exp": "Fakt: die Kurische Nehrung hat die größten Wanderdünen Europas."
+          "tip": "Auf Litauisch heißt dieser Fluss „Nemunas“.",
+          "exp": "Die Memel mündet über das Kurische Haff in die Ostsee."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Litauen?",
+          "q": "Welches ist der längste und wasserreichste Fluss des Landes, der bei Klaipėda in die Ostsee mündet?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Die Memel",
+            "Die Düna",
+            "Die Weichsel",
+            "Die Neris"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Auf Litauisch heißt dieser Fluss „Nemunas“.",
+          "exp": "Die Memel mündet über das Kurische Haff in die Ostsee."
         }
       ]
     },
     "Luxemburg": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Luxemburg?",
+          "q": "Wie heißt die Hauptstadt dieses Großherzogtums?",
           "o": [
             "Luxemburg",
-            "Kopenhagen",
-            "Vilnius",
-            "Brüssel"
+            "Esch an der Alzette",
+            "Echternach",
+            "Differdingen"
           ],
           "a": 0,
-          "exp": "Die Hauptstadt von Luxemburg ist Luxemburg."
+          "tip": "Die Hauptstadt heißt genauso wie der Staat selbst.",
+          "exp": "Die Stadt Luxemburg beherbergt viele europäische Institutionen."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Luxemburg?",
+          "q": "Wie heißt die Hauptstadt dieses Großherzogtums?",
           "o": [
-            "Kasematten von Luxemburg",
-            "Brüsseler Atomium",
-            "Windmühlen von Kinderdijk",
-            "Dom von Helsinki"
+            "Luxemburg",
+            "Esch an der Alzette",
+            "Echternach",
+            "Differdingen"
           ],
           "a": 0,
-          "exp": "Das Wahrzeichen Kasematten von Luxemburg liegt in Luxemburg."
+          "tip": "Die Hauptstadt heißt genauso wie der Staat selbst.",
+          "exp": "Die Stadt Luxemburg beherbergt viele europäische Institutionen."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Luxemburg?",
+          "q": "Welcher Fluss bildet die östliche Grenze des Landes zum Nachbarland Deutschland?",
           "o": [
-            "Kneiff (560 Meter)",
-            "Olymp (2917 Meter)",
-            "Haltitunturi (1324 Meter)",
-            "Møllehøj (170 Meter)"
+            "Die Mosel",
+            "Die Maas",
+            "Die Alzette",
+            "Die Saar"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Kneiff (560 Meter)."
+          "tip": "Dieser Fluss ist auch in Deutschland für seinen Weinbau bekannt.",
+          "exp": "Die Mosel ist der wichtigste Grenzfluss im Osten Luxemburgs."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Luxemburg am besten?",
+          "q": "Welcher Fluss bildet die östliche Grenze des Landes zum Nachbarland Deutschland?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Die Mosel",
+            "Die Maas",
+            "Die Alzette",
+            "Die Saar"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Luxemburg."
+          "tip": "Dieser Fluss ist auch in Deutschland für seinen Weinbau bekannt.",
+          "exp": "Die Mosel ist der wichtigste Grenzfluss im Osten Luxemburgs."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Luxemburg besonders aus?",
+          "q": "Wie heißt die malerische Region im Nordosten des Landes, die wegen ihrer Sandsteinformationen oft als „Kleine Schweiz“ bezeichnet wird?",
           "o": [
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "hier kann man seit 2005 sicher online über das Internet wählen"
+            "Ösling",
+            "Gutland",
+            "Müllerthal",
+            "Minett"
           ],
-          "a": 0,
-          "exp": "Fakt: das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet."
+          "a": 2,
+          "tip": "Der Name erinnert an den Beruf eines Müllers.",
+          "exp": "Das Müllerthal verdankt seinen Namen den ehemaligen Mühlen an der Sauer."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Luxemburg?",
+          "q": "Wie heißt die malerische Region im Nordosten des Landes, die wegen ihrer Sandsteinformationen oft als „Kleine Schweiz“ bezeichnet wird?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Ösling",
+            "Gutland",
+            "Müllerthal",
+            "Minett"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 2,
+          "tip": "Der Name erinnert an den Beruf eines Müllers.",
+          "exp": "Das Müllerthal verdankt seinen Namen den ehemaligen Mühlen an der Sauer."
         }
       ]
     },
     "Malta": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Malta?",
+          "q": "Wie heißt die historische Festungsstadt und Hauptstadt des Inselstaates?",
           "o": [
+            "Sliema",
             "Valletta",
-            "Vilnius",
-            "Madrid",
-            "Rom"
+            "Mdina",
+            "St. Julian’s"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Malta ist Valletta."
+          "a": 1,
+          "tip": "Sie gehört flächenmäßig zu den kleinsten Hauptstädten Europas.",
+          "exp": "Valletta ist als Gesamtmonument UNESCO-Welterbe."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Malta?",
+          "q": "Wie heißt die historische Festungsstadt und Hauptstadt des Inselstaates?",
           "o": [
-            "historische Hauptstadt Valletta",
-            "Rigaer Dom",
-            "historische Altstadt von Dubrovnik",
-            "Parlamentsgebäude in Budapest"
+            "Sliema",
+            "Valletta",
+            "Mdina",
+            "St. Julian’s"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen historische Hauptstadt Valletta liegt in Malta."
+          "a": 1,
+          "tip": "Sie gehört flächenmäßig zu den kleinsten Hauptstädten Europas.",
+          "exp": "Valletta ist als Gesamtmonument UNESCO-Welterbe."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Malta?",
+          "q": "Welches ist die zweitgrößte Insel dieses Archipels im Mittelmeer?",
           "o": [
-            "Ta' Dmejrek (253 Meter)",
-            "Olymp (2917 Meter)",
-            "Signal de Botrange (694 Meter)",
-            "Aukštojas (294 Meter)"
+            "Gozo",
+            "Comino",
+            "Linosa",
+            "Lampedusa"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Ta' Dmejrek (253 Meter)."
+          "tip": "Der Name hat nur vier Buchstaben und beginnt mit „G“.",
+          "exp": "Gozo ist ländlicher und grüner als die Hauptinsel Malta."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Malta am besten?",
+          "q": "Welches ist die zweitgrößte Insel dieses Archipels im Mittelmeer?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Gozo",
+            "Comino",
+            "Linosa",
+            "Lampedusa"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Malta."
+          "tip": "Der Name hat nur vier Buchstaben und beginnt mit „G“.",
+          "exp": "Gozo ist ländlicher und grüner als die Hauptinsel Malta."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Malta besonders aus?",
+          "q": "Wie heißt die winzige, fast unbewohnte Insel zwischen den beiden Hauptinseln, die für ihre „Blaue Lagune“ berühmt ist?",
           "o": [
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas"
+            "Comino",
+            "Filfla",
+            "Cominotto",
+            "Manoel Island"
           ],
           "a": 0,
-          "exp": "Fakt: ist der flächenmäßig kleinste Mitgliedsstaat der EU."
+          "tip": "Ihr Name klingt ähnlich wie die Insel Gozo.",
+          "exp": "Comino ist autofrei und hat nur sehr wenige ständige Einwohner."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Malta?",
+          "q": "Wie heißt die winzige, fast unbewohnte Insel zwischen den beiden Hauptinseln, die für ihre „Blaue Lagune“ berühmt ist?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Comino",
+            "Filfla",
+            "Cominotto",
+            "Manoel Island"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Ihr Name klingt ähnlich wie die Insel Gozo.",
+          "exp": "Comino ist autofrei und hat nur sehr wenige ständige Einwohner."
         }
       ]
     },
     "Niederlande": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Niederlande?",
+          "q": "Wie heißt die offizielle Hauptstadt, die für ihre vielen Grachten und Fahrräder bekannt ist?",
           "o": [
+            "Rotterdam",
+            "Den Haag",
             "Amsterdam",
-            "Zagreb",
-            "Berlin",
-            "Prag"
+            "Utrecht"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Niederlande ist Amsterdam."
+          "a": 2,
+          "tip": "Der Name leitet sich von einem Dammsystem an der Amstel ab.",
+          "exp": "Amsterdam ist weltbekannt für sein historisches Grachtennetz."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Niederlande?",
+          "q": "Wie heißt die offizielle Hauptstadt, die für ihre vielen Grachten und Fahrräder bekannt ist?",
           "o": [
-            "Windmühlen von Kinderdijk",
-            "Athener Akropolis",
-            "Torre de Belém in Lissabon",
-            "Bratislavaer Burg"
+            "Rotterdam",
+            "Den Haag",
+            "Amsterdam",
+            "Utrecht"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Windmühlen von Kinderdijk liegt in Niederlande."
+          "a": 2,
+          "tip": "Der Name leitet sich von einem Dammsystem an der Amstel ab.",
+          "exp": "Amsterdam ist weltbekannt für sein historisches Grachtennetz."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Niederlande?",
+          "q": "In welcher Stadt befinden sich der Regierungssitz, das Parlament und der Internationale Gerichtshof?",
           "o": [
-            "Vaalserberg (322 Meter)",
-            "Rysy (2499 Meter)",
-            "Carrauntoohil (1039 Meter)",
-            "Kékes (1014 Meter)"
+            "Amsterdam",
+            "Den Haag",
+            "Rotterdam",
+            "Eindhoven"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Vaalserberg (322 Meter)."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Artikel „Den“.",
+          "exp": "Den Haag ist der administrative Hauptort der Niederlande."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Niederlande am besten?",
+          "q": "In welcher Stadt befinden sich der Regierungssitz, das Parlament und der Internationale Gerichtshof?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Amsterdam",
+            "Den Haag",
+            "Rotterdam",
+            "Eindhoven"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Niederlande."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Artikel „Den“.",
+          "exp": "Den Haag ist der administrative Hauptort der Niederlande."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Niederlande besonders aus?",
+          "q": "Wie heißt das große flache Küstenmeer mit seinen Inseln, das bei Ebbe stellenweise trockenfällt und zum UNESCO-Weltnaturerbe gehört?",
           "o": [
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt"
+            "IJsselmeer",
+            "Wattenmeer",
+            "Markermeer",
+            "Zeeland-Delta"
           ],
-          "a": 0,
-          "exp": "Fakt: ein Viertel des Landes liegt unter dem Meeresspiegel."
+          "a": 1,
+          "tip": "Man kann dort bei Niedrigwasser auf dem Meeresboden wandern.",
+          "exp": "Das Wattenmeer ist das größte Wattflächensystem der Welt."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Niederlande?",
+          "q": "Wie heißt das große flache Küstenmeer mit seinen Inseln, das bei Ebbe stellenweise trockenfällt und zum UNESCO-Weltnaturerbe gehört?",
           "o": [
-            "Rhein",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "IJsselmeer",
+            "Wattenmeer",
+            "Markermeer",
+            "Zeeland-Delta"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Man kann dort bei Niedrigwasser auf dem Meeresboden wandern.",
+          "exp": "Das Wattenmeer ist das größte Wattflächensystem der Welt."
         }
       ]
     },
     "Österreich": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Österreich?",
+          "q": "Wie heißt die Bundeshauptstadt an der Donau, die für den Stephansdom und den Prater bekannt ist?",
           "o": [
+            "Graz",
+            "Linz",
             "Wien",
-            "Amsterdam",
-            "Riga",
-            "Stockholm"
+            "Salzburg"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Österreich ist Wien."
+          "a": 2,
+          "tip": "Sie ist das größte politische und kulturelle Zentrum des Landes.",
+          "exp": "Wien ist die meistbevölkerte Stadt Österreichs."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Österreich?",
+          "q": "Wie heißt die Bundeshauptstadt an der Donau, die für den Stephansdom und den Prater bekannt ist?",
           "o": [
-            "Schloss Schönbrunn in Wien",
-            "Dracula-Schloss Bran",
-            "Karlsbrücke in Prag",
-            "Windmühlen von Kinderdijk"
+            "Graz",
+            "Linz",
+            "Wien",
+            "Salzburg"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Schloss Schönbrunn in Wien liegt in Österreich."
+          "a": 2,
+          "tip": "Sie ist das größte politische und kulturelle Zentrum des Landes.",
+          "exp": "Wien ist die meistbevölkerte Stadt Österreichs."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Österreich?",
+          "q": "Welcher Berg im Nationalpark Hohe Tauern ist die höchste Erhebung des Landes?",
           "o": [
-            "Großglockner (3798 Meter)",
-            "Kneiff (560 Meter)",
-            "Olymp (2917 Meter)",
-            "Gaiziņkalns (311 Meter)"
+            "Wildspitze",
+            "Großglockner",
+            "Dachstein",
+            "Piz Buin"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Großglockner (3798 Meter)."
+          "a": 1,
+          "tip": "Er erreicht eine Höhe von 3.798 Metern.",
+          "exp": "Der Großglockner besitzt den größten Gletscher Österreichs, die Pasterze."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Österreich am besten?",
+          "q": "Welcher Berg im Nationalpark Hohe Tauern ist die höchste Erhebung des Landes?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Wildspitze",
+            "Großglockner",
+            "Dachstein",
+            "Piz Buin"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Österreich."
+          "a": 1,
+          "tip": "Er erreicht eine Höhe von 3.798 Metern.",
+          "exp": "Der Großglockner besitzt den größten Gletscher Österreichs, die Pasterze."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Österreich besonders aus?",
+          "q": "Welcher große Steppensee im Osten reicht bis an das Staatsgebiet des Nachbarlandes Ungarn heran?",
           "o": [
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik"
+            "Bodensee",
+            "Neusiedler See",
+            "Attersee",
+            "Wörthersee"
           ],
-          "a": 0,
-          "exp": "Fakt: war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte."
+          "a": 1,
+          "tip": "Er liegt im kleinsten und östlichsten Bundesland.",
+          "exp": "Der Neusiedler See ist einer der wenigen Steppenseen in Europa."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Österreich?",
+          "q": "Welcher große Steppensee im Osten reicht bis an das Staatsgebiet des Nachbarlandes Ungarn heran?",
           "o": [
-            "Donau",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Bodensee",
+            "Neusiedler See",
+            "Attersee",
+            "Wörthersee"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Er liegt im kleinsten und östlichsten Bundesland.",
+          "exp": "Der Neusiedler See ist einer der wenigen Steppenseen in Europa."
         }
       ]
     },
     "Polen": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Polen?",
+          "q": "Wie heißt die Hauptstadt an der Weichsel, die im Zweiten Weltkrieg fast völlig zerstört und danach wieder aufgebaut wurde?",
           "o": [
+            "Krakau",
             "Warschau",
-            "Valletta",
-            "Ljubljana",
-            "Lissabon"
+            "Breslau",
+            "Danzig"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Polen ist Warschau."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „W“.",
+          "exp": "Die Altstadt von Warschau wurde originalgetreu rekonstruiert."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Polen?",
+          "q": "Wie heißt die Hauptstadt an der Weichsel, die im Zweiten Weltkrieg fast völlig zerstört und danach wieder aufgebaut wurde?",
           "o": [
-            "Krakauer Wawel-Schloss",
-            "Dom von Helsinki",
-            "Wasserburg Trakai",
-            "Torre de Belém in Lissabon"
+            "Krakau",
+            "Warschau",
+            "Breslau",
+            "Danzig"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Krakauer Wawel-Schloss liegt in Polen."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „W“.",
+          "exp": "Die Altstadt von Warschau wurde originalgetreu rekonstruiert."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Polen?",
+          "q": "Welche historische Königsstadt im Süden des Landes besaß im Mittelalter die berühmten Tuchhallen am Hauptmarkt?",
           "o": [
-            "Rysy (2499 Meter)",
-            "Suur Munamägi (318 Meter)",
-            "Kebnekaise (2096 Meter)",
-            "Ta' Dmejrek (253 Meter)"
+            "Krakau",
+            "Posen",
+            "Katowitz",
+            "Stettin"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Rysy (2499 Meter)."
+          "tip": "Sie liegt nahe den Beskiden an der Weichsel.",
+          "exp": "Krakau war bis 1596 die Hauptstadt Polens."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Polen am besten?",
+          "q": "Welche historische Königsstadt im Süden des Landes besaß im Mittelalter die berühmten Tuchhallen am Hauptmarkt?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Krakau",
+            "Posen",
+            "Katowitz",
+            "Stettin"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Polen."
+          "tip": "Sie liegt nahe den Beskiden an der Weichsel.",
+          "exp": "Krakau war bis 1596 die Hauptstadt Polens."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Polen besonders aus?",
+          "q": "Welches riesige Seengebiet im Nordosten des Landes besteht aus mehr als 2.000 Masuren-Seen?",
           "o": [
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union"
+            "Kaschubische Seenplatte",
+            "Masurische Seenplatte",
+            "Pommersche Seenplatte",
+            "Großpolnische Seenplatte"
           ],
-          "a": 0,
-          "exp": "Fakt: ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland."
+          "a": 1,
+          "tip": "Das gesuchte Wort steckt bereits versteckt in der Frage.",
+          "exp": "Die Masurische Seenplatte ist ein Paradies für Wassersportler."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Polen?",
+          "q": "Welches riesige Seengebiet im Nordosten des Landes besteht aus mehr als 2.000 Masuren-Seen?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Kaschubische Seenplatte",
+            "Masurische Seenplatte",
+            "Pommersche Seenplatte",
+            "Großpolnische Seenplatte"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Das gesuchte Wort steckt bereits versteckt in der Frage.",
+          "exp": "Die Masurische Seenplatte ist ein Paradies für Wassersportler."
         }
       ]
     },
     "Portugal": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Portugal?",
+          "q": "Wie heißt die Hauptstadt an der Mündung des Tejo, die für ihre gelben historischen Straßenbahnen bekannt ist?",
           "o": [
+            "Porto",
             "Lissabon",
-            "Ljubljana",
-            "Sofia",
-            "Valletta"
+            "Faro",
+            "Coimbra"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Portugal ist Lissabon."
+          "a": 1,
+          "tip": "Sie liegt im Westen des Landes nahe dem Atlantik.",
+          "exp": "Lissabon ist die westlichste Großstadt Kontinentaleuropas."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Portugal?",
+          "q": "Wie heißt die Hauptstadt an der Mündung des Tejo, die für ihre gelben historischen Straßenbahnen bekannt ist?",
           "o": [
-            "Torre de Belém in Lissabon",
-            "Krakauer Wawel-Schloss",
-            "Rigaer Dom",
-            "Bratislavaer Burg"
+            "Porto",
+            "Lissabon",
+            "Faro",
+            "Coimbra"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Torre de Belém in Lissabon liegt in Portugal."
+          "a": 1,
+          "tip": "Sie liegt im Westen des Landes nahe dem Atlantik.",
+          "exp": "Lissabon ist die westlichste Großstadt Kontinentaleuropas."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Portugal?",
+          "q": "Welche zweitgrößte Stadt des Landes im Norden ist weltberühmt für ihren Portwein und die Brücke Dom Luís I.?",
           "o": [
-            "Ponta do Pico (2351 Meter auf Azoren)",
-            "Olymp (1952 Meter)",
-            "Vaalserberg (322 Meter)",
-            "Kebnekaise (2096 Meter)"
+            "Braga",
+            "Porto",
+            "Aveiro",
+            "Guimarães"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Ponta do Pico (2351 Meter auf Azoren)."
+          "a": 1,
+          "tip": "Das Land verdankt dieser Stadt historisch einen Teil seines Namens.",
+          "exp": "Porto gab dem Land Portugal und dem Portwein den Namen."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Portugal am besten?",
+          "q": "Welche zweitgrößte Stadt des Landes im Norden ist weltberühmt für ihren Portwein und die Brücke Dom Luís I.?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Braga",
+            "Porto",
+            "Aveiro",
+            "Guimarães"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Portugal."
+          "a": 1,
+          "tip": "Das Land verdankt dieser Stadt historisch einen Teil seines Namens.",
+          "exp": "Porto gab dem Land Portugal und dem Portwein den Namen."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Portugal besonders aus?",
+          "q": "Wie heißt die Blumeninsel im Atlantik, die geografisch zu Afrika gehört, aber politisch Teil dieses europäischen Staates is?",
           "o": [
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt"
+            "Azoren",
+            "Madeira",
+            "Kap Verde",
+            "Kanaren"
           ],
-          "a": 0,
-          "exp": "Fakt: die Atlantik-Inseln Azoren und Madeira gehören dazu."
+          "a": 1,
+          "tip": "Sie ist für ihren berühmten Botanischen Garten und das milde Klima bekannt.",
+          "exp": "Madeira liegt rund 950 km südwestlich von Lissabon."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Portugal?",
+          "q": "Wie heißt die Blumeninsel im Atlantik, die geografisch zu Afrika gehört, aber politisch Teil dieses europäischen Staates is?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Azoren",
+            "Madeira",
+            "Kap Verde",
+            "Kanaren"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Sie ist für ihren berühmten Botanischen Garten und das milde Klima bekannt.",
+          "exp": "Madeira liegt rund 950 km südwestlich von Lissabon."
         }
       ]
     },
     "Rumänien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Rumänien?",
+          "q": "Wie heißt die Hauptstadt im Süden des Landes, die wegen ihrer Architektur früher manchmal „Kleine Paris des Ostens“ genannt wurde?",
           "o": [
+            "Klausenburg",
             "Bukarest",
-            "Ljubljana",
-            "Berlin",
-            "Rom"
+            "Timișoara",
+            "Brașov"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Rumänien ist Bukarest."
+          "a": 1,
+          "tip": "Der Name beginnt mit einem „B“.",
+          "exp": "Bukarest ist das Kultur- und Handelszentrum des Landes."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Rumänien?",
+          "q": "Wie heißt die Hauptstadt im Süden des Landes, die wegen ihrer Architektur früher manchmal „Kleine Paris des Ostens“ genannt wurde?",
           "o": [
-            "Dracula-Schloss Bran",
-            "Krakauer Wawel-Schloss",
-            "Brandenburger Tor in Berlin",
-            "Eiffelturm in Paris"
+            "Klausenburg",
+            "Bukarest",
+            "Timișoara",
+            "Brașov"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Dracula-Schloss Bran liegt in Rumänien."
+          "a": 1,
+          "tip": "Der Name beginnt mit einem „B“.",
+          "exp": "Bukarest ist das Kultur- und Handelszentrum des Landes."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Rumänien?",
+          "q": "Welches große Gebirge zieht sich in einem Bogen durch die Mitte des Landes?",
           "o": [
-            "Moldoveanu (2544 Meter)",
-            "Gaiziņkalns (311 Meter)",
-            "Kékes (1014 Meter)",
-            "Aukštojas (294 Meter)"
+            "Die Karpaten",
+            "Die Balkaniden",
+            "Die Dinariden",
+            "Die Rodopen"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Moldoveanu (2544 Meter)."
+          "tip": "Zu diesem Gebirgszug gehört auch die historische Region Siebenbürgen.",
+          "exp": "Die Karpaten prägen einen Großteil Rumäniens."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Rumänien am besten?",
+          "q": "Welches große Gebirge zieht sich in einem Bogen durch die Mitte des Landes?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Die Karpaten",
+            "Die Balkaniden",
+            "Die Dinariden",
+            "Die Rodopen"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Rumänien."
+          "tip": "Zu diesem Gebirgszug gehört auch die historische Region Siebenbürgen.",
+          "exp": "Die Karpaten prägen einen Großteil Rumäniens."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Rumänien besonders aus?",
+          "q": "Wo mündet der zweitlängste Fluss Europas ins Schwarze Meer und bildet eines der größten Feuchtgebiete des Kontinents?",
           "o": [
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland"
+            "Wolgadelta",
+            "Donaudelta",
+            "Dnjeprdelta",
+            "Rhônedelta"
           ],
-          "a": 0,
-          "exp": "Fakt: hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt."
+          "a": 1,
+          "tip": "Es ist der Mündungsbereich desselben Flusses, der auch durch Wien fließt.",
+          "exp": "Das Donaudelta ist das zweitgrößte Flussdelta Europas."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Rumänien?",
+          "q": "Wo mündet der zweitlängste Fluss Europas ins Schwarze Meer und bildet eines der größten Feuchtgebiete des Kontinents?",
           "o": [
-            "Donau",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Wolgadelta",
+            "Donaudelta",
+            "Dnjeprdelta",
+            "Rhônedelta"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Es ist der Mündungsbereich desselben Flusses, der auch durch Wien fließt.",
+          "exp": "Das Donaudelta ist das zweitgrößte Flussdelta Europas."
         }
       ]
     },
     "Schweden": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Schweden?",
+          "q": "Wie heißt die Hauptstadt, die auf 14 Inseln erbaut wurde und daher auch „Venedig des Nordens“ genannt wird?",
           "o": [
+            "Göteborg",
+            "Malmö",
             "Stockholm",
-            "Madrid",
-            "Bratislava",
-            "Brüssel"
+            "Uppsala"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Schweden ist Stockholm."
+          "a": 2,
+          "tip": "Hier werden jährlich die Nobelpreise verliehen.",
+          "exp": "Stockholm liegt an der Mündung des Mälarensees in die Ostsee."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Schweden?",
+          "q": "Wie heißt die Hauptstadt, die auf 14 Inseln erbaut wurde und daher auch „Venedig des Nordens“ genannt wird?",
           "o": [
-            "Stockholmer Schloss",
-            "Eiffelturm in Paris",
-            "Wasserburg Trakai",
-            "Dom von Helsinki"
+            "Göteborg",
+            "Malmö",
+            "Stockholm",
+            "Uppsala"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Stockholmer Schloss liegt in Schweden."
+          "a": 2,
+          "tip": "Hier werden jährlich die Nobelpreise verliehen.",
+          "exp": "Stockholm liegt an der Mündung des Mälarensees in die Ostsee."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Schweden?",
+          "q": "Wie heißt der größte See des Landes und gleichzeitig der drittgrößte See Europas?",
           "o": [
-            "Kebnekaise (2096 Meter)",
-            "Signal de Botrange (694 Meter)",
-            "Triglav (2864 Meter)",
-            "Moldoveanu (2544 Meter)"
+            "Vättern",
+            "Vänern",
+            "Mälaren",
+            "Hjälmaren"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Kebnekaise (2096 Meter)."
+          "a": 1,
+          "tip": "Der Name beginnt mit „Vä-“.",
+          "exp": "Der Vänern ist fast zehnmal so groß wie der Bodensee."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Schweden am besten?",
+          "q": "Wie heißt der größte See des Landes und gleichzeitig der drittgrößte See Europas?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Vättern",
+            "Vänern",
+            "Mälaren",
+            "Hjälmaren"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Schweden."
+          "a": 1,
+          "tip": "Der Name beginnt mit „Vä-“.",
+          "exp": "Der Vänern ist fast zehnmal so groß wie der Bodensee."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Schweden besonders aus?",
+          "q": "Welches Gebirge bildet im Westen die natürliche Grenze zum Nachbarland Norwegen?",
           "o": [
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte"
+            "Skandinavisches Gebirge",
+            "Ural",
+            "Kaskadenkette",
+            "Grampian Mountains"
           ],
           "a": 0,
-          "exp": "Fakt: die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab."
+          "tip": "Es trägt den Namen der nordischen Halbinsel.",
+          "exp": "Das Skandinavische Gebirge erstreckt sich über die gesamte Halbinsel."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Schweden?",
+          "q": "Welches Gebirge bildet im Westen die natürliche Grenze zum Nachbarland Norwegen?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Skandinavisches Gebirge",
+            "Ural",
+            "Kaskadenkette",
+            "Grampian Mountains"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Es trägt den Namen der nordischen Halbinsel.",
+          "exp": "Das Skandinavische Gebirge erstreckt sich über die gesamte Halbinsel."
         }
       ]
     },
     "Slowakei": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Slowakei?",
+          "q": "Wie heißt die Hauptstadt an der Donau, die nur wenige Kilometer von der österreichischen Grenze entfernt liegt?",
           "o": [
+            "Košice",
             "Bratislava",
-            "Tallinn",
-            "Kopenhagen",
-            "Luxemburg"
+            "Prešov",
+            "Nitra"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Slowakei ist Bratislava."
+          "a": 1,
+          "tip": "Auf Deutsch hieß die Stadt früher Preßburg.",
+          "exp": "Bratislava und Wien sind die zwei am nächsten beieinander liegenden Hauptstädte Europas."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Slowakei?",
+          "q": "Wie heißt die Hauptstadt an der Donau, die nur wenige Kilometer von der österreichischen Grenze entfernt liegt?",
           "o": [
-            "Bratislavaer Burg",
-            "Athener Akropolis",
-            "Windmühlen von Kinderdijk",
-            "Dom von Helsinki"
+            "Košice",
+            "Bratislava",
+            "Prešov",
+            "Nitra"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Bratislavaer Burg liegt in Slowakei."
+          "a": 1,
+          "tip": "Auf Deutsch hieß die Stadt früher Preßburg.",
+          "exp": "Bratislava und Wien sind die zwei am nächsten beieinander liegenden Hauptstädte Europas."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Slowakei?",
+          "q": "Welches Gebirge im Norden des Landes ist der höchste Teilzug der Karpaten und ein beliebtes Wintersportgebiet?",
           "o": [
-            "Gerlachovský štít (2655 Meter)",
-            "Teide (3718 Meter auf Teneriffa)",
-            "Mont Blanc (Grenze zu Frankreich)",
-            "Suur Munamägi (318 Meter)"
+            "Niedere Tatra",
+            "Hohe Tatra",
+            "Kleine Karpaten",
+            "Fatra"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Gerlachovský štít (2655 Meter)."
+          "a": 1,
+          "tip": "Der höchste Berg heißt Gerlachovský štít.",
+          "exp": "Die Hohe Tatra ist das kleinste Hochgebirge der Welt."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Slowakei am besten?",
+          "q": "Welches Gebirge im Norden des Landes ist der höchste Teilzug der Karpaten und ein beliebtes Wintersportgebiet?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Niedere Tatra",
+            "Hohe Tatra",
+            "Kleine Karpaten",
+            "Fatra"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Slowakei."
+          "a": 1,
+          "tip": "Der höchste Berg heißt Gerlachovský štít.",
+          "exp": "Die Hohe Tatra ist das kleinste Hochgebirge der Welt."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Slowakei besonders aus?",
+          "q": "Welcher Fluss bildet über weite Strecken die südliche Grenze des Landes zum Nachbarland Ungarn?",
           "o": [
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu"
+            "Die Waag",
+            "Die Donau",
+            "Die Gran",
+            "Die Theiß"
           ],
-          "a": 0,
-          "exp": "Fakt: trennte sich 1993 völlig friedlich von der Tschechischen Republik."
+          "a": 1,
+          "tip": "Dieser europäische Hauptstrom fließt durch mehrere Hauptstädte.",
+          "exp": "Die Donau ist die Lebensader im Süden der Slowakei."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Slowakei?",
+          "q": "Welcher Fluss bildet über weite Strecken die südliche Grenze des Landes zum Nachbarland Ungarn?",
           "o": [
-            "Donau",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Die Waag",
+            "Die Donau",
+            "Die Gran",
+            "Die Theiß"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Dieser europäische Hauptstrom fließt durch mehrere Hauptstädte.",
+          "exp": "Die Donau ist die Lebensader im Süden der Slowakei."
         }
       ]
     },
     "Slowenien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Slowenien?",
+          "q": "Wie heißt die grüne Hauptstadt des Landes, durch die der Fluss Ljubljanica fließt?",
           "o": [
+            "Maribor",
             "Ljubljana",
-            "Vilnius",
-            "Lissabon",
-            "Dublin"
+            "Koper",
+            "Celje"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Slowenien ist Ljubljana."
+          "a": 1,
+          "tip": "Auf Deutsch nannte man die Stadt früher Laibach.",
+          "exp": "Ljubljana wurde 2016 als grüne Hauptstadt Europas ausgezeichnet."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Slowenien?",
+          "q": "Wie heißt die grüne Hauptstadt des Landes, durch die der Fluss Ljubljanica fließt?",
           "o": [
-            "malerische Bleder See mit der Kircheninsel",
-            "Stockholmer Schloss",
-            "Karlsbrücke in Prag",
-            "Dom von Helsinki"
+            "Maribor",
+            "Ljubljana",
+            "Koper",
+            "Celje"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen malerische Bleder See mit der Kircheninsel liegt in Slowenien."
+          "a": 1,
+          "tip": "Auf Deutsch nannte man die Stadt früher Laibach.",
+          "exp": "Ljubljana wurde 2016 als grüne Hauptstadt Europas ausgezeichnet."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Slowenien?",
+          "q": "Wie heißt der alpine Gletschersee im Nordwesten mit einer kleinen Marienkirche auf einer Insel in der Mitte?",
           "o": [
-            "Triglav (2864 Meter)",
-            "Møllehøj (170 Meter)",
-            "Carrauntoohil (1039 Meter)",
-            "Olymp (1952 Meter)"
+            "Bohinj-See",
+            "Bleder See",
+            "Cerknica-See",
+            "Wörthersee"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Triglav (2864 Meter)."
+          "a": 1,
+          "tip": "Der Name des Ortes und des Sees besteht aus nur 4 Buchstaben (Bled).",
+          "exp": "Der Bleder See ist für seine Inselkirche und Burg bekannt."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Slowenien am besten?",
+          "q": "Wie heißt der alpine Gletschersee im Nordwesten mit einer kleinen Marienkirche auf einer Insel in der Mitte?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Bohinj-See",
+            "Bleder See",
+            "Cerknica-See",
+            "Wörthersee"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Slowenien."
+          "a": 1,
+          "tip": "Der Name des Ortes und des Sees besteht aus nur 4 Buchstaben (Bled).",
+          "exp": "Der Bleder See ist für seine Inselkirche und Burg bekannt."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Slowenien besonders aus?",
+          "q": "Welcher Berg in den Julischen Alpen ist mit 2.864 Metern die höchste Erhebung des Landes und ziert auch das Wappen?",
           "o": [
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "hier kann man seit 2005 sicher online über das Internet wählen"
+            "Triglav",
+            "Mangart",
+            "Grintovec",
+            "Stol"
           ],
           "a": 0,
-          "exp": "Fakt: war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat."
+          "tip": "Der Name bedeutet übersetzt „Dreikopf“.",
+          "exp": "Der Triglav ziert die slowenische Nationalflagge."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Slowenien?",
+          "q": "Welcher Berg in den Julischen Alpen ist mit 2.864 Metern die höchste Erhebung des Landes und ziert auch das Wappen?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Triglav",
+            "Mangart",
+            "Grintovec",
+            "Stol"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Der Name bedeutet übersetzt „Dreikopf“.",
+          "exp": "Der Triglav ziert die slowenische Nationalflagge."
         }
       ]
     },
     "Spanien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Spanien?",
+          "q": "Wie heißt die im Zentrum der Iberischen Halbinsel gelegene Hauptstadt?",
           "o": [
+            "Barcelona",
             "Madrid",
-            "Valletta",
-            "Kopenhagen",
-            "Ljubljana"
+            "Sevilla",
+            "Valencia"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Spanien ist Madrid."
+          "a": 1,
+          "tip": "Hier befindet sich das berühmte Kunstmuseum Museo del Prado.",
+          "exp": "Madrid ist die am höchsten gelegene Hauptstadt der EU."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Spanien?",
+          "q": "Wie heißt die im Zentrum der Iberischen Halbinsel gelegene Hauptstadt?",
           "o": [
-            "Sagrada Família in Barcelona",
-            "die kleine Meerjungfrau in Kopenhagen",
-            "malerische Bleder See mit der Kircheninsel",
-            "Rigaer Dom"
+            "Barcelona",
+            "Madrid",
+            "Sevilla",
+            "Valencia"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Sagrada Família in Barcelona liegt in Spanien."
+          "a": 1,
+          "tip": "Hier befindet sich das berühmte Kunstmuseum Museo del Prado.",
+          "exp": "Madrid ist die am höchsten gelegene Hauptstadt der EU."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Spanien?",
+          "q": "Welches hohe Grenzgebirge trennt das Land im Nordosten vom Nachbarland Frankreich ab?",
           "o": [
-            "Teide (3718 Meter auf Teneriffa)",
-            "Mont Blanc (Grenze zu Frankreich)",
-            "Kékes (1014 Meter)",
-            "Olymp (1952 Meter)"
+            "Die Pyrenäen",
+            "Die Kantabrischen Alpen",
+            "Die Baetische Kordillere",
+            "Die Sierra Nevada"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Teide (3718 Meter auf Teneriffa)."
+          "tip": "Dieser Gebirgszug erstreckt sich vom Atlantik bis zum Mittelmeer.",
+          "exp": "Die Pyrenäen umschließen auch den Zwergstaat Andorra."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Spanien am besten?",
+          "q": "Welches hohe Grenzgebirge trennt das Land im Nordosten vom Nachbarland Frankreich ab?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Die Pyrenäen",
+            "Die Kantabrischen Alpen",
+            "Die Baetische Kordillere",
+            "Die Sierra Nevada"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Spanien."
+          "tip": "Dieser Gebirgszug erstreckt sich vom Atlantik bis zum Mittelmeer.",
+          "exp": "Die Pyrenäen umschließen auch den Zwergstaat Andorra."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Spanien besonders aus?",
+          "q": "Welche Inselgruppe im Atlantischen Ozean vor der Küste Westafrikas gehört als autonome Gemeinschaft zu diesem Staat?",
           "o": [
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas"
+            "Balearen",
+            "Kanaren",
+            "Azoren",
+            "Maltesischer Archipel"
           ],
-          "a": 0,
-          "exp": "Fakt: Mallorca und Ibiza gehören politisch zu diesem EU-Staat."
+          "a": 1,
+          "tip": "Dazu gehören Inseln wie Teneriffa, Gran Canaria und Fuerteventura.",
+          "exp": "Die Kanarischen Inseln sind vulkanischen Ursprungs."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Spanien?",
+          "q": "Welche Inselgruppe im Atlantischen Ozean vor der Küste Westafrikas gehört als autonome Gemeinschaft zu diesem Staat?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Balearen",
+            "Kanaren",
+            "Azoren",
+            "Maltesischer Archipel"
           ],
-          "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "a": 1,
+          "tip": "Dazu gehören Inseln wie Teneriffa, Gran Canaria und Fuerteventura.",
+          "exp": "Die Kanarischen Inseln sind vulkanischen Ursprungs."
         }
       ]
     },
     "Tschechien": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Tschechien?",
+          "q": "Wie heißt die Hauptstadt an der Moldau, die für die Karlsbrücke und die Prager Burg bekannt ist?",
           "o": [
+            "Brünn",
             "Prag",
-            "Brüssel",
-            "Warschau",
-            "Rom"
+            "Pilsen",
+            "Ostrau"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Tschechien ist Prag."
+          "a": 1,
+          "tip": "Sie wird auch oft die „Goldene Stadt“ genannt.",
+          "exp": "Prag war über Jahrhunderte eine bedeutende Residenzstadt."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Tschechien?",
+          "q": "Wie heißt die Hauptstadt an der Moldau, die für die Karlsbrücke und die Prager Burg bekannt ist?",
           "o": [
-            "Karlsbrücke in Prag",
-            "Windmühlen von Kinderdijk",
-            "Sagrada Família in Barcelona",
-            "Bratislavaer Burg"
+            "Brünn",
+            "Prag",
+            "Pilsen",
+            "Ostrau"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Karlsbrücke in Prag liegt in Tschechien."
+          "a": 1,
+          "tip": "Sie wird auch oft die „Goldene Stadt“ genannt.",
+          "exp": "Prag war über Jahrhunderte eine bedeutende Residenzstadt."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Tschechien?",
+          "q": "Wie heißt die höchste Erhebung des Landes im Riesengebirge an der Grenze zu Polen?",
           "o": [
-            "Schneekoppe (1603 Meter)",
-            "Vaalserberg (322 Meter)",
-            "Gaiziņkalns (311 Meter)",
-            "Mont Blanc (Grenze zu Frankreich)"
+            "Schneekoppe",
+            "Keilberg",
+            "Altvater",
+            "Great Fatra"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Schneekoppe (1603 Meter)."
+          "tip": "Auf Tschechisch heißt dieser Berg „Sněžka“.",
+          "exp": "Die Schneekoppe misst 1603 Meter Höhe."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Tschechien am besten?",
+          "q": "Wie heißt die höchste Erhebung des Landes im Riesengebirge an der Grenze zu Polen?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Schneekoppe",
+            "Keilberg",
+            "Altvater",
+            "Great Fatra"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Tschechien."
+          "tip": "Auf Tschechisch heißt dieser Berg „Sněžka“.",
+          "exp": "Die Schneekoppe misst 1603 Meter Höhe."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Tschechien besonders aus?",
+          "q": "Welches historische Gebiet bildet neben Böhmen und Schlesien den östlichen Teil des Landes?",
           "o": [
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "trat der EU nach dem Ende der Militärdiktatur bei",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen"
+            "Mähren",
+            "Galizien",
+            "Steiermark",
+            "Banat"
           ],
           "a": 0,
-          "exp": "Fakt: die historische Region Böhmen macht den Hauptteil des Landes aus."
+          "tip": "Die größte Stadt dieser Region ist Brünn (Brno).",
+          "exp": "Mähren nimmt das östliche Drittel Tschechiens ein."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Tschechien?",
+          "q": "Welches historische Gebiet bildet neben Böhmen und Schlesien den östlichen Teil des Landes?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Mähren",
+            "Galizien",
+            "Steiermark",
+            "Banat"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Die größte Stadt dieser Region ist Brünn (Brno).",
+          "exp": "Mähren nimmt das östliche Drittel Tschechiens ein."
         }
       ]
     },
     "Ungarn": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Ungarn?",
+          "q": "Wie heißt die Hauptstadt an der Donau, die aus dem Zusammenwachsen zweier historischer Stadtteile entstand?",
           "o": [
+            "Debrecen",
             "Budapest",
-            "Nikosia",
-            "Berlin",
-            "Rom"
+            "Szeged",
+            "Miskolc"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Ungarn ist Budapest."
+          "a": 1,
+          "tip": "Der Name setzt sich aus den ehemaligen Städten Buda und Pest zusammen.",
+          "exp": "Die Kettenbrücke verbindet Buda und Pest über die Donau."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Ungarn?",
+          "q": "Wie heißt die Hauptstadt an der Donau, die aus dem Zusammenwachsen zweier historischer Stadtteile entstand?",
           "o": [
-            "Parlamentsgebäude in Budapest",
-            "malerische Bleder See mit der Kircheninsel",
-            "Windmühlen von Kinderdijk",
-            "Torre de Belém in Lissabon"
+            "Debrecen",
+            "Budapest",
+            "Szeged",
+            "Miskolc"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Parlamentsgebäude in Budapest liegt in Ungarn."
+          "a": 1,
+          "tip": "Der Name setzt sich aus den ehemaligen Städten Buda und Pest zusammen.",
+          "exp": "Die Kettenbrücke verbindet Buda und Pest über die Donau."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Ungarn?",
+          "q": "Welcher ist der größte Binnensee Mitteleuropas und ein extrem beliebtes Urlaubsziel im Land?",
           "o": [
-            "Kékes (1014 Meter)",
-            "Dinara (1831 Meter)",
-            "Mont Blanc (Grenze zu Frankreich)",
-            "Schneekoppe (1603 Meter)"
+            "Neusiedler See",
+            "Plattensee",
+            "Velence-See",
+            "Tisza-See"
           ],
-          "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Kékes (1014 Meter)."
+          "a": 1,
+          "tip": "Der ungarische Name lautet Balaton.",
+          "exp": "Der Plattensee (Balaton) ist berühmt für sein warmes Wasser."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Ungarn am besten?",
+          "q": "Welcher ist der größte Binnensee Mitteleuropas und ein extrem beliebtes Urlaubsziel im Land?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Neusiedler See",
+            "Plattensee",
+            "Velence-See",
+            "Tisza-See"
           ],
-          "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Ungarn."
+          "a": 1,
+          "tip": "Der ungarische Name lautet Balaton.",
+          "exp": "Der Plattensee (Balaton) ist berühmt für sein warmes Wasser."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Ungarn besonders aus?",
+          "q": "Wie heißt die große baumlose Grassteppe im Osten des Landes, die für Pferde und Hirtenkultur bekannt ist?",
           "o": [
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg"
+            "Puszta",
+            "Tundra",
+            "Taiga",
+            "Pampa"
           ],
           "a": 0,
-          "exp": "Fakt: der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas."
+          "tip": "Das Wort beginnt mit dem Buchstaben „P“.",
+          "exp": "Die Puszta gehört zum Nationalpark Hortobágy."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Ungarn?",
+          "q": "Wie heißt die große baumlose Grassteppe im Osten des Landes, die für Pferde und Hirtenkultur bekannt ist?",
           "o": [
-            "Donau",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Puszta",
+            "Tundra",
+            "Taiga",
+            "Pampa"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Das Wort beginnt mit dem Buchstaben „P“.",
+          "exp": "Die Puszta gehört zum Nationalpark Hortobágy."
         }
       ]
     },
     "Zypern": {
       "1": [
         {
-          "q": "Wie heißt die offizielle Hauptstadt von Zypern?",
+          "q": "Wie heißt die im Landesinneren gelegene Hauptstadt, die bis heute durch eine grüne Linie geteilt ist?",
           "o": [
+            "Limassol",
             "Nikosia",
-            "Bukarest",
-            "Rom",
-            "Budapest"
+            "Larnaka",
+            "Paphos"
           ],
-          "a": 0,
-          "exp": "Die Hauptstadt von Zypern ist Nikosia."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „N“.",
+          "exp": "Nikosia ist die letzte geteilte Hauptstadt Europas."
         },
         {
-          "q": "Welches bekannte landschaftliche oder städtische Wahrzeichen liegt in Zypern?",
+          "q": "Wie heißt die im Landesinneren gelegene Hauptstadt, die bis heute durch eine grüne Linie geteilt ist?",
           "o": [
-            "Felsen der Aphrodite",
-            "Windmühlen von Kinderdijk",
-            "Athener Akropolis",
-            "Torre de Belém in Lissabon"
+            "Limassol",
+            "Nikosia",
+            "Larnaka",
+            "Paphos"
           ],
-          "a": 0,
-          "exp": "Das Wahrzeichen Felsen der Aphrodite liegt in Zypern."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „N“.",
+          "exp": "Nikosia ist die letzte geteilte Hauptstadt Europas."
         }
       ],
       "2": [
         {
-          "q": "Wie heißt der höchste Berg bzw. Punkt in Zypern?",
+          "q": "Welches große Gebirge zieht sich durch das Innere der Insel und beherbergt den Berg Olympos?",
           "o": [
-            "Olymp (1952 Meter)",
-            "Kneiff (560 Meter)",
-            "Gerlachovský štít (2655 Meter)",
-            "Mont Blanc (4807 Meter)"
+            "Troodos-Gebirge",
+            "Kyrenia-Gebirge",
+            "Pindos-Gebirge",
+            "Ida-Gebirge"
           ],
           "a": 0,
-          "exp": "Die höchste Erhebung des Landes ist Olymp (1952 Meter)."
+          "tip": "Der Name beginnt mit den Buchstaben „Tr-“.",
+          "exp": "Das Troodos-Gebirge nimmt das Zentrum Zyperns ein."
         },
         {
-          "q": "Was beschreibt die geografische Lage von Zypern am besten?",
+          "q": "Welches große Gebirge zieht sich durch das Innere der Insel und beherbergt den Berg Olympos?",
           "o": [
-            "Alpen- und Bergregionen",
-            "Liegt auf einer isolierten Insel im Nordpolarmeer",
-            "Hat keine europäischen Nachbarstaaten",
-            "Besteht ausschließlich aus Wüstensand"
+            "Troodos-Gebirge",
+            "Kyrenia-Gebirge",
+            "Pindos-Gebirge",
+            "Ida-Gebirge"
           ],
           "a": 0,
-          "exp": "Die geografischen Besonderheiten prägen die Natur von Zypern."
+          "tip": "Der Name beginnt mit den Buchstaben „Tr-“.",
+          "exp": "Das Troodos-Gebirge nimmt das Zentrum Zyperns ein."
         }
       ],
       "3": [
         {
-          "q": "Welcher geografische Fakt zeichnet das Territorium von Zypern besonders aus?",
+          "q": "An welcher Küstenstadt im Südwesten befindet sich laut der griechischen Mythologie der Geburtsfelsen der Göttin Aphrodite?",
           "o": [
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik"
+            "Paphos",
+            "Ayia Napa",
+            "Famagusta",
+            "Kyrenia"
           ],
           "a": 0,
-          "exp": "Fakt: ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist."
+          "tip": "Die Stadt besitzt einen bekannten archäologischen Park und einen Flughafen.",
+          "exp": "Der Felsen 'Petra tou Romiou' nahe Paphos markiert Aphrodites Geburtsort."
         },
         {
-          "q": "Welcher bekannte Fluss oder Gewässer fließt durch Zypern?",
+          "q": "An welcher Küstenstadt im Südwesten befindet sich laut der griechischen Mythologie der Geburtsfelsen der Göttin Aphrodite?",
           "o": [
-            "Ostsee / Atlantik",
-            "Nil",
-            "Amazonas",
-            "Kongo"
+            "Paphos",
+            "Ayia Napa",
+            "Famagusta",
+            "Kyrenia"
           ],
           "a": 0,
-          "exp": "Dieses wichtige Gewässer verbindet das Land mit dem Rest Europas."
+          "tip": "Die Stadt besitzt einen bekannten archäologischen Park und einen Flughafen.",
+          "exp": "Der Felsen 'Petra tou Romiou' nahe Paphos markiert Aphrodites Geburtsort."
         }
       ]
     }
@@ -4582,1998 +4744,2160 @@ const pool = {
     "Belgien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Belgien?",
+          "q": "In welcher Stadt tagt das Europäische Parlament während der meisten Arbeitswochen und befindet sich der Hauptsitz der Europäischen Kommission?",
           "o": [
-            "parlamentarische Monarchie",
-            "semipräsidentielle Republik",
-            "parlamentarische Republik",
-            "parlamentarische Erbmonarchie"
+            "Luxemburg",
+            "Brüssel",
+            "Straßburg",
+            "Den Haag"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Belgien ist: parlamentarische Monarchie."
+          "a": 1,
+          "tip": "Die Stadt gilt inoffiziell als „Hauptstadt Europas“.",
+          "exp": "Brüssel beherbergt die Hauptsitze der EU-Kommission und des Rates."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Belgien?",
+          "q": "In welcher Stadt tagt das Europäische Parlament während der meisten Arbeitswochen und befindet sich der Hauptsitz der Europäischen Kommission?",
           "o": [
-            "Föderales Parlament",
-            "Abgeordnetenkammer",
-            "Riigikogu",
-            "Seimas"
+            "Luxemburg",
+            "Brüssel",
+            "Straßburg",
+            "Den Haag"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Belgien trägt den Namen Föderales Parlament."
+          "a": 1,
+          "tip": "Die Stadt gilt inoffiziell als „Hauptstadt Europas“.",
+          "exp": "Brüssel beherbergt die Hauptsitze der EU-Kommission und des Rates."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Belgien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welche Staatsform hat dieses Land, in dem das europäische Machtzentrum liegt?",
           "o": [
-            "drei offizielle Amtssprachen",
-            "Gälisch und Englisch",
-            "griechische Sprache",
-            "litauische Sprache"
+            "Parlamentarische Republik",
+            "Präsidialrepublik",
+            "Parlamentarische Monarchie",
+            "Absolute Monarchie"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: drei offizielle Amtssprachen."
+          "a": 2,
+          "tip": "Es gibt einen König, aber das Parlament bestimmt die Politik.",
+          "exp": "Belgien ist eine parlamentarische Erbmonarchie mit König Filip an der Spitze."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welche Staatsform hat dieses Land, in dem das europäische Machtzentrum liegt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Parlamentarische Republik",
+            "Präsidialrepublik",
+            "Parlamentarische Monarchie",
+            "Absolute Monarchie"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 2,
+          "tip": "Es gibt einen König, aber das Parlament bestimmt die Politik.",
+          "exp": "Belgien ist eine parlamentarische Erbmonarchie mit König Filip an der Spitze."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Belgien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "In welcher Stadt hat der Europäische Rat (die Versammlung der Staats- und Regierungschefs) seinen offiziellen Sitz im sogenannten „Europa-Gebäude“?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Brüssel",
+            "Antwerpen",
+            "Gent",
+            "Namur"
           ],
           "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "tip": "Es ist dieselbe Stadt, in der auch die EU-Kommission sits.",
+          "exp": "Der Europäische Rat hat seinen ständigen Sitz im Europa-Gebäude in Brüssel."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "In welcher Stadt hat der Europäische Rat (die Versammlung der Staats- und Regierungschefs) seinen offiziellen Sitz im sogenannten „Europa-Gebäude“?",
           "o": [
-            "Paul-Henri Spaak (Gründervater)",
-            "Kommissionschef José Manuel Barroso",
-            "Ministerpräsident Viktor Orbán",
-            "Jean-Claude Juncker (Kommissionschef)"
+            "Brüssel",
+            "Antwerpen",
+            "Gent",
+            "Namur"
           ],
           "a": 0,
-          "exp": "Paul-Henri Spaak (Gründervater) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "tip": "Es ist dieselbe Stadt, in der auch die EU-Kommission sits.",
+          "exp": "Der Europäische Rat hat seinen ständigen Sitz im Europa-Gebäude in Brüssel."
         }
       ]
     },
     "Bulgarien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Bulgarien?",
+          "q": "In welchem Jahr trat dieses Land im Südosten Europas gemeinsam mit Rumänien der Europäischen Union bei?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Monarchie",
-            "Großherzogtum",
-            "präsidiale Republik"
+            "2004",
+            "2007",
+            "2013",
+            "2020"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Bulgarien ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Es war die zweite große Österweiterung nach 2004.",
+          "exp": "Bulgarien und Rumänien traten am 1. Januar 2007 der EU bei."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Bulgarien?",
+          "q": "In welchem Jahr trat dieses Land im Südosten Europas gemeinsam mit Rumänien der Europäischen Union bei?",
           "o": [
-            "Nationalversammlung",
-            "Generalstaaten",
-            "Parlamento Italiano",
-            "Saeima"
+            "2004",
+            "2007",
+            "2013",
+            "2020"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Bulgarien trägt den Namen Nationalversammlung."
+          "a": 1,
+          "tip": "Es war die zweite große Österweiterung nach 2004.",
+          "exp": "Bulgarien und Rumänien traten am 1. Januar 2007 der EU bei."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Bulgarien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welche Währung gilt in diesem Land als offizielle Landeswährung, obwohl der Staat die Einführung des Euro anstrebt?",
           "o": [
-            "kyrillische Schrift",
-            "litauische Sprache",
-            "griechische Sprache",
-            "Griechisch und Türkisch"
+            "Leu",
+            "Lew",
+            "Kuna",
+            "Dinar"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: kyrillische Schrift."
+          "a": 1,
+          "tip": "Der Name der Währung bedeutet übersetzt „Löwe“ und klingt fast wie die Währung des Nachbarlandes.",
+          "exp": "Der bulgarische Lew ist seit 1999 im Verhältnis 1:1,95583 an die D-Mark gekoppelt."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welche Währung gilt in diesem Land als offizielle Landeswährung, obwohl der Staat die Einführung des Euro anstrebt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Leu",
+            "Lew",
+            "Kuna",
+            "Dinar"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Der Name der Währung bedeutet übersetzt „Löwe“ und klingt fast wie die Währung des Nachbarlandes.",
+          "exp": "Der bulgarische Lew ist seit 1999 im Verhältnis 1:1,95583 an die D-Mark gekoppelt."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Bulgarien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welches Schriftsystem brachte dieses Land mit seinem EU-Beitritt als dritte offizielle Alphabetschrift in die EU ein?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Griechisch",
+            "Kyrillisch",
+            "Arabisch",
+            "Georgisch"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Diese Schrift wird auch in Russland und Serbien verwendet.",
+          "exp": "Mit Bulgarien wurde die kyrillische Schrift 2007 zur dritten offiziellen EU-Schrift."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welches Schriftsystem brachte dieses Land mit seinem EU-Beitritt als dritte offizielle Alphabetschrift in die EU ein?",
           "o": [
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "Alcide De Gasperi (Gründervater)",
-            "Jean-Claude Juncker (Kommissionschef)",
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)"
+            "Griechisch",
+            "Kyrillisch",
+            "Arabisch",
+            "Georgisch"
           ],
-          "a": 0,
-          "exp": "Finanzpolitikerin Kristalina Georgiewa vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Diese Schrift wird auch in Russland und Serbien verwendet.",
+          "exp": "Mit Bulgarien wurde die kyrillische Schrift 2007 zur dritten offiziellen EU-Schrift."
         }
       ]
     },
     "Dänemark": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Dänemark?",
+          "q": "Was bedeutet der sogenannte „Opt-out“-Status, den dieses nördliche Land bei manchen EU-Themen (wie z. B. ursprünglich der Euro-Währung) nutzt?",
           "o": [
-            "parlamentarische Monarchie",
-            "präsidiale Republik",
-            "parlamentarische Republik",
-            "Großherzogtum"
+            "Das Land muss doppelt so viele Steuern an die EU zahlen.",
+            "Das Land darf Sonderregeln nutzen und muss nicht an allen EU-Bereichen teilnehmen.",
+            "Das Land hat kein Stimmrecht im Europäischen Parlament.",
+            "Das Land darf nur alle fünf Jahre an EU-Gipfeln teilnehmen."
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Dänemark ist: parlamentarische Monarchie."
+          "a": 1,
+          "tip": "„Opt-out“ heißt übersetzt so viel wie „Ausstieg“ oder „Ausschluss von einer Pflicht“.",
+          "exp": "Dänemark besitzt vertraglich gesicherte Ausnahmeregelungen (Opt-outs) in der EU-Politik."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Dänemark?",
+          "q": "Was bedeutet der sogenannte „Opt-out“-Status, den dieses nördliche Land bei manchen EU-Themen (wie z. B. ursprünglich der Euro-Währung) nutzt?",
           "o": [
-            "Folketing",
-            "Seimas",
-            "Generalstaaten",
-            "Oireachtas"
+            "Das Land muss doppelt so viele Steuern an die EU zahlen.",
+            "Das Land darf Sonderregeln nutzen und muss nicht an allen EU-Bereichen teilnehmen.",
+            "Das Land hat kein Stimmrecht im Europäischen Parlament.",
+            "Das Land darf nur alle fünf Jahre an EU-Gipfeln teilnehmen."
           ],
-          "a": 0,
-          "exp": "Das Parlament in Dänemark trägt den Namen Folketing."
+          "a": 1,
+          "tip": "„Opt-out“ heißt übersetzt so viel wie „Ausstieg“ oder „Ausschluss von einer Pflicht“.",
+          "exp": "Dänemark besitzt vertraglich gesicherte Ausnahmeregelungen (Opt-outs) in der EU-Politik."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Dänemark gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welche Staatsform hat dieser Staat, der seit 1973 Mitglied der Europäischen Union ist?",
           "o": [
-            "dänische Sprache",
-            "tschechische Sprache",
-            "ungarische Sprache",
-            "drei offizielle Amtssprachen"
+            "Bundesrepublik",
+            "Parlamentarische Monarchie",
+            "Sozialistische Republik",
+            "Großherzogtum"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: dänische Sprache."
+          "a": 1,
+          "tip": "Das Land hat ein Königshaus mit einer Königin oder einem König an der Spitze.",
+          "exp": "Dänemark ist eine konstitutionell-parlamentarische Monarchie."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welche Staatsform hat dieser Staat, der seit 1973 Mitglied der Europäischen Union ist?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Bundesrepublik",
+            "Parlamentarische Monarchie",
+            "Sozialistische Republik",
+            "Großherzogtum"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Das Land hat ein Königshaus mit einer Königin oder einem König an der Spitze.",
+          "exp": "Dänemark ist eine konstitutionell-parlamentarische Monarchie."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Dänemark normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher Vertrag aus dem Jahr 1992 wurde von den Bürgern dieses Landes beim ersten Referendum überraschend abgelehnt, bevor Nachverhandlungen stattfanden?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Vertrag von Nizza",
+            "Vertrag von Maastricht",
+            "Vertrag von Lissabon",
+            "Vertrag von Amsterdam"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es ist der Vertrag, der die Europäische Union in ihrer heutigen Form begründete.",
+          "exp": "Erst nach Zugeständnissen (Edinburgh-Beschluss) stimmten die Dänen 1993 für Maastricht."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher Vertrag aus dem Jahr 1992 wurde von den Bürgern dieses Landes beim ersten Referendum überraschend abgelehnt, bevor Nachverhandlungen stattfanden?",
           "o": [
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen",
-            "EU-Kommissarin Helena Dalli",
-            "ehemaliger Premier Zoran Milanović",
-            "Jan Willem Beyen (Gründervater)"
+            "Vertrag von Nizza",
+            "Vertrag von Maastricht",
+            "Vertrag von Lissabon",
+            "Vertrag von Amsterdam"
           ],
-          "a": 0,
-          "exp": "ehemaliger Ratspräsident Anders Fogh Rasmussen vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es ist der Vertrag, der die Europäische Union in ihrer heutigen Form begründete.",
+          "exp": "Erst nach Zugeständnissen (Edinburgh-Beschluss) stimmten die Dänen 1993 für Maastricht."
         }
       ]
     },
     "Deutschland": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Deutschland?",
+          "q": "In welcher Finanzmetropole hat die Europäische Zentralbank (EZB) ihren Hauptsitz?",
           "o": [
-            "parlamentarische Bundesrepublik",
-            "parlamentarische Erbmonarchie",
-            "präsidiale Republik",
-            "Großherzogtum"
+            "Berlin",
+            "Frankfurt am Main",
+            "München",
+            "Hamburg"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Deutschland ist: parlamentarische Bundesrepublik."
+          "a": 1,
+          "tip": "Die Stadt ist bekannt für ihre Wolkenkratzer-Skyline und ihren riesigen Flughafen.",
+          "exp": "Die EZB steuert die Geldpolitik des Euroraums von Frankfurt am Main aus."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Deutschland?",
+          "q": "In welcher Finanzmetropole hat die Europäische Zentralbank (EZB) ihren Hauptsitz?",
           "o": [
-            "Deutscher Bundestag",
-            "Parlament",
-            "Sejm",
-            "Folketing"
+            "Berlin",
+            "Frankfurt am Main",
+            "München",
+            "Hamburg"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Deutschland trägt den Namen Deutscher Bundestag."
+          "a": 1,
+          "tip": "Die Stadt ist bekannt für ihre Wolkenkratzer-Skyline und ihren riesigen Flughafen.",
+          "exp": "Die EZB steuert die Geldpolitik des Euroraums von Frankfurt am Main aus."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Deutschland gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welcher Mitbegründer der Europäischen Wirtschaftsgemeinschaft (EWG) hat die meisten Abgeordneten im Europäischen Parlament?",
           "o": [
-            "deutsche Sprache",
-            "estnische Sprache",
-            "lettische Sprache",
-            "polnische Sprache"
+            "Das bevölkerungsreichste Mitgliedsland",
+            "Das flächenmäßig größte Mitgliedsland",
+            "Das wirtschaftlich schwächste Mitgliedsland",
+            "Alle Länder haben exakt gleich viele Abgeordnete"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: deutsche Sprache."
+          "tip": "Die Anzahl der Sitze richtet sich nach der Einwohnerzahl des jeweiligen Staates.",
+          "exp": "Deutschland stellt aufgrund seiner Einwohnerzahl mit 96 Abgeordneten das größte Kontingent."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welcher Mitbegründer der Europäischen Wirtschaftsgemeinschaft (EWG) hat die meisten Abgeordneten im Europäischen Parlament?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Das bevölkerungsreichste Mitgliedsland",
+            "Das flächenmäßig größte Mitgliedsland",
+            "Das wirtschaftlich schwächste Mitgliedsland",
+            "Alle Länder haben exakt gleich viele Abgeordnete"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Die Anzahl der Sitze richtet sich nach der Einwohnerzahl des jeweiligen Staates.",
+          "exp": "Deutschland stellt aufgrund seiner Einwohnerzahl mit 96 Abgeordneten das größte Kontingent."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Deutschland normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher Grundsatz der EU besagt, dass Aufgaben so weit wie möglich auf lokaler oder nationaler Ebene geregelt werden sollen und die EU nur eingreift, wenn es notwendiger ist?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Einstimmigkeitsprinzip",
+            "Subsidiaritätsprinzip",
+            "Neutralitätsprinzip",
+            "Solidaritätsprinzip"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Das Wort leitet sich vom lateinischen Begriff für „Hilfe“ oder „Reserve“ ab.",
+          "exp": "Das Subsidiaritätsprinzip schützt die Eigenständigkeit der Mitgliedstaaten."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher Grundsatz der EU besagt, dass Aufgaben so weit wie möglich auf lokaler oder nationaler Ebene geregelt werden sollen und die EU nur eingreift, wenn es notwendiger ist?",
           "o": [
-            "Walter Hallstein (erster EU-Kommissionschef)",
-            "Ratspräsident Donald Tusk",
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)",
-            "EU-Kommissarin Helena Dalli"
+            "Einstimmigkeitsprinzip",
+            "Subsidiaritätsprinzip",
+            "Neutralitätsprinzip",
+            "Solidaritätsprinzip"
           ],
-          "a": 0,
-          "exp": "Walter Hallstein (erster EU-Kommissionschef) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Das Wort leitet sich vom lateinischen Begriff für „Hilfe“ oder „Reserve“ ab.",
+          "exp": "Das Subsidiaritätsprinzip schützt die Eigenständigkeit der Mitgliedstaaten."
         }
       ]
     },
     "Estland": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Estland?",
+          "q": "Dieses Land gilt als absoluter EU-Pionier in welchem Bereich der modernen Verwaltung?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Erbmonarchie",
-            "Großherzogtum",
-            "parlamentarische Monarchie"
+            "Weltraumfahrt",
+            "E-Government und digitale Verwaltung",
+            "Schwerindustrie",
+            "Ökologische Landwirtschaft"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Estland ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Hier kann man fast alle Amtsgeschäfte und Wahlen digital über das Internet erledigen.",
+          "exp": "Estland bietet fast alle staatlichen Dienstleistungen vollkommen digital an (e-Estonia)."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Estland?",
+          "q": "Dieses Land gilt als absoluter EU-Pionier in welchem Bereich der modernen Verwaltung?",
           "o": [
-            "Riigikogu",
-            "Eduskunta",
-            "Oireachtas",
-            "Folketing"
+            "Weltraumfahrt",
+            "E-Government und digitale Verwaltung",
+            "Schwerindustrie",
+            "Ökologische Landwirtschaft"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Estland trägt den Namen Riigikogu."
+          "a": 1,
+          "tip": "Hier kann man fast alle Amtsgeschäfte und Wahlen digital über das Internet erledigen.",
+          "exp": "Estland bietet fast alle staatlichen Dienstleistungen vollkommen digital an (e-Estonia)."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Estland gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welches Beitrittsjahr markiert den Eintritt dieses baltischen Staates in die Europäische Union?",
           "o": [
-            "estnische Sprache",
-            "ungarische Sprache",
-            "litauische Sprache",
-            "französische Sprache"
+            "1995",
+            "2004",
+            "2007",
+            "2013"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: estnische Sprache."
+          "a": 1,
+          "tip": "Es war das Jahr der großen Osterweiterung mit insgesamt 10 neuen Mitgliedstaaten.",
+          "exp": "Estland trat am 1. Mai 2004 im Zuge der EU-Osterweiterung bei."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welches Beitrittsjahr markiert den Eintritt dieses baltischen Staates in die Europäische Union?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "1995",
+            "2004",
+            "2007",
+            "2013"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Es war das Jahr der großen Osterweiterung mit insgesamt 10 neuen Mitgliedstaaten.",
+          "exp": "Estland trat am 1. Mai 2004 im Zuge der EU-Osterweiterung bei."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Estland normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher europäischen Schengen-Zone gehört das Land seit 2007 an?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Zone ohne Grenzkontrollen zwischen den Mitgliedstaaten",
+            "Zone mit einheitlichen Steuersätzen",
+            "Militärbündnis der nordischen Staaten",
+            "Zone mit einer gemeinsamen europäischen Armee"
           ],
           "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "tip": "Das Abkommen ist nach einem kleinen Ort in Luxemburg benannt.",
+          "exp": "Die Schengen-Mitgliedschaft schaffte die systematischen Grenzkontrollen ab."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher europäischen Schengen-Zone gehört das Land seit 2007 an?",
           "o": [
-            "Außenbeauftragte Kaja Kallas",
-            "Kommissionspräsidenten-Kandidat Pat Cox",
-            "Paul-Henri Spaak (Gründervater)",
-            "Chefunterhändler Vasile Pușcaș"
+            "Zone ohne Grenzkontrollen zwischen den Mitgliedstaaten",
+            "Zone mit einheitlichen Steuersätzen",
+            "Militärbündnis der nordischen Staaten",
+            "Zone mit einer gemeinsamen europäischen Armee"
           ],
           "a": 0,
-          "exp": "Außenbeauftragte Kaja Kallas vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "tip": "Das Abkommen ist nach einem kleinen Ort in Luxemburg benannt.",
+          "exp": "Die Schengen-Mitgliedschaft schaffte die systematischen Grenzkontrollen ab."
         }
       ]
     },
     "Finnland": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Finnland?",
+          "q": "Dieses Land hat eine sehr lange Außengrenze zu welchem Nicht-EU-Staat, was für die EU-Sicherheitspolitik besonders wichtig ist?",
           "o": [
-            "parlamentarische Republik",
-            "präsidiale Republik",
-            "Großherzogtum",
-            "semipräsidentielle Republik"
+            "Norwegen",
+            "Russland",
+            "Schweden",
+            "Belarus"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Finnland ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Das Land im Osten ist der flächenmäßig größte Staat der Erde.",
+          "exp": "Finnland teilt eine rund 1340 Kilometer lange Grenze mit Russland."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Finnland?",
+          "q": "Dieses Land hat eine sehr lange Außengrenze zu welchem Nicht-EU-Staat, was für die EU-Sicherheitspolitik besonders wichtig ist?",
           "o": [
-            "Eduskunta",
-            "Riksdag",
-            "Sabor",
-            "Versammlung der Republik"
+            "Norwegen",
+            "Russland",
+            "Schweden",
+            "Belarus"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Finnland trägt den Namen Eduskunta."
+          "a": 1,
+          "tip": "Das Land im Osten ist der flächenmäßig größte Staat der Erde.",
+          "exp": "Finnland teilt eine rund 1340 Kilometer lange Grenze mit Russland."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Finnland gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "In welchem Jahr trat das Land gemeinsam mit Österreich und Schweden der Europäischen Union bei?",
           "o": [
-            "finnische und schwedische Amtssprache",
-            "drei offizielle Amtssprachen",
-            "Maltesisch und Englisch",
-            "griechische Sprache"
+            "1986",
+            "1995",
+            "2004",
+            "2007"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: finnische und schwedische Amtssprache."
+          "a": 1,
+          "tip": "Es war die vierte Erweiterungsrunde der EU in den 1990er Jahren.",
+          "exp": "Finnland wurde nach einer Volksabstimmung am 1. Januar 1995 EU-Mitglied."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "In welchem Jahr trat das Land gemeinsam mit Österreich und Schweden der Europäischen Union bei?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "1986",
+            "1995",
+            "2004",
+            "2007"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Es war die vierte Erweiterungsrunde der EU in den 1990er Jahren.",
+          "exp": "Finnland wurde nach einer Volksabstimmung am 1. Januar 1995 EU-Mitglied."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Finnland normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welche Haltung vertrat das Land in der Außenpolitik jahrzehntelang vor seinem Beitritt zur EU und zur NATO?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Streitkräftefreie Zone",
+            "Militärische Bündnisfreiheit und Neutralität",
+            "Kommunistisches Bündnis",
+            "Isolationismus"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Eine ähnliche Rolle verfassungsrechtlicher Art nimmt auch Österreich ein.",
+          "exp": "Finnland bewahrte während des Kalten Krieges strikte militärische Neutralität."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welche Haltung vertrat das Land in der Außenpolitik jahrzehntelang vor seinem Beitritt zur EU und zur NATO?",
           "o": [
-            "EU-Kommissar Erkki Liikanen",
-            "ehemaliger Premier Zoran Milanović",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen",
-            "Václav Havel (erster tschechischer Präsident)"
+            "Streitkräftefreie Zone",
+            "Militärische Bündnisfreiheit und Neutralität",
+            "Kommunistisches Bündnis",
+            "Isolationismus"
           ],
-          "a": 0,
-          "exp": "EU-Kommissar Erkki Liikanen vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Eine ähnliche Rolle verfassungsrechtlicher Art nimmt auch Österreich ein.",
+          "exp": "Finnland bewahrte während des Kalten Krieges strikte militärische Neutralität."
         }
       ]
     },
     "Frankreich": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Frankreich?",
+          "q": "In welcher Stadt befindet sich der offizielle Sitz des Europäischen Parlaments, in dem die monatlichen Plenartagungen stattfinden?",
           "o": [
-            "semipräsidentielle Republik",
-            "präsidiale Republik",
-            "parlamentarische Erbmonarchie",
-            "parlamentarische Republik"
+            "Paris",
+            "Straßburg",
+            "Lyon",
+            "Marseille"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Frankreich ist: semipräsidentielle Republik."
+          "a": 1,
+          "tip": "Die Stadt liegt direkt an der Grenze zu Deutschland im Elsass.",
+          "exp": "Straßburg ist der verfassungsmäßig verankerte Hauptsitz des EU-Parlaments."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Frankreich?",
+          "q": "In welcher Stadt befindet sich der offizielle Sitz des Europäischen Parlaments, in dem die monatlichen Plenartagungen stattfinden?",
           "o": [
-            "Nationalversammlung",
-            "Eduskunta",
-            "Generalstaaten",
-            "Parlamento Italiano"
+            "Paris",
+            "Straßburg",
+            "Lyon",
+            "Marseille"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Frankreich trägt den Namen Nationalversammlung."
+          "a": 1,
+          "tip": "Die Stadt liegt direkt an der Grenze zu Deutschland im Elsass.",
+          "exp": "Straßburg ist der verfassungsmäßig verankerte Hauptsitz des EU-Parlaments."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Frankreich gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Wer vertritt ein Mitgliedsland im „Europäischen Rat“?",
           "o": [
-            "französische Sprache",
-            "italienische Sprache",
-            "rumänische Sprache",
-            "Spanisch (Kastilisch) sowie Katalanisch/Galicisch/Baskisch"
+            "Der Staats- oder Regierungschef",
+            "Der Außenminister",
+            "Ein gewählter Bürgerbeauftragter",
+            "Der Präsident des Europäischen Gerichtshofs"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: französische Sprache."
+          "tip": "Es sind die mächtigsten Politiker der jeweiligen Länder (z. B. Bundeskanzler oder Präsidenten).",
+          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs sowie dem Kommissionspräsidenten."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Wer vertritt ein Mitgliedsland im „Europäischen Rat“?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Der Staats- oder Regierungschef",
+            "Der Außenminister",
+            "Ein gewählter Bürgerbeauftragter",
+            "Der Präsident des Europäischen Gerichtshofs"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Es sind die mächtigsten Politiker der jeweiligen Länder (z. B. Bundeskanzler oder Präsidenten).",
+          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs sowie dem Kommissionspräsidenten."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Frankreich normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher berühmte Außenminister dieses Landes schlug 1950 den Kohle- und Stahl-Plan vor, der als Grundstein der heutigen EU gilt?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Charles de Gaulle",
+            "Robert Schuman",
+            "François Mitterrand",
+            "Emmanuel Macron"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Nach ihm ist auch das europäische Bildungsprogramm für Schulen benannt (Schuman-Erklärung).",
+          "exp": "Die Schuman-Erklärung vom 9. Mai 1950 gilt als Geburtsstunde der EU."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher berühmte Außenminister dieses Landes schlug 1950 den Kohle- und Stahl-Plan vor, der als Grundstein der heutigen EU gilt?",
           "o": [
-            "Robert Schuman (EU-Gründervater)",
-            "Kommissionschef José Manuel Barroso",
-            "Paul-Henri Spaak (Gründervater)",
-            "Präsidentin Nataša Pirc Musar"
+            "Charles de Gaulle",
+            "Robert Schuman",
+            "François Mitterrand",
+            "Emmanuel Macron"
           ],
-          "a": 0,
-          "exp": "Robert Schuman (EU-Gründervater) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Nach ihm ist auch das europäische Bildungsprogramm für Schulen benannt (Schuman-Erklärung).",
+          "exp": "Die Schuman-Erklärung vom 9. Mai 1950 gilt als Geburtsstunde der EU."
         }
       ]
     },
     "Griechenland": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Griechenland?",
+          "q": "Aus welcher antiken Sprache und kultur stammt der Begriff „Demokratie“, der als Grundwert in den EU-Verträgen verankert ist?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Bundesrepublik",
-            "parlamentarische Monarchie",
-            "präsidiale Republik"
+            "Latein",
+            "Altgriechisch",
+            "Altägyptisch",
+            "Phönizisch"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Griechenland ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Das Wort setzt sich aus „Demos“ (Volk) und „Kratein“ (herrschen) zusammen.",
+          "exp": "Das antike Athen gilt als historischer Ursprungsort der demokratischen Idee."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Griechenland?",
+          "q": "Aus welcher antiken Sprache und kultur stammt der Begriff „Demokratie“, der als Grundwert in den EU-Verträgen verankert ist?",
           "o": [
-            "Parlament (Vouli)",
-            "Folketing",
-            "Eduskunta",
-            "Sejm"
+            "Latein",
+            "Altgriechisch",
+            "Altägyptisch",
+            "Phönizisch"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Griechenland trägt den Namen Parlament (Vouli)."
+          "a": 1,
+          "tip": "Das Wort setzt sich aus „Demos“ (Volk) und „Kratein“ (herrschen) zusammen.",
+          "exp": "Das antike Athen gilt als historischer Ursprungsort der demokratischen Idee."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Griechenland gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "In welchem Jahr trat dieses südosteuropäische Land der Europäischen Gemeinschaft (heute EU) bei?",
           "o": [
-            "griechische Sprache",
-            "Gälisch und Englisch",
-            "litauische Sprache",
-            "schwedische Sprache"
+            "1973",
+            "1981",
+            "1986",
+            "1995"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: griechische Sprache."
+          "a": 1,
+          "tip": "Es war der einzige Staat, der in den 1980er Jahren ganz am Anfang des Jahrzehnts beitrat.",
+          "exp": "Griechenland trat am 1. Januar 1981 als 10. Vollmitglied der Gemeinschaft bei."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "In welchem Jahr trat dieses südosteuropäische Land der Europäischen Gemeinschaft (heute EU) bei?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "1973",
+            "1981",
+            "1986",
+            "1995"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Es war der einzige Staat, der in den 1980er Jahren ganz am Anfang des Jahrzehnts beitrat.",
+          "exp": "Griechenland trat am 1. Januar 1981 als 10. Vollmitglied der Gemeinschaft bei."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Griechenland normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welches finanzielle Rettungsprogramm der EU („Troika“ aus EU-Kommission, EZB und IWF) prägte die Politik des Landes nach der Finanzkrise 2008 stark?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Der Kohäsionsfonds",
+            "Die Euro-Rettungsschirme",
+            "Der Schengen-Fonds",
+            "Das Erasmus-Programm"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es ging um Notkredite zur Abwendung von Staatspleiten im Euroraum.",
+          "exp": "Die Rettungspakete ab 2010 waren an strenge Spar- und Reformauflagen gekoppelt."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welches finanzielle Rettungsprogramm der EU („Troika“ aus EU-Kommission, EZB und IWF) prägte die Politik des Landes nach der Finanzkrise 2008 stark?",
           "o": [
-            "Reformer Konstantinos Karamanlis",
-            "Paul-Henri Spaak (Gründervater)",
-            "Robert Schuman (EU-Gründervater)",
-            "Politiker Alexander Dubček (Prager Frühling)"
+            "Der Kohäsionsfonds",
+            "Die Euro-Rettungsschirme",
+            "Der Schengen-Fonds",
+            "Das Erasmus-Programm"
           ],
-          "a": 0,
-          "exp": "Reformer Konstantinos Karamanlis vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es ging um Notkredite zur Abwendung von Staatspleiten im Euroraum.",
+          "exp": "Die Rettungspakete ab 2010 waren an strenge Spar- und Reformauflagen gekoppelt."
         }
       ]
     },
     "Irland": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Irland?",
+          "q": "Neben der Landessprache ist welche Sprache in diesem Staat offizielle Amtssprache, die auch in der EU eine dominierende Rolle spielt?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Erbmonarchie",
-            "parlamentarische Bundesrepublik",
-            "parlamentarische Monarchie"
+            "Französisch",
+            "Englisch",
+            "Spanisch",
+            "Deutsch"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Irland ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Es ist die weltweit am häufigsten gelernte Zweitsprache.",
+          "exp": "Englisch und Irisch sind die beiden offiziellen Amtssprachen Irlands."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Irland?",
+          "q": "Neben der Landessprache ist welche Sprache in diesem Staat offizielle Amtssprache, die auch in der EU eine dominierende Rolle spielt?",
           "o": [
-            "Oireachtas",
-            "Generalstaaten",
-            "Abgeordnetenhaus",
-            "Föderales Parlament"
+            "Französisch",
+            "Englisch",
+            "Spanisch",
+            "Deutsch"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Irland trägt den Namen Oireachtas."
+          "a": 1,
+          "tip": "Es ist die weltweit am häufigsten gelernte Zweitsprache.",
+          "exp": "Englisch und Irisch sind die beiden offiziellen Amtssprachen Irlands."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Irland gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welchen Vorteil nutzt das Land durch niedrige Unternehmenssteuern innerhalb des EU-Binnenmarktes besonders erfolgreich?",
           "o": [
-            "Gälisch und Englisch",
-            "slowenische Sprache",
-            "griechische Sprache",
-            "lettische Sprache"
+            "Anlockung internationaler Technologie- und Pharmakonzerne",
+            "Aufbau einer riesigen Kohleindustrie",
+            "Verhinderung von Importen aus anderen EU-Ländern",
+            "Abschaffung aller Banken"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: Gälisch und Englisch."
+          "tip": "Große Konzerne wie Apple oder Google haben hier ihren Europa-Sitz.",
+          "exp": "Irlands niedriger Körperschaftssteuersatz von 12,5 % zog Hunderte US-Konzerne an."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welchen Vorteil nutzt das Land durch niedrige Unternehmenssteuern innerhalb des EU-Binnenmarktes besonders erfolgreich?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Anlockung internationaler Technologie- und Pharmakonzerne",
+            "Aufbau einer riesigen Kohleindustrie",
+            "Verhinderung von Importen aus anderen EU-Ländern",
+            "Abschaffung aller Banken"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Große Konzerne wie Apple oder Google haben hier ihren Europa-Sitz.",
+          "exp": "Irlands niedriger Körperschaftssteuersatz von 12,5 % zog Hunderte US-Konzerne an."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Irland normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welches Abkommen zwischen der EU und dem Vereinigten Königreich war nach dem „Brexit“ besonders wichtig, um eine harte Grenze auf der Insel zu verhindern?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Das Karpaten-Protokoll",
+            "Das Nordirland-Protokoll",
+            "Das Gibraltar-Abkommen",
+            "Der Vertrag von Nizza"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es betrifft den nördlichen Teil der Atlantikinsel.",
+          "exp": "Das Nordirland-Protokoll verhinderte Grenzkontrollen zwischen Irland und Nordirland."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welches Abkommen zwischen der EU und dem Vereinigten Königreich war nach dem „Brexit“ besonders wichtig, um eine harte Grenze auf der Insel zu verhindern?",
           "o": [
-            "Kommissionspräsidenten-Kandidat Pat Cox",
-            "Außenbeauftragte Kaja Kallas",
-            "EU-Kommissarin Helena Dalli",
-            "Reformer Konstantinos Karamanlis"
+            "Das Karpaten-Protokoll",
+            "Das Nordirland-Protokoll",
+            "Das Gibraltar-Abkommen",
+            "Der Vertrag von Nizza"
           ],
-          "a": 0,
-          "exp": "Kommissionspräsidenten-Kandidat Pat Cox vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es betrifft den nördlichen Teil der Atlantikinsel.",
+          "exp": "Das Nordirland-Protokoll verhinderte Grenzkontrollen zwischen Irland und Nordirland."
         }
       ]
     },
     "Italien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Italien?",
+          "q": "In welcher italienischen Stadt wurden 1957 die historischen Verträge zur Gründung der Europäischen Wirtschaftsgemeinschaft (EWG) unterzeichnet?",
           "o": [
-            "parlamentarische Republik",
-            "präsidiale Republik",
-            "semipräsidentielle Republik",
-            "parlamentarische Erbmonarchie"
+            "Mailand",
+            "Rom",
+            "Venedig",
+            "Florenz"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Italien ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Die Verträge heißen genau wie diese Hauptstadt.",
+          "exp": "Die Römischen Verträge sind die wichtigsten Gründungsdokumente der EWG."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Italien?",
+          "q": "In welcher italienischen Stadt wurden 1957 die historischen Verträge zur Gründung der Europäischen Wirtschaftsgemeinschaft (EWG) unterzeichnet?",
           "o": [
-            "Parlamento Italiano",
-            "Nationalversammlung",
-            "Seimas",
-            "Riksdag"
+            "Mailand",
+            "Rom",
+            "Venedig",
+            "Florenz"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Italien trägt den Namen Parlamento Italiano."
+          "a": 1,
+          "tip": "Die Verträge heißen genau wie diese Hauptstadt.",
+          "exp": "Die Römischen Verträge sind die wichtigsten Gründungsdokumente der EWG."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Italien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welcher Mitbegründer der EU war eines der ursprünglichen wie vielen Länder der Montanunion (EGKS)?",
           "o": [
-            "italienische Sprache",
-            "lettische Sprache",
-            "portugiesische Sprache",
-            "Gälisch und Englisch"
+            "Die „Inneren Sechs“",
+            "Die „Glorreichen Sieben“",
+            "Die „Neun Gründer“",
+            "Die „Zwölf Apostel“"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: italienische Sprache."
+          "tip": "Es waren zu Beginn exakt 6 Staaten (Deutschland, Frankreich, Italien und die Benelux-Staaten).",
+          "exp": "Die EGKS wurde 1951 von den sechs Gründerstaaten unterzeichnet."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welcher Mitbegründer der EU war eines der ursprünglichen wie vielen Länder der Montanunion (EGKS)?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Die „Inneren Sechs“",
+            "Die „Glorreichen Sieben“",
+            "Die „Neun Gründer“",
+            "Die „Zwölf Apostel“"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Es waren zu Beginn exakt 6 Staaten (Deutschland, Frankreich, Italien und die Benelux-Staaten).",
+          "exp": "Die EGKS wurde 1951 von den sechs Gründerstaaten unterzeichnet."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Italien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welches europäische Amt hat seinen Hauptsitz in der Stadt Parma und kümmert sich um die Sicherheit von Lebensmitteln in der EU?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Europäische Arzneimittel-Agentur",
+            "Europäische Behörde für Lebensmittelsicherheit",
+            "Europäisches Polizeiamt",
+            "Europäische Umweltagentur"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Parma ist auch für seinen berühmten Schinken und Käse bekannt.",
+          "exp": "Die EFSA wurde 2002 gegründet und überwacht Lebensmittelsicherheitsrisiken."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welches europäische Amt hat seinen Hauptsitz in der Stadt Parma und kümmert sich um die Sicherheit von Lebensmitteln in der EU?",
           "o": [
-            "Alcide De Gasperi (Gründervater)",
-            "Ratspräsident Donald Tusk",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen",
-            "Außenbeauftragter Josep Borrell"
+            "Europäische Arzneimittel-Agentur",
+            "Europäische Behörde für Lebensmittelsicherheit",
+            "Europäisches Polizeiamt",
+            "Europäische Umweltagentur"
           ],
-          "a": 0,
-          "exp": "Alcide De Gasperi (Gründervater) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Parma ist auch für seinen berühmten Schinken und Käse bekannt.",
+          "exp": "Die EFSA wurde 2002 gegründet und überwacht Lebensmittelsicherheitsrisiken."
         }
       ]
     },
     "Kroatien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Kroatien?",
+          "q": "Welches Land trat am 1. Juli 2013 als bislang letzter Mitgliedsstaat der Europäischen Union bei?",
           "o": [
-            "parlamentarische Republik",
-            "präsidiale Republik",
-            "parlamentarische Erbmonarchie",
-            "semipräsidentielle Republik"
+            "Serbien",
+            "Kroatien",
+            "Albanien",
+            "Nordmazedonien"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Kroatien ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Es liegt an der Adria und ist ein sehr beliebtes Urlaubsland der Österreicher.",
+          "exp": "Kroatien ist das derzeit 27. und jüngste EU-Mitgliedsland."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Kroatien?",
+          "q": "Welches Land trat am 1. Juli 2013 als bislang letzter Mitgliedsstaat der Europäischen Union bei?",
           "o": [
-            "Sabor",
-            "Generalstaaten",
-            "Parlament",
-            "Saeima"
+            "Serbien",
+            "Kroatien",
+            "Albanien",
+            "Nordmazedonien"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Kroatien trägt den Namen Sabor."
+          "a": 1,
+          "tip": "Es liegt an der Adria und ist ein sehr beliebtes Urlaubsland der Österreicher.",
+          "exp": "Kroatien ist das derzeit 27. und jüngste EU-Mitgliedsland."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Kroatien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welchen Meilenstein der europäischen Integration erreichte dieses Land am 1. Jänner 2023 gleichzeitig mit dem Beitritt zum Schengen-Raum?",
           "o": [
-            "kroatische Sprache",
-            "finnische und schwedische Amtssprache",
-            "italienische Sprache",
-            "kyrillische Schrift"
+            "Einführung des Euro als Währung",
+            "Beitritt zur NATO",
+            "Übernahme der EU-Ratspräsidentschaft",
+            "Verlegung des EU-Parlaments"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: kroatische Sprache."
+          "tip": "Das Land löste damit seine bisherige Währung (Kuna) ab.",
+          "exp": "Am 1. Jänner 2023 vollzog Kroatien den gleichzeitigen Schengen- und Euro-Beitritt."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welchen Meilenstein der europäischen Integration erreichte dieses Land am 1. Jänner 2023 gleichzeitig mit dem Beitritt zum Schengen-Raum?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Einführung des Euro als Währung",
+            "Beitritt zur NATO",
+            "Übernahme der EU-Ratspräsidentschaft",
+            "Verlegung des EU-Parlaments"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Das Land löste damit seine bisherige Währung (Kuna) ab.",
+          "exp": "Am 1. Jänner 2023 vollzog Kroatien den gleichzeitigen Schengen- und Euro-Beitritt."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Kroatien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Wie nennt man das System, bei dem die Vertretung der EU-Mitgliedstaaten im Rat der Europäischen Union alle sechs Monate wechselt?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "EU-Kommissionsvorsitz",
+            "Rotierende Ratspräsidentschaft",
+            "Europäisches Direktorium",
+            "Ständer Sicherheitsrat"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Alle EU-Länder lösen sich dabei im Halbjahrestakt ab.",
+          "exp": "Die rotierende Präsidentschaft führt zu wechselnden thematischen Schwerpunkten."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Wie nennt man das System, bei dem die Vertretung der EU-Mitgliedstaaten im Rat der Europäischen Union alle sechs Monate wechselt?",
           "o": [
-            "ehemaliger Premier Zoran Milanović",
-            "Alcide De Gasperi (Gründervater)",
-            "Ministerpräsident Viktor Orbán",
-            "Ratspräsident Donald Tusk"
+            "EU-Kommissionsvorsitz",
+            "Rotierende Ratspräsidentschaft",
+            "Europäisches Direktorium",
+            "Ständer Sicherheitsrat"
           ],
-          "a": 0,
-          "exp": "ehemaliger Premier Zoran Milanović vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Alle EU-Länder lösen sich dabei im Halbjahrestakt ab.",
+          "exp": "Die rotierende Präsidentschaft führt zu wechselnden thematischen Schwerpunkten."
         }
       ]
     },
     "Lettland": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Lettland?",
+          "q": "Was ist die Hauptaufgabe des Europäischen Rates, in dem die Staats- und Regierungschef aller Mitgliedstaaten zusammentreffen?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Monarchie",
-            "semipräsidentielle Republik",
-            "parlamentarische Bundesrepublik"
+            "Festlegung der allgemeinen politischen Zielsetzungen und Prioritäten der EU",
+            "Erlassen von detaillierten Gesetzen für die Landwirtschaft",
+            "Bestrafung von Bürgern bei Verkehrsdelikten",
+            "Drucken von Geldscheinen"
           ],
           "a": 0,
-          "exp": "Die Staatsform von Lettland ist: parlamentarische Republik."
+          "tip": "Der Rat gibt die große Marschrichtung für ganz Europa vor.",
+          "exp": "Der Europäische Rat definiert die übergeordneten Leitlinien der EU-Politik."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Lettland?",
+          "q": "Was ist die Hauptaufgabe des Europäischen Rates, in dem die Staats- und Regierungschef aller Mitgliedstaaten zusammentreffen?",
           "o": [
-            "Saeima",
-            "Parlament",
-            "Abgeordnetenhaus",
-            "Oireachtas"
+            "Festlegung der allgemeinen politischen Zielsetzungen und Prioritäten der EU",
+            "Erlassen von detaillierten Gesetzen für die Landwirtschaft",
+            "Bestrafung von Bürgern bei Verkehrsdelikten",
+            "Drucken von Geldscheinen"
           ],
           "a": 0,
-          "exp": "Das Parlament in Lettland trägt den Namen Saeima."
+          "tip": "Der Rat gibt die große Marschrichtung für ganz Europa vor.",
+          "exp": "Der Europäische Rat definiert die übergeordneten Leitlinien der EU-Politik."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Lettland gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welches System sorgt dafür, dass Bürger der EU-Länder im gesamten Raum der Union ohne Visum arbeiten und wohnen dürfen?",
           "o": [
-            "lettische Sprache",
-            "kyrillische Schrift",
-            "rumänische Sprache",
-            "Luxemburgisch, Französisch und Deutsch"
+            "Europäische Zollunion",
+            "EU-Freizügigkeit",
+            "Schengener Abkommen",
+            "Europarat"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: lettische Sprache."
+          "a": 1,
+          "tip": "Das Wort beschreibt das „freie Bewegen“ der Menschen.",
+          "exp": "Die Personenfreizügigkeit ist ein Eckpfeiler der EU-Bürgerschaft."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welches System sorgt dafür, dass Bürger der EU-Länder im gesamten Raum der Union ohne Visum arbeiten und wohnen dürfen?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Europäische Zollunion",
+            "EU-Freizügigkeit",
+            "Schengener Abkommen",
+            "Europarat"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Das Wort beschreibt das „freie Bewegen“ der Menschen.",
+          "exp": "Die Personenfreizügigkeit ist ein Eckpfeiler der EU-Bürgerschaft."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Lettland normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "In welchem Jahr führte dieser baltische Staat den Euro als offizielle Währung ein und ersetzte damit den Lats?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "2004",
+            "2014",
+            "2018",
+            "2021"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es geschah genau 10 Jahre nach dem Beitritt zur Europäischen Union.",
+          "exp": "Lettland führte am 1. Jänner 2014 die europäische Gemeinschaftswährung ein."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "In welchem Jahr führte dieser baltische Staat den Euro als offizielle Währung ein und ersetzte damit den Lats?",
           "o": [
-            "Kommissionsvizepräsident Valdis Dombrovskis",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Außenbeauftragter Josep Borrell",
-            "Chefunterhändler Vasile Pușcaș"
+            "2004",
+            "2014",
+            "2018",
+            "2021"
           ],
-          "a": 0,
-          "exp": "Kommissionsvizepräsident Valdis Dombrovskis vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es geschah genau 10 Jahre nach dem Beitritt zur Europäischen Union.",
+          "exp": "Lettland führte am 1. Jänner 2014 die europäische Gemeinschaftswährung ein."
         }
       ]
     },
     "Litauen": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Litauen?",
+          "q": "Welcher europäische Gerichtshof sorgt dafür, dass das EU-Recht in allen Mitgliedsländern gleich angewendet und ausgelegt wird?",
           "o": [
-            "parlamentarische Republik",
-            "Großherzogtum",
-            "parlamentarische Monarchie",
-            "präsidiale Republik"
+            "Europäischer Gerichtshof für Menschenrechte",
+            "Europäischer Gerichtshof",
+            "Internationaler Strafgerichtshof",
+            "Bundesverfassungsgericht"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Litauen ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Die Abkürzung lautet EuGH.",
+          "exp": "Der EuGH in Luxemburg überwacht die Rechtmäßigkeit von EU-Organen."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Litauen?",
+          "q": "Welcher europäische Gerichtshof sorgt dafür, dass das EU-Recht in allen Mitgliedsländern gleich angewendet und ausgelegt wird?",
           "o": [
-            "Seimas",
-            "Riksdag",
-            "Abgeordnetenkammer",
-            "Parlamento Italiano"
+            "Europäischer Gerichtshof für Menschenrechte",
+            "Europäischer Gerichtshof",
+            "Internationaler Strafgerichtshof",
+            "Bundesverfassungsgericht"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Litauen trägt den Namen Seimas."
+          "a": 1,
+          "tip": "Die Abkürzung lautet EuGH.",
+          "exp": "Der EuGH in Luxemburg überwacht die Rechtmäßigkeit von EU-Organen."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Litauen gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welcher Grenzabschnitt dieses Landes ist politisch besonders sensibel, da er das russische Gebiet Kaliningrad vom verbündeten Belarus trennt?",
           "o": [
-            "litauische Sprache",
-            "Spanisch (Kastilisch) sowie Katalanisch/Galicisch/Baskisch",
-            "estnische Sprache",
-            "dänische Sprache"
+            "Die Suwalki-Lücke",
+            "Der Brennerpass",
+            "Die Ostrand-Zone",
+            "Das Memelland"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: litauische Sprache."
+          "tip": "Die Korridor-Region ist nach einer nahegelegenen polnischen Stadt benannt.",
+          "exp": "Die Suwalki-Lücke gilt militärisch als verletzlichste Flanke der NATO."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welcher Grenzabschnitt dieses Landes ist politisch besonders sensibel, da er das russische Gebiet Kaliningrad vom verbündeten Belarus trennt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Die Suwalki-Lücke",
+            "Der Brennerpass",
+            "Die Ostrand-Zone",
+            "Das Memelland"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Die Korridor-Region ist nach einer nahegelegenen polnischen Stadt benannt.",
+          "exp": "Die Suwalki-Lücke gilt militärisch als verletzlichste Flanke der NATO."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Litauen normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Wie heißen die drei Baltischen Staaten zusammen, die 2004 gemeinsam der EU beigetreten sind?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Polen, Tschechien, Slowakei",
+            "Estland, Lettland, Litauen",
+            "Dänemark, Schweden, Finnland",
+            "Rumänien, Bulgarien, Moldau"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es handelt sich um die drei nordöstlichen EU-Staaten an der Ostsee.",
+          "exp": "Estland, Lettland und Litauen werden geographisch und politisch als Baltikum zusammengefasst."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Wie heißen die drei Baltischen Staaten zusammen, die 2004 gemeinsam der EU beigetreten sind?",
           "o": [
-            "ehemalige EU-Kommissarin Dalia Grybauskaitė",
-            "Jean-Claude Juncker (Kommissionschef)",
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "ehemaliger Premier Zoran Milanović"
+            "Polen, Tschechien, Slowakei",
+            "Estland, Lettland, Litauen",
+            "Dänemark, Schweden, Finnland",
+            "Rumänien, Bulgarien, Moldau"
           ],
-          "a": 0,
-          "exp": "ehemalige EU-Kommissarin Dalia Grybauskaitė vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es handelt sich um die drei nordöstlichen EU-Staaten an der Ostsee.",
+          "exp": "Estland, Lettland und Litauen werden geographisch und politisch als Baltikum zusammengefasst."
         }
       ]
     },
     "Luxemburg": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Luxemburg?",
+          "q": "Welches wichtige EU-Organ hat neben dem Europäischen Gerichtshof (EuGH) seinen Hauptsitz in diesem kleinen Land?",
           "o": [
-            "Großherzogtum",
-            "semipräsidentielle Republik",
-            "parlamentarische Monarchie",
-            "parlamentarische Republik"
+            "Europäischer Rechnungshof",
+            "Europäisches Parlament",
+            "Europäische Zentralbank",
+            "Europäische Agentur für Frontex"
           ],
           "a": 0,
-          "exp": "Die Staatsform von Luxemburg ist: Großherzogtum."
+          "tip": "Diese Behörde prüft, ob die EU-Gelder korrekt und rechtmäßig ausgegeben werden.",
+          "exp": "Der Europäische Rechnungshof (EuRH) kontrolliert die EU-Finanzen."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Luxemburg?",
+          "q": "Welches wichtige EU-Organ hat neben dem Europäischen Gerichtshof (EuGH) seinen Hauptsitz in diesem kleinen Land?",
           "o": [
-            "Abgeordnetenkammer",
-            "Oireachtas",
-            "Föderales Parlament",
-            "Parlament (Vouli)"
+            "Europäischer Rechnungshof",
+            "Europäisches Parlament",
+            "Europäische Zentralbank",
+            "Europäische Agentur für Frontex"
           ],
           "a": 0,
-          "exp": "Das Parlament in Luxemburg trägt den Namen Abgeordnetenkammer."
+          "tip": "Diese Behörde prüft, ob die EU-Gelder korrekt und rechtmäßig ausgegeben werden.",
+          "exp": "Der Europäische Rechnungshof (EuRH) kontrolliert die EU-Finanzen."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Luxemburg gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Nach welchem grenznahen Dorf in diesem Land ist das berühmte Abkommen zur Abschaffung der Passkontrollen an den europäischen Binnengrenzen benannt?",
           "o": [
-            "Luxemburgisch, Französisch und Deutsch",
-            "slowenische Sprache",
-            "niederländische Sprache",
-            "griechische Sprache"
+            "Schengen",
+            "Echternach",
+            "Vianden",
+            "Remich"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: Luxemburgisch, Französisch und Deutsch."
+          "tip": "Es liegt im Dreiländereck mit Deutschland und Frankreich.",
+          "exp": "Das Schengener Abkommen wurde 1985 auf einem Schiff nahe Schengen unterzeichnet."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Nach welchem grenznahen Dorf in diesem Land ist das berühmte Abkommen zur Abschaffung der Passkontrollen an den europäischen Binnengrenzen benannt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Schengen",
+            "Echternach",
+            "Vianden",
+            "Remich"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Es liegt im Dreiländereck mit Deutschland und Frankreich.",
+          "exp": "Das Schengener Abkommen wurde 1985 auf einem Schiff nahe Schengen unterzeichnet."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Luxemburg normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Wie wird die Gewichtung der Stimmen im Rat der EU genannt, wenn Gesetzgebungen beschlossen werden?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Absolute Mehrheit",
+            "Qualifizierte Mehrheit",
+            "Einfache Einstimmigkeit",
+            "Veto-Prinzip"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es müssen mindestens 55 % der Staaten zustimmen, die mindestens 65 % der EU-Bevölkerung repräsentieren.",
+          "exp": "Die qualifizierte Mehrheit sichert die demokratische Vertretung kleiner und großer Länder."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Wie wird die Gewichtung der Stimmen im Rat der EU genannt, wenn Gesetzgebungen beschlossen werden?",
           "o": [
-            "Jean-Claude Juncker (Kommissionschef)",
-            "EU-Kommissarin Helena Dalli",
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)",
-            "ehemaliger Präsident Glafkos Klerides"
+            "Absolute Mehrheit",
+            "Qualifizierte Mehrheit",
+            "Einfache Einstimmigkeit",
+            "Veto-Prinzip"
           ],
-          "a": 0,
-          "exp": "Jean-Claude Juncker (Kommissionschef) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es müssen mindestens 55 % der Staaten zustimmen, die mindestens 65 % der EU-Bevölkerung repräsentieren.",
+          "exp": "Die qualifizierte Mehrheit sichert die demokratische Vertretung kleiner und großer Länder."
         }
       ]
     },
     "Malta": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Malta?",
+          "q": "Welches Land ist flächenmäßig und nach der Einwohnerzahl das kleinste Mitgliedsland der Europäischen Union?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Bundesrepublik",
-            "Großherzogtum",
-            "parlamentarische Monarchie"
+            "Luxemburg",
+            "Malta",
+            "Zypern",
+            "Estland"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Malta ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Der Staat besteht aus einer kleinen Inselgruppe im Mittelmeer.",
+          "exp": "Malta besitzt eine Fläche von nur 316 Quadratkilometern."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Malta?",
+          "q": "Welches Land ist flächenmäßig und nach der Einwohnerzahl das kleinste Mitgliedsland der Europäischen Union?",
           "o": [
-            "Repräsentantenhaus",
-            "Riigikogu",
-            "Eduskunta",
-            "Parlamento Italiano"
+            "Luxemburg",
+            "Malta",
+            "Zypern",
+            "Estland"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Malta trägt den Namen Repräsentantenhaus."
+          "a": 1,
+          "tip": "Der Staat besteht aus einer kleinen Inselgruppe im Mittelmeer.",
+          "exp": "Malta besitzt eine Fläche von nur 316 Quadratkilometern."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Malta gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Wie viele Abgeordnete sendet das kleinste EU-Land mindestens in das Europäische Parlament?",
           "o": [
-            "Maltesisch und Englisch",
-            "niederländische Sprache",
-            "drei offizielle Amtssprachen",
-            "französische Sprache"
+            "1 Abgeordneter",
+            "6 Abgeordnete",
+            "12 Abgeordnete",
+            "20 Abgeordnete"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: Maltesisch und Englisch."
+          "a": 1,
+          "tip": "Das EU-Recht garantiert jedem Land eine Mindestanzahl von sechs Sitzen.",
+          "exp": "Nach dem Prinzip der degressiven Proportionalität hat jedes Land mindestens 6 Abgeordnete."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Wie viele Abgeordnete sendet das kleinste EU-Land mindestens in das Europäische Parlament?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "1 Abgeordneter",
+            "6 Abgeordnete",
+            "12 Abgeordnete",
+            "20 Abgeordnete"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Das EU-Recht garantiert jedem Land eine Mindestanzahl von sechs Sitzen.",
+          "exp": "Nach dem Prinzip der degressiven Proportionalität hat jedes Land mindestens 6 Abgeordnete."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Malta normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Wann trat dieser Inselstaat im Mittelmeer der Europäischen Union bei?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "1995",
+            "2004",
+            "2007",
+            "2013"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es trat im Rahmen der bisher größten EU-Erweiterungswelle bei.",
+          "exp": "Malta trat am 1. Mai 2004 gemeinsam mit 9 weiteren Staaten bei."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Wann trat dieser Inselstaat im Mittelmeer der Europäischen Union bei?",
           "o": [
-            "EU-Kommissarin Helena Dalli",
-            "Ministerpräsident Viktor Orbán",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Kommissionsvizepräsident Valdis Dombrovskis"
+            "1995",
+            "2004",
+            "2007",
+            "2013"
           ],
-          "a": 0,
-          "exp": "EU-Kommissarin Helena Dalli vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es trat im Rahmen der bisher größten EU-Erweiterungswelle bei.",
+          "exp": "Malta trat am 1. Mai 2004 gemeinsam mit 9 weiteren Staaten bei."
         }
       ]
     },
     "Niederlande": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Niederlande?",
+          "q": "Welcher Europäische Gerichtshof oder welche EU-Agentur befindet sich in der Stadt Den Haag?",
           "o": [
-            "parlamentarische Monarchie",
-            "parlamentarische Erbmonarchie",
-            "parlamentarische Bundesrepublik",
-            "semipräsidentielle Republik"
+            "Europäische Arzneimittel-Agentur",
+            "Europol",
+            "Europäische Zentralbank",
+            "Europäisches Parlament"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Niederlande ist: parlamentarische Monarchie."
+          "a": 1,
+          "tip": "Den Haag ist international als „Stadt des Friedens und des Rechts“ bekannt.",
+          "exp": "Europol koordiniert die Kriminalitätsbekämpfung der EU-Staaten."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Niederlande?",
+          "q": "Welcher Europäische Gerichtshof oder welche EU-Agentur befindet sich in der Stadt Den Haag?",
           "o": [
-            "Generalstaaten",
-            "Repräsentantenhaus",
-            "Abgeordnetenhaus",
-            "Saeima"
+            "Europäische Arzneimittel-Agentur",
+            "Europol",
+            "Europäische Zentralbank",
+            "Europäisches Parlament"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Niederlande trägt den Namen Generalstaaten."
+          "a": 1,
+          "tip": "Den Haag ist international als „Stadt des Friedens und des Rechts“ bekannt.",
+          "exp": "Europol koordiniert die Kriminalitätsbekämpfung der EU-Staaten."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Niederlande gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Wie nennt man den Zusammenschluss der drei westeuropäischen Nachbarstaaten (inklusive Belgien und Luxemburg), der als Vorbild für die spätere EU galt?",
           "o": [
-            "niederländische Sprache",
-            "kyrillische Schrift",
-            "slowenische Sprache",
-            "portugiesische Sprache"
+            "Nordischer Rat",
+            "Benelux-Union",
+            "Visegrád-Gruppe",
+            "Baltischer Rat"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: niederländische Sprache."
+          "a": 1,
+          "tip": "Der Name setzt sich aus den Anfangsbuchstaben der drei Länder zusammen.",
+          "exp": "Die Benelux-Zollunion wurde bereits 1944 gegründet."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Wie nennt man den Zusammenschluss der drei westeuropäischen Nachbarstaaten (inklusive Belgien und Luxemburg), der als Vorbild für die spätere EU galt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Nordischer Rat",
+            "Benelux-Union",
+            "Visegrád-Gruppe",
+            "Baltischer Rat"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Der Name setzt sich aus den Anfangsbuchstaben der drei Länder zusammen.",
+          "exp": "Die Benelux-Zollunion wurde bereits 1944 gegründet."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Niederlande normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher historische Vertrag wurde 1992 im holländischen Maastricht unterzeichnet?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Der Vertrag zur Gründung der EU und Vorbereitung des Euro",
+            "Der Vertrag zur Abschaffung der Zölle",
+            "Der Friedensvertrag nach dem Kalten Krieg",
+            "Der Beitrittsvertrag Österreichs zur EU"
           ],
           "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "tip": "Er meißelte den Übergang von der EG zur Europäischen Union (EU) fest.",
+          "exp": "Der Vertrag von Maastricht trat am 1. November 1993 in Kraft."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher historische Vertrag wurde 1992 im holländischen Maastricht unterzeichnet?",
           "o": [
-            "Jan Willem Beyen (Gründervater)",
-            "Paul-Henri Spaak (Gründervater)",
-            "Jean-Claude Juncker (Kommissionschef)",
-            "Kommissionschef José Manuel Barroso"
+            "Der Vertrag zur Gründung der EU und Vorbereitung des Euro",
+            "Der Vertrag zur Abschaffung der Zölle",
+            "Der Friedensvertrag nach dem Kalten Krieg",
+            "Der Beitrittsvertrag Österreichs zur EU"
           ],
           "a": 0,
-          "exp": "Jan Willem Beyen (Gründervater) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "tip": "Er meißelte den Übergang von der EG zur Europäischen Union (EU) fest.",
+          "exp": "Der Vertrag von Maastricht trat am 1. November 1993 in Kraft."
         }
       ]
     },
     "Österreich": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Österreich?",
+          "q": "In welchem Jahr stimmte die Bevölkerung dieses Landes in einer Volksabstimmung für den Beitritt zur Europäischen Union?",
           "o": [
-            "parlamentarische Bundesrepublik",
-            "parlamentarische Monarchie",
-            "parlamentarische Erbmonarchie",
-            "Großherzogtum"
+            "1989",
+            "1994",
+            "1998",
+            "2002"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Österreich ist: parlamentarische Bundesrepublik."
+          "a": 1,
+          "tip": "Der tatsächliche Beitritt erfolgte am 1. Jänner 1995.",
+          "exp": "Zwei Drittel der stimmberechtigten Österreicher stimmten 1994 für den Beitritt."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Österreich?",
+          "q": "In welchem Jahr stimmte die Bevölkerung dieses Landes in einer Volksabstimmung für den Beitritt zur Europäischen Union?",
           "o": [
-            "Nationalrat",
-            "Seimas",
-            "Parlament",
-            "Abgeordnetenhaus"
+            "1989",
+            "1994",
+            "1998",
+            "2002"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Österreich trägt den Namen Nationalrat."
+          "a": 1,
+          "tip": "Der tatsächliche Beitritt erfolgte am 1. Jänner 1995.",
+          "exp": "Zwei Drittel der stimmberechtigten Österreicher stimmten 1994 für den Beitritt."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Österreich gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welches EU-Organ vertritt das Volk der EU-Bürger direkt und wird alle 5 Jahre direkt gewählt?",
           "o": [
-            "deutsche Sprache",
-            "finnische und schwedische Amtssprache",
-            "tschechische Sprache",
-            "dänische Sprache"
+            "Der Europäische Rat",
+            "Das Europäische Parlament",
+            "Die Europäische Kommission",
+            "Der Rat der Europäischen Union"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: deutsche Sprache."
+          "a": 1,
+          "tip": "Hier sitzen die direkt gewählten Volksvertreter (MEPs).",
+          "exp": "Das Europäische Parlament teilt sich die Gesetzgebung mit dem Ministerrat."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welches EU-Organ vertritt das Volk der EU-Bürger direkt und wird alle 5 Jahre direkt gewählt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Der Europäische Rat",
+            "Das Europäische Parlament",
+            "Die Europäische Kommission",
+            "Der Rat der Europäischen Union"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Hier sitzen die direkt gewählten Volksvertreter (MEPs).",
+          "exp": "Das Europäische Parlament teilt sich die Gesetzgebung mit dem Ministerrat."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Österreich normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher Artikel der Verfassung schützt das verfassungsrechtliche Grundprinzip des Landes, das auch bei EU-Militäreinsätzen stets beachtet werden muss?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Das Neutralitätsgesetz",
+            "Das Immunitätsgesetz",
+            "Das Notverordnungsrecht",
+            "Das Schengener Abkommen"
           ],
           "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "tip": "Es legt fest, dass das Land keinen fremden Bündnissen beitritt und keine fremden Stützpunkte erlaubt.",
+          "exp": "Das Bundesverfassungsgesetz über die Neutralität Österreichs wurde 1955 beschlossen."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher Artikel der Verfassung schützt das verfassungsrechtliche Grundprinzip des Landes, das auch bei EU-Militäreinsätzen stets beachtet werden muss?",
           "o": [
-            "Kanzler Franz Vranitzky (Beitrittsunterzeichner)",
-            "Alcide De Gasperi (Gründervater)",
-            "ehemalige EU-Kommissarin Dalia Grybauskaitė",
-            "Kommissionsvizepräsident Valdis Dombrovskis"
+            "Das Neutralitätsgesetz",
+            "Das Immunitätsgesetz",
+            "Das Notverordnungsrecht",
+            "Das Schengener Abkommen"
           ],
           "a": 0,
-          "exp": "Kanzler Franz Vranitzky (Beitrittsunterzeichner) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "tip": "Es legt fest, dass das Land keinen fremden Bündnissen beitritt und keine fremden Stützpunkte erlaubt.",
+          "exp": "Das Bundesverfassungsgesetz über die Neutralität Österreichs wurde 1955 beschlossen."
         }
       ]
     },
     "Polen": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Polen?",
+          "q": "Welches wichtige Gremium der EU besteht aus jeweils einem Kommissar oder einer Kommissarin aus jedem Mitgliedstaat?",
           "o": [
-            "parlamentarische Republik",
-            "semipräsidentielle Republik",
-            "parlamentarische Erbmonarchie",
-            "präsidiale Republik"
+            "Der Europäische Gerichtshof",
+            "Die Europäische Kommission",
+            "Der Europäische Rechnungshof",
+            "Die Europäische Investitionsbank"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Polen ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Sie gilt als die „Regierung“ oder Exekutive der EU.",
+          "exp": "Die EU-Kommission schlägt Gesetze vor und überwacht deren Einhaltung."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Polen?",
+          "q": "Welches wichtige Gremium der EU besteht aus jeweils einem Kommissar oder einer Kommissarin aus jedem Mitgliedstaat?",
           "o": [
-            "Sejm",
-            "Parlamento Italiano",
-            "Parlament",
-            "Saeima"
+            "Der Europäische Gerichtshof",
+            "Die Europäische Kommission",
+            "Der Europäische Rechnungshof",
+            "Die Europäische Investitionsbank"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Polen trägt den Namen Sejm."
+          "a": 1,
+          "tip": "Sie gilt als die „Regierung“ oder Exekutive der EU.",
+          "exp": "Die EU-Kommission schlägt Gesetze vor und überwacht deren Einhaltung."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Polen gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welches Koordinierungsgremium bildete dieses Land zusammen mit Tschechien, der Slowakei und Ungarn zur Förderung der regionalen Zusammenarbeit in der EU?",
           "o": [
-            "polnische Sprache",
-            "litauische Sprache",
-            "estnische Sprache",
-            "tschechische Sprache"
+            "Die Benelux-Gruppe",
+            "Die Visegrád-Gruppe",
+            "Der Nordische Rat",
+            "Die Weimarer Dreieck"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: polnische Sprache."
+          "a": 1,
+          "tip": "Die Gruppe ist nach einer ungarischen Stadt benannt.",
+          "exp": "Die V4 wurde 1991 auf der Burg Visegrád gegründet."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welches Koordinierungsgremium bildete dieses Land zusammen mit Tschechien, der Slowakei und Ungarn zur Förderung der regionalen Zusammenarbeit in der EU?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Die Benelux-Gruppe",
+            "Die Visegrád-Gruppe",
+            "Der Nordische Rat",
+            "Die Weimarer Dreieck"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Die Gruppe ist nach einer ungarischen Stadt benannt.",
+          "exp": "Die V4 wurde 1991 auf der Burg Visegrád gegründet."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Polen normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Wie heißt die europäische Agentur für die Grenz- und Küstenwache, die ihren Hauptsitz in der Hauptstadt dieses Landes hat?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Europol",
+            "Frontex",
+            "Eurojust",
+            "Cedefop"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Der Name leitet sich von den französischen Wörtern für „Frontières extérieures“ (Außengrenzen) ab.",
+          "exp": "Frontex hat seinen operativen Hauptsitz in Warschau."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Wie heißt die europäische Agentur für die Grenz- und Küstenwache, die ihren Hauptsitz in der Hauptstadt dieses Landes hat?",
           "o": [
-            "Ratspräsident Donald Tusk",
-            "Außenbeauftragter Josep Borrell",
-            "Klimaaktivistin Greta Thunberg",
-            "Alcide De Gasperi (Gründervater)"
+            "Europol",
+            "Frontex",
+            "Eurojust",
+            "Cedefop"
           ],
-          "a": 0,
-          "exp": "Ratspräsident Donald Tusk vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Der Name leitet sich von den französischen Wörtern für „Frontières extérieures“ (Außengrenzen) ab.",
+          "exp": "Frontex hat seinen operativen Hauptsitz in Warschau."
         }
       ]
     },
     "Portugal": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Portugal?",
+          "q": "Welcher Vertrag der EU wurde 2007 unterzeichnet und reformierte die Funktionsweise der Europäischen Union grundlegend?",
           "o": [
-            "semipräsidentielle Republik",
-            "präsidiale Republik",
-            "Großherzogtum",
-            "parlamentarische Erbmonarchie"
+            "Vertrag von Nizza",
+            "Vertrag von Lissabon",
+            "Vertrag von Amsterdam",
+            "Vertrag von Maastricht"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Portugal ist: semipräsidentielle Republik."
+          "a": 1,
+          "tip": "Er trägt den Namen der Hauptstadt dieses südeuropäischen Landes.",
+          "exp": "Der Vertrag von Lissabon ersetzte den Verfassungsentwurf der EU."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Portugal?",
+          "q": "Welcher Vertrag der EU wurde 2007 unterzeichnet und reformierte die Funktionsweise der Europäischen Union grundlegend?",
           "o": [
-            "Versammlung der Republik",
-            "Eduskunta",
-            "Saeima",
-            "Parlament (Vouli)"
+            "Vertrag von Nizza",
+            "Vertrag von Lissabon",
+            "Vertrag von Amsterdam",
+            "Vertrag von Maastricht"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Portugal trägt den Namen Versammlung der Republik."
+          "a": 1,
+          "tip": "Er trägt den Namen der Hauptstadt dieses südeuropäischen Landes.",
+          "exp": "Der Vertrag von Lissabon ersetzte den Verfassungsentwurf der EU."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Portugal gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Wie wird die europäische Währungsunion genannt, der 20 der 27 EU-Staaten angehören?",
           "o": [
-            "portugiesische Sprache",
-            "lettische Sprache",
-            "deutsche Sprache",
-            "schwedische Sprache"
+            "Schengen-Raum",
+            "Eurozone",
+            "Binnenmarkt",
+            "Europäischer Wirtschaftsraum"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: portugiesische Sprache."
+          "a": 1,
+          "tip": "Das Wort leitet sich direkt von der gemeinsamen Währung ab.",
+          "exp": "Die Eurozone umfasst alle EU-Staaten, die den Euro eingeführt haben."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Wie wird die europäische Währungsunion genannt, der 20 der 27 EU-Staaten angehören?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Schengen-Raum",
+            "Eurozone",
+            "Binnenmarkt",
+            "Europäischer Wirtschaftsraum"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Das Wort leitet sich direkt von der gemeinsamen Währung ab.",
+          "exp": "Die Eurozone umfasst alle EU-Staaten, die den Euro eingeführt haben."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Portugal normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher Politiker dieses Landes war von 2004 bis 2014 für zwei Amtszeiten Präsident der Europäischen Kommission?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Mário Soares",
+            "José Manuel Barroso",
+            "António Guterres",
+            "Marcelo Rebelo de Sousa"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Sein Nachfolger an der Spitze der EU-Kommission war Jean-Claude Juncker.",
+          "exp": "Barroso war zuvor Premierminister Portugals."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher Politiker dieses Landes war von 2004 bis 2014 für zwei Amtszeiten Präsident der Europäischen Kommission?",
           "o": [
-            "Kommissionschef José Manuel Barroso",
-            "EU-Kommissarin Helena Dalli",
-            "Außenbeauftragter Josep Borrell",
-            "Robert Schuman (EU-Gründervater)"
+            "Mário Soares",
+            "José Manuel Barroso",
+            "António Guterres",
+            "Marcelo Rebelo de Sousa"
           ],
-          "a": 0,
-          "exp": "Kommissionschef José Manuel Barroso vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Sein Nachfolger an der Spitze der EU-Kommission war Jean-Claude Juncker.",
+          "exp": "Barroso war zuvor Premierminister Portugals."
         }
       ]
     },
     "Rumänien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Rumänien?",
+          "q": "Welche Vertretung besitzt jedes EU-Mitgliedsland in der Europäischen Kommission?",
           "o": [
-            "semipräsidentielle Republik",
-            "parlamentarische Monarchie",
-            "parlamentarische Republik",
-            "parlamentarische Bundesrepublik"
+            "Genau einen EU-Kommissar",
+            "Zwei EU-Kommissare",
+            "Fünf EU-Kommissare",
+            "Die Anzahl hängt von der Einwohnerzahl ab"
           ],
           "a": 0,
-          "exp": "Die Staatsform von Rumänien ist: semipräsidentielle Republik."
+          "tip": "Das Prinzip lautet: Ein Land, ein Mitglied in der Kommission.",
+          "exp": "Jedes Land stellt ein Mitglied der 27-köpfigen EU-Kommission."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Rumänien?",
+          "q": "Welche Vertretung besitzt jedes EU-Mitgliedsland in der Europäischen Kommission?",
           "o": [
-            "Parlament",
-            "Deutscher Bundestag",
-            "Repräsentantenhaus",
-            "Föderales Parlament"
+            "Genau einen EU-Kommissar",
+            "Zwei EU-Kommissare",
+            "Fünf EU-Kommissare",
+            "Die Anzahl hängt von der Einwohnerzahl ab"
           ],
           "a": 0,
-          "exp": "Das Parlament in Rumänien trägt den Namen Parlament."
+          "tip": "Das Prinzip lautet: Ein Land, ein Mitglied in der Kommission.",
+          "exp": "Jedes Land stellt ein Mitglied der 27-köpfigen EU-Kommission."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Rumänien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "In welchem Jahr wurden Grenzübertritte über den Seeweg und Luftweg für dieses Land im Schengen-Raum teilintegriert („Schengen-Air“)?",
           "o": [
-            "rumänische Sprache",
-            "griechische Sprache",
-            "schwedische Sprache",
-            "ungarische Sprache"
+            "2013",
+            "2020",
+            "2024",
+            "2026"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: rumänische Sprache."
+          "a": 2,
+          "tip": "Es geschah im März eines sehr kürzlich vergangenen Jahres.",
+          "exp": "Rumänien trat am 31. März 2024 dem Schengen-Raum für Flug- und Schiffsverkehr bei."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "In welchem Jahr wurden Grenzübertritte über den Seeweg und Luftweg für dieses Land im Schengen-Raum teilintegriert („Schengen-Air“)?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "2013",
+            "2020",
+            "2024",
+            "2026"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 2,
+          "tip": "Es geschah im März eines sehr kürzlich vergangenen Jahres.",
+          "exp": "Rumänien trat am 31. März 2024 dem Schengen-Raum für Flug- und Schiffsverkehr bei."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Rumänien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Was versteht man unter dem Begriff „EU-Kohäsionspolitik“?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Die gemeinsame Abwehr von Cyberangriffen",
+            "Die Verringerung von wirtschaftlichen und sozialen Unterschieden zwischen den Regionen Europas",
+            "Die Kontrolle von Passagieren an Binnengrenzen",
+            "Die Vereinheitlichung der Schulsysteme"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Kohäsion bedeutet wörtlich „Zusammenhalt“.",
+          "exp": "Die Kohäsionspolitik fördert finanzschwächere Regionen gezielt mit EU-Mitteln."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Was versteht man unter dem Begriff „EU-Kohäsionspolitik“?",
           "o": [
-            "Chefunterhändler Vasile Pușcaș",
-            "Außenbeauftragte Kaja Kallas",
-            "Finanzpolitikerin Kristalina Georgiewa",
-            "Politiker Alexander Dubček (Prager Frühling)"
+            "Die gemeinsame Abwehr von Cyberangriffen",
+            "Die Verringerung von wirtschaftlichen und sozialen Unterschieden zwischen den Regionen Europas",
+            "Die Kontrolle von Passagieren an Binnengrenzen",
+            "Die Vereinheitlichung der Schulsysteme"
           ],
-          "a": 0,
-          "exp": "Chefunterhändler Vasile Pușcaș vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Kohäsion bedeutet wörtlich „Zusammenhalt“.",
+          "exp": "Die Kohäsionspolitik fördert finanzschwächere Regionen gezielt mit EU-Mitteln."
         }
       ]
     },
     "Schweden": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Schweden?",
+          "q": "Welches europäische Bürgerrecht erlaubt es Menschen aus allen EU-Ländern, in diesem skandinavischen Land ohne Arbeitsvisum eine Arbeit aufzunehmen?",
           "o": [
-            "parlamentarische Monarchie",
-            "parlamentarische Bundesrepublik",
-            "parlamentarische Republik",
-            "parlamentarische Erbmonarchie"
+            "Das Europäische Asylrecht",
+            "Die Arbeitnehmerfreizügigkeit",
+            "Die Diplomatenimmunität",
+            "Das Niederlassungsprivileg"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Schweden ist: parlamentarische Monarchie."
+          "a": 1,
+          "tip": "Es gehört zu den vier Grundfreiheiten des EU-Binnenmarktes.",
+          "exp": "Die Arbeitnehmerfreizügigkeit erlaubt die freie Stellenwahl in der EU."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Schweden?",
+          "q": "Welches europäische Bürgerrecht erlaubt es Menschen aus allen EU-Ländern, in diesem skandinavischen Land ohne Arbeitsvisum eine Arbeit aufzunehmen?",
           "o": [
-            "Riksdag",
-            "Versammlung der Republik",
-            "Abgeordnetenkammer",
-            "Folketing"
+            "Das Europäische Asylrecht",
+            "Die Arbeitnehmerfreizügigkeit",
+            "Die Diplomatenimmunität",
+            "Das Niederlassungsprivileg"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Schweden trägt den Namen Riksdag."
+          "a": 1,
+          "tip": "Es gehört zu den vier Grundfreiheiten des EU-Binnenmarktes.",
+          "exp": "Die Arbeitnehmerfreizügigkeit erlaubt die freie Stellenwahl in der EU."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Schweden gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Obwohl das Land seit 1995 EU-Mitglied ist, hat die Bevölkerung in einer Volksabstimmung 2003 die Einführung welcher Neuerung abgelehnt?",
           "o": [
-            "schwedische Sprache",
-            "deutsche Sprache",
-            "drei offizielle Amtssprachen",
-            "niederländische Sprache"
+            "Den Beitritt zum Schengen-Raum",
+            "Die Einführung des Euro als Währung",
+            "Das EU-Parlamentswahlrecht",
+            "Den Beitritt zur EU-Zollunion"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: schwedische Sprache."
+          "a": 1,
+          "tip": "Das Land bezahlt deshalb bis heute mit der Kronen-Währung.",
+          "exp": "Schweden behielt nach dem Referendum 2003 die schwedische Krone."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Obwohl das Land seit 1995 EU-Mitglied ist, hat die Bevölkerung in einer Volksabstimmung 2003 die Einführung welcher Neuerung abgelehnt?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Den Beitritt zum Schengen-Raum",
+            "Die Einführung des Euro als Währung",
+            "Das EU-Parlamentswahlrecht",
+            "Den Beitritt zur EU-Zollunion"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Das Land bezahlt deshalb bis heute mit der Kronen-Währung.",
+          "exp": "Schweden behielt nach dem Referendum 2003 die schwedische Krone."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Schweden normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher Begriff beschreibt das Recht von EU-Bürgern, Einsicht in offizielle Dokumente von EU-Institutionen zu verlangen – ein Prinzip, das traditionell aus diesem Land stammt?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Amtsgeheimnis",
+            "Transparenzprinzip",
+            "Datenschutz-Grundverordnung",
+            "Zensurrecht"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Es sorgt dafür, dass die europäische Politik für Bürger nachvollziehbar ist.",
+          "exp": "Schweden führte bereits 1766 das historische Öffentlichkeitsprinzip ein."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher Begriff beschreibt das Recht von EU-Bürgern, Einsicht in offizielle Dokumente von EU-Institutionen zu verlangen – ein Prinzip, das traditionell aus diesem Land stammt?",
           "o": [
-            "Klimaaktivistin Greta Thunberg",
-            "Außenbeauftragter Josep Borrell",
-            "Paul-Henri Spaak (Gründervater)",
-            "Finanzpolitikerin Kristalina Georgiewa"
+            "Amtsgeheimnis",
+            "Transparenzprinzip",
+            "Datenschutz-Grundverordnung",
+            "Zensurrecht"
           ],
-          "a": 0,
-          "exp": "Klimaaktivistin Greta Thunberg vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Es sorgt dafür, dass die europäische Politik für Bürger nachvollziehbar ist.",
+          "exp": "Schweden führte bereits 1766 das historische Öffentlichkeitsprinzip ein."
         }
       ]
     },
     "Slowakei": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Slowakei?",
+          "q": "Welche Währung wird in diesem Mitteleuropäischen Land verwendet, das direkt an Österreich grenzt?",
           "o": [
-            "parlamentarische Republik",
-            "Großherzogtum",
-            "parlamentarische Monarchie",
-            "parlamentarische Bundesrepublik"
+            "Slowakische Krone",
+            "Euro",
+            "Forint",
+            "Złoty"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Slowakei ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Das Land führte die Währung im Jahr 2009 ein.",
+          "exp": "Die Slowakei führte am 1. Jänner 2009 den Euro ein."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Slowakei?",
+          "q": "Welche Währung wird in diesem Mitteleuropäischen Land verwendet, das direkt an Österreich grenzt?",
           "o": [
-            "Nationalrat",
-            "Abgeordnetenhaus",
-            "Seimas",
-            "Sejm"
+            "Slowakische Krone",
+            "Euro",
+            "Forint",
+            "Złoty"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Slowakei trägt den Namen Nationalrat."
+          "a": 1,
+          "tip": "Das Land führte die Währung im Jahr 2009 ein.",
+          "exp": "Die Slowakei führte am 1. Jänner 2009 den Euro ein."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Slowakei gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welches Organ der EU übt zusammen mit dem Europäischen Parlament die Gesetzgebung (Legislative) aus?",
           "o": [
-            "slowakische Sprache",
-            "Griechisch und Türkisch",
-            "schwedische Sprache",
-            "Maltesisch und Englisch"
+            "Der Rat der Europäischen Union",
+            "Die Europäische Zentralbank",
+            "Der Europäische Gerichtshof",
+            "Der Ausschuss der Regionen"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: slowakische Sprache."
+          "tip": "Hier kommen die Fachminister der einzelnen Mitgliedstaaten zusammen.",
+          "exp": "Der Rat der Europäischen Union repräsentiert die Regierungen der Mitgliedstaaten."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welches Organ der EU übt zusammen mit dem Europäischen Parlament die Gesetzgebung (Legislative) aus?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Der Rat der Europäischen Union",
+            "Die Europäische Zentralbank",
+            "Der Europäische Gerichtshof",
+            "Der Ausschuss der Regionen"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Hier kommen die Fachminister der einzelnen Mitgliedstaaten zusammen.",
+          "exp": "Der Rat der Europäischen Union repräsentiert die Regierungen der Mitgliedstaaten."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Slowakei normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Was legt fest, wie viele Sitze jedem Land im Europäischen Parlament zustehen?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Das Prinzip der „degressiven Proportionalität“",
+            "Die reine Fläche des Staates",
+            "Die Höhe der Einzahlungen in den EU-Haushalt",
+            "Das Alter des jeweiligen Staates"
           ],
           "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "tip": "Kleinere Länder bekommen verhältnismäßig mehr Sitze pro Einwohner als große Länder.",
+          "exp": "Das Prinzip stellt sicher, dass auch kleine Stimmen Gehör finden."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Was legt fest, wie viele Sitze jedem Land im Europäischen Parlament zustehen?",
           "o": [
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "ehemaliger Premier Zoran Milanović",
-            "Ministerpräsident Viktor Orbán",
-            "ehemaliger Ratspräsident Anders Fogh Rasmussen"
+            "Das Prinzip der „degressiven Proportionalität“",
+            "Die reine Fläche des Staates",
+            "Die Höhe der Einzahlungen in den EU-Haushalt",
+            "Das Alter des jeweiligen Staates"
           ],
           "a": 0,
-          "exp": "Politiker Alexander Dubček (Prager Frühling) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "tip": "Kleinere Länder bekommen verhältnismäßig mehr Sitze pro Einwohner als große Länder.",
+          "exp": "Das Prinzip stellt sicher, dass auch kleine Stimmen Gehör finden."
         }
       ]
     },
     "Slowenien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Slowenien?",
+          "q": "Wie viele Sterne befinden sich auf der offiziellen Flagge der Europäischen Union?",
           "o": [
-            "parlamentarische Republik",
-            "Großherzogtum",
-            "semipräsidentielle Republik",
-            "parlamentarische Monarchie"
+            "10 Sterne",
+            "12 Sterne",
+            "27 Sterne",
+            "50 Sterne"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Slowenien ist: parlamentarische Republik."
+          "a": 1,
+          "tip": "Die Anzahl steht symbolisch für Vollkommenheit und Einheit, nicht für die Anzahl der Länder.",
+          "exp": "Die 12 Sterne auf blauem Grund sind das Symbol der europäischen Einheit."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Slowenien?",
+          "q": "Wie viele Sterne befinden sich auf der offiziellen Flagge der Europäischen Union?",
           "o": [
-            "Nationalversammlung",
-            "Repräsentantenhaus",
-            "Parlamento Italiano",
-            "Abgeordnetenkammer"
+            "10 Sterne",
+            "12 Sterne",
+            "27 Sterne",
+            "50 Sterne"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Slowenien trägt den Namen Nationalversammlung."
+          "a": 1,
+          "tip": "Die Anzahl steht symbolisch für Vollkommenheit und Einheit, nicht für die Anzahl der Länder.",
+          "exp": "Die 12 Sterne auf blauem Grund sind das Symbol der europäischen Einheit."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Slowenien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Dieses Nachbarland Österreichs war das erste der 2004 beigetretenen Länder, das welche Voraussetzung erfüllte?",
           "o": [
-            "slowenische Sprache",
-            "Spanisch (Kastilisch) sowie Katalanisch/Galicisch/Baskisch",
-            "tschechische Sprache",
-            "portugiesische Sprache"
+            "Die Übernahme des Euro bereits im Jahr 2007",
+            "Der Austritt aus der EU",
+            "Der Bau des EU-Parlaments",
+            "Die Abschaffung aller Steuern"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: slowenische Sprache."
+          "tip": "Es trat der europäischen Gemeinschaftswährung sehr schnell bei.",
+          "exp": "Slowenien trat am 1. Jänner 2007 der Eurozone bei."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Dieses Nachbarland Österreichs war das erste der 2004 beigetretenen Länder, das welche Voraussetzung erfüllte?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Die Übernahme des Euro bereits im Jahr 2007",
+            "Der Austritt aus der EU",
+            "Der Bau des EU-Parlaments",
+            "Die Abschaffung aller Steuern"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Es trat der europäischen Gemeinschaftswährung sehr schnell bei.",
+          "exp": "Slowenien trat am 1. Jänner 2007 der Eurozone bei."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Slowenien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welcher Begriff beschreibt die Fähigkeit von EU-Mitgliedsländern, bei bestimmten Entscheidungen im Rat (z. B. Außenpolitik) Gesetze allein zu blockieren?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Mehrheitsentscheid",
+            "Vetorecht",
+            "Enthaltsamkeitsklausel",
+            "Dringlichkeitsverfahren"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Das lateinische Wort „Veto“ bedeutet „Ich verbiete“.",
+          "exp": "Das Einstimmigkeitsprinzip sichert jedem Land ein Vetorecht in Kernbereichen."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welcher Begriff beschreibt die Fähigkeit von EU-Mitgliedsländern, bei bestimmten Entscheidungen im Rat (z. B. Außenpolitik) Gesetze allein zu blockieren?",
           "o": [
-            "Präsidentin Nataša Pirc Musar",
-            "Jan Willem Beyen (Gründervater)",
-            "ehemaliger Präsident Glafkos Klerides",
-            "Klimaaktivistin Greta Thunberg"
+            "Mehrheitsentscheid",
+            "Vetorecht",
+            "Enthaltsamkeitsklausel",
+            "Dringlichkeitsverfahren"
           ],
-          "a": 0,
-          "exp": "Präsidentin Nataša Pirc Musar vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Das lateinische Wort „Veto“ bedeutet „Ich verbiete“.",
+          "exp": "Das Einstimmigkeitsprinzip sichert jedem Land ein Vetorecht in Kernbereichen."
         }
       ]
     },
     "Spanien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Spanien?",
+          "q": "In welchem Jahrzehnt traten dieser Staat und sein Nachbarland Portugal der Europäischen Gemeinschaft bei?",
           "o": [
-            "parlamentarische Erbmonarchie",
-            "parlamentarische Bundesrepublik",
-            "parlamentarische Monarchie",
-            "präsidiale Republik"
+            "1970er Jahre",
+            "1980er Jahre",
+            "1990er Jahre",
+            "2000er Jahre"
           ],
-          "a": 0,
-          "exp": "Die Staatsform von Spanien ist: parlamentarische Erbmonarchie."
+          "a": 1,
+          "tip": "Der Beitritt erfolgte exakt im Jahr 1986.",
+          "exp": "Spanien trat am 1. Jänner 1986 der EG bei."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Spanien?",
+          "q": "In welchem Jahrzehnt traten dieser Staat und sein Nachbarland Portugal der Europäischen Gemeinschaft bei?",
           "o": [
-            "Cortes Generales",
-            "Saeima",
-            "Generalstaaten",
-            "Riksdag"
+            "1970er Jahre",
+            "1980er Jahre",
+            "1990er Jahre",
+            "2000er Jahre"
           ],
-          "a": 0,
-          "exp": "Das Parlament in Spanien trägt den Namen Cortes Generales."
+          "a": 1,
+          "tip": "Der Beitritt erfolgte exakt im Jahr 1986.",
+          "exp": "Spanien trat am 1. Jänner 1986 der EG bei."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Spanien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welcher Hochkommissar bzw. Hohe Vertreter vertritt die EU nach außen in Fragen der gemeinsamen Außen- und Sicherheitspolitik?",
           "o": [
-            "Spanisch (Kastilisch) sowie Katalanisch/Galicisch/Baskisch",
-            "Luxemburgisch, Französisch und Deutsch",
-            "finnische und schwedische Amtssprache",
-            "schwedische Sprache"
+            "Der Hohe Vertreter der EU für Außen- und Sicherheitspolitik",
+            "Der NATO-Generalsekretär",
+            "Der Präsident des UN-Sicherheitsrates",
+            "Der Europäische Bürgerbeauftragte"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: Spanisch (Kastilisch) sowie Katalanisch/Galicisch/Baskisch."
+          "tip": "Dieser Posten wird oft inoffiziell als „EU-Außenminister“ bezeichnet.",
+          "exp": "Der Hohe Vertreter koordiniert die gemeinsame Außenpolitik."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welcher Hochkommissar bzw. Hohe Vertreter vertritt die EU nach außen in Fragen der gemeinsamen Außen- und Sicherheitspolitik?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Der Hohe Vertreter der EU für Außen- und Sicherheitspolitik",
+            "Der NATO-Generalsekretär",
+            "Der Präsident des UN-Sicherheitsrates",
+            "Der Europäische Bürgerbeauftragte"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Dieser Posten wird oft inoffiziell als „EU-Außenminister“ bezeichnet.",
+          "exp": "Der Hohe Vertreter koordiniert die gemeinsame Außenpolitik."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Spanien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welche Exklaven dieses Landes an der nordafrikanischen Küste bilden eine Außengrenze der Europäischen Union auf dem afrikanischen Kontinent?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Ceuta und Melilla",
+            "Gibraltar und Ibiza",
+            "Las Palmas und Teneriffa",
+            "Mallorca und Menorca"
           ],
           "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "tip": "Es handelt sich um zwei spanische Städte an der Küste Marokkos.",
+          "exp": "Ceuta und Melilla sind spanische Hoheitsgebiete auf dem afrikanischen Festland."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welche Exklaven dieses Landes an der nordafrikanischen Küste bilden eine Außengrenze der Europäischen Union auf dem afrikanischen Kontinent?",
           "o": [
-            "Außenbeauftragter Josep Borrell",
-            "Paul-Henri Spaak (Gründervater)",
-            "Kommissionspräsidenten-Kandidat Pat Cox",
-            "EU-Kommissar Erkki Liikanen"
+            "Ceuta und Melilla",
+            "Gibraltar und Ibiza",
+            "Las Palmas und Teneriffa",
+            "Mallorca und Menorca"
           ],
           "a": 0,
-          "exp": "Außenbeauftragter Josep Borrell vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "tip": "Es handelt sich um zwei spanische Städte an der Küste Marokkos.",
+          "exp": "Ceuta und Melilla sind spanische Hoheitsgebiete auf dem afrikanischen Festland."
         }
       ]
     },
     "Tschechien": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Tschechien?",
+          "q": "Welcher berühmte Staatsmann und Bürgerrechtler war der erste Präsident dieses Landes nach dem Fall des Eisernen Vorhangs und trieb den EU-Beitritt voran?",
           "o": [
-            "parlamentarische Republik",
-            "Großherzogtum",
-            "parlamentarische Monarchie",
-            "semipräsidentielle Republik"
+            "Václav Havel",
+            "Alexander Dubček",
+            "Lech Wałęsa",
+            "Viktor Orbán"
           ],
           "a": 0,
-          "exp": "Die Staatsform von Tschechien ist: parlamentarische Republik."
+          "tip": "Er war auch ein bekannter Schriftsteller und Dramatiker.",
+          "exp": "Havel war von 1993 bis 2003 Präsident der Tschechischen Republik."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Tschechien?",
+          "q": "Welcher berühmte Staatsmann und Bürgerrechtler war der erste Präsident dieses Landes nach dem Fall des Eisernen Vorhangs und trieb den EU-Beitritt voran?",
           "o": [
-            "Abgeordnetenhaus",
-            "Parlament (Vouli)",
-            "Parlament",
-            "Nationalrat"
+            "Václav Havel",
+            "Alexander Dubček",
+            "Lech Wałęsa",
+            "Viktor Orbán"
           ],
           "a": 0,
-          "exp": "Das Parlament in Tschechien trägt den Namen Abgeordnetenhaus."
+          "tip": "Er war auch ein bekannter Schriftsteller und Dramatiker.",
+          "exp": "Havel war von 1993 bis 2003 Präsident der Tschechischen Republik."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Tschechien gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welche offizielle Währung nutzt dieses mitteleuropäische Land weiterhin, obwohl es Mitglied der EU ist?",
           "o": [
-            "tschechische Sprache",
-            "schwedische Sprache",
-            "rumänische Sprache",
-            "kyrillische Schrift"
+            "Tschechische Krone",
+            "Euro",
+            "Dinar",
+            "Lei"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: tschechische Sprache."
+          "tip": "Die Währung trägt die Bezeichnung „Krone“ (Koruň).",
+          "exp": "Tschechien bezahlt weiterhin mit der tschechischen Krone."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welche offizielle Währung nutzt dieses mitteleuropäische Land weiterhin, obwohl es Mitglied der EU ist?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Tschechische Krone",
+            "Euro",
+            "Dinar",
+            "Lei"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Die Währung trägt die Bezeichnung „Krone“ (Koruň).",
+          "exp": "Tschechien bezahlt weiterhin mit der tschechischen Krone."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Tschechien normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welches Gesetzgebungsverfahren ist das Standardverfahren in der EU, bei dem das Europäische Parlament und der Rat gleichberechtigt entscheiden?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Zustimmungsverfahren",
+            "Ordentliches Gesetzgebungsverfahren",
+            "Anhörungsverfahren",
+            "Dringlichkeitsanordnung"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Das Wort drückt aus, dass dies der normale und „ordentliche“ Weg ist.",
+          "exp": "Das ordentliche Gesetzgebungsverfahren sichert die gleichberechtigte Mitbestimmung."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welches Gesetzgebungsverfahren ist das Standardverfahren in der EU, bei dem das Europäische Parlament und der Rat gleichberechtigt entscheiden?",
           "o": [
-            "Václav Havel (erster tschechischer Präsident)",
-            "ehemaliger Präsident Glafkos Klerides",
-            "Politiker Alexander Dubček (Prager Frühling)",
-            "Präsidentin Nataša Pirc Musar"
+            "Zustimmungsverfahren",
+            "Ordentliches Gesetzgebungsverfahren",
+            "Anhörungsverfahren",
+            "Dringlichkeitsanordnung"
           ],
-          "a": 0,
-          "exp": "Václav Havel (erster tschechischer Präsident) vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Das Wort drückt aus, dass dies der normale und „ordentliche“ Weg ist.",
+          "exp": "Das ordentliche Gesetzgebungsverfahren sichert die gleichberechtigte Mitbestimmung."
         }
       ]
     },
     "Ungarn": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Ungarn?",
+          "q": "Was passiert bei den Europawahlen, die alle fünf Jahre in allen Mitgliedstaaten stattfinden?",
           "o": [
-            "parlamentarische Republik",
-            "parlamentarische Bundesrepublik",
-            "Großherzogtum",
-            "parlamentarische Monarchie"
+            "Die Bürger wählen die Abgeordneten des Europäischen Parlaments.",
+            "Die Bürger wählen den Präsidenten der USA.",
+            "Die Bürger bestimmen die Richter des EuGH.",
+            "Die Bürger wählen die Bürgermeister von Brüssel."
           ],
           "a": 0,
-          "exp": "Die Staatsform von Ungarn ist: parlamentarische Republik."
+          "tip": "Es ist die einzige Direktwahl auf europäischer Ebene.",
+          "exp": "Die Abgeordneten des EU-Parlaments werden direkt von den Bürgern gewählt."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Ungarn?",
+          "q": "Was passiert bei den Europawahlen, die alle fünf Jahre in allen Mitgliedstaaten stattfinden?",
           "o": [
-            "Nationalversammlung",
-            "Versammlung der Republik",
-            "Abgeordnetenkammer",
-            "Deutscher Bundestag"
+            "Die Bürger wählen die Abgeordneten des Europäischen Parlaments.",
+            "Die Bürger wählen den Präsidenten der USA.",
+            "Die Bürger bestimmen die Richter des EuGH.",
+            "Die Bürger wählen die Bürgermeister von Brüssel."
           ],
           "a": 0,
-          "exp": "Das Parlament in Ungarn trägt den Namen Nationalversammlung."
+          "tip": "Es ist die einzige Direktwahl auf europäischer Ebene.",
+          "exp": "Die Abgeordneten des EU-Parlaments werden direkt von den Bürgern gewählt."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Ungarn gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Welcher Artikel des EU-Vertrags (Vertrag über die Europäische Union) regelt das Verfahren, wenn einem Land wegen Verletzung von Grundwerten wie Rechtsstaatlichkeit Stimmrechte entzogen werden können?",
           "o": [
-            "ungarische Sprache",
-            "schwedische Sprache",
-            "drei offizielle Amtssprachen",
-            "deutsche Sprache"
+            "Artikel 7",
+            "Artikel 50",
+            "Artikel 13",
+            "Artikel 100"
           ],
           "a": 0,
-          "exp": "Offiziell gilt dort: ungarische Sprache."
+          "tip": "Es ist eine einstellige, sehr bekannte Artikelnummer.",
+          "exp": "Artikel 7 des EU-Vertrags sieht Sanktionen bei Grundwerteverletzungen vor."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Welcher Artikel des EU-Vertrags (Vertrag über die Europäische Union) regelt das Verfahren, wenn einem Land wegen Verletzung von Grundwerten wie Rechtsstaatlichkeit Stimmrechte entzogen werden können?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "Artikel 7",
+            "Artikel 50",
+            "Artikel 13",
+            "Artikel 100"
           ],
           "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "tip": "Es ist eine einstellige, sehr bekannte Artikelnummer.",
+          "exp": "Artikel 7 des EU-Vertrags sieht Sanktionen bei Grundwerteverletzungen vor."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Ungarn normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Welche nationale Währung nutzt der Staat im Karpatenbecken, der 2004 der EU beitrat?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Złoty",
+            "Forint",
+            "Lei",
+            "Lev"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Die Abkürzung dieser Währung lautet HUF.",
+          "exp": "Ungarn nutzt weiterhin den ungarischen Forint als Zahlungsmittel."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Welche nationale Währung nutzt der Staat im Karpatenbecken, der 2004 der EU beitrat?",
           "o": [
-            "Ministerpräsident Viktor Orbán",
-            "Walter Hallstein (erster EU-Kommissionschef)",
-            "Außenbeauftragter Josep Borrell",
-            "EU-Kommissarin Helena Dalli"
+            "Złoty",
+            "Forint",
+            "Lei",
+            "Lev"
           ],
-          "a": 0,
-          "exp": "Ministerpräsident Viktor Orbán vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Die Abkürzung dieser Währung lautet HUF.",
+          "exp": "Ungarn nutzt weiterhin den ungarischen Forint als Zahlungsmittel."
         }
       ]
     },
     "Zypern": {
       "1": [
         {
-          "q": "Welche Regierungsform bzw. Staatsform hat Zypern?",
+          "q": "Welches besondere politische Problem betrifft dieses Mitgliedsland seit 1974 und erschwert die EU-Integration der gesamten Insel?",
           "o": [
-            "präsidiale Republik",
-            "semipräsidentielle Republik",
-            "parlamentarische Monarchie",
-            "parlamentarische Erbmonarchie"
+            "Die Teilung der Insel in einen südlichen und einen nördlichen Teil",
+            "Das Fehlen einer Verfassung",
+            "Die Zugehörigkeit zu Südamerika",
+            "Der Mangel an eigenen Häfen"
           ],
           "a": 0,
-          "exp": "Die Staatsform von Zypern ist: präsidiale Republik."
+          "tip": "Der Norden der Insel wird nur von der Türkei als eigener Staat anerkannt.",
+          "exp": "Zypern ist de facto seit der türkischen Intervention 1974 geteilt."
         },
         {
-          "q": "Wie heißt die parlamentarische Vertretung (das Parlament) von Zypern?",
+          "q": "Welches besondere politische Problem betrifft dieses Mitgliedsland seit 1974 und erschwert die EU-Integration der gesamten Insel?",
           "o": [
-            "Repräsentantenhaus",
-            "Eduskunta",
-            "Sabor",
-            "Parlamento Italiano"
+            "Die Teilung der Insel in einen südlichen und einen nördlichen Teil",
+            "Das Fehlen einer Verfassung",
+            "Die Zugehörigkeit zu Südamerika",
+            "Der Mangel an eigenen Häfen"
           ],
           "a": 0,
-          "exp": "Das Parlament in Zypern trägt den Namen Repräsentantenhaus."
+          "tip": "Der Norden der Insel wird nur von der Türkei als eigener Staat anerkannt.",
+          "exp": "Zypern ist de facto seit der türkischen Intervention 1974 geteilt."
         }
       ],
       "2": [
         {
-          "q": "Welche offizielle Sprache wird in Zypern gesprochen (bzw. welche Schrift wird dort genutzt)?",
+          "q": "Wann trat dieses Inselstaat-Mitglied der Eurozone bei und wendete damit den Euro als Landeswährung an?",
           "o": [
-            "Griechisch und Türkisch",
-            "französische Sprache",
-            "slowenische Sprache",
-            "lettische Sprache"
+            "2004",
+            "2008",
+            "2015",
+            "2020"
           ],
-          "a": 0,
-          "exp": "Offiziell gilt dort: Griechisch und Türkisch."
+          "a": 1,
+          "tip": "Es geschah exakt vier Jahre nach dem EU-Beitritt (zusammen mit Malta).",
+          "exp": "Zypern führte am 1. Jänner 2008 den Euro ein."
         },
         {
-          "q": "Wie oft finden die Europawahlen statt, um Abgeordnete nach Straßburg und Brüssel zu schicken?",
+          "q": "Wann trat dieses Inselstaat-Mitglied der Eurozone bei und wendete damit den Euro als Landeswährung an?",
           "o": [
-            "Alle 5 Jahre",
-            "Alle 3 Jahre",
-            "Alle 4 Jahre",
-            "Alle 6 Jahre"
+            "2004",
+            "2008",
+            "2015",
+            "2020"
           ],
-          "a": 0,
-          "exp": "In allen EU-Mitgliedsstaaten wird das Europäische Parlament alle 5 Jahre neu gewählt."
+          "a": 1,
+          "tip": "Es geschah exakt vier Jahre nach dem EU-Beitritt (zusammen mit Malta).",
+          "exp": "Zypern führte am 1. Jänner 2008 den Euro ein."
         }
       ],
       "3": [
         {
-          "q": "Wer vertritt Zypern normalerweise bei den regelmäßigen Treffen der Staats- und Regierungschefs (Europäischer Rat)?",
+          "q": "Das EU-Recht ist im nördlichen Teil der Insel derzeit ausgesetzt. Wie nennt man die Trennlinie zwischen beiden Teilen, die von der UNO überwacht wird?",
           "o": [
-            "Der Premierminister / Bundeskanzler (oder Staatspräsident)",
-            "Der regierende König",
-            "Der Finanzminister des Landes",
-            "Der Präsident des nationalen Parlaments"
+            "Eiserner Vorhang",
+            "Grüne Linie",
+            "Maginot-Linie",
+            "Schengen-Grenze"
           ],
-          "a": 0,
-          "exp": "Der Europäische Rat besteht aus den Staats- und Regierungschefs der 27 EU-Staaten."
+          "a": 1,
+          "tip": "Die Linie ist nach einer Farbe benannt.",
+          "exp": "Die Grüne Linie teilt die Insel Zypern und die Hauptstadt Nikosia."
         },
         {
-          "q": "Welche politische Person des Landes übernahm wichtige Aufgaben in der EU-Politik?",
+          "q": "Das EU-Recht ist im nördlichen Teil der Insel derzeit ausgesetzt. Wie nennt man die Trennlinie zwischen beiden Teilen, die von der UNO überwacht wird?",
           "o": [
-            "ehemaliger Präsident Glafkos Klerides",
-            "EU-Kommissar Erkki Liikanen",
-            "Kommissionspräsidenten-Kandidat Pat Cox",
-            "Finanzpolitikerin Kristalina Georgiewa"
+            "Eiserner Vorhang",
+            "Grüne Linie",
+            "Maginot-Linie",
+            "Schengen-Grenze"
           ],
-          "a": 0,
-          "exp": "ehemaliger Präsident Glafkos Klerides vertritt oder vertrat das Land auf höchster europäischer Ebene."
+          "a": 1,
+          "tip": "Die Linie ist nach einer Farbe benannt.",
+          "exp": "Die Grüne Linie teilt die Insel Zypern und die Hauptstadt Nikosia."
         }
       ]
     }
@@ -6582,1998 +6906,2160 @@ const pool = {
     "Belgien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Belgien bekannt?",
+          "q": "Welche weltberühmte Süßspeise und Beilage, die fälschlicherweise oft Amerika zugeschrieben wird, ist das kulinarische Aushängeschild des Landes?",
           "o": [
-            "belgische Waffeln",
-            "Mămăligă (Maisbrei)",
-            "Ćevapčići & dalmatinischer Schinken",
-            "Baguette & Croissants"
+            "Churros",
+            "Pommes Frites",
+            "Donuts",
+            "Croissants"
           ],
-          "a": 0,
-          "exp": "belgische Waffeln ist ein bekanntes Nationalgericht von Belgien."
+          "a": 1,
+          "tip": "Sie werden traditionell zweifach frittiert und oft mit Mayonnaise in der Tüte serviert.",
+          "exp": "Pommes Frites stammen historisch aus Belgien, wo sie Nationalspeise sind."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Belgien?",
+          "q": "Welche weltberühmte Süßspeise und Beilage, die fälschlicherweise oft Amerika zugeschrieben wird, ist das kulinarische Aushängeschild des Landes?",
           "o": [
-            "Zeichner Peyo (Erfinder der Schlümpfe)",
-            "Radprofi Tadej Pogačar",
-            "Physiker Nikola Tesla",
-            "Philosoph Sokrates"
+            "Churros",
+            "Pommes Frites",
+            "Donuts",
+            "Croissants"
           ],
-          "a": 0,
-          "exp": "Zeichner Peyo (Erfinder der Schlümpfe) ist weltberühmt und stammt aus Belgien."
+          "a": 1,
+          "tip": "Sie werden traditionell zweifach frittiert und oft mit Mayonnaise in der Tüte serviert.",
+          "exp": "Pommes Frites stammen historisch aus Belgien, wo sie Nationalspeise sind."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Belgien?",
+          "q": "Wie heißen die weltberühmten Comic-Figuren (kleine blaue Wesen mit weißen Mützen), die von einem Künstler aus diesem Land erfunden wurden?",
           "o": [
-            "Tim & Struppi kommen aus Belgien",
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß",
-            "die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg",
-            "das sommerliche Midsommar-Fest"
+            "Die Gallier",
+            "Die Schlümpfe",
+            "Die Minions",
+            "Die Moomins"
           ],
-          "a": 0,
-          "exp": "Typisch Belgien: Tim & Struppi kommen aus Belgien."
+          "a": 1,
+          "tip": "Ihr Erfinder nannte sich „Peyo“.",
+          "exp": "Die Schlümpfe wurden 1958 vom belgischen Zeichner Peyo kreiert."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Belgien hauptsächlich?",
+          "q": "Wie heißen die weltberühmten Comic-Figuren (kleine blaue Wesen mit weißen Mützen), die von einem Künstler aus diesem Land erfunden wurden?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Die Gallier",
+            "Die Schlümpfe",
+            "Die Minions",
+            "Die Moomins"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Ihr Erfinder nannte sich „Peyo“.",
+          "exp": "Die Schlümpfe wurden 1958 vom belgischen Zeichner Peyo kreiert."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Belgien aus?",
+          "q": "Welches berühmte Wahrzeichen in der Hauptstadt wurde zur Weltausstellung 1958 erbaut und stellt ein vergrößertes Eisen-Kristallmodell dar?",
           "o": [
-            "Brüsseler Atomium",
-            "Dracula-Schloss Bran",
-            "historische Hauptstadt Valletta",
-            "Eiffelturm in Paris"
+            "Der Fernsehturm",
+            "Das Atomium",
+            "Das Hundertwasserhaus",
+            "Die Pyramide"
           ],
-          "a": 0,
-          "exp": "Brüsseler Atomium gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Das Bauwerk besteht aus neun großen glänzenden Kugeln.",
+          "exp": "Das Atomium ist 102 Meter hoch und stellt eine 165-milliardenfache Kristallgitter-Vergrößerung dar."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Belgien?",
+          "q": "Welches berühmte Wahrzeichen in der Hauptstadt wurde zur Weltausstellung 1958 erbaut und stellt ein vergrößertes Eisen-Kristallmodell dar?",
           "o": [
-            "Zeichner Peyo (Erfinder der Schlümpfe)",
-            "Radprofi Tadej Pogačar",
-            "Physiker Nikola Tesla",
-            "Philosoph Sokrates"
+            "Der Fernsehturm",
+            "Das Atomium",
+            "Das Hundertwasserhaus",
+            "Die Pyramide"
           ],
-          "a": 0,
-          "exp": "Zeichner Peyo (Erfinder der Schlümpfe) ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Das Bauwerk besteht aus neun großen glänzenden Kugeln.",
+          "exp": "Das Atomium ist 102 Meter hoch und stellt eine 165-milliardenfache Kristallgitter-Vergrößerung dar."
         }
       ]
     },
     "Bulgarien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Bulgarien bekannt?",
+          "q": "Aus welchem Produkt ist dieses Land einer der weltweiten Hauptproduzenten, das besonders in der Kosmetik und Parfümherstellung genutzt wird?",
           "o": [
-            "bulgarischer Joghurt",
-            "Pastéis de Nata (Puddingtörtchen)",
-            "marinierter Hering",
-            "Cepelinai (Kartoffelklöße)"
+            "Lavendelöl",
+            "Rosenöl",
+            "Olivenöl",
+            "Arganöl"
           ],
-          "a": 0,
-          "exp": "bulgarischer Joghurt ist ein bekanntes Nationalgericht von Bulgarien."
+          "a": 1,
+          "tip": "Das berühmte „Tal der Blüten“ ist nach dieser roten oder rosa Blume benannt.",
+          "exp": "Bulgarien liefert einen Großteil des weltweiten Bedarfs an kostbarem Rosenöl."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Bulgarien?",
+          "q": "Aus welchem Produkt ist dieses Land einer der weltweiten Hauptproduzenten, das besonders in der Kosmetik und Parfümherstellung genutzt wird?",
           "o": [
-            "Verpackungskünstler Christo",
-            "General Milan Rastislav Štefánik",
-            "Erfinder Ernő Rubik",
-            "Popgruppe ABBA"
+            "Lavendelöl",
+            "Rosenöl",
+            "Olivenöl",
+            "Arganöl"
           ],
-          "a": 0,
-          "exp": "Verpackungskünstler Christo ist weltberühmt und stammt aus Bulgarien."
+          "a": 1,
+          "tip": "Das berühmte „Tal der Blüten“ ist nach dieser roten oder rosa Blume benannt.",
+          "exp": "Bulgarien liefert einen Großteil des weltweiten Bedarfs an kostbarem Rosenöl."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Bulgarien?",
+          "q": "Welche Tradition wird am 1. März gefeiert, bei der man sich rot-weiße Glücksbringer aus Wolle („Marteniza“) ansteckt?",
           "o": [
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß",
-            "die traditionellen bunten Luzzu-Fischerboote",
-            "das Donaudelta als Naturparadies",
-            "Millionen Fahrräder auf eigenen Radwegen"
+            "Der Frühlingsanfang",
+            "Das Erntedankfest",
+            "Die Sonnenwende",
+            "Das Neujahrsfest"
           ],
           "a": 0,
-          "exp": "Typisch Bulgarien: Marteniza-Puppen (rot-weiß) als Frühlingsgruß."
+          "tip": "Das Fest begrüßt das Erwachen der Natur nach dem Winter.",
+          "exp": "Die Marteniza symbolisiert Gesundheit und das Nahen des Frühlings."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Bulgarien hauptsächlich?",
+          "q": "Welche Tradition wird am 1. März gefeiert, bei der man sich rot-weiße Glücksbringer aus Wolle („Marteniza“) ansteckt?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Der Frühlingsanfang",
+            "Das Erntedankfest",
+            "Die Sonnenwende",
+            "Das Neujahrsfest"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Das Fest begrüßt das Erwachen der Natur nach dem Winter.",
+          "exp": "Die Marteniza symbolisiert Gesundheit und das Nahen des Frühlings."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Bulgarien aus?",
+          "q": "Wie heißen die traditionellen Maskentänzer, die mit riesigen Holzmasken und schallenden Glocken böse Geister vertreiben sollen?",
           "o": [
-            "Rila-Kloster",
-            "historische Hauptstadt Valletta",
-            "Stockholmer Schloss",
-            "Dracula-Schloss Bran"
+            "Kukeri",
+            "Krampusse",
+            "Perchten",
+            "Glöckler"
           ],
           "a": 0,
-          "exp": "Rila-Kloster gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Der Name beginnt mit dem Buchstaben „K“.",
+          "exp": "Das Kukeri-Ritual findet im Winter statt und soll Fruchtbarkeit bringen."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Bulgarien?",
+          "q": "Wie heißen die traditionellen Maskentänzer, die mit riesigen Holzmasken und schallenden Glocken böse Geister vertreiben sollen?",
           "o": [
-            "Verpackungskünstler Christo",
-            "General Milan Rastislav Štefánik",
-            "Erfinder Ernő Rubik",
-            "Popgruppe ABBA"
+            "Kukeri",
+            "Krampusse",
+            "Perchten",
+            "Glöckler"
           ],
           "a": 0,
-          "exp": "Verpackungskünstler Christo ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Der Name beginnt mit dem Buchstaben „K“.",
+          "exp": "Das Kukeri-Ritual findet im Winter statt und soll Fruchtbarkeit bringen."
         }
       ]
     },
     "Dänemark": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Dänemark bekannt?",
+          "q": "Welches weltbekannte Spielzeug aus bunten Kunststoff-Bausteinen wurde in diesem skandinavischen Land erfunden?",
           "o": [
-            "Smørrebrød",
-            "Irish Stew",
-            "belgische Waffeln",
-            "Pizza & Pasta"
+            "Playmobil",
+            "Lego",
+            "Fischertechnik",
+            "Märklin"
           ],
-          "a": 0,
-          "exp": "Smørrebrød ist ein bekanntes Nationalgericht von Dänemark."
+          "a": 1,
+          "tip": "Der Name leitet sich vom dänischen „leg godt“ (spiel gut) ab.",
+          "exp": "Lego wurde in Billund erfunden und ist der größte Spielzeughersteller der Welt."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Dänemark?",
+          "q": "Welches weltbekannte Spielzeug aus bunten Kunststoff-Bausteinen wurde in diesem skandinavischen Land erfunden?",
           "o": [
-            "Hans Christian Andersen",
-            "Physiker Nikola Tesla",
-            "General Milan Rastislav Štefánik",
-            "Maler Vincent van Gogh"
+            "Playmobil",
+            "Lego",
+            "Fischertechnik",
+            "Märklin"
           ],
-          "a": 0,
-          "exp": "Hans Christian Andersen ist weltberühmt und stammt aus Dänemark."
+          "a": 1,
+          "tip": "Der Name leitet sich vom dänischen „leg godt“ (spiel gut) ab.",
+          "exp": "Lego wurde in Billund erfunden und ist der größte Spielzeughersteller der Welt."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Dänemark?",
+          "q": "Welcher berühmte Märchenerzähler erfand Figuren wie „Die kleine Meerjungfrau“ und „Das hässliche Entlein“?",
           "o": [
-            "das dänische Wort 'Hygge' für Gemütlichkeit",
-            "die finnische Sauna gehört zum Alltag",
-            "das Baguette wurde zum UNESCO-Weltkulturerbe erklärt",
-            "das Prager Marionettentheater"
+            "Hans Christian Andersen",
+            "Gebrüder Grimm",
+            "Astrid Lindgren",
+            "Roald Dahl"
           ],
           "a": 0,
-          "exp": "Typisch Dänemark: das dänische Wort 'Hygge' für Gemütlichkeit."
+          "tip": "Seine Initialen sind H. C. A.",
+          "exp": "Andersen ist Dänemarks bekanntester Schriftsteller und Dichter."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Dänemark hauptsächlich?",
+          "q": "Welcher berühmte Märchenerzähler erfand Figuren wie „Die kleine Meerjungfrau“ und „Das hässliche Entlein“?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Hans Christian Andersen",
+            "Gebrüder Grimm",
+            "Astrid Lindgren",
+            "Roald Dahl"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Seine Initialen sind H. C. A.",
+          "exp": "Andersen ist Dänemarks bekanntester Schriftsteller und Dichter."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Dänemark aus?",
+          "q": "Welches dänische Lebensgefühl beschreibt eine gemütliche, herzliche Atmosphäre und das Genießen der guten Dinge im Leben?",
           "o": [
-            "die kleine Meerjungfrau in Kopenhagen",
-            "Karlsbrücke in Prag",
-            "historische Altstadt von Dubrovnik",
-            "Bratislavaer Burg"
+            "Lagom",
+            "Hygge",
+            "Sisu",
+            "Dolce Vita"
           ],
-          "a": 0,
-          "exp": "die kleine Meerjungfrau in Kopenhagen gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Das Wort beginnt mit „Hyg-“.",
+          "exp": "Hygge steht für dänische Behaglichkeit, Wärme und Gemeinschaft."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Dänemark?",
+          "q": "Welches dänische Lebensgefühl beschreibt eine gemütliche, herzliche Atmosphäre und das Genießen der guten Dinge im Leben?",
           "o": [
-            "Hans Christian Andersen",
-            "Physiker Nikola Tesla",
-            "General Milan Rastislav Štefánik",
-            "Maler Vincent van Gogh"
+            "Lagom",
+            "Hygge",
+            "Sisu",
+            "Dolce Vita"
           ],
-          "a": 0,
-          "exp": "Hans Christian Andersen ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Das Wort beginnt mit „Hyg-“.",
+          "exp": "Hygge steht für dänische Behaglichkeit, Wärme und Gemeinschaft."
         }
       ]
     },
     "Deutschland": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Deutschland bekannt?",
+          "q": "Welches weltweit größte Volksfest zieht jedes Jahr Millionen Menschen in die bayrische Landeshauptstadt?",
           "o": [
-            "Currywurst & Brezeln",
-            "Graue Erbsen mit Speck",
-            "Pierogi (Teigtaschen)",
-            "Bryndzové halušky (Schafskäse-Nockerl)"
+            "Der Wiener Prater",
+            "Das Oktoberfest",
+            "Der Kölner Karneval",
+            "Die Cannstatter Wasen"
           ],
-          "a": 0,
-          "exp": "Currywurst & Brezeln ist ein bekanntes Nationalgericht von Deutschland."
+          "a": 1,
+          "tip": "Es wird trotz des Namens größtenteils im September gefeiert.",
+          "exp": "Das Oktoberfest in München findet seit 1810 auf der Theresienwiese statt."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Deutschland?",
+          "q": "Welches weltweit größte Volksfest zieht jedes Jahr Millionen Menschen in die bayrische Landeshauptstadt?",
           "o": [
-            "Komponist Ludwig van Beethoven",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Kaiser Napoleon Bonaparte",
-            "Maler Vincent van Gogh"
+            "Der Wiener Prater",
+            "Das Oktoberfest",
+            "Der Kölner Karneval",
+            "Die Cannstatter Wasen"
           ],
-          "a": 0,
-          "exp": "Komponist Ludwig van Beethoven ist weltberühmt und stammt aus Deutschland."
+          "a": 1,
+          "tip": "Es wird trotz des Namens größtenteils im September gefeiert.",
+          "exp": "Das Oktoberfest in München findet seit 1810 auf der Theresienwiese statt."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Deutschland?",
+          "q": "Welcher weltberühmte Komponist der Klassik schrieb die Melodie der Europahymne („Ode an die Freude“)?",
           "o": [
-            "das Oktoberfest in München",
-            "die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg",
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß",
-            "das dänische Wort 'Hygge' für Gemütlichkeit"
+            "Wolfgang Amadeus Mozart",
+            "Ludwig van Beethoven",
+            "Johann Sebastian Bach",
+            "Richard Wagner"
           ],
-          "a": 0,
-          "exp": "Typisch Deutschland: das Oktoberfest in München."
+          "a": 1,
+          "tip": "Er wurde in Bonn geboren und vollendete seine 9. Sinfonie, als er bereits taub war.",
+          "exp": "Beethovens Vertonung von Schillers Ode wurde 1985 zur offiziellen EU-Hymne."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Deutschland hauptsächlich?",
+          "q": "Welcher weltberühmte Komponist der Klassik schrieb die Melodie der Europahymne („Ode an die Freude“)?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Wolfgang Amadeus Mozart",
+            "Ludwig van Beethoven",
+            "Johann Sebastian Bach",
+            "Richard Wagner"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Er wurde in Bonn geboren und vollendete seine 9. Sinfonie, als er bereits taub war.",
+          "exp": "Beethovens Vertonung von Schillers Ode wurde 1985 zur offiziellen EU-Hymne."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Deutschland aus?",
+          "q": "Welches Symbol auf der Nationalflagge und dem Bundeswappen geht historisch auf das Heilige Römische Reich zurück?",
           "o": [
-            "Brandenburger Tor in Berlin",
-            "Dracula-Schloss Bran",
-            "schiefe Turm von Pisa",
-            "historische Altstadt von Dubrovnik"
+            "Der Löwe",
+            "Der Bundesadler",
+            "Der Bär",
+            "Der Stier"
           ],
-          "a": 0,
-          "exp": "Brandenburger Tor in Berlin gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der greifvogelartige Vogel ziert auch die deutschen Euro-Münzen.",
+          "exp": "Der Adler ist eines der ältesten staatlichen Symbole der Welt."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Deutschland?",
+          "q": "Welches Symbol auf der Nationalflagge und dem Bundeswappen geht historisch auf das Heilige Römische Reich zurück?",
           "o": [
-            "Komponist Ludwig van Beethoven",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Kaiser Napoleon Bonaparte",
-            "Maler Vincent van Gogh"
+            "Der Löwe",
+            "Der Bundesadler",
+            "Der Bär",
+            "Der Stier"
           ],
-          "a": 0,
-          "exp": "Komponist Ludwig van Beethoven ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der greifvogelartige Vogel ziert auch die deutschen Euro-Münzen.",
+          "exp": "Der Adler ist eines der ältesten staatlichen Symbole der Welt."
         }
       ]
     },
     "Estland": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Estland bekannt?",
+          "q": "Welches musikalische Großereignis findet alle fünf Jahre statt und spielte eine riesige Rolle bei der friedlichen Unabhängigkeit des Landes („Singende Revolution“)?",
           "o": [
-            "marinierter Hering",
-            "bulgarischer Joghurt",
-            "Halloumi-Grillkäse",
-            "Potica (Hefekuchen)"
+            "Das Sängerfest",
+            "Der Eurovision Song Contest",
+            "Das Opernfestival",
+            "Das Rock-am-Ring-Festival"
           ],
           "a": 0,
-          "exp": "marinierter Hering ist ein bekanntes Nationalgericht von Estland."
+          "tip": "Tausende Chöre singen dabei gemeinsam auf einer riesigen Freilichtbühne.",
+          "exp": "Das Sängerfest Laulupidu ist immaterielles UNESCO-Weltkulturerbe."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Estland?",
+          "q": "Welches musikalische Großereignis findet alle fünf Jahre statt und spielte eine riesige Rolle bei der friedlichen Unabhängigkeit des Landes („Singende Revolution“)?",
           "o": [
-            "Komponist Arvo Pärt",
-            "Kaiser Napoleon Bonaparte",
-            "Radprofi Tadej Pogačar",
-            "Band U2 (Sänger Bono)"
+            "Das Sängerfest",
+            "Der Eurovision Song Contest",
+            "Das Opernfestival",
+            "Das Rock-am-Ring-Festival"
           ],
           "a": 0,
-          "exp": "Komponist Arvo Pärt ist weltberühmt und stammt aus Estland."
+          "tip": "Tausende Chöre singen dabei gemeinsam auf einer riesigen Freilichtbühne.",
+          "exp": "Das Sängerfest Laulupidu ist immaterielles UNESCO-Weltkulturerbe."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Estland?",
+          "q": "Welcher Fabel- oder Waldkreatur wird in der nationalen Folklore besonders viel Respekt entgegengebracht?",
           "o": [
-            "das gigantische Liederfest Laulupidu",
-            "die weißen Lipizzaner-Pferde stammen ursprünglich aus Lipica",
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "der mystische Berg der Kreuze (Kryžių kalnas)"
+            "Dem Bären",
+            "Dem Wolf",
+            "Dem Elch",
+            "Dem Luchs"
           ],
-          "a": 0,
-          "exp": "Typisch Estland: das gigantische Liederfest Laulupidu."
+          "a": 1,
+          "tip": "Es ist das grösste Raubtier europäischer Wälder und gilt als offizielles Nationaltier.",
+          "exp": "Der Wolf ist seit 2018 das offizielle Nationaltier Estlands."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Estland hauptsächlich?",
+          "q": "Welcher Fabel- oder Waldkreatur wird in der nationalen Folklore besonders viel Respekt entgegengebracht?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Dem Bären",
+            "Dem Wolf",
+            "Dem Elch",
+            "Dem Luchs"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Es ist das grösste Raubtier europäischer Wälder und gilt als offizielles Nationaltier.",
+          "exp": "Der Wolf ist seit 2018 das offizielle Nationaltier Estlands."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Estland aus?",
+          "q": "Was bedeuten die drei Farben Schwarz, Blau und Weiß auf der Nationalflagge nach traditioneller Deutung?",
           "o": [
-            "mittelalterliche Altstadt von Tallinn",
-            "Brandenburger Tor in Berlin",
-            "Athener Akropolis",
-            "Krakauer Wawel-Schloss"
+            "Kohle, Meer und Wolken",
+            "Erde/Vergangenheit, Himmel und Schnee/Licht",
+            "Nacht, Seen und Freiheit",
+            "Wald, Ostsee und Frieden"
           ],
-          "a": 0,
-          "exp": "mittelalterliche Altstadt von Tallinn gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Blau steht für den klaren Himmel über dem Land.",
+          "exp": "Blau symbolisiert Vertreue und Himmel, Schwarz die Heimaterde, Weiß die Reinheit."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Estland?",
+          "q": "Was bedeuten die drei Farben Schwarz, Blau und Weiß auf der Nationalflagge nach traditioneller Deutung?",
           "o": [
-            "Komponist Arvo Pärt",
-            "Kaiser Napoleon Bonaparte",
-            "Radprofi Tadej Pogačar",
-            "Band U2 (Sänger Bono)"
+            "Kohle, Meer und Wolken",
+            "Erde/Vergangenheit, Himmel und Schnee/Licht",
+            "Nacht, Seen und Freiheit",
+            "Wald, Ostsee und Frieden"
           ],
-          "a": 0,
-          "exp": "Komponist Arvo Pärt ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Blau steht für den klaren Himmel über dem Land.",
+          "exp": "Blau symbolisiert Vertreue und Himmel, Schwarz die Heimaterde, Weiß die Reinheit."
         }
       ]
     },
     "Finnland": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Finnland bekannt?",
+          "q": "Welches Schwitzbad ist der wichtigste Bestandteil der Kultur dieses Landes und in fast jedem Haushalt zu finden?",
           "o": [
-            "karelische Piroggen",
-            "Graue Erbsen mit Speck",
-            "Baguette & Croissants",
-            "Irish Stew"
+            "Das Hammam",
+            "Die Sauna",
+            "Das Bania",
+            "Das Dampfbad"
           ],
-          "a": 0,
-          "exp": "karelische Piroggen ist ein bekanntes Nationalgericht von Finnland."
+          "a": 1,
+          "tip": "Es gibt im Land mehr dieser Schwitzkabinen als Autos.",
+          "exp": "Die finnische Saunakultur gehört zum immateriellen Kulturerbe der Menschheit."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Finnland?",
+          "q": "Welches Schwitzbad ist der wichtigste Bestandteil der Kultur dieses Landes und in fast jedem Haushalt zu finden?",
           "o": [
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Schriftsteller Franz Kafka",
-            "Hans Christian Andersen",
-            "Tennisprofi Marcos Baghdatis"
+            "Das Hammam",
+            "Die Sauna",
+            "Das Bania",
+            "Das Dampfbad"
           ],
-          "a": 0,
-          "exp": "Tove Jansson (Erfinderin der Mumins) ist weltberühmt und stammt aus Finnland."
+          "a": 1,
+          "tip": "Es gibt im Land mehr dieser Schwitzkabinen als Autos.",
+          "exp": "Die finnische Saunakultur gehört zum immateriellen Kulturerbe der Menschheit."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Finnland?",
+          "q": "Welches berühmte Buch- und Comicuniversum über weiße, nielfpferdähnliche Trollwesen erfand die Künstlerin Tove Jansson?",
           "o": [
-            "die finnische Sauna gehört zum Alltag",
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "das dänische Wort 'Hygge' für Gemütlichkeit",
-            "der slowakische Robin Hood Juraj Jánošík"
+            "Die Schlümpfe",
+            "Die Moomins",
+            "Die Barbapapas",
+            "Die Fraggles"
           ],
-          "a": 0,
-          "exp": "Typisch Finnland: die finnische Sauna gehört zum Alltag."
+          "a": 1,
+          "tip": "Das Tal dieser Wesen heißt „Mumingrad“ bzw. „Mumintal“.",
+          "exp": "Die Mumins sind weltweit beliebte finnische Kultfiguren."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Finnland hauptsächlich?",
+          "q": "Welches berühmte Buch- und Comicuniversum über weiße, nielfpferdähnliche Trollwesen erfand die Künstlerin Tove Jansson?",
           "o": [
-            "Rot, Blau und Weiß",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Die Schlümpfe",
+            "Die Moomins",
+            "Die Barbapapas",
+            "Die Fraggles"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Das Tal dieser Wesen heißt „Mumingrad“ bzw. „Mumintal“.",
+          "exp": "Die Mumins sind weltweit beliebte finnische Kultfiguren."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Finnland aus?",
+          "q": "Welches nationale Epos stellt die legendäre Mythensammlung des Landes dar, auf der auch viele Fantasy-Werke (wie Der Herr der Ringe) aufbauen?",
           "o": [
-            "Dom von Helsinki",
-            "Krakauer Wawel-Schloss",
-            "Karlsbrücke in Prag",
-            "Stockholmer Schloss"
+            "Nibelungenlied",
+            "Kalevala",
+            "Edda",
+            "Beowulf"
           ],
-          "a": 0,
-          "exp": "Dom von Helsinki gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „K“.",
+          "exp": "Das Kalevala-Epos wurde im 19. Jahrhundert von Elias Lönnrot zusammengestellt."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Finnland?",
+          "q": "Welches nationale Epos stellt die legendäre Mythensammlung des Landes dar, auf der auch viele Fantasy-Werke (wie Der Herr der Ringe) aufbauen?",
           "o": [
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Schriftsteller Franz Kafka",
-            "Hans Christian Andersen",
-            "Tennisprofi Marcos Baghdatis"
+            "Nibelungenlied",
+            "Kalevala",
+            "Edda",
+            "Beowulf"
           ],
-          "a": 0,
-          "exp": "Tove Jansson (Erfinderin der Mumins) ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „K“.",
+          "exp": "Das Kalevala-Epos wurde im 19. Jahrhundert von Elias Lönnrot zusammengestellt."
         }
       ]
     },
     "Frankreich": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Frankreich bekannt?",
+          "q": "Welcher Nationalfeiertag am 14. Juli erinnert an den Sturm auf eine berühmte Pariser Festung im Jahr 1789?",
           "o": [
-            "Baguette & Croissants",
-            "Feta & Tzatziki",
-            "Currywurst & Brezeln",
-            "Wiener Schnitzel & Sachertorte"
+            "Der Tag der Arbeit",
+            "Der Bastille-Tag",
+            "Der Tag des Sieges",
+            "Der Europagut-Tag"
           ],
-          "a": 0,
-          "exp": "Baguette & Croissants ist ein bekanntes Nationalgericht von Frankreich."
+          "a": 1,
+          "tip": "Es war der Beginn der Französischen Revolution.",
+          "exp": "Der Sturm auf die Bastille am 14. Juli 1789 markiert den Beginn der Revolution."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Frankreich?",
+          "q": "Welcher Nationalfeiertag am 14. Juli erinnert an den Sturm auf eine berühmte Pariser Festung im Jahr 1789?",
           "o": [
-            "Kaiser Napoleon Bonaparte",
-            "Komponist Ludwig van Beethoven",
-            "General Milan Rastislav Štefánik",
-            "Hans Christian Andersen"
+            "Der Tag der Arbeit",
+            "Der Bastille-Tag",
+            "Der Tag des Sieges",
+            "Der Europagut-Tag"
           ],
-          "a": 0,
-          "exp": "Kaiser Napoleon Bonaparte ist weltberühmt und stammt aus Frankreich."
+          "a": 1,
+          "tip": "Es war der Beginn der Französischen Revolution.",
+          "exp": "Der Sturm auf die Bastille am 14. Juli 1789 markiert den Beginn der Revolution."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Frankreich?",
+          "q": "Welches lange, dünne Weißbrot gehört als UNESCO-Weltkulturerbe fest zur täglichen Esskultur des Landes?",
           "o": [
-            "das Baguette wurde zum UNESCO-Weltkulturerbe erklärt",
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß",
-            "das Donaudelta als Naturparadies",
-            "das sommerliche Midsommar-Fest"
+            "Ciabatta",
+            "Baguette",
+            "Pumpernickel",
+            "Brioche"
           ],
-          "a": 0,
-          "exp": "Typisch Frankreich: das Baguette wurde zum UNESCO-Weltkulturerbe erklärt."
+          "a": 1,
+          "tip": "Übersetzt bedeutet das Wort so viel wie „Stäbchen“ oder „Stock“.",
+          "exp": "Das Baguette ist weltweit das Erkennungsmerkmal französischer Bäcker."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Frankreich hauptsächlich?",
+          "q": "Welches lange, dünne Weißbrot gehört als UNESCO-Weltkulturerbe fest zur täglichen Esskultur des Landes?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Ciabatta",
+            "Baguette",
+            "Pumpernickel",
+            "Brioche"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Übersetzt bedeutet das Wort so viel wie „Stäbchen“ oder „Stock“.",
+          "exp": "Das Baguette ist weltweit das Erkennungsmerkmal französischer Bäcker."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Frankreich aus?",
+          "q": "Welche Frauengestalt mit der phrygischen Mütze gilt als Nationalfigur und Symbol für Freiheit und die Republik?",
           "o": [
-            "Eiffelturm in Paris",
-            "Wasserburg Trakai",
-            "die kleine Meerjungfrau in Kopenhagen",
-            "Rila-Kloster"
+            "Britannia",
+            "Marianne",
+            "Helvetia",
+            "Columbia"
           ],
-          "a": 0,
-          "exp": "Eiffelturm in Paris gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Ihr Bildnis hängt in allen Rathäusern und ziert die Cent-Münzen des Landes.",
+          "exp": "Marianne verkörpert die französischen Werte Liberté, Égalité, Fraternité."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Frankreich?",
+          "q": "Welche Frauengestalt mit der phrygischen Mütze gilt als Nationalfigur und Symbol für Freiheit und die Republik?",
           "o": [
-            "Kaiser Napoleon Bonaparte",
-            "Komponist Ludwig van Beethoven",
-            "General Milan Rastislav Štefánik",
-            "Hans Christian Andersen"
+            "Britannia",
+            "Marianne",
+            "Helvetia",
+            "Columbia"
           ],
-          "a": 0,
-          "exp": "Kaiser Napoleon Bonaparte ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Ihr Bildnis hängt in allen Rathäusern und ziert die Cent-Münzen des Landes.",
+          "exp": "Marianne verkörpert die französischen Werte Liberté, Égalité, Fraternité."
         }
       ]
     },
     "Griechenland": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Griechenland bekannt?",
+          "q": "Welcher traditionelle Gruppentanz mit ansteigendem Tempo wurde durch den Film „Zorba“ weltweit berühmt?",
           "o": [
-            "Feta & Tzatziki",
-            "Pizza & Pasta",
-            "Graue Erbsen mit Speck",
-            "Köttbullar & Zimtschnecken"
+            "Tango",
+            "Sirtaki",
+            "Flamenco",
+            "Walzer"
           ],
-          "a": 0,
-          "exp": "Feta & Tzatziki ist ein bekanntes Nationalgericht von Griechenland."
+          "a": 1,
+          "tip": "Die Tänzer legen die Arme auf die Schultern ihrer Nachbarn.",
+          "exp": "Der Sirtaki wurde 1964 speziell für den Film 'Alexis Sorbas' kreiert."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Griechenland?",
+          "q": "Welcher traditionelle Gruppentanz mit ansteigendem Tempo wurde durch den Film „Zorba“ weltweit berühmt?",
           "o": [
-            "Philosoph Sokrates",
-            "Entdecker Vasco da Gama",
-            "Erfinder Ernő Rubik",
-            "Hans Christian Andersen"
+            "Tango",
+            "Sirtaki",
+            "Flamenco",
+            "Walzer"
           ],
-          "a": 0,
-          "exp": "Philosoph Sokrates ist weltberühmt und stammt aus Griechenland."
+          "a": 1,
+          "tip": "Die Tänzer legen die Arme auf die Schultern ihrer Nachbarn.",
+          "exp": "Der Sirtaki wurde 1964 speziell für den Film 'Alexis Sorbas' kreiert."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Griechenland?",
+          "q": "Welches blaue Schutzsymbol gegen den „bösen Blick“ sieht man in diesem Land an fast jeder Haustür und als Souvenir?",
           "o": [
-            "die Olympischen Spiele der Antike",
-            "das dänische Wort 'Hygge' für Gemütlichkeit",
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "die Wichtel-Statuen in Breslau (Wrocław)"
+            "Das Nazar-Auge",
+            "Das Hamsa-Handzeichen",
+            "Das Kleeblatt",
+            "Das Hufeisen"
           ],
           "a": 0,
-          "exp": "Typisch Griechenland: die Olympischen Spiele der Antike."
+          "tip": "Es besteht aus konzentrischen Kreisen in Dunkelblau, Hellblau, Weiß und Schwarz.",
+          "exp": "Das Nazar-Auge (griechisch 'Mati') soll Unglück abwenden."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Griechenland hauptsächlich?",
+          "q": "Welches blaue Schutzsymbol gegen den „bösen Blick“ sieht man in diesem Land an fast jeder Haustür und als Souvenir?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Das Nazar-Auge",
+            "Das Hamsa-Handzeichen",
+            "Das Kleeblatt",
+            "Das Hufeisen"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Es besteht aus konzentrischen Kreisen in Dunkelblau, Hellblau, Weiß und Schwarz.",
+          "exp": "Das Nazar-Auge (griechisch 'Mati') soll Unglück abwenden."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Griechenland aus?",
+          "q": "Welcher weiße Salzlakenkäse aus Schaf- und Ziegenmilch ist herkunftsgeschützt und die Hauptzutat des Bauernsalats?",
           "o": [
-            "Athener Akropolis",
-            "Sagrada Família in Barcelona",
-            "Brüsseler Atomium",
-            "Brandenburger Tor in Berlin"
+            "Mozzarella",
+            "Feta",
+            "Halloumi",
+            "Gouda"
           ],
-          "a": 0,
-          "exp": "Athener Akropolis gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Name hat nur vier Buchstaben.",
+          "exp": "Echter Feta darf seit 2002 nur in Griechenland hergestellt werden."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Griechenland?",
+          "q": "Welcher weiße Salzlakenkäse aus Schaf- und Ziegenmilch ist herkunftsgeschützt und die Hauptzutat des Bauernsalats?",
           "o": [
-            "Philosoph Sokrates",
-            "Entdecker Vasco da Gama",
-            "Erfinder Ernő Rubik",
-            "Hans Christian Andersen"
+            "Mozzarella",
+            "Feta",
+            "Halloumi",
+            "Gouda"
           ],
-          "a": 0,
-          "exp": "Philosoph Sokrates ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Name hat nur vier Buchstaben.",
+          "exp": "Echter Feta darf seit 2002 nur in Griechenland hergestellt werden."
         }
       ]
     },
     "Irland": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Irland bekannt?",
+          "q": "Welcher Nationalfeiertag wird am 17. März weltweit mit grüner Kleidung und Paraden gefeiert?",
           "o": [
-            "Irish Stew",
-            "Pizza & Pasta",
-            "Feta & Tzatziki",
-            "Cepelinai (Kartoffelklöße)"
+            "St. Patrick’s Day",
+            "Halloween",
+            "Bloomsday",
+            "Thanksgiving"
           ],
           "a": 0,
-          "exp": "Irish Stew ist ein bekanntes Nationalgericht von Irland."
+          "tip": "Der heilige Schutzpatron soll laut der Sage die Schlangen von der Insel vertrieben haben.",
+          "exp": "Der St. Patrick's Day ehrt den irischen Bischof Patrick."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Irland?",
+          "q": "Welcher Nationalfeiertag wird am 17. März weltweit mit grüner Kleidung und Paraden gefeiert?",
           "o": [
-            "Band U2 (Sänger Bono)",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Hans Christian Andersen",
-            "Parlamentspräsidentin Roberta Metsola"
+            "St. Patrick’s Day",
+            "Halloween",
+            "Bloomsday",
+            "Thanksgiving"
           ],
           "a": 0,
-          "exp": "Band U2 (Sänger Bono) ist weltberühmt und stammt aus Irland."
+          "tip": "Der heilige Schutzpatron soll laut der Sage die Schlangen von der Insel vertrieben haben.",
+          "exp": "Der St. Patrick's Day ehrt den irischen Bischof Patrick."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Irland?",
+          "q": "Welches dreiblättrige Pflanzensymbol nutzt der Schutzheilige laut Legende, um die Heilige Dreifaltigkeit zu erklären?",
           "o": [
-            "der grüne Saint Patrick's Day am 17. März",
-            "die Olympischen Spiele der Antike",
-            "die traditionellen bunten Luzzu-Fischerboote",
-            "das dänische Wort 'Hygge' für Gemütlichkeit"
+            "Die Rose",
+            "Der Shamrock",
+            "Die Distel",
+            "Der Farn"
           ],
-          "a": 0,
-          "exp": "Typisch Irland: der grüne Saint Patrick's Day am 17. März."
+          "a": 1,
+          "tip": "Es ist das grüne Erkennungszeichen des Landes.",
+          "exp": "Der Shamrock ist das inoffizielle Nationalsymbol Irlands."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Irland hauptsächlich?",
+          "q": "Welches dreiblättrige Pflanzensymbol nutzt der Schutzheilige laut Legende, um die Heilige Dreifaltigkeit zu erklären?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Die Rose",
+            "Der Shamrock",
+            "Die Distel",
+            "Der Farn"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Es ist das grüne Erkennungszeichen des Landes.",
+          "exp": "Der Shamrock ist das inoffizielle Nationalsymbol Irlands."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Irland aus?",
+          "q": "Welches Musikinstrument ziert als offizielles Staatswappen die Euro-Münzen und Reisepässe des Landes?",
           "o": [
-            "die Klippen von Moher (Cliffs of Moher)",
-            "Karlsbrücke in Prag",
-            "Stockholmer Schloss",
-            "Sagrada Família in Barcelona"
+            "Der Dudelsack",
+            "Die keltische Harfe",
+            "Die Geige",
+            "Die Flöte"
           ],
-          "a": 0,
-          "exp": "die Klippen von Moher (Cliffs of Moher) gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Es ist ein sehr altes Zupfinstrument mit Saiten.",
+          "exp": "Die Harfe ist das offizielle Wappensymbol Irlands."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Irland?",
+          "q": "Welches Musikinstrument ziert als offizielles Staatswappen die Euro-Münzen und Reisepässe des Landes?",
           "o": [
-            "Band U2 (Sänger Bono)",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Hans Christian Andersen",
-            "Parlamentspräsidentin Roberta Metsola"
+            "Der Dudelsack",
+            "Die keltische Harfe",
+            "Die Geige",
+            "Die Flöte"
           ],
-          "a": 0,
-          "exp": "Band U2 (Sänger Bono) ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Es ist ein sehr altes Zupfinstrument mit Saiten.",
+          "exp": "Die Harfe ist das offizielle Wappensymbol Irlands."
         }
       ]
     },
     "Italien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Italien bekannt?",
+          "q": "Welches weltweit beliebte Gericht stammt ursprünglich aus der Stadt Neapel und bestand klassisch nur aus Teig, Tomaten, Mozzarella und Basilikum?",
           "o": [
-            "Pizza & Pasta",
-            "Feta & Tzatziki",
-            "Pastizzi (Blätterteigtaschen)",
-            "Judd mat Gaardebounen (Schweinefleisch)"
+            "Lasagne",
+            "Pizza Margherita",
+            "Risotto",
+            "Tortellini"
           ],
-          "a": 0,
-          "exp": "Pizza & Pasta ist ein bekanntes Nationalgericht von Italien."
+          "a": 1,
+          "tip": "Die Farben der Zutaten entsprechen der Flagge des Landes (Rot, Weiß, Grün).",
+          "exp": "Die Pizza Margherita wurde 1889 zu Ehren der Königin Margarethe erfunden."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Italien?",
+          "q": "Welches weltweit beliebte Gericht stammt ursprünglich aus der Stadt Neapel und bestand klassisch nur aus Teig, Tomaten, Mozzarella und Basilikum?",
           "o": [
-            "Maler & Erfinder Leonardo da Vinci",
-            "Komponist Arvo Pärt",
-            "Entdecker Vasco da Gama",
-            "Tove Jansson (Erfinderin der Mumins)"
+            "Lasagne",
+            "Pizza Margherita",
+            "Risotto",
+            "Tortellini"
           ],
-          "a": 0,
-          "exp": "Maler & Erfinder Leonardo da Vinci ist weltberühmt und stammt aus Italien."
+          "a": 1,
+          "tip": "Die Farben der Zutaten entsprechen der Flagge des Landes (Rot, Weiß, Grün).",
+          "exp": "Die Pizza Margherita wurde 1889 zu Ehren der Königin Margarethe erfunden."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Italien?",
+          "q": "Welche Stadt ist berühmt für ihren Karneval, bei dem die Menschen kunstvolle historische Masken und Kostüme auf den Kanälen tragen?",
           "o": [
-            "die Gondeln in Venedig",
-            "das Oktoberfest in München",
-            "das lettische Lieder- und Tanzfest",
-            "das Donaudelta als Naturparadies"
+            "Rom",
+            "Venedig",
+            "Mailand",
+            "Florenz"
           ],
-          "a": 0,
-          "exp": "Typisch Italien: die Gondeln in Venedig."
+          "a": 1,
+          "tip": "In dieser Stadt fährt man mit Gondeln.",
+          "exp": "Der Karneval in Venedig geht auf das Mittelalter zurück."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Italien hauptsächlich?",
+          "q": "Welche Stadt ist berühmt für ihren Karneval, bei dem die Menschen kunstvolle historische Masken und Kostüme auf den Kanälen tragen?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Rom",
+            "Venedig",
+            "Mailand",
+            "Florenz"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "In dieser Stadt fährt man mit Gondeln.",
+          "exp": "Der Karneval in Venedig geht auf das Mittelalter zurück."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Italien aus?",
+          "q": "Welcher weltberühmte Künstler und Universalgelehrte der Renaissance malte die „Mona Lisa“ und das „Abendmahl“?",
           "o": [
-            "schiefe Turm von Pisa",
-            "Rigaer Dom",
-            "malerische Bleder See mit der Kircheninsel",
-            "Eiffelturm in Paris"
+            "Michelangelo",
+            "Leonardo da Vinci",
+            "Raffael",
+            "Sandro Botticelli"
           ],
-          "a": 0,
-          "exp": "schiefe Turm von Pisa gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Sein Name verrät seine Herkunft aus der Kleinstadt Vinci.",
+          "exp": "Leonardo da Vinci war Maler, Bildhauer, Architekt und Anatom."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Italien?",
+          "q": "Welcher weltberühmte Künstler und Universalgelehrte der Renaissance malte die „Mona Lisa“ und das „Abendmahl“?",
           "o": [
-            "Maler & Erfinder Leonardo da Vinci",
-            "Komponist Arvo Pärt",
-            "Entdecker Vasco da Gama",
-            "Tove Jansson (Erfinderin der Mumins)"
+            "Michelangelo",
+            "Leonardo da Vinci",
+            "Raffael",
+            "Sandro Botticelli"
           ],
-          "a": 0,
-          "exp": "Maler & Erfinder Leonardo da Vinci ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Sein Name verrät seine Herkunft aus der Kleinstadt Vinci.",
+          "exp": "Leonardo da Vinci war Maler, Bildhauer, Architekt und Anatom."
         }
       ]
     },
     "Kroatien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Kroatien bekannt?",
+          "q": "Welches weltberühmte Modeaccessoire für Männer wurde ursprünglich von den Soldaten dieses Landes im 17. Jahrhundert erfunden?",
           "o": [
-            "Ćevapčići & dalmatinischer Schinken",
-            "Feta & Tzatziki",
-            "Potica (Hefekuchen)",
-            "Pierogi (Teigtaschen)"
+            "Die Krawatte",
+            "Der Zylinder",
+            "Der Gürtel",
+            "Die Fliege"
           ],
           "a": 0,
-          "exp": "Ćevapčići & dalmatinischer Schinken ist ein bekanntes Nationalgericht von Kroatien."
+          "tip": "Das Wort leitet sich direkt vom Französischen „à la Croate“ ab.",
+          "exp": "Die Krawatte wurde von kroatischen Söldnern in Frankreich populär gemacht."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Kroatien?",
+          "q": "Welches weltberühmte Modeaccessoire für Männer wurde ursprünglich von den Soldaten dieses Landes im 17. Jahrhundert erfunden?",
           "o": [
-            "Physiker Nikola Tesla",
-            "Komponist Wolfgang Amadeus Mozart",
-            "Schriftsteller Franz Kafka",
-            "Erfinder Ernő Rubik"
+            "Die Krawatte",
+            "Der Zylinder",
+            "Der Gürtel",
+            "Die Fliege"
           ],
           "a": 0,
-          "exp": "Physiker Nikola Tesla ist weltberühmt und stammt aus Kroatien."
+          "tip": "Das Wort leitet sich direkt vom Französischen „à la Croate“ ab.",
+          "exp": "Die Krawatte wurde von kroatischen Söldnern in Frankreich populär gemacht."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Kroatien?",
+          "q": "Welches rot-weiße Muster ist das markanteste Symbol auf dem Wappen und den Trikots der Sport-Nationalteams?",
           "o": [
-            "die gepunkteten Dalmatiner-Hunde stammen von hier",
-            "Millionen Fahrräder auf eigenen Radwegen",
-            "die finnische Sauna gehört zum Alltag",
-            "die Wichtel-Statuen in Breslau (Wrocław)"
+            "Das Streifenmuster",
+            "Das Schachbrettmuster",
+            "Das Punktemuster",
+            "Das Rautenmuster"
           ],
-          "a": 0,
-          "exp": "Typisch Kroatien: die gepunkteten Dalmatiner-Hunde stammen von hier."
+          "a": 1,
+          "tip": "Es erinnert an das Spiel Schach.",
+          "exp": "Das Schachbrettmuster Šahovnica ist das Staatswappen Kroatiens."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Kroatien hauptsächlich?",
+          "q": "Welches rot-weiße Muster ist das markanteste Symbol auf dem Wappen und den Trikots der Sport-Nationalteams?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Das Streifenmuster",
+            "Das Schachbrettmuster",
+            "Das Punktemuster",
+            "Das Rautenmuster"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Es erinnert an das Spiel Schach.",
+          "exp": "Das Schachbrettmuster Šahovnica ist das Staatswappen Kroatiens."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Kroatien aus?",
+          "q": "Welche weltbekannte Hunderasse mit weißem Fell und schwarzen Punkten stammt historisch aus der Küstenregion Dalmatien?",
           "o": [
-            "historische Altstadt von Dubrovnik",
-            "Dracula-Schloss Bran",
-            "malerische Bleder See mit der Kircheninsel",
-            "schiefe Turm von Pisa"
+            "Dalmatiner",
+            "Dackel",
+            "Schäferhund",
+            "Pudel"
           ],
           "a": 0,
-          "exp": "historische Altstadt von Dubrovnik gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Bekannt auch durch den Disney-Film „101 ...“.",
+          "exp": "Dalmatiner sind nach der kroatischen Region Dalmatien benannt."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Kroatien?",
+          "q": "Welche weltbekannte Hunderasse mit weißem Fell und schwarzen Punkten stammt historisch aus der Küstenregion Dalmatien?",
           "o": [
-            "Physiker Nikola Tesla",
-            "Komponist Wolfgang Amadeus Mozart",
-            "Schriftsteller Franz Kafka",
-            "Erfinder Ernő Rubik"
+            "Dalmatiner",
+            "Dackel",
+            "Schäferhund",
+            "Pudel"
           ],
           "a": 0,
-          "exp": "Physiker Nikola Tesla ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Bekannt auch durch den Disney-Film „101 ...“.",
+          "exp": "Dalmatiner sind nach der kroatischen Region Dalmatien benannt."
         }
       ]
     },
     "Lettland": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Lettland bekannt?",
+          "q": "Welches Mittsommerfest in der Nacht vom 23. auf den 24. Juni ist das wichtigste und traditionsreichste Fest des Jahres?",
           "o": [
-            "Graue Erbsen mit Speck",
-            "bulgarischer Joghurt",
-            "Köttbullar & Zimtschnecken",
-            "Gouda-Käse & Stroopwafels"
+            "Jāņi",
+            "Diwali",
+            "Hanami",
+            "Ostara"
           ],
           "a": 0,
-          "exp": "Graue Erbsen mit Speck ist ein bekanntes Nationalgericht von Lettland."
+          "tip": "Man flicht Blumenkränze, springt über Lagerfeuer und sucht nach der magischen Farnblüte.",
+          "exp": "Jāņi feiert die Sommersonnenwende und ist ein gesetzlicher Feiertag."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Lettland?",
+          "q": "Welches Mittsommerfest in der Nacht vom 23. auf den 24. Juni ist das wichtigste und traditionsreichste Fest des Jahres?",
           "o": [
-            "Dirigent Mariss Jansons",
-            "Popgruppe ABBA",
-            "Bildhauer Constantin Brâncuși",
-            "Zeichner Peyo (Erfinder der Schlümpfe)"
+            "Jāņi",
+            "Diwali",
+            "Hanami",
+            "Ostara"
           ],
           "a": 0,
-          "exp": "Dirigent Mariss Jansons ist weltberühmt und stammt aus Lettland."
+          "tip": "Man flicht Blumenkränze, springt über Lagerfeuer und sucht nach der magischen Farnblüte.",
+          "exp": "Jāņi feiert die Sommersonnenwende und ist ein gesetzlicher Feiertag."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Lettland?",
+          "q": "Welches fossile Harz, das an den Stränden der Ostsee angespült wird, ist der traditionelle Schmuckstein des Landes?",
           "o": [
-            "das lettische Lieder- und Tanzfest",
-            "Millionen Fahrräder auf eigenen Radwegen",
-            "das dänische Wort 'Hygge' für Gemütlichkeit",
-            "der traditionelle Fado-Gesang"
+            "Rubin",
+            "Bernstein",
+            "Smaragd",
+            "Opal"
           ],
-          "a": 0,
-          "exp": "Typisch Lettland: das lettische Lieder- und Tanzfest."
+          "a": 1,
+          "tip": "Man nennt das fossile Nadelholzharz auch das „Gold der Ostsee“.",
+          "exp": "Der baltische Bernstein wird seit Jahrtausenden gesammelt und verarbeitet."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Lettland hauptsächlich?",
+          "q": "Welches fossile Harz, das an den Stränden der Ostsee angespült wird, ist der traditionelle Schmuckstein des Landes?",
           "o": [
-            "Rot, Blau und Weiß",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Rubin",
+            "Bernstein",
+            "Smaragd",
+            "Opal"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Man nennt das fossile Nadelholzharz auch das „Gold der Ostsee“.",
+          "exp": "Der baltische Bernstein wird seit Jahrtausenden gesammelt und verarbeitet."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Lettland aus?",
+          "q": "Wie heißen die kurzen, vierzeiligen traditionellen Volkslieder, von denen es über eine Million überlieferte Verse gibt?",
           "o": [
-            "Rigaer Dom",
-            "Kasematten von Luxemburg",
-            "Stockholmer Schloss",
-            "Parlamentsgebäude in Budapest"
+            "Haikus",
+            "Dainas",
+            "Chansons",
+            "Balladen"
           ],
-          "a": 0,
-          "exp": "Rigaer Dom gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Name klingt ähnlich wie die Vorname „Diana“.",
+          "exp": "Die Dainas bilden den Kern lettischer Folklore und Identität."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Lettland?",
+          "q": "Wie heißen die kurzen, vierzeiligen traditionellen Volkslieder, von denen es über eine Million überlieferte Verse gibt?",
           "o": [
-            "Dirigent Mariss Jansons",
-            "Popgruppe ABBA",
-            "Bildhauer Constantin Brâncuși",
-            "Zeichner Peyo (Erfinder der Schlümpfe)"
+            "Haikus",
+            "Dainas",
+            "Chansons",
+            "Balladen"
           ],
-          "a": 0,
-          "exp": "Dirigent Mariss Jansons ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Name klingt ähnlich wie die Vorname „Diana“.",
+          "exp": "Die Dainas bilden den Kern lettischer Folklore und Identität."
         }
       ]
     },
     "Litauen": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Litauen bekannt?",
+          "q": "Welches Gericht aus geriebenen Kartoffeln, meist gefüllt mit Hackfleisch und serviert mit Sauerrahm, ist das Nationalgericht?",
           "o": [
-            "Cepelinai (Kartoffelklöße)",
-            "marinierter Hering",
-            "Gulaschsuppe",
-            "Knödel & Gulasch"
+            "Cepelinai",
+            "Pierogi",
+            "Gulasch",
+            "Knödel"
           ],
           "a": 0,
-          "exp": "Cepelinai (Kartoffelklöße) ist ein bekanntes Nationalgericht von Litauen."
+          "tip": "Die Form des Gerichts erinnert an ein bekanntes großes Luftschiff.",
+          "exp": "Cepelinai sind große Kartoffelklöße, benannt nach Graf Zeppelin."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Litauen?",
+          "q": "Welches Gericht aus geriebenen Kartoffeln, meist gefüllt mit Hackfleisch und serviert mit Sauerrahm, ist das Nationalgericht?",
           "o": [
-            "Basketballer Jonas Valančiūnas",
-            "Philosoph Sokrates",
-            "Tennisstar Rafael Nadal",
-            "Entdecker Vasco da Gama"
+            "Cepelinai",
+            "Pierogi",
+            "Gulasch",
+            "Knödel"
           ],
           "a": 0,
-          "exp": "Basketballer Jonas Valančiūnas ist weltberühmt und stammt aus Litauen."
+          "tip": "Die Form des Gerichts erinnert an ein bekanntes großes Luftschiff.",
+          "exp": "Cepelinai sind große Kartoffelklöße, benannt nach Graf Zeppelin."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Litauen?",
+          "q": "Welches beeindruckende Symbol des katholischen Glaubens und des Widerstands gegen die Sowjetunion besteht aus über 100.000 aufgestellten Holzkreuzen?",
           "o": [
-            "der mystische Berg der Kreuze (Kryžių kalnas)",
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "Millionen Fahrräder auf eigenen Radwegen",
-            "das gigantische Liederfest Laulupidu"
+            "Der Berg der Kreuze",
+            "Das Tal der Könige",
+            "Der Altar der Freiheit",
+            "Die Wand der Stimmen"
           ],
           "a": 0,
-          "exp": "Typisch Litauen: der mystische Berg der Kreuze (Kryžių kalnas)."
+          "tip": "Es ist ein Hügel in der Nähe der Stadt Šiauliai.",
+          "exp": "Der Berg der Kreuze (Kryžių kalnas) ist eine weltbekannte Pilgerstätte."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Litauen hauptsächlich?",
+          "q": "Welches beeindruckende Symbol des katholischen Glaubens und des Widerstands gegen die Sowjetunion besteht aus über 100.000 aufgestellten Holzkreuzen?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Der Berg der Kreuze",
+            "Das Tal der Könige",
+            "Der Altar der Freiheit",
+            "Die Wand der Stimmen"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Es ist ein Hügel in der Nähe der Stadt Šiauliai.",
+          "exp": "Der Berg der Kreuze (Kryžių kalnas) ist eine weltbekannte Pilgerstätte."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Litauen aus?",
+          "q": "Welcher edle Raubvogel ziert das historische Wappen („Vytis“) als Reittier eines bewaffneten Ritters auf weißem Pferd?",
           "o": [
-            "Wasserburg Trakai",
-            "Rila-Kloster",
-            "Kasematten von Luxemburg",
-            "die Klippen von Moher (Cliffs of Moher)"
+            "Kein Vogel, es ist ein Wappenreiter",
+            "Ein doppelköpfiger Adler",
+            "Ein Falke",
+            "Ein Drache"
           ],
           "a": 0,
-          "exp": "Wasserburg Trakai gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Das Wappen zeigt gar keinen Vogel, sondern einen galoppierenden Ritter mit Schwert!",
+          "exp": "Das litauische Staatswappen Vytis zeigt einen aufgerichteten weißen Ritter auf Pferd."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Litauen?",
+          "q": "Welcher edle Raubvogel ziert das historische Wappen („Vytis“) als Reittier eines bewaffneten Ritters auf weißem Pferd?",
           "o": [
-            "Basketballer Jonas Valančiūnas",
-            "Philosoph Sokrates",
-            "Tennisstar Rafael Nadal",
-            "Entdecker Vasco da Gama"
+            "Kein Vogel, es ist ein Wappenreiter",
+            "Ein doppelköpfiger Adler",
+            "Ein Falke",
+            "Ein Drache"
           ],
           "a": 0,
-          "exp": "Basketballer Jonas Valančiūnas ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Das Wappen zeigt gar keinen Vogel, sondern einen galoppierenden Ritter mit Schwert!",
+          "exp": "Das litauische Staatswappen Vytis zeigt einen aufgerichteten weißen Ritter auf Pferd."
         }
       ]
     },
     "Luxemburg": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Luxemburg bekannt?",
+          "q": "In welcher Sprache, die eine Mischung aus moselfränkischen Dialekten und französischen Einflüssen ist, unterhalten sich die Einheimischen im Alltag?",
           "o": [
-            "Judd mat Gaardebounen (Schweinefleisch)",
-            "marinierter Hering",
-            "Knödel & Gulasch",
-            "Pastizzi (Blätterteigtaschen)"
+            "Letzeburgisch",
+            "Flämisch",
+            "Wallonisch",
+            "Rätoromanisch"
           ],
           "a": 0,
-          "exp": "Judd mat Gaardebounen (Schweinefleisch) ist ein bekanntes Nationalgericht von Luxemburg."
+          "tip": "Der Name der Sprache leitet sich vom Landesnamen ab.",
+          "exp": "Luxemburgisch ist seit 1984 die gesetzliche Nationalsprache des Landes."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Luxemburg?",
+          "q": "In welcher Sprache, die eine Mischung aus moselfränkischen Dialekten und französischen Einflüssen ist, unterhalten sich die Einheimischen im Alltag?",
           "o": [
-            "Radprofi Andy Schleck",
-            "Hans Christian Andersen",
-            "Dirigent Mariss Jansons",
-            "Komponist Arvo Pärt"
+            "Letzeburgisch",
+            "Flämisch",
+            "Wallonisch",
+            "Rätoromanisch"
           ],
           "a": 0,
-          "exp": "Radprofi Andy Schleck ist weltberühmt und stammt aus Luxemburg."
+          "tip": "Der Name der Sprache leitet sich vom Landesnamen ab.",
+          "exp": "Luxemburgisch ist seit 1984 die gesetzliche Nationalsprache des Landes."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Luxemburg?",
+          "q": "Welche mythische Wasserfee aus den Sagen des Landes soll die Gemahlin des ersten Grafen Siegfried gewesen sein?",
           "o": [
-            "die Echternacher Springprozession",
-            "die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg",
-            "das Oktoberfest in München",
-            "Millionen Fahrräder auf eigenen Radwegen"
+            "Loreley",
+            "Melusina",
+            "Undine",
+            "Rusalka"
           ],
-          "a": 0,
-          "exp": "Typisch Luxemburg: die Echternacher Springprozession."
+          "a": 1,
+          "tip": "Ihr Name beginnt mit den Buchstaben „Mel-“.",
+          "exp": "Die Melusina-Legende besagt, dass sie sich samstags in eine Meerjungfrau verwandelt."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Luxemburg hauptsächlich?",
+          "q": "Welche mythische Wasserfee aus den Sagen des Landes soll die Gemahlin des ersten Grafen Siegfried gewesen sein?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Loreley",
+            "Melusina",
+            "Undine",
+            "Rusalka"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Ihr Name beginnt mit den Buchstaben „Mel-“.",
+          "exp": "Die Melusina-Legende besagt, dass sie sich samstags in eine Meerjungfrau verwandelt."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Luxemburg aus?",
+          "q": "Welcher traditionelle Umzug findet jedes Jahr am Pfingstdienstag in der Stadt Echternach statt und gehört zum UNESCO-Weltkulturerbe?",
           "o": [
-            "Kasematten von Luxemburg",
-            "Brüsseler Atomium",
-            "Windmühlen von Kinderdijk",
-            "Dom von Helsinki"
+            "Der Blumenkorso",
+            "Die Echternacher Springprozession",
+            "Der Almabtrieb",
+            "Der Narrensprung"
           ],
-          "a": 0,
-          "exp": "Kasematten von Luxemburg gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Die Teilnehmer hüpfen dabei rhythmisch zu Marschmusik durch die Straßen.",
+          "exp": "Die Springprozession zu Ehren des Heiligen Willibrord lockt Tausende Pilger an."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Luxemburg?",
+          "q": "Welcher traditionelle Umzug findet jedes Jahr am Pfingstdienstag in der Stadt Echternach statt und gehört zum UNESCO-Weltkulturerbe?",
           "o": [
-            "Radprofi Andy Schleck",
-            "Hans Christian Andersen",
-            "Dirigent Mariss Jansons",
-            "Komponist Arvo Pärt"
+            "Der Blumenkorso",
+            "Die Echternacher Springprozession",
+            "Der Almabtrieb",
+            "Der Narrensprung"
           ],
-          "a": 0,
-          "exp": "Radprofi Andy Schleck ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Die Teilnehmer hüpfen dabei rhythmisch zu Marschmusik durch die Straßen.",
+          "exp": "Die Springprozession zu Ehren des Heiligen Willibrord lockt Tausende Pilger an."
         }
       ]
     },
     "Malta": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Malta bekannt?",
+          "q": "Welches Kreuz mit acht Spitzen gilt als weltweit bekanntes Symbol dieses Inselstaates und seiner historischen Ritter?",
           "o": [
-            "Pastizzi (Blätterteigtaschen)",
-            "Köttbullar & Zimtschnecken",
-            "Potica (Hefekuchen)",
-            "Gouda-Käse & Stroopwafels"
+            "Das Georgskreuz",
+            "Das Malteserkreuz",
+            "Das Eiserne Kreuz",
+            "Das Keltische Kreuz"
           ],
-          "a": 0,
-          "exp": "Pastizzi (Blätterteigtaschen) ist ein bekanntes Nationalgericht von Malta."
+          "a": 1,
+          "tip": "Der Name der Ritter und des Kreuzes ist identisch mit dem Namen des Landes.",
+          "exp": "Das Malteserkreuz geht auf den katholischen Malteserorden zurück."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Malta?",
+          "q": "Welches Kreuz mit acht Spitzen gilt als weltweit bekanntes Symbol dieses Inselstaates und seiner historischen Ritter?",
           "o": [
-            "Parlamentspräsidentin Roberta Metsola",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Dirigent Mariss Jansons",
-            "Zeichner Peyo (Erfinder der Schlümpfe)"
+            "Das Georgskreuz",
+            "Das Malteserkreuz",
+            "Das Eiserne Kreuz",
+            "Das Keltische Kreuz"
           ],
-          "a": 0,
-          "exp": "Parlamentspräsidentin Roberta Metsola ist weltberühmt und stammt aus Malta."
+          "a": 1,
+          "tip": "Der Name der Ritter und des Kreuzes ist identisch mit dem Namen des Landes.",
+          "exp": "Das Malteserkreuz geht auf den katholischen Malteserorden zurück."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Malta?",
+          "q": "Wie heißen die traditionellen, bunt bemaltem Fischerboote mit den typischen aufgemalten Osiris-Augen am Bug?",
           "o": [
-            "die traditionellen bunten Luzzu-Fischerboote",
-            "die weißen Lipizzaner-Pferde stammen ursprünglich aus Lipica",
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß",
-            "das gigantische Liederfest Laulupidu"
+            "Gondeln",
+            "Luzzus",
+            "Dhows",
+            "Kajaks"
           ],
-          "a": 0,
-          "exp": "Typisch Malta: die traditionellen bunten Luzzu-Fischerboote."
+          "a": 1,
+          "tip": "Der Name hat nur 5 Buchstaben und beginnt mit „L“.",
+          "exp": "Die Luzzus schützten laut Aberglaube die Fischer vor den Gefahren des Meeres."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Malta hauptsächlich?",
+          "q": "Wie heißen die traditionellen, bunt bemaltem Fischerboote mit den typischen aufgemalten Osiris-Augen am Bug?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Gondeln",
+            "Luzzus",
+            "Dhows",
+            "Kajaks"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Der Name hat nur 5 Buchstaben und beginnt mit „L“.",
+          "exp": "Die Luzzus schützten laut Aberglaube die Fischer vor den Gefahren des Meeres."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Malta aus?",
+          "q": "Welches prähistorische unterirdische Höhlensystem und Tempelanlage gehört zu den ältesten freistehenden Bauwerken der Menschheit?",
           "o": [
-            "historische Hauptstadt Valletta",
-            "Rigaer Dom",
-            "historische Altstadt von Dubrovnik",
-            "Parlamentsgebäude in Budapest"
+            "Das Hypogäum von Ħal-Saflieni",
+            "Die Katakomben von Rom",
+            "Der Parthenon",
+            "Die Pyramiden von Gizeh"
           ],
           "a": 0,
-          "exp": "historische Hauptstadt Valletta gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Das Wort „Hypogäum“ kommt aus dem Griechischen und bedeutet „unter der Erde“.",
+          "exp": "Das Hypogäum wurde um 4000 v. Chr. als Begräbnisstätte genutzt."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Malta?",
+          "q": "Welches prähistorische unterirdische Höhlensystem und Tempelanlage gehört zu den ältesten freistehenden Bauwerken der Menschheit?",
           "o": [
-            "Parlamentspräsidentin Roberta Metsola",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Dirigent Mariss Jansons",
-            "Zeichner Peyo (Erfinder der Schlümpfe)"
+            "Das Hypogäum von Ħal-Saflieni",
+            "Die Katakomben von Rom",
+            "Der Parthenon",
+            "Die Pyramiden von Gizeh"
           ],
           "a": 0,
-          "exp": "Parlamentspräsidentin Roberta Metsola ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Das Wort „Hypogäum“ kommt aus dem Griechischen und bedeutet „unter der Erde“.",
+          "exp": "Das Hypogäum wurde um 4000 v. Chr. als Begräbnisstätte genutzt."
         }
       ]
     },
     "Niederlande": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Niederlande bekannt?",
+          "q": "Welche Blume ist das berühmteste florale Symbol des Landes, für das im Frühling ganze Felder bunt aufblühen?",
           "o": [
-            "Gouda-Käse & Stroopwafels",
-            "Pizza & Pasta",
-            "karelische Piroggen",
-            "Baguette & Croissants"
+            "Die Rose",
+            "Die Tulpe",
+            "Die Sonnenblume",
+            "Die Narzisse"
           ],
-          "a": 0,
-          "exp": "Gouda-Käse & Stroopwafels ist ein bekanntes Nationalgericht von Niederlande."
+          "a": 1,
+          "tip": "Im 17. Jahrhundert gab es um diese Zwiebelblume sogar eine riesige Spekulationsblase („Tulpenmanie“).",
+          "exp": "Die Tulpe wurde im 16. Jahrhundert aus dem Osmanischen Reich importiert."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Niederlande?",
+          "q": "Welche Blume ist das berühmteste florale Symbol des Landes, für das im Frühling ganze Felder bunt aufblühen?",
           "o": [
-            "Maler Vincent van Gogh",
-            "Popgruppe ABBA",
-            "General Milan Rastislav Štefánik",
-            "Hans Christian Andersen"
+            "Die Rose",
+            "Die Tulpe",
+            "Die Sonnenblume",
+            "Die Narzisse"
           ],
-          "a": 0,
-          "exp": "Maler Vincent van Gogh ist weltberühmt und stammt aus Niederlande."
+          "a": 1,
+          "tip": "Im 17. Jahrhundert gab es um diese Zwiebelblume sogar eine riesige Spekulationsblase („Tulpenmanie“).",
+          "exp": "Die Tulpe wurde im 16. Jahrhundert aus dem Osmanischen Reich importiert."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Niederlande?",
+          "q": "Welche Farbe trägt das Königshaus (Haus Oranien-Nassau) und ist daher die inoffizielle Nationalfarbe bei Sportevents?",
           "o": [
-            "Millionen Fahrräder auf eigenen Radwegen",
-            "die gepunkteten Dalmatiner-Hunde stammen von hier",
-            "der slowakische Robin Hood Juraj Jánošík",
-            "das gigantische Liederfest Laulupidu"
+            "Rot",
+            "Blau",
+            "Orange",
+            "Gelb"
           ],
-          "a": 0,
-          "exp": "Typisch Niederlande: Millionen Fahrräder auf eigenen Radwegen."
+          "a": 2,
+          "tip": "Die Farbe leitet sich vom englischen Wort „Orange“ ab.",
+          "exp": "Orange symbolisiert die Verbundenheit der Niederländer mit dem Königshaus."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Niederlande hauptsächlich?",
+          "q": "Welche Farbe trägt das Königshaus (Haus Oranien-Nassau) und ist daher die inoffizielle Nationalfarbe bei Sportevents?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Rot",
+            "Blau",
+            "Orange",
+            "Gelb"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 2,
+          "tip": "Die Farbe leitet sich vom englischen Wort „Orange“ ab.",
+          "exp": "Orange symbolisiert die Verbundenheit der Niederländer mit dem Königshaus."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Niederlande aus?",
+          "q": "Welcher berühmte Maler des Barock schuf das riesige Meisterwerk „Die Nachtwache“?",
           "o": [
-            "Windmühlen von Kinderdijk",
-            "Athener Akropolis",
-            "Torre de Belém in Lissabon",
-            "Bratislavaer Burg"
+            "Vincent van Gogh",
+            "Rembrandt van Rijn",
+            "Johannes Vermeer",
+            "Piet Mondrian"
           ],
-          "a": 0,
-          "exp": "Windmühlen von Kinderdijk gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Sein Vorname lautet Rembrandt.",
+          "exp": "Rembrandts Nachtwache (1642) hängt heute im Rijksmuseum in Amsterdam."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Niederlande?",
+          "q": "Welcher berühmte Maler des Barock schuf das riesige Meisterwerk „Die Nachtwache“?",
           "o": [
-            "Maler Vincent van Gogh",
-            "Popgruppe ABBA",
-            "General Milan Rastislav Štefánik",
-            "Hans Christian Andersen"
+            "Vincent van Gogh",
+            "Rembrandt van Rijn",
+            "Johannes Vermeer",
+            "Piet Mondrian"
           ],
-          "a": 0,
-          "exp": "Maler Vincent van Gogh ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Sein Vorname lautet Rembrandt.",
+          "exp": "Rembrandts Nachtwache (1642) hängt heute im Rijksmuseum in Amsterdam."
         }
       ]
     },
     "Österreich": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Österreich bekannt?",
+          "q": "Welcher weltberühmte Walzer von Johann Strauß Sohn gilt als inoffizielle Landeshymne und wird traditionell zu Silvester gespielt?",
           "o": [
-            "Wiener Schnitzel & Sachertorte",
-            "Köttbullar & Zimtschnecken",
-            "Mămăligă (Maisbrei)",
-            "Pastizzi (Blätterteigtaschen)"
+            "Radetzky-Marsch",
+            "An der schönen blauen Donau",
+            "Wiener Blut",
+            "Kaiser-Walzer"
           ],
-          "a": 0,
-          "exp": "Wiener Schnitzel & Sachertorte ist ein bekanntes Nationalgericht von Österreich."
+          "a": 1,
+          "tip": "Der Titel nennt den zweitlängste Fluss Europas.",
+          "exp": "Der Donauwalzer wurde 1867 uraufgeführt und ist fester Neujahrsbestandteil."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Österreich?",
+          "q": "Welcher weltberühmte Walzer von Johann Strauß Sohn gilt als inoffizielle Landeshymne und wird traditionell zu Silvester gespielt?",
           "o": [
-            "Komponist Wolfgang Amadeus Mozart",
-            "Zeichner Peyo (Erfinder der Schlümpfe)",
-            "Erfinder Ernő Rubik",
-            "Tennisprofi Marcos Baghdatis"
+            "Radetzky-Marsch",
+            "An der schönen blauen Donau",
+            "Wiener Blut",
+            "Kaiser-Walzer"
           ],
-          "a": 0,
-          "exp": "Komponist Wolfgang Amadeus Mozart ist weltberühmt und stammt aus Österreich."
+          "a": 1,
+          "tip": "Der Titel nennt den zweitlängste Fluss Europas.",
+          "exp": "Der Donauwalzer wurde 1867 uraufgeführt und ist fester Neujahrsbestandteil."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Österreich?",
+          "q": "Welche edle Rasse weißer Pferde wird in der Spanischen Hofreitschule in der Hauptstadt ausgebildet?",
           "o": [
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß",
-            "die Echternacher Springprozession",
-            "das Donaudelta als Naturparadies"
+            "Haflinger",
+            "Lipizzaner",
+            "Isländer",
+            "Friesen"
           ],
-          "a": 0,
-          "exp": "Typisch Österreich: das Neujahrskonzert der Wiener Philharmoniker."
+          "a": 1,
+          "tip": "Die Fohlen werden dunkel geboren und werden erst im Laufe der Jahre weiß.",
+          "exp": "Lipizzaner gehen auf das kaiserliche Gestüt Lippiza zurück."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Österreich hauptsächlich?",
+          "q": "Welche edle Rasse weißer Pferde wird in der Spanischen Hofreitschule in der Hauptstadt ausgebildet?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Haflinger",
+            "Lipizzaner",
+            "Isländer",
+            "Friesen"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Die Fohlen werden dunkel geboren und werden erst im Laufe der Jahre weiß.",
+          "exp": "Lipizzaner gehen auf das kaiserliche Gestüt Lippiza zurück."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Österreich aus?",
+          "q": "Welches weltberühmte Werk des Künstlers Gustav Klimt zeigt ein schlingendes Paar im Goldregen?",
           "o": [
-            "Schloss Schönbrunn in Wien",
-            "Dracula-Schloss Bran",
-            "Karlsbrücke in Prag",
-            "Windmühlen von Kinderdijk"
+            "Die Schrei",
+            "Der Kuss",
+            "Die Mona Lisa",
+            "Das Mädchen mit dem Perlenohrring"
           ],
-          "a": 0,
-          "exp": "Schloss Schönbrunn in Wien gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Name beschreibt eine sehr liebevolle Geste.",
+          "exp": "Der Kuss (1908) ist das Prunkstück des Wiener Belvedere-Museums."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Österreich?",
+          "q": "Welches weltberühmte Werk des Künstlers Gustav Klimt zeigt ein schlingendes Paar im Goldregen?",
           "o": [
-            "Komponist Wolfgang Amadeus Mozart",
-            "Zeichner Peyo (Erfinder der Schlümpfe)",
-            "Erfinder Ernő Rubik",
-            "Tennisprofi Marcos Baghdatis"
+            "Die Schrei",
+            "Der Kuss",
+            "Die Mona Lisa",
+            "Das Mädchen mit dem Perlenohrring"
           ],
-          "a": 0,
-          "exp": "Komponist Wolfgang Amadeus Mozart ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Name beschreibt eine sehr liebevolle Geste.",
+          "exp": "Der Kuss (1908) ist das Prunkstück des Wiener Belvedere-Museums."
         }
       ]
     },
     "Polen": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Polen bekannt?",
+          "q": "Welches gefüllte Teigtaschen-Gericht ist das bekannteste Nationalgericht und wird sowohl herzhaft als auch süß serviert?",
           "o": [
-            "Pierogi (Teigtaschen)",
-            "Irish Stew",
-            "Halloumi-Grillkäse",
-            "Baguette & Croissants"
+            "Pelmeni",
+            "Pierogi",
+            "Tortellini",
+            "Empanadas"
           ],
-          "a": 0,
-          "exp": "Pierogi (Teigtaschen) ist ein bekanntes Nationalgericht von Polen."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „P“.",
+          "exp": "Pierogi sind in Polen und ganz Osteuropa ein fester Küchenbestandteil."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Polen?",
+          "q": "Welches gefüllte Teigtaschen-Gericht ist das bekannteste Nationalgericht und wird sowohl herzhaft als auch süß serviert?",
           "o": [
-            "Astronom Nikolaus Kopernikus",
-            "Bildhauer Constantin Brâncuși",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Maler Vincent van Gogh"
+            "Pelmeni",
+            "Pierogi",
+            "Tortellini",
+            "Empanadas"
           ],
-          "a": 0,
-          "exp": "Astronom Nikolaus Kopernikus ist weltberühmt und stammt aus Polen."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „P“.",
+          "exp": "Pierogi sind in Polen und ganz Osteuropa ein fester Küchenbestandteil."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Polen?",
+          "q": "Welches Tier ziert als majestätisches Symbol das Wappen des Landes auf rotem Grund?",
           "o": [
-            "die Wichtel-Statuen in Breslau (Wrocław)",
-            "das Oktoberfest in München",
-            "das gigantische Liederfest Laulupidu",
-            "die Olympischen Spiele der Antike"
+            "Der weiße Adler",
+            "Der braune Bär",
+            "Der schwarze Stier",
+            "Der graue Wolf"
           ],
           "a": 0,
-          "exp": "Typisch Polen: die Wichtel-Statuen in Breslau (Wrocław)."
+          "tip": "Er trägt eine goldene Krone auf dem Kopf.",
+          "exp": "Der weiße Adler auf rotem Schild ist seit Jahrhunderten Polens Wappentier."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Polen hauptsächlich?",
+          "q": "Welches Tier ziert als majestätisches Symbol das Wappen des Landes auf rotem Grund?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Der weiße Adler",
+            "Der braune Bär",
+            "Der schwarze Stier",
+            "Der graue Wolf"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Er trägt eine goldene Krone auf dem Kopf.",
+          "exp": "Der weiße Adler auf rotem Schild ist seit Jahrhunderten Polens Wappentier."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Polen aus?",
+          "q": "Welcher weltberühmte Komponist der Romantik schrieb fast ausschließlich Werke für das Klavier, darunter viele Mazurken und Polonaisen?",
           "o": [
-            "Krakauer Wawel-Schloss",
-            "Dom von Helsinki",
-            "Wasserburg Trakai",
-            "Torre de Belém in Lissabon"
+            "Franz Liszt",
+            "Frédéric Chopin",
+            "Antonín Dvořák",
+            "Béla Bartók"
           ],
-          "a": 0,
-          "exp": "Krakauer Wawel-Schloss gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Flughafen in der Hauptstadt ist nach ihm benannt.",
+          "exp": "Chopin verbrachte seine ersten 20 Jahre in Polen und starb in Paris."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Polen?",
+          "q": "Welcher weltberühmte Komponist der Romantik schrieb fast ausschließlich Werke für das Klavier, darunter viele Mazurken und Polonaisen?",
           "o": [
-            "Astronom Nikolaus Kopernikus",
-            "Bildhauer Constantin Brâncuși",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Maler Vincent van Gogh"
+            "Franz Liszt",
+            "Frédéric Chopin",
+            "Antonín Dvořák",
+            "Béla Bartók"
           ],
-          "a": 0,
-          "exp": "Astronom Nikolaus Kopernikus ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Flughafen in der Hauptstadt ist nach ihm benannt.",
+          "exp": "Chopin verbrachte seine ersten 20 Jahre in Polen und starb in Paris."
         }
       ]
     },
     "Portugal": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Portugal bekannt?",
+          "q": "Welches Gericht aus getrocknetem und gesalzenem Kabeljau soll es in über 365 verschiedenen Rezepten geben?",
           "o": [
-            "Pastéis de Nata (Puddingtörtchen)",
-            "Pierogi (Teigtaschen)",
-            "Cepelinai (Kartoffelklöße)",
-            "Ćevapčići & dalmatinischer Schinken"
+            "Paella",
+            "Bacalhau",
+            "Tapas",
+            "Sardinen"
           ],
-          "a": 0,
-          "exp": "Pastéis de Nata (Puddingtörtchen) ist ein bekanntes Nationalgericht von Portugal."
+          "a": 1,
+          "tip": "Es ist der berühmte Klippfisch.",
+          "exp": "Bacalhau wird seit den Entdeckerzeiten getrocknet und eingesalzen haltbar gemacht."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Portugal?",
+          "q": "Welches Gericht aus getrocknetem und gesalzenem Kabeljau soll es in über 365 verschiedenen Rezepten geben?",
           "o": [
-            "Entdecker Vasco da Gama",
-            "General Milan Rastislav Štefánik",
-            "Basketballer Jonas Valančiūnas",
-            "Hans Christian Andersen"
+            "Paella",
+            "Bacalhau",
+            "Tapas",
+            "Sardinen"
           ],
-          "a": 0,
-          "exp": "Entdecker Vasco da Gama ist weltberühmt und stammt aus Portugal."
+          "a": 1,
+          "tip": "Es ist der berühmte Klippfisch.",
+          "exp": "Bacalhau wird seit den Entdeckerzeiten getrocknet und eingesalzen haltbar gemacht."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Portugal?",
+          "q": "Welcher Musikstil ist bekannt für seine schwermütigen Melodien, Gitarrenklänge und das Thema der Sehnsucht („Saudade“)?",
           "o": [
-            "der traditionelle Fado-Gesang",
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "die Olympischen Spiele der Antike",
-            "das dänische Wort 'Hygge' für Gemütlichkeit"
+            "Flamenco",
+            "Fado",
+            "Samba",
+            "Bossa Nova"
           ],
-          "a": 0,
-          "exp": "Typisch Portugal: der traditionelle Fado-Gesang."
+          "a": 1,
+          "tip": "Das Wort hat nur vier Buchstaben und bedeutet übersetzt „Schicksal“.",
+          "exp": "Fado gehört zum UNESCO-Weltkulturerbe und spiegelt das portugiesische Lebensgefühl wider."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Portugal hauptsächlich?",
+          "q": "Welcher Musikstil ist bekannt für seine schwermütigen Melodien, Gitarrenklänge und das Thema der Sehnsucht („Saudade“)?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Flamenco",
+            "Fado",
+            "Samba",
+            "Bossa Nova"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Das Wort hat nur vier Buchstaben und bedeutet übersetzt „Schicksal“.",
+          "exp": "Fado gehört zum UNESCO-Weltkulturerbe und spiegelt das portugiesische Lebensgefühl wider."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Portugal aus?",
+          "q": "Welcher bunte Hahn gilt als nationaler Glücksbringer und Symbol für Ehrlichkeit und Gerechtigkeit?",
           "o": [
-            "Torre de Belém in Lissabon",
-            "Krakauer Wawel-Schloss",
-            "Rigaer Dom",
-            "Bratislavaer Burg"
+            "Der Hahn von Barcelos",
+            "Der Hahn von Sintra",
+            "Der Gallische Hahn",
+            "Der goldene Gockel"
           ],
           "a": 0,
-          "exp": "Torre de Belém in Lissabon gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Die Legende besagt, dass ein gebratener Hahn krähte, um die Unschuld eines Pilgers zu beweisen.",
+          "exp": "Der Hahn von Barcelos (Galo de Barcelos) ist Portugals Nationalsymbol."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Portugal?",
+          "q": "Welcher bunte Hahn gilt als nationaler Glücksbringer und Symbol für Ehrlichkeit und Gerechtigkeit?",
           "o": [
-            "Entdecker Vasco da Gama",
-            "General Milan Rastislav Štefánik",
-            "Basketballer Jonas Valančiūnas",
-            "Hans Christian Andersen"
+            "Der Hahn von Barcelos",
+            "Der Hahn von Sintra",
+            "Der Gallische Hahn",
+            "Der goldene Gockel"
           ],
           "a": 0,
-          "exp": "Entdecker Vasco da Gama ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Die Legende besagt, dass ein gebratener Hahn krähte, um die Unschuld eines Pilgers zu beweisen.",
+          "exp": "Der Hahn von Barcelos (Galo de Barcelos) ist Portugals Nationalsymbol."
         }
       ]
     },
     "Rumänien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Rumänien bekannt?",
+          "q": "Welche fiktive Romanfigur des Autors Bram Stoker beruht lose auf dem historischen Herrscher Vlad III. Drăculea?",
           "o": [
-            "Mămăligă (Maisbrei)",
-            "Bryndzové halušky (Schafskäse-Nockerl)",
-            "Pierogi (Teigtaschen)",
-            "Smørrebrød"
+            "Frankenstein",
+            "Graf Dracula",
+            "Der Werwolf",
+            "Van Helsing"
           ],
-          "a": 0,
-          "exp": "Mămăligă (Maisbrei) ist ein bekanntes Nationalgericht von Rumänien."
+          "a": 1,
+          "tip": "Es handelt sich um den berühmtesten Vampir der Weltgeschichte.",
+          "exp": "Vlad der Pfähler lieferte die Inspiration für den Vampirfürsten Dracula."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Rumänien?",
+          "q": "Welche fiktive Romanfigur des Autors Bram Stoker beruht lose auf dem historischen Herrscher Vlad III. Drăculea?",
           "o": [
-            "Bildhauer Constantin Brâncuși",
-            "Erfinder Ernő Rubik",
-            "Tennisstar Rafael Nadal",
-            "Band U2 (Sänger Bono)"
+            "Frankenstein",
+            "Graf Dracula",
+            "Der Werwolf",
+            "Van Helsing"
           ],
-          "a": 0,
-          "exp": "Bildhauer Constantin Brâncuși ist weltberühmt und stammt aus Rumänien."
+          "a": 1,
+          "tip": "Es handelt sich um den berühmtesten Vampir der Weltgeschichte.",
+          "exp": "Vlad der Pfähler lieferte die Inspiration für den Vampirfürsten Dracula."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Rumänien?",
+          "q": "Welches Schloss in Transsilvanien wird Touristen oft als das angebliche „Dracula-Schloss“ präsentiert?",
           "o": [
-            "das Donaudelta als Naturparadies",
-            "die traditionellen bunten Luzzu-Fischerboote",
-            "Tim & Struppi kommen aus Belgien",
-            "das Neujahrskonzert der Wiener Philharmoniker"
+            "Schloss Bran",
+            "Schloss Peleș",
+            "Burg Hunedoara",
+            "Schloss Corvinus"
           ],
           "a": 0,
-          "exp": "Typisch Rumänien: das Donaudelta als Naturparadies."
+          "tip": "Es hat nur vier Buchstaben im Namen (Bran).",
+          "exp": "Schloss Bran ähnelt Stokers Beschreibung, Vlad III. hat es aber wohl nie bewohnt."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Rumänien hauptsächlich?",
+          "q": "Welches Schloss in Transsilvanien wird Touristen oft als das angebliche „Dracula-Schloss“ präsentiert?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Schloss Bran",
+            "Schloss Peleș",
+            "Burg Hunedoara",
+            "Schloss Corvinus"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Es hat nur vier Buchstaben im Namen (Bran).",
+          "exp": "Schloss Bran ähnelt Stokers Beschreibung, Vlad III. hat es aber wohl nie bewohnt."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Rumänien aus?",
+          "q": "Wie heißt die traditionelle bestickte Leinenbluse, die als Symbol des nationalen Kulturerbes gilt?",
           "o": [
-            "Dracula-Schloss Bran",
-            "Krakauer Wawel-Schloss",
-            "Brandenburger Tor in Berlin",
-            "Eiffelturm in Paris"
+            "Dirndl",
+            "Ia",
+            "Sarafan",
+            "Vyshhyvanka"
           ],
-          "a": 0,
-          "exp": "Dracula-Schloss Bran gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Name ist extrem kurz und besteht aus nur zwei Vokalen.",
+          "exp": "Die Ia ist die reich verzierte rumänische Volkstrachtenbluse."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Rumänien?",
+          "q": "Wie heißt die traditionelle bestickte Leinenbluse, die als Symbol des nationalen Kulturerbes gilt?",
           "o": [
-            "Bildhauer Constantin Brâncuși",
-            "Erfinder Ernő Rubik",
-            "Tennisstar Rafael Nadal",
-            "Band U2 (Sänger Bono)"
+            "Dirndl",
+            "Ia",
+            "Sarafan",
+            "Vyshhyvanka"
           ],
-          "a": 0,
-          "exp": "Bildhauer Constantin Brâncuși ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Name ist extrem kurz und besteht aus nur zwei Vokalen.",
+          "exp": "Die Ia ist die reich verzierte rumänische Volkstrachtenbluse."
         }
       ]
     },
     "Schweden": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Schweden bekannt?",
+          "q": "Welches Midsommar-Symbol wird auf den Wiesen aufgestellt, um das man in Gruppen tanzt und singt?",
           "o": [
-            "Köttbullar & Zimtschnecken",
-            "Gulaschsuppe",
-            "Pastéis de Nata (Puddingtörtchen)",
-            "Smørrebrød"
+            "Der Maibaum",
+            "Das Osterfeuer",
+            "Der Adventskranz",
+            "Der Erntedankkorb"
           ],
           "a": 0,
-          "exp": "Köttbullar & Zimtschnecken ist ein bekanntes Nationalgericht von Schweden."
+          "tip": "Es ist ein mit Birkenzweigen und Blumen geschmückter Mast.",
+          "exp": "Das Midsommar-Fest feiert das Licht zur Sommersonnenwende."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Schweden?",
+          "q": "Welches Midsommar-Symbol wird auf den Wiesen aufgestellt, um das man in Gruppen tanzt und singt?",
           "o": [
-            "Popgruppe ABBA",
-            "Erfinder Ernő Rubik",
-            "Entdecker Vasco da Gama",
-            "Tennisstar Rafael Nadal"
+            "Der Maibaum",
+            "Das Osterfeuer",
+            "Der Adventskranz",
+            "Der Erntedankkorb"
           ],
           "a": 0,
-          "exp": "Popgruppe ABBA ist weltberühmt und stammt aus Schweden."
+          "tip": "Es ist ein mit Birkenzweigen und Blumen geschmückter Mast.",
+          "exp": "Das Midsommar-Fest feiert das Licht zur Sommersonnenwende."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Schweden?",
+          "q": "Welches rote Holzpferdchen aus der Region Dalarna ist das bekannteste Souvenir und Symbol des Landes?",
           "o": [
-            "das sommerliche Midsommar-Fest",
-            "die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg",
-            "der leidenschaftliche Flamenco-Tanz",
-            "Marteniza-Puppen (rot-weiß) als Frühlingsgruß"
+            "Dalahäst",
+            "Lindwurm",
+            "Schaukelpferd",
+            "Holzbock"
           ],
           "a": 0,
-          "exp": "Typisch Schweden: das sommerliche Midsommar-Fest."
+          "tip": "Es ist meist leuchtend rot bemalt und mit traditionellen Blumenmustern verziert.",
+          "exp": "Das Dala-Pferd entstand im 17. Jahrhundert als Schnitzspielzeug."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Schweden hauptsächlich?",
+          "q": "Welches rote Holzpferdchen aus der Region Dalarna ist das bekannteste Souvenir und Symbol des Landes?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Dalahäst",
+            "Lindwurm",
+            "Schaukelpferd",
+            "Holzbock"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Es ist meist leuchtend rot bemalt und mit traditionellen Blumenmustern verziert.",
+          "exp": "Das Dala-Pferd entstand im 17. Jahrhundert als Schnitzspielzeug."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Schweden aus?",
+          "q": "Welches Pop-Quartett gewann 1974 mit dem Song „Waterloo“ den Eurovision Song Contest und wurde weltberühmt?",
           "o": [
-            "Stockholmer Schloss",
-            "Eiffelturm in Paris",
-            "Wasserburg Trakai",
-            "Dom von Helsinki"
+            "Roxette",
+            "ABBA",
+            "A-ha",
+            "Ace of Base"
           ],
-          "a": 0,
-          "exp": "Stockholmer Schloss gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Der Name setzt sich aus den Anfangsbuchstaben der vier Mitglieder Agnetha, Björn, Benny und Anni-Frid zusammen.",
+          "exp": "ABBA ist mit rund 400 Millionen Tonträgern eine der erfolgreichsten Bands aller Zeiten."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Schweden?",
+          "q": "Welches Pop-Quartett gewann 1974 mit dem Song „Waterloo“ den Eurovision Song Contest und wurde weltberühmt?",
           "o": [
-            "Popgruppe ABBA",
-            "Erfinder Ernő Rubik",
-            "Entdecker Vasco da Gama",
-            "Tennisstar Rafael Nadal"
+            "Roxette",
+            "ABBA",
+            "A-ha",
+            "Ace of Base"
           ],
-          "a": 0,
-          "exp": "Popgruppe ABBA ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Der Name setzt sich aus den Anfangsbuchstaben der vier Mitglieder Agnetha, Björn, Benny und Anni-Frid zusammen.",
+          "exp": "ABBA ist mit rund 400 Millionen Tonträgern eine der erfolgreichsten Bands aller Zeiten."
         }
       ]
     },
     "Slowakei": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Slowakei bekannt?",
+          "q": "Welcher legendäre Bergamts-Räuber gilt im Volk als nationaler Volksheld (ähnlich wie Robin Hood)?",
           "o": [
-            "Bryndzové halušky (Schafskäse-Nockerl)",
-            "Halloumi-Grillkäse",
-            "Graue Erbsen mit Speck",
-            "marinierter Hering"
+            "Juraj Jánošík",
+            "Sandor Rózsa",
+            "Räuber Hotzenplotz",
+            "Wilhelm Tell"
           ],
           "a": 0,
-          "exp": "Bryndzové halušky (Schafskäse-Nockerl) ist ein bekanntes Nationalgericht von Slowakei."
+          "tip": "Er stahl von den Reichen und gab es den Armen.",
+          "exp": "Jánošík lebte im frühen 18. Jahrhundert und wurde zum Volkshelden verklärt."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Slowakei?",
+          "q": "Welcher legendäre Bergamts-Räuber gilt im Volk als nationaler Volksheld (ähnlich wie Robin Hood)?",
           "o": [
-            "General Milan Rastislav Štefánik",
-            "Komponist Ludwig van Beethoven",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Tennisprofi Marcos Baghdatis"
+            "Juraj Jánošík",
+            "Sandor Rózsa",
+            "Räuber Hotzenplotz",
+            "Wilhelm Tell"
           ],
           "a": 0,
-          "exp": "General Milan Rastislav Štefánik ist weltberühmt und stammt aus Slowakei."
+          "tip": "Er stahl von den Reichen und gab es den Armen.",
+          "exp": "Jánošík lebte im frühen 18. Jahrhundert und wurde zum Volkshelden verklärt."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Slowakei?",
+          "q": "Welches Gericht aus Kartoffelnocken mit Schafskäse (Bryndza) und krossen Speckwürfeln ist das Nationalgericht?",
           "o": [
-            "der slowakische Robin Hood Juraj Jánošík",
-            "das Baguette wurde zum UNESCO-Weltkulturerbe erklärt",
-            "das Prager Marionettentheater",
-            "die Echternacher Springprozession"
+            "Bryndzové halušky",
+            "Piroggen",
+            "Schätzle",
+            "Gulasch"
           ],
           "a": 0,
-          "exp": "Typisch Slowakei: der slowakische Robin Hood Juraj Jánošík."
+          "tip": "Die Nocken ähneln den Spätzle.",
+          "exp": "Bryndzové halušky ist der Inbegriff der slowakischen Traditionsküche."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Slowakei hauptsächlich?",
+          "q": "Welches Gericht aus Kartoffelnocken mit Schafskäse (Bryndza) und krossen Speckwürfeln ist das Nationalgericht?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Bryndzové halušky",
+            "Piroggen",
+            "Schätzle",
+            "Gulasch"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Die Nocken ähneln den Spätzle.",
+          "exp": "Bryndzové halušky ist der Inbegriff der slowakischen Traditionsküche."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Slowakei aus?",
+          "q": "Welches Symbol mit einem Doppelkreuz auf drei blauen Hügeln ziert die Nationalflagge und das Wappen?",
           "o": [
-            "Bratislavaer Burg",
-            "Athener Akropolis",
-            "Windmühlen von Kinderdijk",
-            "Dom von Helsinki"
+            "Das Byzantinische Doppelkreuz",
+            "Das Malteserkreuz",
+            "Das Keltische Kreuz",
+            "Das Balkenkreuz"
           ],
           "a": 0,
-          "exp": "Bratislavaer Burg gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Die drei Hügel stellen die Gebirge Tatra, Fatra und Mátra dar.",
+          "exp": "Das Doppelkreuz geht auf den byzantinischen Einfluss im Mittelalter zurück."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Slowakei?",
+          "q": "Welches Symbol mit einem Doppelkreuz auf drei blauen Hügeln ziert die Nationalflagge und das Wappen?",
           "o": [
-            "General Milan Rastislav Štefánik",
-            "Komponist Ludwig van Beethoven",
-            "Tove Jansson (Erfinderin der Mumins)",
-            "Tennisprofi Marcos Baghdatis"
+            "Das Byzantinische Doppelkreuz",
+            "Das Malteserkreuz",
+            "Das Keltische Kreuz",
+            "Das Balkenkreuz"
           ],
           "a": 0,
-          "exp": "General Milan Rastislav Štefánik ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Die drei Hügel stellen die Gebirge Tatra, Fatra und Mátra dar.",
+          "exp": "Das Doppelkreuz geht auf den byzantinischen Einfluss im Mittelalter zurück."
         }
       ]
     },
     "Slowenien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Slowenien bekannt?",
+          "q": "Welcher Höhlenmolch (ein blinder Schwanzlurch), der in den berühmten Postojna-Höhlen lebt, wird auch als „Menschliches Fischlein“ bezeichnet?",
           "o": [
-            "Potica (Hefekuchen)",
-            "belgische Waffeln",
-            "Currywurst & Brezeln",
-            "Smørrebrød"
+            "Grottenolm",
+            "Feuersalamander",
+            "Axolotl",
+            "Bergmolch"
           ],
           "a": 0,
-          "exp": "Potica (Hefekuchen) ist ein bekanntes Nationalgericht von Slowenien."
+          "tip": "Er hat eine hautähnliche rosa Farbe und lebt komplett im Dunkeln.",
+          "exp": "Der Grottenolm schlägt ohne Nahrung Jahre durch und atmet über Kiemen."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Slowenien?",
+          "q": "Welcher Höhlenmolch (ein blinder Schwanzlurch), der in den berühmten Postojna-Höhlen lebt, wird auch als „Menschliches Fischlein“ bezeichnet?",
           "o": [
-            "Radprofi Tadej Pogačar",
-            "Tennisstar Rafael Nadal",
-            "Philosoph Sokrates",
-            "Parlamentspräsidentin Roberta Metsola"
+            "Grottenolm",
+            "Feuersalamander",
+            "Axolotl",
+            "Bergmolch"
           ],
           "a": 0,
-          "exp": "Radprofi Tadej Pogačar ist weltberühmt und stammt aus Slowenien."
+          "tip": "Er hat eine hautähnliche rosa Farbe und lebt komplett im Dunkeln.",
+          "exp": "Der Grottenolm schlägt ohne Nahrung Jahre durch und atmet über Kiemen."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Slowenien?",
+          "q": "Welche Delikatesse aus Hefeteig mit einer Füllung aus Nüssen, Estragon oder Mohn ist der traditionelle Festtagskuchen?",
           "o": [
-            "die weißen Lipizzaner-Pferde stammen ursprünglich aus Lipica",
-            "die Olympischen Spiele der Antike",
-            "das Neujahrskonzert der Wiener Philharmoniker",
-            "Tim & Struppi kommen aus Belgien"
+            "Potica",
+            "Strudel",
+            "Panettone",
+            "Gugelhupf"
           ],
           "a": 0,
-          "exp": "Typisch Slowenien: die weißen Lipizzaner-Pferde stammen ursprünglich aus Lipica."
+          "tip": "Der Name klingt ähnlich wie „Potizza“.",
+          "exp": "Potica ist das unverzichtbare Festgebäck Sloweniens."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Slowenien hauptsächlich?",
+          "q": "Welche Delikatesse aus Hefeteig mit einer Füllung aus Nüssen, Estragon oder Mohn ist der traditionelle Festtagskuchen?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Potica",
+            "Strudel",
+            "Panettone",
+            "Gugelhupf"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Der Name klingt ähnlich wie „Potizza“.",
+          "exp": "Potica ist das unverzichtbare Festgebäck Sloweniens."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Slowenien aus?",
+          "q": "Welches Tier gilt als Symbol für Fleiß und Ausdauer und wird in der traditionellen Bienenhaltung auf bunt bemallten Beutenbrettern geehrt?",
           "o": [
-            "malerische Bleder See mit der Kircheninsel",
-            "Stockholmer Schloss",
-            "Karlsbrücke in Prag",
-            "Dom von Helsinki"
+            "Die Krainer Biene",
+            "Die Ameise",
+            "Der Biber",
+            "Die Seidenraupe"
           ],
           "a": 0,
-          "exp": "malerische Bleder See mit der Kircheninsel gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Im Land hat die Imkerei eine riesige historische Tradition.",
+          "exp": "Die Krainer Biene (Apis mellifera carnica) ist weltweit als sanftmütig bekannt."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Slowenien?",
+          "q": "Welches Tier gilt als Symbol für Fleiß und Ausdauer und wird in der traditionellen Bienenhaltung auf bunt bemallten Beutenbrettern geehrt?",
           "o": [
-            "Radprofi Tadej Pogačar",
-            "Tennisstar Rafael Nadal",
-            "Philosoph Sokrates",
-            "Parlamentspräsidentin Roberta Metsola"
+            "Die Krainer Biene",
+            "Die Ameise",
+            "Der Biber",
+            "Die Seidenraupe"
           ],
           "a": 0,
-          "exp": "Radprofi Tadej Pogačar ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Im Land hat die Imkerei eine riesige historische Tradition.",
+          "exp": "Die Krainer Biene (Apis mellifera carnica) ist weltweit als sanftmütig bekannt."
         }
       ]
     },
     "Spanien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Spanien bekannt?",
+          "q": "Welches traditionelle Gericht aus Reis, Safran, Gemüse und Meeresfrüchten oder Fleisch wird in einer großen flachen Pfanne zubereitet?",
           "o": [
-            "Paella & Tapas",
-            "Currywurst & Brezeln",
-            "Gulaschsuppe",
-            "Wiener Schnitzel & Sachertorte"
+            "Gazpacho",
+            "Paella",
+            "Tortilla",
+            "Tapas"
           ],
-          "a": 0,
-          "exp": "Paella & Tapas ist ein bekanntes Nationalgericht von Spanien."
+          "a": 1,
+          "tip": "Es stammt ursprünglich aus der Region Valencia.",
+          "exp": "Die Paella ist die weltweit bekannteste Spezialität Spaniens."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Spanien?",
+          "q": "Welches traditionelle Gericht aus Reis, Safran, Gemüse und Meeresfrüchten oder Fleisch wird in einer großen flachen Pfanne zubereitet?",
           "o": [
-            "Tennisstar Rafael Nadal",
-            "Hans Christian Andersen",
-            "Verpackungskünstler Christo",
-            "Philosoph Sokrates"
+            "Gazpacho",
+            "Paella",
+            "Tortilla",
+            "Tapas"
           ],
-          "a": 0,
-          "exp": "Tennisstar Rafael Nadal ist weltberühmt und stammt aus Spanien."
+          "a": 1,
+          "tip": "Es stammt ursprünglich aus der Region Valencia.",
+          "exp": "Die Paella ist die weltweit bekannteste Spezialität Spaniens."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Spanien?",
+          "q": "Welcher feurige Tanz- und Musikstil aus Andalusien kombiniert Gesang, Gitarrenspiel, Klatschen und ausdrucksstarken Tanz?",
           "o": [
-            "der leidenschaftliche Flamenco-Tanz",
-            "die gepunkteten Dalmatiner-Hunde stammen von hier",
-            "das Oktoberfest in München",
-            "das Donaudelta als Naturparadies"
+            "Tango",
+            "Flamenco",
+            "Salsa",
+            "Merengue"
           ],
-          "a": 0,
-          "exp": "Typisch Spanien: der leidenschaftliche Flamenco-Tanz."
+          "a": 1,
+          "tip": "Die Tänzerinnen tragen oft weit schwingende Kleider mit Fransen.",
+          "exp": "Der Flamenco ist immaterielles UNESCO-Weltkulturerbe."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Spanien hauptsächlich?",
+          "q": "Welcher feurige Tanz- und Musikstil aus Andalusien kombiniert Gesang, Gitarrenspiel, Klatschen und ausdrucksstarken Tanz?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Tango",
+            "Flamenco",
+            "Salsa",
+            "Merengue"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Die Tänzerinnen tragen oft weit schwingende Kleider mit Fransen.",
+          "exp": "Der Flamenco ist immaterielles UNESCO-Weltkulturerbe."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Spanien aus?",
+          "q": "Welcher weltberühmte Architekt entwarf das bis heute unvollendete Meisterwerk der Basilika Sagrada Família in Barcelona?",
           "o": [
-            "Sagrada Família in Barcelona",
-            "die kleine Meerjungfrau in Kopenhagen",
-            "malerische Bleder See mit der Kircheninsel",
-            "Rigaer Dom"
+            "Antoni Gaudí",
+            "Pablo Picasso",
+            "Salvador Dalí",
+            "Joan Miró"
           ],
           "a": 0,
-          "exp": "Sagrada Família in Barcelona gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Seine Bauwerke zeichnen sich durch geschwungene organische Formen aus der Natur aus.",
+          "exp": "Gaudís Sagrada Família befindet sich seit 1882 im Bau."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Spanien?",
+          "q": "Welcher weltberühmte Architekt entwarf das bis heute unvollendete Meisterwerk der Basilika Sagrada Família in Barcelona?",
           "o": [
-            "Tennisstar Rafael Nadal",
-            "Hans Christian Andersen",
-            "Verpackungskünstler Christo",
-            "Philosoph Sokrates"
+            "Antoni Gaudí",
+            "Pablo Picasso",
+            "Salvador Dalí",
+            "Joan Miró"
           ],
           "a": 0,
-          "exp": "Tennisstar Rafael Nadal ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Seine Bauwerke zeichnen sich durch geschwungene organische Formen aus der Natur aus.",
+          "exp": "Gaudís Sagrada Família befindet sich seit 1882 im Bau."
         }
       ]
     },
     "Tschechien": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Tschechien bekannt?",
+          "q": "Welche zeichentrickfigur eines kleinen schwarzen Grabtiers mit roter Nase und blauer Latzhose begeistert seit den 1950er Jahren Kinder weltweit?",
           "o": [
-            "Knödel & Gulasch",
-            "Irish Stew",
-            "Currywurst & Brezeln",
-            "Wiener Schnitzel & Sachertorte"
+            "Der kleine Maulwurf",
+            "Biene Maja",
+            "Schnuffel",
+            "Pittiplatsch"
           ],
           "a": 0,
-          "exp": "Knödel & Gulasch ist ein bekanntes Nationalgericht von Tschechien."
+          "tip": "Auf Tschechisch heißt das Tier „Krtek“.",
+          "exp": "Der kleine Maulwurf wurde vom tschechischen Zeichner Zdeněk Miler erschaffen."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Tschechien?",
+          "q": "Welche zeichentrickfigur eines kleinen schwarzen Grabtiers mit roter Nase und blauer Latzhose begeistert seit den 1950er Jahren Kinder weltweit?",
           "o": [
-            "Schriftsteller Franz Kafka",
-            "Komponist Arvo Pärt",
-            "Maler Vincent van Gogh",
-            "Hans Christian Andersen"
+            "Der kleine Maulwurf",
+            "Biene Maja",
+            "Schnuffel",
+            "Pittiplatsch"
           ],
           "a": 0,
-          "exp": "Schriftsteller Franz Kafka ist weltberühmt und stammt aus Tschechien."
+          "tip": "Auf Tschechisch heißt das Tier „Krtek“.",
+          "exp": "Der kleine Maulwurf wurde vom tschechischen Zeichner Zdeněk Miler erschaffen."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Tschechien?",
+          "q": "Welches Hopfengetränk hat in diesem Land die weltweit höchste Pro-Kopf-Menge beim Konsum und stammt z. B. aus der Stadt Pilsen?",
           "o": [
-            "das Prager Marionettentheater",
-            "die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg",
-            "Tim & Struppi kommen aus Belgien",
-            "das legendäre Sziget-Musikfestival in Budapest"
+            "Wein",
+            "Bier",
+            "Cider",
+            "Met"
           ],
-          "a": 0,
-          "exp": "Typisch Tschechien: das Prager Marionettentheater."
+          "a": 1,
+          "tip": "Die Brauart „Pils“ ist nach einer tschechischen Stadt benannt.",
+          "exp": "Tschechien hält seit Jahren den Rekord beim weltweiten Bierkonsum pro Kopf."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Tschechien hauptsächlich?",
+          "q": "Welches Hopfengetränk hat in diesem Land die weltweit höchste Pro-Kopf-Menge beim Konsum und stammt z. B. aus der Stadt Pilsen?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Wein",
+            "Bier",
+            "Cider",
+            "Met"
           ],
-          "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "a": 1,
+          "tip": "Die Brauart „Pils“ ist nach einer tschechischen Stadt benannt.",
+          "exp": "Tschechien hält seit Jahren den Rekord beim weltweiten Bierkonsum pro Kopf."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Tschechien aus?",
+          "q": "Welches mystische Tonwesen soll laut einer Prager Legende im 16. Jahrhundert von Rabbi Löw erschaffen worden sein, um die Menschen zu beschützen?",
           "o": [
-            "Karlsbrücke in Prag",
-            "Windmühlen von Kinderdijk",
-            "Sagrada Família in Barcelona",
-            "Bratislavaer Burg"
+            "Der Golem",
+            "Der Frankenstein",
+            "Der Wassermann",
+            "Der Gargoyle"
           ],
           "a": 0,
-          "exp": "Karlsbrücke in Prag gehört zu den herausragenden Wahrzeichen des Landes."
+          "tip": "Das Wesen bestand aus Lehm und Erde.",
+          "exp": "Die Legende vom Prager Golem inspirierte weltweit Fantasy-Autoren."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Tschechien?",
+          "q": "Welches mystische Tonwesen soll laut einer Prager Legende im 16. Jahrhundert von Rabbi Löw erschaffen worden sein, um die Menschen zu beschützen?",
           "o": [
-            "Schriftsteller Franz Kafka",
-            "Komponist Arvo Pärt",
-            "Maler Vincent van Gogh",
-            "Hans Christian Andersen"
+            "Der Golem",
+            "Der Frankenstein",
+            "Der Wassermann",
+            "Der Gargoyle"
           ],
           "a": 0,
-          "exp": "Schriftsteller Franz Kafka ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "tip": "Das Wesen bestand aus Lehm und Erde.",
+          "exp": "Die Legende vom Prager Golem inspirierte weltweit Fantasy-Autoren."
         }
       ]
     },
     "Ungarn": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Ungarn bekannt?",
+          "q": "Welcher rote Gewürzpaprika gibt dem traditionellen Kesselsuppen-Gericht seine typische Farbe und Schärfe?",
           "o": [
-            "Gulaschsuppe",
-            "Cepelinai (Kartoffelklöße)",
-            "Ćevapčići & dalmatinischer Schinken",
-            "Judd mat Gaardebounen (Schweinefleisch)"
+            "Curry",
+            "Paprikapulver",
+            "Safran",
+            "Chili"
           ],
-          "a": 0,
-          "exp": "Gulaschsuppe ist ein bekanntes Nationalgericht von Ungarn."
+          "a": 1,
+          "tip": "Das Gericht selbst wird oft fälschlicherweise als „Gulasch“ bezeichnet (in Wahrheit ist es eine Suppe).",
+          "exp": "Ungarischer Paprika ist weltweit für seine Qualität und sein Aroma bekannt."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Ungarn?",
+          "q": "Welcher rote Gewürzpaprika gibt dem traditionellen Kesselsuppen-Gericht seine typische Farbe und Schärfe?",
           "o": [
-            "Erfinder Ernő Rubik",
-            "Radprofi Tadej Pogačar",
-            "Band U2 (Sänger Bono)",
-            "Zeichner Peyo (Erfinder der Schlümpfe)"
+            "Curry",
+            "Paprikapulver",
+            "Safran",
+            "Chili"
           ],
-          "a": 0,
-          "exp": "Erfinder Ernő Rubik ist weltberühmt und stammt aus Ungarn."
+          "a": 1,
+          "tip": "Das Gericht selbst wird oft fälschlicherweise als „Gulasch“ bezeichnet (in Wahrheit ist es eine Suppe).",
+          "exp": "Ungarischer Paprika ist weltweit für seine Qualität und sein Aroma bekannt."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Ungarn?",
+          "q": "Welches gedrehte Gebäck, das über offener Glut gebacken und in Zucker und Nüssen gewälzt wird, ist der bekannteste Straßen-Snack?",
           "o": [
-            "das legendäre Sziget-Musikfestival in Budapest",
-            "die weißen Lipizzaner-Pferde stammen ursprünglich aus Lipica",
-            "der grüne Saint Patrick's Day am 17. März",
-            "die Wichtel-Statuen in Breslau (Wrocław)"
+            "Kürtőskalács",
+            "Lángos",
+            "Churros",
+            "Donut"
           ],
           "a": 0,
-          "exp": "Typisch Ungarn: das legendäre Sziget-Musikfestival in Budapest."
+          "tip": "Es wird auch Schornsteinkuchen genannt, weil der Dampf oben heraussteigt.",
+          "exp": "Kürtőskalács stammt ursprünglich aus Siebenbürgen."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Ungarn hauptsächlich?",
+          "q": "Welches gedrehte Gebäck, das über offener Glut gebacken und in Zucker und Nüssen gewälzt wird, ist der bekannteste Straßen-Snack?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Kürtőskalács",
+            "Lángos",
+            "Churros",
+            "Donut"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Es wird auch Schornsteinkuchen genannt, weil der Dampf oben heraussteigt.",
+          "exp": "Kürtőskalács stammt ursprünglich aus Siebenbürgen."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Ungarn aus?",
+          "q": "Welches knifflige 3D-Drehrätsel mit 6 farbigen Seiten erfand der Architekturprofessor Ernő Rubik im Jahr 1974?",
           "o": [
-            "Parlamentsgebäude in Budapest",
-            "malerische Bleder See mit der Kircheninsel",
-            "Windmühlen von Kinderdijk",
-            "Torre de Belém in Lissabon"
+            "Das Tangram",
+            "Der Rubik’s Cube",
+            "Sudoku",
+            "Das Solitär"
           ],
-          "a": 0,
-          "exp": "Parlamentsgebäude in Budapest gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Es trägt den Namen seines Erfinders.",
+          "exp": "Der Rubik's Cube ist eines der meistverkauften Geduldspiele weltweit."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Ungarn?",
+          "q": "Welches knifflige 3D-Drehrätsel mit 6 farbigen Seiten erfand der Architekturprofessor Ernő Rubik im Jahr 1974?",
           "o": [
-            "Erfinder Ernő Rubik",
-            "Radprofi Tadej Pogačar",
-            "Band U2 (Sänger Bono)",
-            "Zeichner Peyo (Erfinder der Schlümpfe)"
+            "Das Tangram",
+            "Der Rubik’s Cube",
+            "Sudoku",
+            "Das Solitär"
           ],
-          "a": 0,
-          "exp": "Erfinder Ernő Rubik ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Es trägt den Namen seines Erfinders.",
+          "exp": "Der Rubik's Cube ist eines der meistverkauften Geduldspiele weltweit."
         }
       ]
     },
     "Zypern": {
       "1": [
         {
-          "q": "Für welches berühmte Gericht oder welche kulinarische Spezialität ist Zypern bekannt?",
+          "q": "Welcher weiße, feste Käse, der beim Grillen oder Braten nicht schmilzt, ist die bekannteste kulinarische Spezialität der Insel?",
           "o": [
-            "Halloumi-Grillkäse",
-            "Gouda-Käse & Stroopwafels",
-            "Graue Erbsen mit Speck",
-            "Köttbullar & Zimtschnecken"
+            "Feta",
+            "Halloumi",
+            "Mozzarella",
+            "Parmesan"
           ],
-          "a": 0,
-          "exp": "Halloumi-Grillkäse ist ein bekanntes Nationalgericht von Zypern."
+          "a": 1,
+          "tip": "Er wird oft aus Schaf- und Ziegenmilch hergestellt und quietscht leicht beim Kauen.",
+          "exp": "Halloumi besitzt einen EU-weit geschützten Ursprungsstatus."
         },
         {
-          "q": "Welcher berühmte Kulturschaffende, Popstar oder Sportler kommt aus Zypern?",
+          "q": "Welcher weiße, feste Käse, der beim Grillen oder Braten nicht schmilzt, ist die bekannteste kulinarische Spezialität der Insel?",
           "o": [
-            "Tennisprofi Marcos Baghdatis",
-            "Hans Christian Andersen",
-            "Astronom Nikolaus Kopernikus",
-            "Physiker Nikola Tesla"
+            "Feta",
+            "Halloumi",
+            "Mozzarella",
+            "Parmesan"
           ],
-          "a": 0,
-          "exp": "Tennisprofi Marcos Baghdatis ist weltberühmt und stammt aus Zypern."
+          "a": 1,
+          "tip": "Er wird oft aus Schaf- und Ziegenmilch hergestellt und quietscht leicht beim Kauen.",
+          "exp": "Halloumi besitzt einen EU-weit geschützten Ursprungsstatus."
         }
       ],
       "2": [
         {
-          "q": "Welcher traditionelle Brauch oder witzige Kulturfakt gehört zu Zypern?",
+          "q": "Welches Tier ziert die Münzen und Briefmarken des Landes und gilt als geschütztes Symbol der Bergregionen?",
           "o": [
-            "die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg",
-            "das Donaudelta als Naturparadies",
-            "die Olympischen Spiele der Antike",
-            "die weißen Lipizzaner-Pferde stammen ursprünglich aus Lipica"
+            "Das Zypern-Mufflon",
+            "Der Esel",
+            "Der Flamingo",
+            "Die Meeresschildkröte"
           ],
           "a": 0,
-          "exp": "Typisch Zypern: die Legende, dass Aphrodite hier dem Schaum des Meeres entstieg."
+          "tip": "Es ist eine scheue Wildschaf-Art mit geschwungenen Hörnern.",
+          "exp": "Das Zypern-Mufflon lebt wild im bewaldeten Troodos-Gebirge."
         },
         {
-          "q": "Welche Farben hat die Landesflagge von Zypern hauptsächlich?",
+          "q": "Welches Tier ziert die Münzen und Briefmarken des Landes und gilt als geschütztes Symbol der Bergregionen?",
           "o": [
-            "Kombinationen aus Nationalfarben",
-            "Pink-Türkisch-Gepunktet",
-            "Neon-Grün und Lila",
-            "Silberglänzend"
+            "Das Zypern-Mufflon",
+            "Der Esel",
+            "Der Flamingo",
+            "Die Meeresschildkröte"
           ],
           "a": 0,
-          "exp": "Die Nationalfarben spiegeln sich in der Flagge des Landes wider."
+          "tip": "Es ist eine scheue Wildschaf-Art mit geschwungenen Hörnern.",
+          "exp": "Das Zypern-Mufflon lebt wild im bewaldeten Troodos-Gebirge."
         }
       ],
       "3": [
         {
-          "q": "Welches bekannte Kulturerbe (z.B. Bauwerk oder Tradition) zeichnet Zypern aus?",
+          "q": "Welche Liebesgöttin aus der antiken griechischen Mythologie soll an den Felsen von Petra tou Romiou aus dem Meeresschaum entstiegen sein?",
           "o": [
-            "Felsen der Aphrodite",
-            "Windmühlen von Kinderdijk",
-            "Athener Akropolis",
-            "Torre de Belém in Lissabon"
+            "Athena",
+            "Aphrodite",
+            "Hera",
+            "Artemis"
           ],
-          "a": 0,
-          "exp": "Felsen der Aphrodite gehört zu den herausragenden Wahrzeichen des Landes."
+          "a": 1,
+          "tip": "Bei den Römern hieß diese Göttin „Venus“.",
+          "exp": "Zypern wird in der antiken Sage oft als die Insel der Aphrodite bezeichnet."
         },
         {
-          "q": "Welcher weltberühmte Erfinder oder Künstler stammt aus Zypern?",
+          "q": "Welche Liebesgöttin aus der antiken griechischen Mythologie soll an den Felsen von Petra tou Romiou aus dem Meeresschaum entstiegen sein?",
           "o": [
-            "Tennisprofi Marcos Baghdatis",
-            "Hans Christian Andersen",
-            "Astronom Nikolaus Kopernikus",
-            "Physiker Nikola Tesla"
+            "Athena",
+            "Aphrodite",
+            "Hera",
+            "Artemis"
           ],
-          "a": 0,
-          "exp": "Tennisprofi Marcos Baghdatis ist eng mit der wissenschaftlichen oder künstlerischen Tradition des Landes verbunden."
+          "a": 1,
+          "tip": "Bei den Römern hieß diese Göttin „Venus“.",
+          "exp": "Zypern wird in der antiken Sage oft als die Insel der Aphrodite bezeichnet."
         }
       ]
     }
@@ -8582,1998 +9068,2160 @@ const pool = {
     "Belgien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Belgien heute im Alltag?",
+          "q": "In welcher Stadt befindet sich der zweitgrößte Seehafen Europas, der als wichtiger Umschlagplatz für Chemie, Autos und Container gilt?",
           "o": [
-            "Belgischer Franc",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Rotterdam",
+            "Antwerpen",
+            "Hamburg",
+            "Marseille"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Belgischer Franc."
+          "a": 1,
+          "tip": "Die Stadt liegt an der Schelde im Norden des Landes.",
+          "exp": "Der Hafen von Antwerpen ist ein zentraler Wirtschaftsmotor Belgiens."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Belgien?",
+          "q": "In welcher Stadt befindet sich der zweitgrößte Seehafen Europas, der als wichtiger Umschlagplatz für Chemie, Autos und Container gilt?",
           "o": [
-            "feine Pralinen",
-            "LEGO-Bausteine",
-            "Online-Glücksspiel (iGaming)",
-            "Olivenöl & Schifffahrt"
+            "Rotterdam",
+            "Antwerpen",
+            "Hamburg",
+            "Marseille"
           ],
-          "a": 0,
-          "exp": "feine Pralinen ist ein bekanntes Aushängeschild der Wirtschaft von Belgien."
+          "a": 1,
+          "tip": "Die Stadt liegt an der Schelde im Norden des Landes.",
+          "exp": "Der Hafen von Antwerpen ist ein zentraler Wirtschaftsmotor Belgiens."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Belgien?",
+          "q": "Dieses Land gehört zu den wenigen EU-Staaten, in denen Löhne und Gehälter automatisch an welche Wirtschaftskennzahl angepasst werden?",
           "o": [
-            "Diamantenhandel in Antwerpen",
-            "Luft- und Raumfahrt (Airbus)",
-            "Maschinenbau und Automobilzulieferung",
-            "internationale Tech-Konzerne (Google, Apple)"
+            "Die Inflationsrate",
+            "Der Aktienindex",
+            "Der Goldpreis",
+            "Der Wechselkurs des US-Dollars"
           ],
           "a": 0,
-          "exp": "Diamantenhandel in Antwerpen ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Diese automatische Anpassung soll die Kaufkraft der Bürger bei Preissteigerungen sichern.",
+          "exp": "Die Indexierung der Löhne sichert die Kaufkraft der Arbeitnehmer automatisch ab."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Belgien?",
+          "q": "Dieses Land gehört zu den wenigen EU-Staaten, in denen Löhne und Gehälter automatisch an welche Wirtschaftskennzahl angepasst werden?",
           "o": [
-            "feine Pralinen",
-            "LEGO-Bausteine",
-            "Online-Glücksspiel (iGaming)",
-            "Olivenöl & Schifffahrt"
+            "Die Inflationsrate",
+            "Der Aktienindex",
+            "Der Goldpreis",
+            "Der Wechselkurs des US-Dollars"
           ],
           "a": 0,
-          "exp": "feine Pralinen wurde in Belgien gegründet."
+          "tip": "Diese automatische Anpassung soll die Kaufkraft der Bürger bei Preissteigerungen sichern.",
+          "exp": "Die Indexierung der Löhne sichert die Kaufkraft der Arbeitnehmer automatisch ab."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Belgien?",
+          "q": "In welcher Stadt hat die Europäische Investitionsbank (EIB) zwar nicht ihren Hauptsitz, aber welche Institution regelt die Abwicklung von Wertpapiergeschäften über den Finanzplatz der Hauptstadt?",
           "o": [
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt"
+            "Euroclear",
+            "Wall Street",
+            "Börse Frankfurt",
+            "NASDAQ"
           ],
           "a": 0,
-          "exp": "Fakt: Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen."
+          "tip": "Der Finanzdienstleister hat seinen Sitz im Zentrum des Landes nahe den EU-Institutionen.",
+          "exp": "Euroclear ist einer der weltweit größten Abwickler für Wertpapiertransaktionen."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Belgien?",
+          "q": "In welcher Stadt hat die Europäische Investitionsbank (EIB) zwar nicht ihren Hauptsitz, aber welche Institution regelt die Abwicklung von Wertpapiergeschäften über den Finanzplatz der Hauptstadt?",
           "o": [
-            "feine Pralinen",
-            "LEGO-Bausteine",
-            "Online-Glücksspiel (iGaming)",
-            "Olivenöl & Schifffahrt"
+            "Euroclear",
+            "Wall Street",
+            "Börse Frankfurt",
+            "NASDAQ"
           ],
           "a": 0,
-          "exp": "Belgien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Finanzdienstleister hat seinen Sitz im Zentrum des Landes nahe den EU-Institutionen.",
+          "exp": "Euroclear ist einer der weltweit größten Abwickler für Wertpapiertransaktionen."
         }
       ]
     },
     "Bulgarien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Bulgarien heute im Alltag?",
+          "q": "Welcher steuerliche Anreiz mit einem festen Steuersatz von nur 10 % zieht viele ausländische Unternehmen und digitale Nomaden an?",
           "o": [
-            "Bulgarischer Lew",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Die progressive Einkommensteuer",
+            "Die Flat Tax",
+            "Die Luxussteuer",
+            "Die Finanztransaktionssteuer"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Bulgarischer Lew."
+          "a": 1,
+          "tip": "Alle Einkommen werden unabhängig von der Höhe mit genau demselben Prozentsatz besteuert.",
+          "exp": "Bulgarien hat mit 10 % eine der niedrigsten Flat Taxes in Europa."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Bulgarien?",
+          "q": "Welcher steuerliche Anreiz mit einem festen Steuersatz von nur 10 % zieht viele ausländische Unternehmen und digitale Nomaden an?",
           "o": [
-            "duftendes Rosenöl",
-            "Nokia-Handys & Angry Birds",
-            "Skype & digitale e-Residency",
-            "Zara-Kleidung (Inditex)"
+            "Die progressive Einkommensteuer",
+            "Die Flat Tax",
+            "Die Luxussteuer",
+            "Die Finanztransaktionssteuer"
           ],
-          "a": 0,
-          "exp": "duftendes Rosenöl ist ein bekanntes Aushängeschild der Wirtschaft von Bulgarien."
+          "a": 1,
+          "tip": "Alle Einkommen werden unabhängig von der Höhe mit genau demselben Prozentsatz besteuert.",
+          "exp": "Bulgarien hat mit 10 % eine der niedrigsten Flat Taxes in Europa."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Bulgarien?",
+          "q": "An welche europäische Leitwährung ist die nationale Währung (Lew) über ein festes Wechselkurssystem (Currency Board) gebunden?",
           "o": [
-            "Tourismus am Goldstrand",
-            "Blumenhandel (Aalsmeer)",
-            "Finanzdienstleistungen und Reedereien",
-            "Windkraftanlagen von Vestas"
+            "An den Schweizer Franken",
+            "An den Euro",
+            "An das Britische Pfund",
+            "An den US-Dollar"
           ],
-          "a": 0,
-          "exp": "Tourismus am Goldstrand ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Ein Euro entspricht genau 1,95583 dieser Landeswährung.",
+          "exp": "Der bulgarische Lew ist fest an den Euro gekoppelt."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Bulgarien?",
+          "q": "An welche europäische Leitwährung ist die nationale Währung (Lew) über ein festes Wechselkurssystem (Currency Board) gebunden?",
           "o": [
-            "duftendes Rosenöl",
-            "Nokia-Handys & Angry Birds",
-            "Skype & digitale e-Residency",
-            "Zara-Kleidung (Inditex)"
+            "An den Schweizer Franken",
+            "An den Euro",
+            "An das Britische Pfund",
+            "An den US-Dollar"
           ],
-          "a": 0,
-          "exp": "duftendes Rosenöl wurde in Bulgarien gegründet."
+          "a": 1,
+          "tip": "Ein Euro entspricht genau 1,95583 dieser Landeswährung.",
+          "exp": "Der bulgarische Lew ist fest an den Euro gekoppelt."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Bulgarien?",
+          "q": "Welcher Wirtschaftszweig im Landesinneren profitiert enorm vom Anbau von Rosenblüten für die weltweite Kosmetikindustrie?",
           "o": [
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist"
+            "Die Pharmazie und Parfümöl-Produktion",
+            "Die Schwerindustrie",
+            "Die Halbleiterfertigung",
+            "Die Papierherstellung"
           ],
           "a": 0,
-          "exp": "Fakt: Lew-Währung ist fest an die D-Mark/Euro gekoppelt."
+          "tip": "Das ätherische Öl ist eines der teuersten Exportprodukte des Landes.",
+          "exp": "Bulgariens Rosenöl ist weltweit für Parfüms gefragt."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Bulgarien?",
+          "q": "Welcher Wirtschaftszweig im Landesinneren profitiert enorm vom Anbau von Rosenblüten für die weltweite Kosmetikindustrie?",
           "o": [
-            "duftendes Rosenöl",
-            "Nokia-Handys & Angry Birds",
-            "Skype & digitale e-Residency",
-            "Zara-Kleidung (Inditex)"
+            "Die Pharmazie und Parfümöl-Produktion",
+            "Die Schwerindustrie",
+            "Die Halbleiterfertigung",
+            "Die Papierherstellung"
           ],
           "a": 0,
-          "exp": "Bulgarien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Das ätherische Öl ist eines der teuersten Exportprodukte des Landes.",
+          "exp": "Bulgariens Rosenöl ist weltweit für Parfüms gefragt."
         }
       ]
     },
     "Dänemark": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Dänemark heute im Alltag?",
+          "q": "Welcher weltweite Marktführer in der Container-Schifffahrt hat seinen Hauptsitz in diesem Land?",
           "o": [
-            "Dänische Krone",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "MSC",
+            "Maersk",
+            "Hapag-Lloyd",
+            "CMA CGM"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Dänische Krone."
+          "a": 1,
+          "tip": "Die riesigen blauen Containerschiffe tragen einen siebenzackigen Stern im Logo.",
+          "exp": "Maersk ist eine der größten Containerschiffs-Reedereien der Welt."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Dänemark?",
+          "q": "Welcher weltweite Marktführer in der Container-Schifffahrt hat seinen Hauptsitz in diesem Land?",
           "o": [
-            "LEGO-Bausteine",
-            "Naturkorken für Weinflaschen",
-            "Nokia-Handys & Angry Birds",
-            "Investmentfonds & Frachtflüge"
+            "MSC",
+            "Maersk",
+            "Hapag-Lloyd",
+            "CMA CGM"
           ],
-          "a": 0,
-          "exp": "LEGO-Bausteine ist ein bekanntes Aushängeschild der Wirtschaft von Dänemark."
+          "a": 1,
+          "tip": "Die riesigen blauen Containerschiffe tragen einen siebenzackigen Stern im Logo.",
+          "exp": "Maersk ist eine der größten Containerschiffs-Reedereien der Welt."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Dänemark?",
+          "q": "Aus welchem Grund zahlt das Land bis heute nicht mit dem Euro, obwohl es alle wirtschaftlichen Kriterien erfüllt?",
           "o": [
-            "Windkraftanlagen von Vestas",
-            "Obst- und Gemüseexporte ('Gewächshaus Europas')",
-            "Holz- und Papierprodukte",
-            "pharmazeutische Generika-Industrie (Krka)"
+            "Die EU hat den Zutritt verwehrt",
+            "Die Bevölkerung stimmte in einer Volksabstimmung dagegen",
+            "Das Land hat keine eigene Zentralbank",
+            "Der Euro ist dort gesetzlich verboten"
           ],
-          "a": 0,
-          "exp": "Windkraftanlagen von Vestas ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Das Land nutzt eine vereinbarte Duldung (Opt-out) nach einem Referendum.",
+          "exp": "Dänemark lehnte den Euro im Jahr 2000 in einer Volksabstimmung ab."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Dänemark?",
+          "q": "Aus welchem Grund zahlt das Land bis heute nicht mit dem Euro, obwohl es alle wirtschaftlichen Kriterien erfüllt?",
           "o": [
-            "LEGO-Bausteine",
-            "Naturkorken für Weinflaschen",
-            "Nokia-Handys & Angry Birds",
-            "Investmentfonds & Frachtflüge"
+            "Die EU hat den Zutritt verwehrt",
+            "Die Bevölkerung stimmte in einer Volksabstimmung dagegen",
+            "Das Land hat keine eigene Zentralbank",
+            "Der Euro ist dort gesetzlich verboten"
           ],
-          "a": 0,
-          "exp": "LEGO-Bausteine wurde in Dänemark gegründet."
+          "a": 1,
+          "tip": "Das Land nutzt eine vereinbarte Duldung (Opt-out) nach einem Referendum.",
+          "exp": "Dänemark lehnte den Euro im Jahr 2000 in einer Volksabstimmung ab."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Dänemark?",
+          "q": "Welcher Pharmakonzern aus diesem Land wurde durch seine Diabetes-Medikamente und Abnehm-Spritzen zum wertvollsten Unternehmen Europas?",
           "o": [
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus"
+            "Roche",
+            "Novo Nordisk",
+            "Sanofi",
+            "Bayer"
           ],
-          "a": 0,
-          "exp": "Fakt: besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen."
+          "a": 1,
+          "tip": "Der Name beginnt mit den Wörtern „Novo...“.",
+          "exp": "Novo Nordisk hat durch seine Medikamente einen enormen Börsenwert erreicht."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Dänemark?",
+          "q": "Welcher Pharmakonzern aus diesem Land wurde durch seine Diabetes-Medikamente und Abnehm-Spritzen zum wertvollsten Unternehmen Europas?",
           "o": [
-            "LEGO-Bausteine",
-            "Naturkorken für Weinflaschen",
-            "Nokia-Handys & Angry Birds",
-            "Investmentfonds & Frachtflüge"
+            "Roche",
+            "Novo Nordisk",
+            "Sanofi",
+            "Bayer"
           ],
-          "a": 0,
-          "exp": "Dänemark exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Name beginnt mit den Wörtern „Novo...“.",
+          "exp": "Novo Nordisk hat durch seine Medikamente einen enormen Börsenwert erreicht."
         }
       ]
     },
     "Deutschland": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Deutschland heute im Alltag?",
+          "q": "Welcher Industriezweig gilt mit Marken wie Volkswagen, BMW und Mercedes-Benz als der wichtigste Motor der heimischen Wirtschaft?",
           "o": [
-            "Deutsche Mark",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Die Textilindustrie",
+            "Die Automobilindustrie",
+            "Die Uhrenindustrie",
+            "Die Spielzeugindustrie"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Deutsche Mark."
+          "a": 1,
+          "tip": "Das Land ist weltweit berühmt für den Bau hochwertiger Fahrzeuge.",
+          "exp": "Die Automobilindustrie ist der umsatzstärkste Industriezweig Deutschlands."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Deutschland?",
+          "q": "Welcher Industriezweig gilt mit Marken wie Volkswagen, BMW und Mercedes-Benz als der wichtigste Motor der heimischen Wirtschaft?",
           "o": [
-            "Autos von VW, BMW oder Mercedes",
-            "FinTech (wie Revolut-Lizenzen)",
-            "Gorenje-Kühlschränke",
-            "Schiffsregister & Tourismus"
+            "Die Textilindustrie",
+            "Die Automobilindustrie",
+            "Die Uhrenindustrie",
+            "Die Spielzeugindustrie"
           ],
-          "a": 0,
-          "exp": "Autos von VW, BMW oder Mercedes ist ein bekanntes Aushängeschild der Wirtschaft von Deutschland."
+          "a": 1,
+          "tip": "Das Land ist weltweit berühmt für den Bau hochwertiger Fahrzeuge.",
+          "exp": "Die Automobilindustrie ist der umsatzstärkste Industriezweig Deutschlands."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Deutschland?",
+          "q": "Welches Konzept beschreibt die Wirtschaftsordnung des Landes, die freien Markt wettbewerblich nutzt, aber durch sozialen Ausgleich ergänzt?",
           "o": [
-            "Maschinenbau und Chemie",
-            "Automobilherstellung pro Kopf weltweit am höchsten",
-            "Automobilwerke (Audi, Suzuki) und Elektronik",
-            "internationaler Bankensektor"
+            "Planwirtschaft",
+            "Soziale Marktwirtschaft",
+            "Reine Marktwirtschaft",
+            "Feudalismus"
           ],
-          "a": 0,
-          "exp": "Maschinenbau und Chemie ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Ludwig Erhard gilt als einer der Gründerväter dieses Modells.",
+          "exp": "Die Soziale Marktwirtschaft verbindet wirtschaftliche Freiheit mit sozialer Gerechtigkeit."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Deutschland?",
+          "q": "Welches Konzept beschreibt die Wirtschaftsordnung des Landes, die freien Markt wettbewerblich nutzt, aber durch sozialen Ausgleich ergänzt?",
           "o": [
-            "Autos von VW, BMW oder Mercedes",
-            "FinTech (wie Revolut-Lizenzen)",
-            "Gorenje-Kühlschränke",
-            "Schiffsregister & Tourismus"
+            "Planwirtschaft",
+            "Soziale Marktwirtschaft",
+            "Reine Marktwirtschaft",
+            "Feudalismus"
           ],
-          "a": 0,
-          "exp": "Autos von VW, BMW oder Mercedes wurde in Deutschland gegründet."
+          "a": 1,
+          "tip": "Ludwig Erhard gilt als einer der Gründerväter dieses Modells.",
+          "exp": "Die Soziale Marktwirtschaft verbindet wirtschaftliche Freiheit mit sozialer Gerechtigkeit."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Deutschland?",
+          "q": "Welcher wichtigste Aktienindex fasst die 40 größten und umsatzstärksten börsennotierten Unternehmen des Landes zusammen?",
           "o": [
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu"
+            "Dow Jones",
+            "DAX",
+            "ATX",
+            "CAC 40"
           ],
-          "a": 0,
-          "exp": "Fakt: die Europäische Zentralbank hat ihren Sitz in Frankfurt."
+          "a": 1,
+          "tip": "Die Abkürzung steht für „Deutscher Aktienindex“.",
+          "exp": "Der DAX misst die Wertentwicklung der 40 größten deutschen Aktiengesellschaften."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Deutschland?",
+          "q": "Welcher wichtigste Aktienindex fasst die 40 größten und umsatzstärksten börsennotierten Unternehmen des Landes zusammen?",
           "o": [
-            "Autos von VW, BMW oder Mercedes",
-            "FinTech (wie Revolut-Lizenzen)",
-            "Gorenje-Kühlschränke",
-            "Schiffsregister & Tourismus"
+            "Dow Jones",
+            "DAX",
+            "ATX",
+            "CAC 40"
           ],
-          "a": 0,
-          "exp": "Deutschland exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Die Abkürzung steht für „Deutscher Aktienindex“.",
+          "exp": "Der DAX misst die Wertentwicklung der 40 größten deutschen Aktiengesellschaften."
         }
       ]
     },
     "Estland": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Estland heute im Alltag?",
+          "q": "Welcher weltbekannte Internet-Videotelefonie-Dienst wurde Anfang der 2000er Jahre von Software-Entwicklern aus diesem baltischen Land erfunden?",
           "o": [
-            "Estnische Krone",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Zoom",
+            "Skype",
+            "WhatsApp",
+            "Teams"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Estnische Krone."
+          "a": 1,
+          "tip": "Der Dienst hat ein blaues S-Logo.",
+          "exp": "Skype wurde von estnischen Entwicklern mitbegründet und aufgebaut."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Estland?",
+          "q": "Welcher weltbekannte Internet-Videotelefonie-Dienst wurde Anfang der 2000er Jahre von Software-Entwicklern aus diesem baltischen Land erfunden?",
           "o": [
-            "Skype & digitale e-Residency",
-            "Tokajer-Süßwein & Rubik's Zauberwürfel",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "FinTech (wie Revolut-Lizenzen)"
+            "Zoom",
+            "Skype",
+            "WhatsApp",
+            "Teams"
           ],
-          "a": 0,
-          "exp": "Skype & digitale e-Residency ist ein bekanntes Aushängeschild der Wirtschaft von Estland."
+          "a": 1,
+          "tip": "Der Dienst hat ein blaues S-Logo.",
+          "exp": "Skype wurde von estnischen Entwicklern mitbegründet und aufgebaut."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Estland?",
+          "q": "Welches einzigartige Steuersystem nutzt das Land, um Investitionen von Unternehmen anzulocken?",
           "o": [
-            "fortschrittliches e-Government",
-            "Automobilbau (Volvo) und Stahl",
-            "schnell wachsende IT-Branche in Cluj",
-            "Blumenhandel (Aalsmeer)"
+            "Einbehaltene und wiederinvestierte Gewinne von Unternehmen sind steuerfrei",
+            "Es gibt überhaupt keine Mehrwertsteuer",
+            "Unternehmen zahlen 80 % Steuern",
+            "Bargeld ist gesetzlich verboten"
           ],
           "a": 0,
-          "exp": "fortschrittliches e-Government ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Erst wenn Gewinne an Eigentümer ausgeschüttet werden, fällt Steuer an.",
+          "exp": "Reinvestierte Gewinne werden in Estland nicht besteuert, was Firmen anzieht."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Estland?",
+          "q": "Welches einzigartige Steuersystem nutzt das Land, um Investitionen von Unternehmen anzulocken?",
           "o": [
-            "Skype & digitale e-Residency",
-            "Tokajer-Süßwein & Rubik's Zauberwürfel",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "FinTech (wie Revolut-Lizenzen)"
+            "Einbehaltene und wiederinvestierte Gewinne von Unternehmen sind steuerfrei",
+            "Es gibt überhaupt keine Mehrwertsteuer",
+            "Unternehmen zahlen 80 % Steuern",
+            "Bargeld ist gesetzlich verboten"
           ],
           "a": 0,
-          "exp": "Skype & digitale e-Residency wurde in Estland gegründet."
+          "tip": "Erst wenn Gewinne an Eigentümer ausgeschüttet werden, fällt Steuer an.",
+          "exp": "Reinvestierte Gewinne werden in Estland nicht besteuert, was Firmen anzieht."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Estland?",
+          "q": "Welches Programm ermöglicht es Menschen aus aller Welt, eine digitale Identität in diesem Land zu beantragen und dort online Firmen zu gründen?",
           "o": [
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus"
+            "Green Card",
+            "e-Residency",
+            "Digital Nomads Visa",
+            "Golden Passport"
           ],
-          "a": 0,
-          "exp": "Fakt: hier kann man seit 2005 sicher online über das Internet wählen."
+          "a": 1,
+          "tip": "Es macht einen zum „elektronischen Einwohner“.",
+          "exp": "Die e-Residency erlaubt es Ausländern, digitale Dienste wie Firmengründungen zu nutzen."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Estland?",
+          "q": "Welches Programm ermöglicht es Menschen aus aller Welt, eine digitale Identität in diesem Land zu beantragen und dort online Firmen zu gründen?",
           "o": [
-            "Skype & digitale e-Residency",
-            "Tokajer-Süßwein & Rubik's Zauberwürfel",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "FinTech (wie Revolut-Lizenzen)"
+            "Green Card",
+            "e-Residency",
+            "Digital Nomads Visa",
+            "Golden Passport"
           ],
-          "a": 0,
-          "exp": "Estland exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Es macht einen zum „elektronischen Einwohner“.",
+          "exp": "Die e-Residency erlaubt es Ausländern, digitale Dienste wie Firmengründungen zu nutzen."
         }
       ]
     },
     "Finnland": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Finnland heute im Alltag?",
+          "q": "Welches einst weltgrößte Mobilfunkunternehmen hatte seinen Hauptsitz in diesem nordischen Staat?",
           "o": [
-            "Finnische Mark",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Samsung",
+            "Nokia",
+            "Sony",
+            "Apple"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Finnische Mark."
+          "a": 1,
+          "tip": "Bekannt für legendäre Robuste Handys wie das Modell 3310.",
+          "exp": "Nokia war über Jahre hinweg Weltmarktführer bei Mobiltelefonen."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Finnland?",
+          "q": "Welches einst weltgrößte Mobilfunkunternehmen hatte seinen Hauptsitz in diesem nordischen Staat?",
           "o": [
-            "Nokia-Handys & Angry Birds",
-            "Skype & digitale e-Residency",
-            "Gorenje-Kühlschränke",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Samsung",
+            "Nokia",
+            "Sony",
+            "Apple"
           ],
-          "a": 0,
-          "exp": "Nokia-Handys & Angry Birds ist ein bekanntes Aushängeschild der Wirtschaft von Finnland."
+          "a": 1,
+          "tip": "Bekannt für legendäre Robuste Handys wie das Modell 3310.",
+          "exp": "Nokia war über Jahre hinweg Weltmarktführer bei Mobiltelefonen."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Finnland?",
+          "q": "Welcher Rohstoff aus den riesigen Taiga-Wäldern bildet traditionell das Rückgrat der Exportwirtschaft?",
           "o": [
-            "Holz- und Papierprodukte",
-            "Windkraftanlagen von Vestas",
-            "Maschinenbau und Automobilzulieferung",
-            "Maschinenbau und Chemie"
+            "Erdöl",
+            "Holz",
+            "Eisenerz",
+            "Bauxit"
           ],
-          "a": 0,
-          "exp": "Holz- und Papierprodukte ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Das Land ist zu über 70 % mit Wald bedeckt.",
+          "exp": "Finnlands Forstwirtschaft gehört zu den größten Holzexporteuren Europas."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Finnland?",
+          "q": "Welcher Rohstoff aus den riesigen Taiga-Wäldern bildet traditionell das Rückgrat der Exportwirtschaft?",
           "o": [
-            "Nokia-Handys & Angry Birds",
-            "Skype & digitale e-Residency",
-            "Gorenje-Kühlschränke",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Erdöl",
+            "Holz",
+            "Eisenerz",
+            "Bauxit"
           ],
-          "a": 0,
-          "exp": "Nokia-Handys & Angry Birds wurde in Finnland gegründet."
+          "a": 1,
+          "tip": "Das Land ist zu über 70 % mit Wald bedeckt.",
+          "exp": "Finnlands Forstwirtschaft gehört zu den größten Holzexporteuren Europas."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Finnland?",
+          "q": "Welcher Entwickler von Handyspielen aus diesem Land feierte weltweite Erfolge mit Spielen wie „Clash of Clans“ und „Hay Day“?",
           "o": [
-            "Lappland gilt als Heimatort des Weihnachtsmanns",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab"
+            "Rovio",
+            "Supercell",
+            "Mojang",
+            "Epic Games"
           ],
-          "a": 0,
-          "exp": "Fakt: Lappland gilt als Heimatort des Weihnachtsmanns."
+          "a": 1,
+          "tip": "Der Firmenname lautet übersetzt „Superzelle“.",
+          "exp": "Supercell ist eines der erfolgreichsten Mobile-Gaming-Studios weltweit."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Finnland?",
+          "q": "Welcher Entwickler von Handyspielen aus diesem Land feierte weltweite Erfolge mit Spielen wie „Clash of Clans“ und „Hay Day“?",
           "o": [
-            "Nokia-Handys & Angry Birds",
-            "Skype & digitale e-Residency",
-            "Gorenje-Kühlschränke",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Rovio",
+            "Supercell",
+            "Mojang",
+            "Epic Games"
           ],
-          "a": 0,
-          "exp": "Finnland exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Firmenname lautet übersetzt „Superzelle“.",
+          "exp": "Supercell ist eines der erfolgreichsten Mobile-Gaming-Studios weltweit."
         }
       ]
     },
     "Frankreich": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Frankreich heute im Alltag?",
+          "q": "Für welche weltweite Branche mit Konzernen wie LVMH (Moët Hennessy Louis Vuitton) ist dieses Land die unangefochtene Nummer 1?",
           "o": [
-            "Französischer Franc",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Schwerer Maschinenbau",
+            "Luxusgüter und Mode",
+            "Unterhaltungselektronik",
+            "Bergbau"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Französischer Franc."
+          "a": 1,
+          "tip": "Marken wie Chanel, Dior oder Louis Vuitton prägen dieses Image.",
+          "exp": "Die französische Luxusgüterindustrie gehört zu den erfolgreichsten Exportbranchen."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Frankreich?",
+          "q": "Für welche weltweite Branche mit Konzernen wie LVMH (Moët Hennessy Louis Vuitton) ist dieses Land die unangefochtene Nummer 1?",
           "o": [
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Autos von VW, BMW oder Mercedes",
-            "Schiffsregister & Tourismus",
-            "elektrische Hypercars von Rimac"
+            "Schwerer Maschinenbau",
+            "Luxusgüter und Mode",
+            "Unterhaltungselektronik",
+            "Bergbau"
           ],
-          "a": 0,
-          "exp": "Luxusartikel von Louis Vuitton oder Chanel ist ein bekanntes Aushängeschild der Wirtschaft von Frankreich."
+          "a": 1,
+          "tip": "Marken wie Chanel, Dior oder Louis Vuitton prägen dieses Image.",
+          "exp": "Die französische Luxusgüterindustrie gehört zu den erfolgreichsten Exportbranchen."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Frankreich?",
+          "q": "Aus welcher Energiequelle gewinnt das Land rund 60 bis 70 % seines gesamten Strombedarfs?",
           "o": [
-            "Luft- und Raumfahrt (Airbus)",
-            "Tourismus auf den griechischen Inseln",
-            "Automobilbau (Volvo) und Stahl",
-            "schnell wachsende IT-Branche in Cluj"
+            "Kohlekraftwerke",
+            "Kernkraft",
+            "Windkraft",
+            "Wasserkraft"
           ],
-          "a": 0,
-          "exp": "Luft- und Raumfahrt (Airbus) ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Das Land betreibt über 50 Reaktoren im ganzen Staat.",
+          "exp": "Frankreich setzt stark auf Atomstrom zur Energieversorgung."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Frankreich?",
+          "q": "Aus welcher Energiequelle gewinnt das Land rund 60 bis 70 % seines gesamten Strombedarfs?",
           "o": [
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Autos von VW, BMW oder Mercedes",
-            "Schiffsregister & Tourismus",
-            "elektrische Hypercars von Rimac"
+            "Kohlekraftwerke",
+            "Kernkraft",
+            "Windkraft",
+            "Wasserkraft"
           ],
-          "a": 0,
-          "exp": "Luxusartikel von Louis Vuitton oder Chanel wurde in Frankreich gegründet."
+          "a": 1,
+          "tip": "Das Land betreibt über 50 Reaktoren im ganzen Staat.",
+          "exp": "Frankreich setzt stark auf Atomstrom zur Energieversorgung."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Frankreich?",
+          "q": "Welches Europäische Luft- und Raumfahrtkonsortium baut in der Nähe von Toulouse Passagierflugzeuge als größter Konkurrent von Boeing?",
           "o": [
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab"
+            "Lockheed Martin",
+            "Airbus",
+            "Bombardier",
+            "Embraer"
           ],
-          "a": 0,
-          "exp": "Fakt: das Europäische Parlament hat seinen Hauptsitz in Straßburg."
+          "a": 1,
+          "tip": "Der Name bedeutet übersetzt „Luft-Bus“.",
+          "exp": "Airbus hat seinen Sitz in Toulouse und baut einen Großteil aller Verkehrsflugzeuge."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Frankreich?",
+          "q": "Welches Europäische Luft- und Raumfahrtkonsortium baut in der Nähe von Toulouse Passagierflugzeuge als größter Konkurrent von Boeing?",
           "o": [
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Autos von VW, BMW oder Mercedes",
-            "Schiffsregister & Tourismus",
-            "elektrische Hypercars von Rimac"
+            "Lockheed Martin",
+            "Airbus",
+            "Bombardier",
+            "Embraer"
           ],
-          "a": 0,
-          "exp": "Frankreich exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Name bedeutet übersetzt „Luft-Bus“.",
+          "exp": "Airbus hat seinen Sitz in Toulouse und baut einen Großteil aller Verkehrsflugzeuge."
         }
       ]
     },
     "Griechenland": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Griechenland heute im Alltag?",
+          "q": "Welche traditionelle Branche mit riesigen Tanker- und Frachtflotten macht dieses Land zu einer globalen Supermacht auf den Weltmeeren?",
           "o": [
-            "Griechische Drachme",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Die Seeschifffahrt",
+            "Die Raumfahrt",
+            "Der Eisenbahnbau",
+            "Die Halbleiterindustrie"
           ],
           "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Griechische Drachme."
+          "tip": "Reeder wie Aristoteles Onassis wurden damit Steinreich.",
+          "exp": "Griechenland besitzt die größte Handelsflotte der Welt nach Tonnage."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Griechenland?",
+          "q": "Welche traditionelle Branche mit riesigen Tanker- und Frachtflotten macht dieses Land zu einer globalen Supermacht auf den Weltmeeren?",
           "o": [
-            "Olivenöl & Schifffahrt",
-            "IKEA-Möbel & Spotify-Musik",
-            "Ryanair-Flüge & Guinness-Bier",
-            "rote Sportwagen von Ferrari"
+            "Die Seeschifffahrt",
+            "Die Raumfahrt",
+            "Der Eisenbahnbau",
+            "Die Halbleiterindustrie"
           ],
           "a": 0,
-          "exp": "Olivenöl & Schifffahrt ist ein bekanntes Aushängeschild der Wirtschaft von Griechenland."
+          "tip": "Reeder wie Aristoteles Onassis wurden damit Steinreich.",
+          "exp": "Griechenland besitzt die größte Handelsflotte der Welt nach Tonnage."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Griechenland?",
+          "q": "Welcher Dienstleistungssektor ist neben der Schifffahrt der wichtigste Arbeitgeber und bringt am meisten Devisen ins Land?",
           "o": [
-            "Tourismus auf den griechischen Inseln",
-            "Blumenhandel (Aalsmeer)",
-            "Biotechnologie und Lasertechnik",
-            "Obst- und Gemüseexporte ('Gewächshaus Europas')"
+            "Der Tourismus",
+            "Der Bergbau",
+            "Die Automobilherstellung",
+            "Die Holzverarbeitung"
           ],
           "a": 0,
-          "exp": "Tourismus auf den griechischen Inseln ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Millionen Menschen besuchen im Sommer die Inseln und antiken Stätten.",
+          "exp": "Der Tourismus trägt rund ein Fünftel zur griechischen Wirtschaftsleistung bei."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Griechenland?",
+          "q": "Welcher Dienstleistungssektor ist neben der Schifffahrt der wichtigste Arbeitgeber und bringt am meisten Devisen ins Land?",
           "o": [
-            "Olivenöl & Schifffahrt",
-            "IKEA-Möbel & Spotify-Musik",
-            "Ryanair-Flüge & Guinness-Bier",
-            "rote Sportwagen von Ferrari"
+            "Der Tourismus",
+            "Der Bergbau",
+            "Die Automobilherstellung",
+            "Die Holzverarbeitung"
           ],
           "a": 0,
-          "exp": "Olivenöl & Schifffahrt wurde in Griechenland gegründet."
+          "tip": "Millionen Menschen besuchen im Sommer die Inseln und antiken Stätten.",
+          "exp": "Der Tourismus trägt rund ein Fünftel zur griechischen Wirtschaftsleistung bei."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Griechenland?",
+          "q": "Welches Agrarprodukt gilt als das „flüssige Gold“ des Landes und ist ein Hauptschwerpunkt des Exports im Binnenmarkt?",
           "o": [
-            "trat der EU nach dem Ende der Militärdiktatur bei",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt"
+            "Ahornsirup",
+            "Olivenöl",
+            "Palmöl",
+            "Sonnenblumenöl"
           ],
-          "a": 0,
-          "exp": "Fakt: trat der EU nach dem Ende der Militärdiktatur bei."
+          "a": 1,
+          "tip": "Es ist die Basis der gesunden mediterranen Küche.",
+          "exp": "Griechenland exportiert hochwertiges, kaltgepresstes Olivenöl weltweit."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Griechenland?",
+          "q": "Welches Agrarprodukt gilt als das „flüssige Gold“ des Landes und ist ein Hauptschwerpunkt des Exports im Binnenmarkt?",
           "o": [
-            "Olivenöl & Schifffahrt",
-            "IKEA-Möbel & Spotify-Musik",
-            "Ryanair-Flüge & Guinness-Bier",
-            "rote Sportwagen von Ferrari"
+            "Ahornsirup",
+            "Olivenöl",
+            "Palmöl",
+            "Sonnenblumenöl"
           ],
-          "a": 0,
-          "exp": "Griechenland exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Es ist die Basis der gesunden mediterranen Küche.",
+          "exp": "Griechenland exportiert hochwertiges, kaltgepresstes Olivenöl weltweit."
         }
       ]
     },
     "Irland": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Irland heute im Alltag?",
+          "q": "Aus welchem Grund haben US-Tech-Riesen wie Google, Meta und Apple ihre europäischen Hauptsitze in diesem Land aufgeschlagen?",
           "o": [
-            "Irisches Pfund",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Wegen des extrem heißen Klimas",
+            "Wegen niedriger Unternehmenssteuern und der englischen Sprache",
+            "Weil es dort keine Gesetze gibt",
+            "Weil dort alle Rohstoffe gefördert werden"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Irisches Pfund."
+          "a": 1,
+          "tip": "Die Körperschaftsteuer lag lange Zeit bei nur 12,5 %.",
+          "exp": "Niedrige Steuern und gut ausgebildete englischsprachige Arbeitskräfte locken US-Firmen."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Irland?",
+          "q": "Aus welchem Grund haben US-Tech-Riesen wie Google, Meta und Apple ihre europäischen Hauptsitze in diesem Land aufgeschlagen?",
           "o": [
-            "Ryanair-Flüge & Guinness-Bier",
-            "Dacia-Autos",
-            "Zara-Kleidung (Inditex)",
-            "Online-Glücksspiel (iGaming)"
+            "Wegen des extrem heißen Klimas",
+            "Wegen niedriger Unternehmenssteuern und der englischen Sprache",
+            "Weil es dort keine Gesetze gibt",
+            "Weil dort alle Rohstoffe gefördert werden"
           ],
-          "a": 0,
-          "exp": "Ryanair-Flüge & Guinness-Bier ist ein bekanntes Aushängeschild der Wirtschaft von Irland."
+          "a": 1,
+          "tip": "Die Körperschaftsteuer lag lange Zeit bei nur 12,5 %.",
+          "exp": "Niedrige Steuern und gut ausgebildete englischsprachige Arbeitskräfte locken US-Firmen."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Irland?",
+          "q": "Welcher Begriff beschreibt das rasante Wirtschaftswachstum des Landes in den 1990er und 2000er Jahren in Anlehnung an asiatische Staaten?",
           "o": [
-            "internationale Tech-Konzerne (Google, Apple)",
-            "Transport und Transitlogistik",
-            "Diamantenhandel in Antwerpen",
-            "Automobilbau (Volvo) und Stahl"
+            "Der Keltische Tiger",
+            "Der Nordische Bär",
+            "Der Atlantische Löwe",
+            "Der Grüne Pansen"
           ],
           "a": 0,
-          "exp": "internationale Tech-Konzerne (Google, Apple) ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Eine Raubkatze steckt im Namen.",
+          "exp": "Das irische Wirtschaftswunder brachte dem Land den Spitznamen Keltischer Tiger ein."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Irland?",
+          "q": "Welcher Begriff beschreibt das rasante Wirtschaftswachstum des Landes in den 1990er und 2000er Jahren in Anlehnung an asiatische Staaten?",
           "o": [
-            "Ryanair-Flüge & Guinness-Bier",
-            "Dacia-Autos",
-            "Zara-Kleidung (Inditex)",
-            "Online-Glücksspiel (iGaming)"
+            "Der Keltische Tiger",
+            "Der Nordische Bär",
+            "Der Atlantische Löwe",
+            "Der Grüne Pansen"
           ],
           "a": 0,
-          "exp": "Ryanair-Flüge & Guinness-Bier wurde in Irland gegründet."
+          "tip": "Eine Raubkatze steckt im Namen.",
+          "exp": "Das irische Wirtschaftswunder brachte dem Land den Spitznamen Keltischer Tiger ein."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Irland?",
+          "q": "Welches weltbekannte alkoholfreie oder alkoholische Exportgut (ein sehr dunkles Staut-Bier) wird in der St. James’s Gate Brewery gebraut?",
           "o": [
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt"
+            "Heineken",
+            "Guinness",
+            "Budweiser",
+            "Carlsberg"
           ],
-          "a": 0,
-          "exp": "Fakt: muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen."
+          "a": 1,
+          "tip": "Das Symbol der Marke ist eine goldene Harfe.",
+          "exp": "Guinness ist ein weltbekanntes dunkles Stout-Bier aus Dublin."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Irland?",
+          "q": "Welches weltbekannte alkoholfreie oder alkoholische Exportgut (ein sehr dunkles Staut-Bier) wird in der St. James’s Gate Brewery gebraut?",
           "o": [
-            "Ryanair-Flüge & Guinness-Bier",
-            "Dacia-Autos",
-            "Zara-Kleidung (Inditex)",
-            "Online-Glücksspiel (iGaming)"
+            "Heineken",
+            "Guinness",
+            "Budweiser",
+            "Carlsberg"
           ],
-          "a": 0,
-          "exp": "Irland exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Das Symbol der Marke ist eine goldene Harfe.",
+          "exp": "Guinness ist ein weltbekanntes dunkles Stout-Bier aus Dublin."
         }
       ]
     },
     "Italien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Italien heute im Alltag?",
+          "q": "Welcher Sportwagenhersteller mit dem tänzelnden Pferd im Logo hat seinen Hauptsitz in Maranello?",
           "o": [
-            "Italienische Lira",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Lamborghini",
+            "Ferrari",
+            "Maserati",
+            "Alfa Romeo"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Italienische Lira."
+          "a": 1,
+          "tip": "Die Rennwagen fahren traditionell in der Farbe „Rosso Corsa“ (Rennrot).",
+          "exp": "Ferrari wurde von Enzo Ferrari gegründet und steht für Rennsport-Tradition."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Italien?",
+          "q": "Welcher Sportwagenhersteller mit dem tänzelnden Pferd im Logo hat seinen Hauptsitz in Maranello?",
           "o": [
-            "rote Sportwagen von Ferrari",
-            "LEGO-Bausteine",
-            "IKEA-Möbel & Spotify-Musik",
-            "Red Bull Energy-Drinks"
+            "Lamborghini",
+            "Ferrari",
+            "Maserati",
+            "Alfa Romeo"
           ],
-          "a": 0,
-          "exp": "rote Sportwagen von Ferrari ist ein bekanntes Aushängeschild der Wirtschaft von Italien."
+          "a": 1,
+          "tip": "Die Rennwagen fahren traditionell in der Farbe „Rosso Corsa“ (Rennrot).",
+          "exp": "Ferrari wurde von Enzo Ferrari gegründet und steht für Rennsport-Tradition."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Italien?",
+          "q": "Wie nennt man das wirtschaftliche Gefälle zwischen dem Industrie-reichen Norden und dem historisch strukturschwächeren Süden des Landes?",
           "o": [
-            "Modehäuser in Mailand (Gucci, Prada)",
-            "Schiffsregister und Tourismus",
-            "Automobilbau (Volvo) und Stahl",
-            "Biotechnologie und Lasertechnik"
+            "Der Ost-West-Konflikt",
+            "Die Nord-Süd-Kluft",
+            "Der Röstigraben",
+            "Das Ruhrgebiets-Phänomen"
           ],
-          "a": 0,
-          "exp": "Modehäuser in Mailand (Gucci, Prada) ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Der Süden wird auf Italienisch oft „Mezzogiorno“ genannt.",
+          "exp": "Der Mezzogiorno im Süden kämpft historisch mit höherer Arbeitslosigkeit."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Italien?",
+          "q": "Wie nennt man das wirtschaftliche Gefälle zwischen dem Industrie-reichen Norden und dem historisch strukturschwächeren Süden des Landes?",
           "o": [
-            "rote Sportwagen von Ferrari",
-            "LEGO-Bausteine",
-            "IKEA-Möbel & Spotify-Musik",
-            "Red Bull Energy-Drinks"
+            "Der Ost-West-Konflikt",
+            "Die Nord-Süd-Kluft",
+            "Der Röstigraben",
+            "Das Ruhrgebiets-Phänomen"
           ],
-          "a": 0,
-          "exp": "rote Sportwagen von Ferrari wurde in Italien gegründet."
+          "a": 1,
+          "tip": "Der Süden wird auf Italienisch oft „Mezzogiorno“ genannt.",
+          "exp": "Der Mezzogiorno im Süden kämpft historisch mit höherer Arbeitslosigkeit."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Italien?",
+          "q": "Welcher Brillenkonzern (EssilorLuxottica) aus diesem Land ist der größte Brillenhersteller der Welt (u. a. Ray-Ban, Oakley)?",
           "o": [
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet"
+            "Luxottica",
+            "Gucci",
+            "Safilo",
+            "Prada"
           ],
           "a": 0,
-          "exp": "Fakt: die Römischen Verträge von 1957 wurden hier unterschrieben."
+          "tip": "Der Name setzt sich aus „Lux“ und „Ottica“ zusammen.",
+          "exp": "Luxottica produziert einen Großteil aller Design-Brillengestelle weltweit."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Italien?",
+          "q": "Welcher Brillenkonzern (EssilorLuxottica) aus diesem Land ist der größte Brillenhersteller der Welt (u. a. Ray-Ban, Oakley)?",
           "o": [
-            "rote Sportwagen von Ferrari",
-            "LEGO-Bausteine",
-            "IKEA-Möbel & Spotify-Musik",
-            "Red Bull Energy-Drinks"
+            "Luxottica",
+            "Gucci",
+            "Safilo",
+            "Prada"
           ],
           "a": 0,
-          "exp": "Italien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Name setzt sich aus „Lux“ und „Ottica“ zusammen.",
+          "exp": "Luxottica produziert einen Großteil aller Design-Brillengestelle weltweit."
         }
       ]
     },
     "Kroatien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Kroatien heute im Alltag?",
+          "q": "Welches Hochtechnologie-Unternehmen für elektrische Hypercars und Batterien (u. a. Modell „Nevera“) stammt aus diesem Adria-Staat?",
           "o": [
-            "Kroatische Kuna",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Tesla",
+            "Rimac Automobili",
+            "NIO",
+            "Polestar"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Kroatische Kuna."
+          "a": 1,
+          "tip": "Der Gründer heißt Mate Rimac.",
+          "exp": "Rimac baut die schnellsten straßenzugelassenen Elektro-Hypercars."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Kroatien?",
+          "q": "Welches Hochtechnologie-Unternehmen für elektrische Hypercars und Batterien (u. a. Modell „Nevera“) stammt aus diesem Adria-Staat?",
           "o": [
-            "elektrische Hypercars von Rimac",
-            "Videospiele wie The Witcher",
-            "Red Bull Energy-Drinks",
-            "Luxusartikel von Louis Vuitton oder Chanel"
+            "Tesla",
+            "Rimac Automobili",
+            "NIO",
+            "Polestar"
           ],
-          "a": 0,
-          "exp": "elektrische Hypercars von Rimac ist ein bekanntes Aushängeschild der Wirtschaft von Kroatien."
+          "a": 1,
+          "tip": "Der Gründer heißt Mate Rimac.",
+          "exp": "Rimac baut die schnellsten straßenzugelassenen Elektro-Hypercars."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Kroatien?",
+          "q": "Welcher Wirtschaftszweig macht mehr als 20 % des gesamten Bruttoinlandsprodukts (BIP) aus und ist damit so hoch wie in kaum einem anderen EU-Land?",
           "o": [
-            "Adria-Tourismus",
-            "Zellulose- und Papierherstellung",
-            "Maschinenbau und Chemie",
-            "Finanzdienstleistungen und Reedereien"
+            "Der Tourismus",
+            "Die Kohleförderung",
+            "Die Schwerindustrie",
+            "Der Bausektor"
           ],
           "a": 0,
-          "exp": "Adria-Tourismus ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Die lange Adriaküste zieht im Sommer Millionen Urlauber an.",
+          "exp": "Kroatien ist für Einnahmen aus dem Küstentourismus stark sensibilisiert."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Kroatien?",
+          "q": "Welcher Wirtschaftszweig macht mehr als 20 % des gesamten Bruttoinlandsprodukts (BIP) aus und ist damit so hoch wie in kaum einem anderen EU-Land?",
           "o": [
-            "elektrische Hypercars von Rimac",
-            "Videospiele wie The Witcher",
-            "Red Bull Energy-Drinks",
-            "Luxusartikel von Louis Vuitton oder Chanel"
+            "Der Tourismus",
+            "Die Kohleförderung",
+            "Die Schwerindustrie",
+            "Der Bausektor"
           ],
           "a": 0,
-          "exp": "elektrische Hypercars von Rimac wurde in Kroatien gegründet."
+          "tip": "Die lange Adriaküste zieht im Sommer Millionen Urlauber an.",
+          "exp": "Kroatien ist für Einnahmen aus dem Küstentourismus stark sensibilisiert."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Kroatien?",
+          "q": "Welcher ehemals staatliche Werften- und Schiffbaukomplex in den Städten Pula und Rijeka prägte jahrzehntelang die Industrie des Landes?",
           "o": [
-            "ist das bisher jüngste Mitgliedsland der Europäischen Union",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet"
+            "Uljanik",
+            "Meyer Werft",
+            "Damen Shipyards",
+            "Fincantieri"
           ],
           "a": 0,
-          "exp": "Fakt: ist das bisher jüngste Mitgliedsland der Europäischen Union."
+          "tip": "Der Name der Werft in Pula beginnt mit einem „U“.",
+          "exp": "Die Uljanik-Werft baute Riesenschiffe, ging aber in eine schwere Finanzkrise."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Kroatien?",
+          "q": "Welcher ehemals staatliche Werften- und Schiffbaukomplex in den Städten Pula und Rijeka prägte jahrzehntelang die Industrie des Landes?",
           "o": [
-            "elektrische Hypercars von Rimac",
-            "Videospiele wie The Witcher",
-            "Red Bull Energy-Drinks",
-            "Luxusartikel von Louis Vuitton oder Chanel"
+            "Uljanik",
+            "Meyer Werft",
+            "Damen Shipyards",
+            "Fincantieri"
           ],
           "a": 0,
-          "exp": "Kroatien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Name der Werft in Pula beginnt mit einem „U“.",
+          "exp": "Die Uljanik-Werft baute Riesenschiffe, ging aber in eine schwere Finanzkrise."
         }
       ]
     },
     "Lettland": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Lettland heute im Alltag?",
+          "q": "Welche Fluggesellschaft ist die größte Airline aller drei baltischen Staaten und hat ihren Hauptknotenpunkt in der Hauptstadt?",
           "o": [
-            "Lettischer Lats",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Ryanair",
+            "airBaltic",
+            "Lufthansa",
+            "Wizz Air"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Lettischer Lats."
+          "a": 1,
+          "tip": "Der Name zeigt direkt die Zugehörigkeit zur baltischen Region.",
+          "exp": "airBaltic ist die staatliche lettische Fluglinie und Marktführer im Baltikum."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Lettland?",
+          "q": "Welche Fluggesellschaft ist die größte Airline aller drei baltischen Staaten und hat ihren Hauptknotenpunkt in der Hauptstadt?",
           "o": [
-            "airBaltic-Flüge & Holzexporte",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Red Bull Energy-Drinks",
-            "Heineken-Bier & ASML-Chipmaschinen"
+            "Ryanair",
+            "airBaltic",
+            "Lufthansa",
+            "Wizz Air"
           ],
-          "a": 0,
-          "exp": "airBaltic-Flüge & Holzexporte ist ein bekanntes Aushängeschild der Wirtschaft von Lettland."
+          "a": 1,
+          "tip": "Der Name zeigt direkt die Zugehörigkeit zur baltischen Region.",
+          "exp": "airBaltic ist die staatliche lettische Fluglinie und Marktführer im Baltikum."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Lettland?",
+          "q": "Welcher Rohstoff aus der Natur macht einen enormen Teil der verarbeitenden Industrie und der Exporte des Landes aus?",
           "o": [
-            "Transport und Transitlogistik",
-            "Blumenhandel (Aalsmeer)",
-            "Windkraftanlagen von Vestas",
-            "Finanzdienstleistungen und Reedereien"
+            "Erdgas",
+            "Holz und Holzprodukte",
+            "Aluminium",
+            "Steinkohle"
           ],
-          "a": 0,
-          "exp": "Transport und Transitlogistik ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Rund die Hälfte der Landesfläche besteht aus Wäldern.",
+          "exp": "Holzverarbeitung bildet die tragende Säule der lettischen Exportindustrie."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Lettland?",
+          "q": "Welcher Rohstoff aus der Natur macht einen enormen Teil der verarbeitenden Industrie und der Exporte des Landes aus?",
           "o": [
-            "airBaltic-Flüge & Holzexporte",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Red Bull Energy-Drinks",
-            "Heineken-Bier & ASML-Chipmaschinen"
+            "Erdgas",
+            "Holz und Holzprodukte",
+            "Aluminium",
+            "Steinkohle"
           ],
-          "a": 0,
-          "exp": "airBaltic-Flüge & Holzexporte wurde in Lettland gegründet."
+          "a": 1,
+          "tip": "Rund die Hälfte der Landesfläche besteht aus Wäldern.",
+          "exp": "Holzverarbeitung bildet die tragende Säule der lettischen Exportindustrie."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Lettland?",
+          "q": "Welches IT- und Elektronikunternehmen aus diesem Land ist weltweit bekannt für die Herstellung von WLAN-Routern und Netzwerkgeräten?",
           "o": [
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist"
+            "MikroTik",
+            "TP-Link",
+            "Cisco",
+            "NETGEAR"
           ],
           "a": 0,
-          "exp": "Fakt: die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt."
+          "tip": "Der Firmenname beschreibt kleine Technologie („Mikro...“).",
+          "exp": "MikroTik stellt weltweit geschätzte Profi-Netzwerkausrüstung her."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Lettland?",
+          "q": "Welches IT- und Elektronikunternehmen aus diesem Land ist weltweit bekannt für die Herstellung von WLAN-Routern und Netzwerkgeräten?",
           "o": [
-            "airBaltic-Flüge & Holzexporte",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Red Bull Energy-Drinks",
-            "Heineken-Bier & ASML-Chipmaschinen"
+            "MikroTik",
+            "TP-Link",
+            "Cisco",
+            "NETGEAR"
           ],
           "a": 0,
-          "exp": "Lettland exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Firmenname beschreibt kleine Technologie („Mikro...“).",
+          "exp": "MikroTik stellt weltweit geschätzte Profi-Netzwerkausrüstung her."
         }
       ]
     },
     "Litauen": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Litauen heute im Alltag?",
+          "q": "Welches europäische Fintech-Unternehmen für Second-Hand-Kleidung () wurde in der Hauptstadt gegründet und wurde zum ersten Milliarden-Startup () des Landes?",
           "o": [
-            "Litauischer Litas",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Zalando",
+            "Vinted",
+            "Depop",
+            "Willhaben"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Litauischer Litas."
+          "a": 1,
+          "tip": "Der Slogan lautet: „Du trägst es nicht? Verkaufs auf...“.",
+          "exp": "Vinted ist Europas größte Online-Plattform für Second-Hand-Mode."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Litauen?",
+          "q": "Welches europäische Fintech-Unternehmen für Second-Hand-Kleidung () wurde in der Hauptstadt gegründet und wurde zum ersten Milliarden-Startup () des Landes?",
           "o": [
-            "FinTech (wie Revolut-Lizenzen)",
-            "duftendes Rosenöl",
-            "rote Sportwagen von Ferrari",
-            "Skype & digitale e-Residency"
+            "Zalando",
+            "Vinted",
+            "Depop",
+            "Willhaben"
           ],
-          "a": 0,
-          "exp": "FinTech (wie Revolut-Lizenzen) ist ein bekanntes Aushängeschild der Wirtschaft von Litauen."
+          "a": 1,
+          "tip": "Der Slogan lautet: „Du trägst es nicht? Verkaufs auf...“.",
+          "exp": "Vinted ist Europas größte Online-Plattform für Second-Hand-Mode."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Litauen?",
+          "q": "Welcher Industriekomplex nahe der Stadt Kėdainiai ist ein wichtiger Produzent für den europäischen Agrarmarkt?",
           "o": [
-            "Biotechnologie und Lasertechnik",
-            "Blumenhandel (Aalsmeer)",
-            "Holz- und Papierprodukte",
-            "Adria-Tourismus"
+            "Düngemittelherstellung",
+            "Mikrochip-Produktion",
+            "Flugzeugbau",
+            "Uhrenmanufaktur"
           ],
           "a": 0,
-          "exp": "Biotechnologie und Lasertechnik ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Das Produkt hilft Bauern, Pflanzen besser wachsen zu lassen.",
+          "exp": "Düngemittelwerke machen einen wesentlichen Teil der litauischen Chemieindustrie aus."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Litauen?",
+          "q": "Welcher Industriekomplex nahe der Stadt Kėdainiai ist ein wichtiger Produzent für den europäischen Agrarmarkt?",
           "o": [
-            "FinTech (wie Revolut-Lizenzen)",
-            "duftendes Rosenöl",
-            "rote Sportwagen von Ferrari",
-            "Skype & digitale e-Residency"
+            "Düngemittelherstellung",
+            "Mikrochip-Produktion",
+            "Flugzeugbau",
+            "Uhrenmanufaktur"
           ],
           "a": 0,
-          "exp": "FinTech (wie Revolut-Lizenzen) wurde in Litauen gegründet."
+          "tip": "Das Produkt hilft Bauern, Pflanzen besser wachsen zu lassen.",
+          "exp": "Düngemittelwerke machen einen wesentlichen Teil der litauischen Chemieindustrie aus."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Litauen?",
+          "q": "Welches schwimmende LNG-Terminal (Flüssigerdgas) im Hafen von Klaipėda machte das Land als erstes baltisches Land komplett unabhängig von russischem Gas?",
           "o": [
-            "die Kurische Nehrung hat die größten Wanderdünen Europas",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "die Europäische Zentralbank hat ihren Sitz in Frankfurt",
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist"
+            "Nord Stream",
+            "Independence",
+            "Poseidon",
+            "Baltic Pipe"
           ],
-          "a": 0,
-          "exp": "Fakt: die Kurische Nehrung hat die größten Wanderdünen Europas."
+          "a": 1,
+          "tip": "Das englische Wort bedeutet „Unabhängigkeit“.",
+          "exp": "Das LNG-Terminal Independence sichert Litauens unabhängige Gasversorgung."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Litauen?",
+          "q": "Welches schwimmende LNG-Terminal (Flüssigerdgas) im Hafen von Klaipėda machte das Land als erstes baltisches Land komplett unabhängig von russischem Gas?",
           "o": [
-            "FinTech (wie Revolut-Lizenzen)",
-            "duftendes Rosenöl",
-            "rote Sportwagen von Ferrari",
-            "Skype & digitale e-Residency"
+            "Nord Stream",
+            "Independence",
+            "Poseidon",
+            "Baltic Pipe"
           ],
-          "a": 0,
-          "exp": "Litauen exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Das englische Wort bedeutet „Unabhängigkeit“.",
+          "exp": "Das LNG-Terminal Independence sichert Litauens unabhängige Gasversorgung."
         }
       ]
     },
     "Luxemburg": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Luxemburg heute im Alltag?",
+          "q": "Welcher Wirtschaftssektor macht dieses kleine Land zu einem der reichsten Staaten der Welt (höchstes BIP pro Kopf in der EU)?",
           "o": [
-            "Luxemburgischer Franc",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Der Finanz- und Bankensektor",
+            "Die Landwirtschaft",
+            "Der Tourismus",
+            "Die Fischerei"
           ],
           "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Luxemburgischer Franc."
+          "tip": "Zahlreiche internationale Banken und Investmentfonds haben hier ihren Sitz.",
+          "exp": "Luxemburg ist das größte Fonds- und Investmentzentrum Europas."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Luxemburg?",
+          "q": "Welcher Wirtschaftssektor macht dieses kleine Land zu einem der reichsten Staaten der Welt (höchstes BIP pro Kopf in der EU)?",
           "o": [
-            "Investmentfonds & Frachtflüge",
-            "Autoproduktion für VW, Kia und Jaguar",
-            "LEGO-Bausteine",
-            "elektrische Hypercars von Rimac"
+            "Der Finanz- und Bankensektor",
+            "Die Landwirtschaft",
+            "Der Tourismus",
+            "Die Fischerei"
           ],
           "a": 0,
-          "exp": "Investmentfonds & Frachtflüge ist ein bekanntes Aushängeschild der Wirtschaft von Luxemburg."
+          "tip": "Zahlreiche internationale Banken und Investmentfonds haben hier ihren Sitz.",
+          "exp": "Luxemburg ist das größte Fonds- und Investmentzentrum Europas."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Luxemburg?",
+          "q": "Welcher weltgrößte Stahlkonzern hat seinen Hauptsitz in der Hauptstadt dieses Staates?",
           "o": [
-            "internationaler Bankensektor",
-            "Blumenhandel (Aalsmeer)",
-            "Diamantenhandel in Antwerpen",
-            "Obst- und Gemüseexporte ('Gewächshaus Europas')"
+            "Thyssenkrupp",
+            "ArcelorMittal",
+            "Voestalpine",
+            "POSCO"
           ],
-          "a": 0,
-          "exp": "internationaler Bankensektor ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Der Name setzt sich aus Arcelor und Mittal zusammen.",
+          "exp": "ArcelorMittal entstand durch die Fusion von Arcelor und Mittal Steel."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Luxemburg?",
+          "q": "Welcher weltgrößte Stahlkonzern hat seinen Hauptsitz in der Hauptstadt dieses Staates?",
           "o": [
-            "Investmentfonds & Frachtflüge",
-            "Autoproduktion für VW, Kia und Jaguar",
-            "LEGO-Bausteine",
-            "elektrische Hypercars von Rimac"
+            "Thyssenkrupp",
+            "ArcelorMittal",
+            "Voestalpine",
+            "POSCO"
           ],
-          "a": 0,
-          "exp": "Investmentfonds & Frachtflüge wurde in Luxemburg gegründet."
+          "a": 1,
+          "tip": "Der Name setzt sich aus Arcelor und Mittal zusammen.",
+          "exp": "ArcelorMittal entstand durch die Fusion von Arcelor und Mittal Steel."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Luxemburg?",
+          "q": "Welcher weltweit führende Satellitenbetreiber hat seinen Hauptsitz auf Schloss Betzdorf in diesem Land?",
           "o": [
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt"
+            "SES",
+            "SpaceX",
+            "Eutelsat",
+            "Intelsat"
           ],
           "a": 0,
-          "exp": "Fakt: das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet."
+          "tip": "Die Abkürzung hat drei Buchstaben und beginnt mit „S“.",
+          "exp": "SES betreibt ein weltweites Netz von Kommunikationssatelliten."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Luxemburg?",
+          "q": "Welcher weltweit führende Satellitenbetreiber hat seinen Hauptsitz auf Schloss Betzdorf in diesem Land?",
           "o": [
-            "Investmentfonds & Frachtflüge",
-            "Autoproduktion für VW, Kia und Jaguar",
-            "LEGO-Bausteine",
-            "elektrische Hypercars von Rimac"
+            "SES",
+            "SpaceX",
+            "Eutelsat",
+            "Intelsat"
           ],
           "a": 0,
-          "exp": "Luxemburg exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Die Abkürzung hat drei Buchstaben und beginnt mit „S“.",
+          "exp": "SES betreibt ein weltweites Netz von Kommunikationssatelliten."
         }
       ]
     },
     "Malta": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Malta heute im Alltag?",
+          "q": "Welches moderne digitale Geschäftsfeld nutzt den Vorteil von Lizenzen und macht das Land zu einem europäischen Zentrum dieser Branche?",
           "o": [
-            "Maltesische Lira",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "iGaming",
+            "Weltraum-Tourismus",
+            "Auto-Prototypenbau",
+            "Schwerindustrie"
           ],
           "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Maltesische Lira."
+          "tip": "Viele europäische Online-Casino- und Sportwettenanbieter haben hier ihre Lizenz.",
+          "exp": "Malta war das erste EU-Land, das Online-Glücksspiel gesetzlich regulierte."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Malta?",
+          "q": "Welches moderne digitale Geschäftsfeld nutzt den Vorteil von Lizenzen und macht das Land zu einem europäischen Zentrum dieser Branche?",
           "o": [
-            "Online-Glücksspiel (iGaming)",
-            "Skype & digitale e-Residency",
-            "Ryanair-Flüge & Guinness-Bier",
-            "Olivenöl & Schifffahrt"
+            "iGaming",
+            "Weltraum-Tourismus",
+            "Auto-Prototypenbau",
+            "Schwerindustrie"
           ],
           "a": 0,
-          "exp": "Online-Glücksspiel (iGaming) ist ein bekanntes Aushängeschild der Wirtschaft von Malta."
+          "tip": "Viele europäische Online-Casino- und Sportwettenanbieter haben hier ihre Lizenz.",
+          "exp": "Malta war das erste EU-Land, das Online-Glücksspiel gesetzlich regulierte."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Malta?",
+          "q": "Welches Register macht die Flagge dieses Landes zur größten Handelsflotte innerhalb der Europäischen Union?",
           "o": [
-            "Schiffsregister und Tourismus",
-            "Modehäuser in Mailand (Gucci, Prada)",
-            "Automobilbau (Volvo) und Stahl",
-            "Transport und Transitlogistik"
+            "Das Schiffsregister",
+            "Das Luftfahrtregister",
+            "Das Gold-Register",
+            "Das Patentregister"
           ],
           "a": 0,
-          "exp": "Schiffsregister und Tourismus ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Tausende Frachtschiffe fahren weltweit unter der rot-weißen Flagge der Insel.",
+          "exp": "Malta bietet Reedern Steuervorteile über sein offenes Schiffsregister."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Malta?",
+          "q": "Welches Register macht die Flagge dieses Landes zur größten Handelsflotte innerhalb der Europäischen Union?",
           "o": [
-            "Online-Glücksspiel (iGaming)",
-            "Skype & digitale e-Residency",
-            "Ryanair-Flüge & Guinness-Bier",
-            "Olivenöl & Schifffahrt"
+            "Das Schiffsregister",
+            "Das Luftfahrtregister",
+            "Das Gold-Register",
+            "Das Patentregister"
           ],
           "a": 0,
-          "exp": "Online-Glücksspiel (iGaming) wurde in Malta gegründet."
+          "tip": "Tausende Frachtschiffe fahren weltweit unter der rot-weißen Flagge der Insel.",
+          "exp": "Malta bietet Reedern Steuervorteile über sein offenes Schiffsregister."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Malta?",
+          "q": "Welcher Sektor neben Finanzdienstleistungen profitiert stark vom warmen Klima und der englischen Sprache für Sprachschüler?",
           "o": [
-            "ist der flächenmäßig kleinste Mitgliedsstaat der EU",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat"
+            "Der Sprach- und Bildungstourismus",
+            "Die Wintersportindustrie",
+            "Die Holzverarbeitung",
+            "Der Bergbau"
           ],
           "a": 0,
-          "exp": "Fakt: ist der flächenmäßig kleinste Mitgliedsstaat der EU."
+          "tip": "Tausende Jugendliche reisen im Sommer dorthin, um Englisch zu lernen.",
+          "exp": "Englische Sprachschulen sind ein tragendes Element der maltesischen Wirtschaft."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Malta?",
+          "q": "Welcher Sektor neben Finanzdienstleistungen profitiert stark vom warmen Klima und der englischen Sprache für Sprachschüler?",
           "o": [
-            "Online-Glücksspiel (iGaming)",
-            "Skype & digitale e-Residency",
-            "Ryanair-Flüge & Guinness-Bier",
-            "Olivenöl & Schifffahrt"
+            "Der Sprach- und Bildungstourismus",
+            "Die Wintersportindustrie",
+            "Die Holzverarbeitung",
+            "Der Bergbau"
           ],
           "a": 0,
-          "exp": "Malta exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Tausende Jugendliche reisen im Sommer dorthin, um Englisch zu lernen.",
+          "exp": "Englische Sprachschulen sind ein tragendes Element der maltesischen Wirtschaft."
         }
       ]
     },
     "Niederlande": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Niederlande heute im Alltag?",
+          "q": "Wie heißt der flächen- und umsatzmäßig größte Seehafen Europas?",
           "o": [
-            "Niederländischer Gulden",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Hafen von Antwerpen",
+            "Hafen von Rotterdam",
+            "Hafen von Hamburg",
+            "Hafen von Felixstowe"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Niederländischer Gulden."
+          "a": 1,
+          "tip": "Er liegt im Rhein-Maas-Delta im Westen des Landes.",
+          "exp": "Der Hafen Rotterdam ist die logistische Drehscheibe für den Binnenmarkt."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Niederlande?",
+          "q": "Wie heißt der flächen- und umsatzmäßig größte Seehafen Europas?",
           "o": [
-            "Heineken-Bier & ASML-Chipmaschinen",
-            "Investmentfonds & Frachtflüge",
-            "Videospiele wie The Witcher",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Hafen von Antwerpen",
+            "Hafen von Rotterdam",
+            "Hafen von Hamburg",
+            "Hafen von Felixstowe"
           ],
-          "a": 0,
-          "exp": "Heineken-Bier & ASML-Chipmaschinen ist ein bekanntes Aushängeschild der Wirtschaft von Niederlande."
+          "a": 1,
+          "tip": "Er liegt im Rhein-Maas-Delta im Westen des Landes.",
+          "exp": "Der Hafen Rotterdam ist die logistische Drehscheibe für den Binnenmarkt."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Niederlande?",
+          "q": "Welches Tech-Unternehmen aus diesem Land baut die weltweit einzigen Spezialmaschinen zur Herstellung modernster Mikrochips?",
           "o": [
-            "Blumenhandel (Aalsmeer)",
-            "Adria-Tourismus",
-            "Diamantenhandel in Antwerpen",
-            "Tourismus auf den griechischen Inseln"
+            "ASML",
+            "Intel",
+            "Nvidia",
+            "Foxconn"
           ],
           "a": 0,
-          "exp": "Blumenhandel (Aalsmeer) ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Die Abkürzung hat vier Buchstaben und beginnt mit „A“.",
+          "exp": "ASML besitzt ein Monopol auf die fortschrittlichsten Halbleiter-Belichtungsanlagen."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Niederlande?",
+          "q": "Welches Tech-Unternehmen aus diesem Land baut die weltweit einzigen Spezialmaschinen zur Herstellung modernster Mikrochips?",
           "o": [
-            "Heineken-Bier & ASML-Chipmaschinen",
-            "Investmentfonds & Frachtflüge",
-            "Videospiele wie The Witcher",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "ASML",
+            "Intel",
+            "Nvidia",
+            "Foxconn"
           ],
           "a": 0,
-          "exp": "Heineken-Bier & ASML-Chipmaschinen wurde in Niederlande gegründet."
+          "tip": "Die Abkürzung hat vier Buchstaben und beginnt mit „A“.",
+          "exp": "ASML besitzt ein Monopol auf die fortschrittlichsten Halbleiter-Belichtungsanlagen."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Niederlande?",
+          "q": "Welches internationale Lebensmittel- und Konsumgüterunternehmen hatte lange seinen Hauptsitz in Rotterdam (Hersteller von Knorr, Dove, Ben & Jerry’s)?",
           "o": [
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland"
+            "Nestlé",
+            "Unilever",
+            "Procter & Gamble",
+            "Danone"
           ],
-          "a": 0,
-          "exp": "Fakt: ein Viertel des Landes liegt unter dem Meeresspiegel."
+          "a": 1,
+          "tip": "Der Name beginnt mit „Uni...“.",
+          "exp": "Unilever ist einer der weltgrößten Konsumgüterkonzerne."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Niederlande?",
+          "q": "Welches internationale Lebensmittel- und Konsumgüterunternehmen hatte lange seinen Hauptsitz in Rotterdam (Hersteller von Knorr, Dove, Ben & Jerry’s)?",
           "o": [
-            "Heineken-Bier & ASML-Chipmaschinen",
-            "Investmentfonds & Frachtflüge",
-            "Videospiele wie The Witcher",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Nestlé",
+            "Unilever",
+            "Procter & Gamble",
+            "Danone"
           ],
-          "a": 0,
-          "exp": "Niederlande exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Name beginnt mit „Uni...“.",
+          "exp": "Unilever ist einer der weltgrößten Konsumgüterkonzerne."
         }
       ]
     },
     "Österreich": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Österreich heute im Alltag?",
+          "q": "Welcher weltbekannte Schmuckkonzern aus Tirol ist berühmt für die Herstellung von geschliffenem Kristallglas?",
           "o": [
-            "Österreichischer Schilling",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Pandora",
+            "Swarovski",
+            "Tiffany & Co.",
+            "Cartier"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Österreichischer Schilling."
+          "a": 1,
+          "tip": "Das Firmenlogo zeigt einen eleganten Schwan.",
+          "exp": "Swarovski hat seinen Stammsitz in Wattens, Tirol."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Österreich?",
+          "q": "Welcher weltbekannte Schmuckkonzern aus Tirol ist berühmt für die Herstellung von geschliffenem Kristallglas?",
           "o": [
-            "Red Bull Energy-Drinks",
-            "Skoda-Autos & Pilsner Bier",
-            "Schiffsregister & Tourismus",
-            "elektrische Hypercars von Rimac"
+            "Pandora",
+            "Swarovski",
+            "Tiffany & Co.",
+            "Cartier"
           ],
-          "a": 0,
-          "exp": "Red Bull Energy-Drinks ist ein bekanntes Aushängeschild der Wirtschaft von Österreich."
+          "a": 1,
+          "tip": "Das Firmenlogo zeigt einen eleganten Schwan.",
+          "exp": "Swarovski hat seinen Stammsitz in Wattens, Tirol."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Österreich?",
+          "q": "Welcher Energy-Drink-Hersteller aus Fuschl am See revolutionierte den weltweiten Getränkemarkt und betreibt eigene Sport-Teams?",
           "o": [
-            "Skihersteller und Alpintourismus",
-            "Zellulose- und Papierherstellung",
-            "Diamantenhandel in Antwerpen",
-            "Maschinenbau und Automobilzulieferung"
+            "Monster Energy",
+            "Red Bull",
+            "Rockstar",
+            "Coca-Cola"
           ],
-          "a": 0,
-          "exp": "Skihersteller und Alpintourismus ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Der Drink „verleiht Flügel“.",
+          "exp": "Red Bull ist das bekannteste globale Marketing- und Getränkeunternehmen Österreichs."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Österreich?",
+          "q": "Welcher Energy-Drink-Hersteller aus Fuschl am See revolutionierte den weltweiten Getränkemarkt und betreibt eigene Sport-Teams?",
           "o": [
-            "Red Bull Energy-Drinks",
-            "Skoda-Autos & Pilsner Bier",
-            "Schiffsregister & Tourismus",
-            "elektrische Hypercars von Rimac"
+            "Monster Energy",
+            "Red Bull",
+            "Rockstar",
+            "Coca-Cola"
           ],
-          "a": 0,
-          "exp": "Red Bull Energy-Drinks wurde in Österreich gegründet."
+          "a": 1,
+          "tip": "Der Drink „verleiht Flügel“.",
+          "exp": "Red Bull ist das bekannteste globale Marketing- und Getränkeunternehmen Österreichs."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Österreich?",
+          "q": "Welcher spezialisierte Stahl- und Technologiekonzern in Linz ist ein Pionier im Bereich der CO2-armen Stahlherstellung?",
           "o": [
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen"
+            "Voestalpine",
+            "Thyssenkrupp",
+            "ArcelorMittal",
+            "Salzgitter AG"
           ],
           "a": 0,
-          "exp": "Fakt: war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte."
+          "tip": "Der Firmenname setzt sich aus „VOEST“ und „Alpine“ zusammen.",
+          "exp": "Die Voestalpine gilt als einer der innovativsten Industriekonzerne Europas."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Österreich?",
+          "q": "Welcher spezialisierte Stahl- und Technologiekonzern in Linz ist ein Pionier im Bereich der CO2-armen Stahlherstellung?",
           "o": [
-            "Red Bull Energy-Drinks",
-            "Skoda-Autos & Pilsner Bier",
-            "Schiffsregister & Tourismus",
-            "elektrische Hypercars von Rimac"
+            "Voestalpine",
+            "Thyssenkrupp",
+            "ArcelorMittal",
+            "Salzgitter AG"
           ],
           "a": 0,
-          "exp": "Österreich exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Firmenname setzt sich aus „VOEST“ und „Alpine“ zusammen.",
+          "exp": "Die Voestalpine gilt als einer der innovativsten Industriekonzerne Europas."
         }
       ]
     },
     "Polen": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Polen heute im Alltag?",
+          "q": "Welches Videospiel-Entwicklerstudio aus dieser Nation erschuf weltweite Megahits wie „The Witcher 3“ und „Cyberpunk 2077“?",
           "o": [
-            "Polnischen Złoty",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Ubisoft",
+            "CD Projekt Red",
+            "Rockstar Games",
+            "EA Sports"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Polnischen Złoty."
+          "a": 1,
+          "tip": "Die Abkürzung „CD Projekt“ gehört dazu.",
+          "exp": "CD Projekt Red ist das größte und bekannteste Entwicklerstudio Polens."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Polen?",
+          "q": "Welches Videospiel-Entwicklerstudio aus dieser Nation erschuf weltweite Megahits wie „The Witcher 3“ und „Cyberpunk 2077“?",
           "o": [
-            "Videospiele wie The Witcher",
-            "Red Bull Energy-Drinks",
-            "IKEA-Möbel & Spotify-Musik",
-            "Olivenöl & Schifffahrt"
+            "Ubisoft",
+            "CD Projekt Red",
+            "Rockstar Games",
+            "EA Sports"
           ],
-          "a": 0,
-          "exp": "Videospiele wie The Witcher ist ein bekanntes Aushängeschild der Wirtschaft von Polen."
+          "a": 1,
+          "tip": "Die Abkürzung „CD Projekt“ gehört dazu.",
+          "exp": "CD Projekt Red ist das größte und bekannteste Entwicklerstudio Polens."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Polen?",
+          "q": "Welcher Sektor hat sich in den letzten Jahrzehnten enorm entwickelt, sodass das Land als „Werkbank Europas“ für die Automobil- und Elektrogeräteindustrie gilt?",
           "o": [
-            "Möbel- und Holzproduktion",
-            "Luft- und Raumfahrt (Airbus)",
-            "internationale Tech-Konzerne (Google, Apple)",
-            "Blumenhandel (Aalsmeer)"
+            "Das verarbeitende Gewerbe",
+            "Der reine Tourismus",
+            "Die Fischzucht",
+            "Die Ölförderung"
           ],
           "a": 0,
-          "exp": "Möbel- und Holzproduktion ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Viele deutsche und internationale Konzerne lassen dort produzieren.",
+          "exp": "Polen ist ein führender Zulieferer und Fertiger im EU-Binnenmarkt."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Polen?",
+          "q": "Welcher Sektor hat sich in den letzten Jahrzehnten enorm entwickelt, sodass das Land als „Werkbank Europas“ für die Automobil- und Elektrogeräteindustrie gilt?",
           "o": [
-            "Videospiele wie The Witcher",
-            "Red Bull Energy-Drinks",
-            "IKEA-Möbel & Spotify-Musik",
-            "Olivenöl & Schifffahrt"
+            "Das verarbeitende Gewerbe",
+            "Der reine Tourismus",
+            "Die Fischzucht",
+            "Die Ölförderung"
           ],
           "a": 0,
-          "exp": "Videospiele wie The Witcher wurde in Polen gegründet."
+          "tip": "Viele deutsche und internationale Konzerne lassen dort produzieren.",
+          "exp": "Polen ist ein führender Zulieferer und Fertiger im EU-Binnenmarkt."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Polen?",
+          "q": "Wie heißt die Landeswährung, die trotz EU-Mitgliedschaft weiterhin genutzt wird?",
           "o": [
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt"
+            "Koruna",
+            "Złoty",
+            "Forint",
+            "Leu"
           ],
-          "a": 0,
-          "exp": "Fakt: ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland."
+          "a": 1,
+          "tip": "Übersetzt bedeutet das Wort „der Goldene“.",
+          "exp": "Polen nutzt nach wie vor den Złoty als Währung."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Polen?",
+          "q": "Wie heißt die Landeswährung, die trotz EU-Mitgliedschaft weiterhin genutzt wird?",
           "o": [
-            "Videospiele wie The Witcher",
-            "Red Bull Energy-Drinks",
-            "IKEA-Möbel & Spotify-Musik",
-            "Olivenöl & Schifffahrt"
+            "Koruna",
+            "Złoty",
+            "Forint",
+            "Leu"
           ],
-          "a": 0,
-          "exp": "Polen exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Übersetzt bedeutet das Wort „der Goldene“.",
+          "exp": "Polen nutzt nach wie vor den Złoty als Währung."
         }
       ]
     },
     "Portugal": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Portugal heute im Alltag?",
+          "q": "Welches Naturprodukt macht das Land zum weltweiten Marktführer bei der Herstellung von Flaschenverschlüssen?",
           "o": [
-            "Portugiesischer Escudo",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Kunststoff",
+            "Kork",
+            "Schraubverschlüsse aus Aluminium",
+            "Glas"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Portugiesischer Escudo."
+          "a": 1,
+          "tip": "Es wird aus der Rinde der Korkeiche gewonnen.",
+          "exp": "Portugal produziert rund die Hälfte des weltweiten Flaschenkorks."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Portugal?",
+          "q": "Welches Naturprodukt macht das Land zum weltweiten Marktführer bei der Herstellung von Flaschenverschlüssen?",
           "o": [
-            "Naturkorken für Weinflaschen",
-            "Skoda-Autos & Pilsner Bier",
-            "Videospiele wie The Witcher",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Kunststoff",
+            "Kork",
+            "Schraubverschlüsse aus Aluminium",
+            "Glas"
           ],
-          "a": 0,
-          "exp": "Naturkorken für Weinflaschen ist ein bekanntes Aushängeschild der Wirtschaft von Portugal."
+          "a": 1,
+          "tip": "Es wird aus der Rinde der Korkeiche gewonnen.",
+          "exp": "Portugal produziert rund die Hälfte des weltweiten Flaschenkorks."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Portugal?",
+          "q": "Welcher Sektor der erneuerbaren Energien gedeiht an der Atlantikküste und im windigen Landesinneren besonders gut?",
           "o": [
-            "Zellulose- und Papierherstellung",
-            "Maschinenbau und Automobilzulieferung",
-            "Maschinenbau und Chemie",
-            "Windkraftanlagen von Vestas"
+            "Atomkraft",
+            "Wind- und Solarenergie",
+            "Geothermie",
+            "Braunkohle"
           ],
-          "a": 0,
-          "exp": "Zellulose- und Papierherstellung ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Das Land deckt an manchen Tagen über 100 % seines Strombedarfs aus diesen nachhaltigen Quellen.",
+          "exp": "Portugal gehört zu den EU-Pionieren bei erneuerbarer Elektrizität."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Portugal?",
+          "q": "Welcher Sektor der erneuerbaren Energien gedeiht an der Atlantikküste und im windigen Landesinneren besonders gut?",
           "o": [
-            "Naturkorken für Weinflaschen",
-            "Skoda-Autos & Pilsner Bier",
-            "Videospiele wie The Witcher",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Atomkraft",
+            "Wind- und Solarenergie",
+            "Geothermie",
+            "Braunkohle"
           ],
-          "a": 0,
-          "exp": "Naturkorken für Weinflaschen wurde in Portugal gegründet."
+          "a": 1,
+          "tip": "Das Land deckt an manchen Tagen über 100 % seines Strombedarfs aus diesen nachhaltigen Quellen.",
+          "exp": "Portugal gehört zu den EU-Pionieren bei erneuerbarer Elektrizität."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Portugal?",
+          "q": "Welcher traditionelle Export-Süßwein aus dem Douro-Tal wird in der Stadt Vila Nova de Gaia gereift und verschifft?",
           "o": [
-            "die Atlantik-Inseln Azoren und Madeira gehören dazu",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg"
+            "Sherry",
+            "Portwein",
+            "Prosecco",
+            "Marsala"
           ],
-          "a": 0,
-          "exp": "Fakt: die Atlantik-Inseln Azoren und Madeira gehören dazu."
+          "a": 1,
+          "tip": "Der Name leitet sich von der zweitgrößten Stadt des Landes (Porto) ab.",
+          "exp": "Portwein darf rechtlich geschützt nur aus Nordportugal stammen."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Portugal?",
+          "q": "Welcher traditionelle Export-Süßwein aus dem Douro-Tal wird in der Stadt Vila Nova de Gaia gereift und verschifft?",
           "o": [
-            "Naturkorken für Weinflaschen",
-            "Skoda-Autos & Pilsner Bier",
-            "Videospiele wie The Witcher",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Sherry",
+            "Portwein",
+            "Prosecco",
+            "Marsala"
           ],
-          "a": 0,
-          "exp": "Portugal exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Name leitet sich von der zweitgrößten Stadt des Landes (Porto) ab.",
+          "exp": "Portwein darf rechtlich geschützt nur aus Nordportugal stammen."
         }
       ]
     },
     "Rumänien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Rumänien heute im Alltag?",
+          "q": "Welcher Autohersteller aus diesem Land gehört heute zum Renault-Konzern und ist bekannt für preiswerte Modelle wie Duster und Sandero?",
           "o": [
-            "Rumänischer Leu",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Škoda",
+            "Dacia",
+            "Lada",
+            "Seat"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Rumänischer Leu."
+          "a": 1,
+          "tip": "Der Wappenname geht auf eine antike Region auf dem Staatsgebiet zurück.",
+          "exp": "Dacia wurde 1999 von Renault übernommen und feierte Billigauto-Erfolge."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Rumänien?",
+          "q": "Welcher Autohersteller aus diesem Land gehört heute zum Renault-Konzern und ist bekannt für preiswerte Modelle wie Duster und Sandero?",
           "o": [
-            "Dacia-Autos",
-            "Zara-Kleidung (Inditex)",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Red Bull Energy-Drinks"
+            "Škoda",
+            "Dacia",
+            "Lada",
+            "Seat"
           ],
-          "a": 0,
-          "exp": "Dacia-Autos ist ein bekanntes Aushängeschild der Wirtschaft von Rumänien."
+          "a": 1,
+          "tip": "Der Wappenname geht auf eine antike Region auf dem Staatsgebiet zurück.",
+          "exp": "Dacia wurde 1999 von Renault übernommen und feierte Billigauto-Erfolge."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Rumänien?",
+          "q": "Welcher Sektor der Wirtschaft in Städten wie Klausenburg (Cluj) und Bukarest wächst extrem schnell und gilt als IT-Hub Osteuropas?",
           "o": [
-            "schnell wachsende IT-Branche in Cluj",
-            "Modehäuser in Mailand (Gucci, Prada)",
-            "Adria-Tourismus",
-            "pharmazeutische Generika-Industrie (Krka)"
+            "Die Softwareentwicklung und IT-Dienstleistungen",
+            "Der Schiffbau",
+            "Die Uhrenproduktion",
+            "Die Kohleförderung"
           ],
           "a": 0,
-          "exp": "schnell wachsende IT-Branche in Cluj ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Das Land ist bekannt für hervorragend ausgebildete Programmierer.",
+          "exp": "Rumäniens IT-Sektor zieht viele multinationale Technologiekonzerne an."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Rumänien?",
+          "q": "Welcher Sektor der Wirtschaft in Städten wie Klausenburg (Cluj) und Bukarest wächst extrem schnell und gilt als IT-Hub Osteuropas?",
           "o": [
-            "Dacia-Autos",
-            "Zara-Kleidung (Inditex)",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Red Bull Energy-Drinks"
+            "Die Softwareentwicklung und IT-Dienstleistungen",
+            "Der Schiffbau",
+            "Die Uhrenproduktion",
+            "Die Kohleförderung"
           ],
           "a": 0,
-          "exp": "Dacia-Autos wurde in Rumänien gegründet."
+          "tip": "Das Land ist bekannt für hervorragend ausgebildete Programmierer.",
+          "exp": "Rumäniens IT-Sektor zieht viele multinationale Technologiekonzerne an."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Rumänien?",
+          "q": "Welches Erdöl- und Erdgasunternehmen (OMV Petrom) ist das größte Unternehmen des Landes und gehört mehrheitlich zu einem österreichischen Konzern?",
           "o": [
-            "hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt",
-            "das Europäische Parlament hat seinen Hauptsitz in Straßburg",
-            "hier kann man seit 2005 sicher online über das Internet wählen",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt"
+            "Petrom",
+            "Rompetrol",
+            "Lukoil",
+            "Shell"
           ],
           "a": 0,
-          "exp": "Fakt: hat den riesigen Parlamentspalast in Bukarest - eines der schwersten Gebäude der Welt."
+          "tip": "Der Wappenname setzt sich aus „Petro-“ und „-rom“ zusammen.",
+          "exp": "Petrom wurde 2004 von der österreichischen OMV mehrheitlich erworben."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Rumänien?",
+          "q": "Welches Erdöl- und Erdgasunternehmen (OMV Petrom) ist das größte Unternehmen des Landes und gehört mehrheitlich zu einem österreichischen Konzern?",
           "o": [
-            "Dacia-Autos",
-            "Zara-Kleidung (Inditex)",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Red Bull Energy-Drinks"
+            "Petrom",
+            "Rompetrol",
+            "Lukoil",
+            "Shell"
           ],
           "a": 0,
-          "exp": "Rumänien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Wappenname setzt sich aus „Petro-“ und „-rom“ zusammen.",
+          "exp": "Petrom wurde 2004 von der österreichischen OMV mehrheitlich erworben."
         }
       ]
     },
     "Schweden": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Schweden heute im Alltag?",
+          "q": "Welcher weltbekannte Möbelkonzern wurde von Ingvar Kamprad gegründet und vertreibt zerlegbare Möbel in blau-gelben Einrichtungshäusern?",
           "o": [
-            "Schwedische Krone",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "XXL Lutz",
+            "IKEA",
+            "Mömax",
+            "Jysk"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Schwedische Krone."
+          "a": 1,
+          "tip": "Der Name besteht aus den Initialen des Gründers und seines Heimatdorfes (I.K.E.A.).",
+          "exp": "IKEA ist das weltweit größte Möbelhandelsunternehmen."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Schweden?",
+          "q": "Welcher weltbekannte Möbelkonzern wurde von Ingvar Kamprad gegründet und vertreibt zerlegbare Möbel in blau-gelben Einrichtungshäusern?",
           "o": [
-            "IKEA-Möbel & Spotify-Musik",
-            "Olivenöl & Schifffahrt",
-            "Gorenje-Kühlschränke",
-            "rote Sportwagen von Ferrari"
+            "XXL Lutz",
+            "IKEA",
+            "Mömax",
+            "Jysk"
           ],
-          "a": 0,
-          "exp": "IKEA-Möbel & Spotify-Musik ist ein bekanntes Aushängeschild der Wirtschaft von Schweden."
+          "a": 1,
+          "tip": "Der Name besteht aus den Initialen des Gründers und seines Heimatdorfes (I.K.E.A.).",
+          "exp": "IKEA ist das weltweit größte Möbelhandelsunternehmen."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Schweden?",
+          "q": "Welcher Audio-Streaming-Dienst für Musik und Podcasts wurde 2006 in Stockholm gegründet?",
           "o": [
-            "Automobilbau (Volvo) und Stahl",
-            "Transport und Transitlogistik",
-            "internationale Tech-Konzerne (Google, Apple)",
-            "Tourismus auf den griechischen Inseln"
+            "Apple Music",
+            "Spotify",
+            "Deezer",
+            "Tidal"
           ],
-          "a": 0,
-          "exp": "Automobilbau (Volvo) und Stahl ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Das Logo ist grün mit drei schwarzen Schallwellen.",
+          "exp": "Spotify revolutionierte den weltweiten Musikvertrieb durch Streaming."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Schweden?",
+          "q": "Welcher Audio-Streaming-Dienst für Musik und Podcasts wurde 2006 in Stockholm gegründet?",
           "o": [
-            "IKEA-Möbel & Spotify-Musik",
-            "Olivenöl & Schifffahrt",
-            "Gorenje-Kühlschränke",
-            "rote Sportwagen von Ferrari"
+            "Apple Music",
+            "Spotify",
+            "Deezer",
+            "Tidal"
           ],
-          "a": 0,
-          "exp": "IKEA-Möbel & Spotify-Musik wurde in Schweden gegründet."
+          "a": 1,
+          "tip": "Das Logo ist grün mit drei schwarzen Schallwellen.",
+          "exp": "Spotify revolutionierte den weltweiten Musikvertrieb durch Streaming."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Schweden?",
+          "q": "Welcher LKW- und Bushersteller mit dem Greif-Logo gehört neben der Volvo Group zu den bekanntesten Nutzfahrzeugmarken des Landes?",
           "o": [
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "die Kurische Nehrung hat die größten Wanderdünen Europas"
+            "MAN",
+            "Scania",
+            "Iveco",
+            "DAF"
           ],
-          "a": 0,
-          "exp": "Fakt: die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab."
+          "a": 1,
+          "tip": "Der Name leitet sich von der historischen Provinz Schonen ab.",
+          "exp": "Scania ist einer der profitabelsten Schwer-LKW-Bauer der Welt."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Schweden?",
+          "q": "Welcher LKW- und Bushersteller mit dem Greif-Logo gehört neben der Volvo Group zu den bekanntesten Nutzfahrzeugmarken des Landes?",
           "o": [
-            "IKEA-Möbel & Spotify-Musik",
-            "Olivenöl & Schifffahrt",
-            "Gorenje-Kühlschränke",
-            "rote Sportwagen von Ferrari"
+            "MAN",
+            "Scania",
+            "Iveco",
+            "DAF"
           ],
-          "a": 0,
-          "exp": "Schweden exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Name leitet sich von der historischen Provinz Schonen ab.",
+          "exp": "Scania ist einer der profitabelsten Schwer-LKW-Bauer der Welt."
         }
       ]
     },
     "Slowakei": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Slowakei heute im Alltag?",
+          "q": "Welcher Industriezweig macht das Land zum weltweiten Spitzenreiter bei der Anzahl der produzierten Fahrzeuge pro Einwohner?",
           "o": [
-            "Slowakische Krone",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Der Schiffbau",
+            "Die Automobilindustrie",
+            "Der Flugzeugbau",
+            "Die Fahrradherstellung"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Slowakische Krone."
+          "a": 1,
+          "tip": "Große Werke von VW, Kia, Stellantis und Jaguar Land Rover stehen im Land.",
+          "exp": "Die Slowakei ist bezogen auf die Einwohnerzahl der größte Autohersteller weltweit."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Slowakei?",
+          "q": "Welcher Industriezweig macht das Land zum weltweiten Spitzenreiter bei der Anzahl der produzierten Fahrzeuge pro Einwohner?",
           "o": [
-            "Autoproduktion für VW, Kia und Jaguar",
-            "Ryanair-Flüge & Guinness-Bier",
-            "rote Sportwagen von Ferrari",
-            "LEGO-Bausteine"
+            "Der Schiffbau",
+            "Die Automobilindustrie",
+            "Der Flugzeugbau",
+            "Die Fahrradherstellung"
           ],
-          "a": 0,
-          "exp": "Autoproduktion für VW, Kia und Jaguar ist ein bekanntes Aushängeschild der Wirtschaft von Slowakei."
+          "a": 1,
+          "tip": "Große Werke von VW, Kia, Stellantis und Jaguar Land Rover stehen im Land.",
+          "exp": "Die Slowakei ist bezogen auf die Einwohnerzahl der größte Autohersteller weltweit."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Slowakei?",
+          "q": "Welches Cybersicherheitsunternehmen () hat seinen Hauptsitz in der Hauptstadt und entwickelt Antiviren-Software?",
           "o": [
-            "Automobilherstellung pro Kopf weltweit am höchsten",
-            "fortschrittliches e-Government",
-            "Holz- und Papierprodukte",
-            "internationale Tech-Konzerne (Google, Apple)"
+            "Kaspersky",
+            "ESET",
+            "Avast",
+            "Norton"
           ],
-          "a": 0,
-          "exp": "Automobilherstellung pro Kopf weltweit am höchsten ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Der Name besteht aus vier Buchstaben (ESET).",
+          "exp": "ESET schützt mit seiner Software Millionen Computer weltweit."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Slowakei?",
+          "q": "Welches Cybersicherheitsunternehmen () hat seinen Hauptsitz in der Hauptstadt und entwickelt Antiviren-Software?",
           "o": [
-            "Autoproduktion für VW, Kia und Jaguar",
-            "Ryanair-Flüge & Guinness-Bier",
-            "rote Sportwagen von Ferrari",
-            "LEGO-Bausteine"
+            "Kaspersky",
+            "ESET",
+            "Avast",
+            "Norton"
           ],
-          "a": 0,
-          "exp": "Autoproduktion für VW, Kia und Jaguar wurde in Slowakei gegründet."
+          "a": 1,
+          "tip": "Der Name besteht aus vier Buchstaben (ESET).",
+          "exp": "ESET schützt mit seiner Software Millionen Computer weltweit."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Slowakei?",
+          "q": "In welchem Jahr führte das Land den Euro ein und verabschiedete sich von der Krone?",
           "o": [
-            "trennte sich 1993 völlig friedlich von der Tschechischen Republik",
-            "Lew-Währung ist fest an die D-Mark/Euro gekoppelt",
-            "die Hauptstadt Riga hat eine weltbekannte Jugendstil-Altstadt",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet"
+            "2004",
+            "2009",
+            "2015",
+            "2020"
           ],
-          "a": 0,
-          "exp": "Fakt: trennte sich 1993 völlig friedlich von der Tschechischen Republik."
+          "a": 1,
+          "tip": "Es geschah genau fünf Jahre nach dem EU-Beitritt.",
+          "exp": "Die Slowakei führte am 1. Jänner 2009 die europäische Währung ein."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Slowakei?",
+          "q": "In welchem Jahr führte das Land den Euro ein und verabschiedete sich von der Krone?",
           "o": [
-            "Autoproduktion für VW, Kia und Jaguar",
-            "Ryanair-Flüge & Guinness-Bier",
-            "rote Sportwagen von Ferrari",
-            "LEGO-Bausteine"
+            "2004",
+            "2009",
+            "2015",
+            "2020"
           ],
-          "a": 0,
-          "exp": "Slowakei exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Es geschah genau fünf Jahre nach dem EU-Beitritt.",
+          "exp": "Die Slowakei führte am 1. Jänner 2009 die europäische Währung ein."
         }
       ]
     },
     "Slowenien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Slowenien heute im Alltag?",
+          "q": "Welcher internationale Hersteller von Haushaltsgeräten (u. a. Kühlschränke, Herdsets) stammt aus diesem Land und gehört heute zum Hisense-Konzern?",
           "o": [
-            "Slowenischer Tolar",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Bosch",
+            "Gorenje",
+            "Miele",
+            "Beko"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Slowenischer Tolar."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „G“.",
+          "exp": "Gorenje ist eine feste Marke für Haushaltsgeräte in ganz Europa."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Slowenien?",
+          "q": "Welcher internationale Hersteller von Haushaltsgeräten (u. a. Kühlschränke, Herdsets) stammt aus diesem Land und gehört heute zum Hisense-Konzern?",
           "o": [
-            "Gorenje-Kühlschränke",
-            "elektrische Hypercars von Rimac",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Zara-Kleidung (Inditex)"
+            "Bosch",
+            "Gorenje",
+            "Miele",
+            "Beko"
           ],
-          "a": 0,
-          "exp": "Gorenje-Kühlschränke ist ein bekanntes Aushängeschild der Wirtschaft von Slowenien."
+          "a": 1,
+          "tip": "Der Name beginnt mit dem Buchstaben „G“.",
+          "exp": "Gorenje ist eine feste Marke für Haushaltsgeräte in ganz Europa."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Slowenien?",
+          "q": "Welcher Pharma-Riese () aus der Stadt Novo Mesto gehört zu den führenden Herstellern von Generika-Medikamenten in Mitteleuropa?",
           "o": [
-            "pharmazeutische Generika-Industrie (Krka)",
-            "Biotechnologie und Lasertechnik",
-            "Blumenhandel (Aalsmeer)",
-            "Holz- und Papierprodukte"
+            "Krka",
+            "Novartis",
+            "Pfizer",
+            "Astra Zeneca"
           ],
           "a": 0,
-          "exp": "pharmazeutische Generika-Industrie (Krka) ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Der Name lautet genau wie ein bekannter Fluss und Nationalpark im Nachbarland Kroatien.",
+          "exp": "Krka exportiert Generika-Arzneimittel in über 70 Länder."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Slowenien?",
+          "q": "Welcher Pharma-Riese () aus der Stadt Novo Mesto gehört zu den führenden Herstellern von Generika-Medikamenten in Mitteleuropa?",
           "o": [
-            "Gorenje-Kühlschränke",
-            "elektrische Hypercars von Rimac",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Zara-Kleidung (Inditex)"
+            "Krka",
+            "Novartis",
+            "Pfizer",
+            "Astra Zeneca"
           ],
           "a": 0,
-          "exp": "Gorenje-Kühlschränke wurde in Slowenien gegründet."
+          "tip": "Der Name lautet genau wie ein bekannter Fluss und Nationalpark im Nachbarland Kroatien.",
+          "exp": "Krka exportiert Generika-Arzneimittel in über 70 Länder."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Slowenien?",
+          "q": "Welches Sportartikelunternehmen aus diesem Land ist weltberühmt für die Herstellung von Skiern und Yachten?",
           "o": [
-            "war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat",
-            "die Wähler lehnten den Euro 2003 in einer Volksabstimmung ab",
-            "die Römischen Verträge von 1957 wurden hier unterschrieben",
-            "Lappland gilt als Heimatort des Weihnachtsmanns"
+            "Atomic",
+            "Elan",
+            "Fischer",
+            "Head"
           ],
-          "a": 0,
-          "exp": "Fakt: war das erste Land des ehemaligen Jugoslawiens, das der EU beitrat."
+          "a": 1,
+          "tip": "Der Name hat nur vier Buchstaben und bedeutet übersetzt Schwung oder Begeisterung.",
+          "exp": "Elan gilt als Pionier beim Carving-Ski."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Slowenien?",
+          "q": "Welches Sportartikelunternehmen aus diesem Land ist weltberühmt für die Herstellung von Skiern und Yachten?",
           "o": [
-            "Gorenje-Kühlschränke",
-            "elektrische Hypercars von Rimac",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Zara-Kleidung (Inditex)"
+            "Atomic",
+            "Elan",
+            "Fischer",
+            "Head"
           ],
-          "a": 0,
-          "exp": "Slowenien exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Der Name hat nur vier Buchstaben und bedeutet übersetzt Schwung oder Begeisterung.",
+          "exp": "Elan gilt als Pionier beim Carving-Ski."
         }
       ]
     },
     "Spanien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Spanien heute im Alltag?",
+          "q": "Welcher internationale Modekonzern (Inditex) betreibt Modemarken wie Zara, Pull&Bear und Massimo Dutti?",
           "o": [
-            "Spanische Peseta",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "H&M",
+            "Inditex",
+            "Mango",
+            "Primark"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Spanische Peseta."
+          "a": 1,
+          "tip": "Der Gründer Amancio Ortega gehörte lange zu den reichsten Menschen der Welt.",
+          "exp": "Inditex ist einer der weltgrößten Mode-Filialisten."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Spanien?",
+          "q": "Welcher internationale Modekonzern (Inditex) betreibt Modemarken wie Zara, Pull&Bear und Massimo Dutti?",
           "o": [
-            "Zara-Kleidung (Inditex)",
-            "Red Bull Energy-Drinks",
-            "Olivenöl & Schifffahrt",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "H&M",
+            "Inditex",
+            "Mango",
+            "Primark"
           ],
-          "a": 0,
-          "exp": "Zara-Kleidung (Inditex) ist ein bekanntes Aushängeschild der Wirtschaft von Spanien."
+          "a": 1,
+          "tip": "Der Gründer Amancio Ortega gehörte lange zu den reichsten Menschen der Welt.",
+          "exp": "Inditex ist einer der weltgrößten Mode-Filialisten."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Spanien?",
+          "q": "Welches Finanzinstitut (Banco Santander) gehört zu den größten und wertvollsten Bankengruppen in der gesamten Eurozone?",
           "o": [
-            "Obst- und Gemüseexporte ('Gewächshaus Europas')",
-            "Biotechnologie und Lasertechnik",
-            "Holz- und Papierprodukte",
-            "Blumenhandel (Aalsmeer)"
+            "Deutsche Bank",
+            "Banco Santander",
+            "BNP Paribas",
+            "ING"
           ],
-          "a": 0,
-          "exp": "Obst- und Gemüseexporte ('Gewächshaus Europas') ist eine wichtige tragende Säule der Wirtschaft."
+          "a": 1,
+          "tip": "Das Firmenlogo zeigt eine rote Flamme.",
+          "exp": "Santander ist die größte Bank Spaniens und stark im Privatkundengeschäft."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Spanien?",
+          "q": "Welches Finanzinstitut (Banco Santander) gehört zu den größten und wertvollsten Bankengruppen in der gesamten Eurozone?",
           "o": [
-            "Zara-Kleidung (Inditex)",
-            "Red Bull Energy-Drinks",
-            "Olivenöl & Schifffahrt",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "Deutsche Bank",
+            "Banco Santander",
+            "BNP Paribas",
+            "ING"
           ],
-          "a": 0,
-          "exp": "Zara-Kleidung (Inditex) wurde in Spanien gegründet."
+          "a": 1,
+          "tip": "Das Firmenlogo zeigt eine rote Flamme.",
+          "exp": "Santander ist die größte Bank Spaniens und stark im Privatkundengeschäft."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Spanien?",
+          "q": "Welche Automarke gehört zum Volkswagen-Konzern und hat ihren Hauptsitz in Martorell nahe Barcelona?",
           "o": [
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "muss EU-Verträge verfassungsgemäß per Volksabstimmung beschließen",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte"
+            "SEAT",
+            "Fiat",
+            "Renault",
+            "Peugeot"
           ],
           "a": 0,
-          "exp": "Fakt: Mallorca und Ibiza gehören politisch zu diesem EU-Staat."
+          "tip": "Die sportliche Submarke heißt „Cupra“.",
+          "exp": "SEAT wurde 1950 gegründet und gehört seit 1986 zu VW."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Spanien?",
+          "q": "Welche Automarke gehört zum Volkswagen-Konzern und hat ihren Hauptsitz in Martorell nahe Barcelona?",
           "o": [
-            "Zara-Kleidung (Inditex)",
-            "Red Bull Energy-Drinks",
-            "Olivenöl & Schifffahrt",
-            "Autoproduktion für VW, Kia und Jaguar"
+            "SEAT",
+            "Fiat",
+            "Renault",
+            "Peugeot"
           ],
           "a": 0,
-          "exp": "Spanien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Die sportliche Submarke heißt „Cupra“.",
+          "exp": "SEAT wurde 1950 gegründet und gehört seit 1986 zu VW."
         }
       ]
     },
     "Tschechien": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Tschechien heute im Alltag?",
+          "q": "Welcher traditionsreiche Automobilhersteller aus Mladá Boleslav gehört seit 1991 zum Volkswagen-Konzern?",
           "o": [
-            "Tschechische Krone",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Tatra",
+            "Škoda",
+            "Trabant",
+            "Wartburg"
           ],
-          "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Tschechische Krone."
+          "a": 1,
+          "tip": "Das Logo stellt einen geflügelten Pfeil dar.",
+          "exp": "Škoda ist einer der ältesten noch produzierenden Autobauer der Welt."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Tschechien?",
+          "q": "Welcher traditionsreiche Automobilhersteller aus Mladá Boleslav gehört seit 1991 zum Volkswagen-Konzern?",
           "o": [
-            "Skoda-Autos & Pilsner Bier",
-            "airBaltic-Flüge & Holzexporte",
-            "feine Pralinen",
-            "Red Bull Energy-Drinks"
+            "Tatra",
+            "Škoda",
+            "Trabant",
+            "Wartburg"
           ],
-          "a": 0,
-          "exp": "Skoda-Autos & Pilsner Bier ist ein bekanntes Aushängeschild der Wirtschaft von Tschechien."
+          "a": 1,
+          "tip": "Das Logo stellt einen geflügelten Pfeil dar.",
+          "exp": "Škoda ist einer der ältesten noch produzierenden Autobauer der Welt."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Tschechien?",
+          "q": "Welches berühmte Produkt macht die Stadt Pilsen (Plzeň) zu einer weltbekannten Legende im Getränkesektor?",
           "o": [
-            "Maschinenbau und Automobilzulieferung",
-            "Automobilwerke (Audi, Suzuki) und Elektronik",
-            "Adria-Tourismus",
-            "Blumenhandel (Aalsmeer)"
+            "Pilsner Urquell",
+            "Champagner",
+            "Whisky",
+            "Gin"
           ],
           "a": 0,
-          "exp": "Maschinenbau und Automobilzulieferung ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Es begründete die weltweit am häufigsten gebraute Bierart.",
+          "exp": "Das helle Lagerbier Pilsner Urquell wird seit 1842 gebraut."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Tschechien?",
+          "q": "Welches berühmte Produkt macht die Stadt Pilsen (Plzeň) zu einer weltbekannten Legende im Getränkesektor?",
           "o": [
-            "Skoda-Autos & Pilsner Bier",
-            "airBaltic-Flüge & Holzexporte",
-            "feine Pralinen",
-            "Red Bull Energy-Drinks"
+            "Pilsner Urquell",
+            "Champagner",
+            "Whisky",
+            "Gin"
           ],
           "a": 0,
-          "exp": "Skoda-Autos & Pilsner Bier wurde in Tschechien gegründet."
+          "tip": "Es begründete die weltweit am häufigsten gebraute Bierart.",
+          "exp": "Das helle Lagerbier Pilsner Urquell wird seit 1842 gebraut."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Tschechien?",
+          "q": "Welches Sicherheitsunternehmen für Cybersicherheit () wurde in Prag gegründet und schützte Millionen PCs vor Viren?",
           "o": [
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "das Schengener Abkommen wurde in einem luxemburgischen Dorf unterzeichnet",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen",
-            "war 2007 das erste EU-Land, das das Wahlalter auf 16 Jahre senkte"
+            "Avast",
+            "Bitdefender",
+            "McAfee",
+            "Sophos"
           ],
           "a": 0,
-          "exp": "Fakt: die historische Region Böhmen macht den Hauptteil des Landes aus."
+          "tip": "Der Name beginnt mit den Buchstaben „Av-“.",
+          "exp": "Avast wurde durch kostenlose Virenscanner weltbekannt."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Tschechien?",
+          "q": "Welches Sicherheitsunternehmen für Cybersicherheit () wurde in Prag gegründet und schützte Millionen PCs vor Viren?",
           "o": [
-            "Skoda-Autos & Pilsner Bier",
-            "airBaltic-Flüge & Holzexporte",
-            "feine Pralinen",
-            "Red Bull Energy-Drinks"
+            "Avast",
+            "Bitdefender",
+            "McAfee",
+            "Sophos"
           ],
           "a": 0,
-          "exp": "Tschechien exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Name beginnt mit den Buchstaben „Av-“.",
+          "exp": "Avast wurde durch kostenlose Virenscanner weltbekannt."
         }
       ]
     },
     "Ungarn": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Ungarn heute im Alltag?",
+          "q": "Welcher Bereich der Fertigung hat in Städten wie Kecskemét (Mercedes), Győr (Audi) und Debrecen (BMW) tausende Arbeitsplätze geschaffen?",
           "o": [
-            "Ungarischen Forint",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Die Automobil- und Motorenfertigung",
+            "Die Uhrenmanufaktur",
+            "Die Textilweberei",
+            "Die Halbleiterfertigung"
           ],
           "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Ungarischen Forint."
+          "tip": "Das Land baut viele Verbrennungs- und Elektromotoren für deutsche Premium-Marken.",
+          "exp": "Die Automobilproduktion ist ein dominanter Zweig der ungarischen Industrie."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Ungarn?",
+          "q": "Welcher Bereich der Fertigung hat in Städten wie Kecskemét (Mercedes), Győr (Audi) und Debrecen (BMW) tausende Arbeitsplätze geschaffen?",
           "o": [
-            "Tokajer-Süßwein & Rubik's Zauberwürfel",
-            "duftendes Rosenöl",
-            "feine Pralinen",
-            "Naturkorken für Weinflaschen"
+            "Die Automobil- und Motorenfertigung",
+            "Die Uhrenmanufaktur",
+            "Die Textilweberei",
+            "Die Halbleiterfertigung"
           ],
           "a": 0,
-          "exp": "Tokajer-Süßwein & Rubik's Zauberwürfel ist ein bekanntes Aushängeschild der Wirtschaft von Ungarn."
+          "tip": "Das Land baut viele Verbrennungs- und Elektromotoren für deutsche Premium-Marken.",
+          "exp": "Die Automobilproduktion ist ein dominanter Zweig der ungarischen Industrie."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Ungarn?",
+          "q": "Wie heißt die eigene Landeswährung, die der Staat trotz Mitgliedschaft in der Europäischen Union weiterhin nutzt?",
           "o": [
-            "Automobilwerke (Audi, Suzuki) und Elektronik",
-            "Finanzdienstleistungen und Reedereien",
-            "pharmazeutische Generika-Industrie (Krka)",
-            "internationale Tech-Konzerne (Google, Apple)"
+            "Forint",
+            "Złoty",
+            "Krone",
+            "Lei"
           ],
           "a": 0,
-          "exp": "Automobilwerke (Audi, Suzuki) und Elektronik ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Die internationale Abkürzung lautet HUF.",
+          "exp": "Ungarn bezahlt weiterhin mit dem ungarischen Forint."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Ungarn?",
+          "q": "Wie heißt die eigene Landeswährung, die der Staat trotz Mitgliedschaft in der Europäischen Union weiterhin nutzt?",
           "o": [
-            "Tokajer-Süßwein & Rubik's Zauberwürfel",
-            "duftendes Rosenöl",
-            "feine Pralinen",
-            "Naturkorken für Weinflaschen"
+            "Forint",
+            "Złoty",
+            "Krone",
+            "Lei"
           ],
           "a": 0,
-          "exp": "Tokajer-Süßwein & Rubik's Zauberwürfel wurde in Ungarn gegründet."
+          "tip": "Die internationale Abkürzung lautet HUF.",
+          "exp": "Ungarn bezahlt weiterhin mit dem ungarischen Forint."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Ungarn?",
+          "q": "Welcher Pharma-Konzern () aus der Hauptstadt gehört zu den ältesten und bedeutendsten Herstellern von Arzneimitteln in Osteuropa?",
           "o": [
-            "der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas",
-            "die historische Region Böhmen macht den Hauptteil des Landes aus",
-            "ist das bevölkerungsreichste osteuropäische EU-Mitgliedsland",
-            "Mallorca und Ibiza gehören politisch zu diesem EU-Staat"
+            "Richter Gedeon",
+            "Sanofi",
+            "Sandoz",
+            "Zentiva"
           ],
           "a": 0,
-          "exp": "Fakt: der Plattensee (Balaton) ist der größte Binnensee Mitteleuropas."
+          "tip": "Der Name trägt den Vornamen und Nachnamen des Firmengründers.",
+          "exp": "Gedeon Richter wurde 1901 gegründet und stellt vor allem Gynäkologika her."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Ungarn?",
+          "q": "Welcher Pharma-Konzern () aus der Hauptstadt gehört zu den ältesten und bedeutendsten Herstellern von Arzneimitteln in Osteuropa?",
           "o": [
-            "Tokajer-Süßwein & Rubik's Zauberwürfel",
-            "duftendes Rosenöl",
-            "feine Pralinen",
-            "Naturkorken für Weinflaschen"
+            "Richter Gedeon",
+            "Sanofi",
+            "Sandoz",
+            "Zentiva"
           ],
           "a": 0,
-          "exp": "Ungarn exportiert dieses Gut in die gesamte Europäische Union."
+          "tip": "Der Name trägt den Vornamen und Nachnamen des Firmengründers.",
+          "exp": "Gedeon Richter wurde 1901 gegründet und stellt vor allem Gynäkologika her."
         }
       ]
     },
     "Zypern": {
       "1": [
         {
-          "q": "Welche Landeswährung nutzt Zypern heute im Alltag?",
+          "q": "Welcher Wirtschaftszweig im Dienstleistungssektor profitierte lange Zeit von niedrigen Steuern und zog viele ausländische Anleger und Unternehmen an?",
           "o": [
-            "Zypern-Pfund",
-            "Pfund",
-            "Dollar",
-            "Yen"
+            "Der Offshore-Finanz- und Treuhandsektor",
+            "Die Schwerindustrie",
+            "Die Automobilfertigung",
+            "Die Raumfahrt"
           ],
           "a": 0,
-          "exp": "Das Land zahlt weiterhin mit seiner Landeswährung: Zypern-Pfund."
+          "tip": "Es geht um Bankkonten, Firmenregistrierungen und Finanzberatung.",
+          "exp": "Zypern zog durch niedrige Steuersätze viele Treuhandgeschäfte an."
         },
         {
-          "q": "Welche weltweit bekannte Marke oder welches Exportprodukt stammt aus Zypern?",
+          "q": "Welcher Wirtschaftszweig im Dienstleistungssektor profitierte lange Zeit von niedrigen Steuern und zog viele ausländische Anleger und Unternehmen an?",
           "o": [
-            "Schiffsregister & Tourismus",
-            "Investmentfonds & Frachtflüge",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Zara-Kleidung (Inditex)"
+            "Der Offshore-Finanz- und Treuhandsektor",
+            "Die Schwerindustrie",
+            "Die Automobilfertigung",
+            "Die Raumfahrt"
           ],
           "a": 0,
-          "exp": "Schiffsregister & Tourismus ist ein bekanntes Aushängeschild der Wirtschaft von Zypern."
+          "tip": "Es geht um Bankkonten, Firmenregistrierungen und Finanzberatung.",
+          "exp": "Zypern zog durch niedrige Steuersätze viele Treuhandgeschäfte an."
         }
       ],
       "2": [
         {
-          "q": "Welcher Wirtschaftszweig ist von großer Bedeutung für Zypern?",
+          "q": "Welcher Sektor profitiert vom extrem sonnigen Wetter im Mittelmeer und den Sandstränden wie in Ayia Napa?",
           "o": [
-            "Finanzdienstleistungen und Reedereien",
-            "Biotechnologie und Lasertechnik",
-            "pharmazeutische Generika-Industrie (Krka)",
-            "Maschinenbau und Chemie"
+            "Der Tourismus",
+            "Der Wintersport",
+            "Die Holzfällerei",
+            "Die Kohleförderung"
           ],
           "a": 0,
-          "exp": "Finanzdienstleistungen und Reedereien ist eine wichtige tragende Säule der Wirtschaft."
+          "tip": "Er bildet das Rückgrat der Wirtschaft auf der Insel.",
+          "exp": "Der Tourismus ist die Haupteinnahmequelle Zyperns."
         },
         {
-          "q": "Welcher bekannte europäische Konzern bzw. welches Exportgut stammt aus Zypern?",
+          "q": "Welcher Sektor profitiert vom extrem sonnigen Wetter im Mittelmeer und den Sandstränden wie in Ayia Napa?",
           "o": [
-            "Schiffsregister & Tourismus",
-            "Investmentfonds & Frachtflüge",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Zara-Kleidung (Inditex)"
+            "Der Tourismus",
+            "Der Wintersport",
+            "Die Holzfällerei",
+            "Die Kohleförderung"
           ],
           "a": 0,
-          "exp": "Schiffsregister & Tourismus wurde in Zypern gegründet."
+          "tip": "Er bildet das Rückgrat der Wirtschaft auf der Insel.",
+          "exp": "Der Tourismus ist die Haupteinnahmequelle Zyperns."
         }
       ],
       "3": [
         {
-          "q": "Welcher Wirtschaftsfakt oder welche steuerliche Besonderheit gilt für Zypern?",
+          "q": "In welchem Jahr führte die Insel den Euro ein und ersetzte damit das Pfund?",
           "o": [
-            "ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist",
-            "ein Viertel des Landes liegt unter dem Meeresspiegel",
-            "besitzt drei Opt-outs (Ausnahmen) von EU-Verträgen",
-            "Sitz des Europäischen Gerichtshofs ist hier nicht, aber dafür fast alle EU-Politiker-Zentralen"
+            "2004",
+            "2008",
+            "2013",
+            "2018"
           ],
-          "a": 0,
-          "exp": "Fakt: ist eine politisch geteilte Insel, wobei der Norden vom Süden getrennt ist."
+          "a": 1,
+          "tip": "Es war exakt vier Jahre nach dem EU-Beitritt (zeitgleich mit Malta).",
+          "exp": "Zypern trat am 1. Jänner 2008 der Eurozone bei."
         },
         {
-          "q": "Welches Produkt gehört zu den wichtigsten wirtschaftlichen Exportgütern von Zypern?",
+          "q": "In welchem Jahr führte die Insel den Euro ein und ersetzte damit das Pfund?",
           "o": [
-            "Schiffsregister & Tourismus",
-            "Investmentfonds & Frachtflüge",
-            "Luxusartikel von Louis Vuitton oder Chanel",
-            "Zara-Kleidung (Inditex)"
+            "2004",
+            "2008",
+            "2013",
+            "2018"
           ],
-          "a": 0,
-          "exp": "Zypern exportiert dieses Gut in die gesamte Europäische Union."
+          "a": 1,
+          "tip": "Es war exakt vier Jahre nach dem EU-Beitritt (zeitgleich mit Malta).",
+          "exp": "Zypern trat am 1. Jänner 2008 der Eurozone bei."
         }
       ]
     }
