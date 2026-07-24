@@ -79,7 +79,8 @@ function initSPMultiplayerSetup() {
     teams.push({
       name: val,
       score: 0,
-      jokers: jokers
+      jokers: jokers,
+      tipsLeft: 2
     });
   }
   
@@ -106,7 +107,8 @@ function initSPMultiplayerSetup() {
       isBot: true,
       difficulty: botDiff,
       simulate: document.getElementById('setup-bot-simulate').checked,
-      jokers: botJokers
+      jokers: botJokers,
+      tipsLeft: 2
     });
   }
   
@@ -415,7 +417,8 @@ function initSinglePlayerGame() {
   teams = [{
     name: "Spieler",
     score: 0,
-    jokers: spJokers
+    jokers: spJokers,
+    tipsLeft: 2
   }];
   activeTeam = 0;
   
@@ -509,6 +512,29 @@ function openRapidFireQuestion() {
   document.getElementById('diff-buttons').style.display = 'none';
   document.getElementById('q-area').style.display = 'block';
   document.getElementById('q-text').innerText = qData.q;
+
+  // Handle Dropdown Hint Menu for Level 2 & 3
+  const tipContainer = document.getElementById('q-tip-container');
+  if (tipContainer) {
+    if (qData.tip && qData.lvl > 1) {
+      document.getElementById('q-tip-text').innerText = qData.tip;
+      document.getElementById('q-tip-text').style.display = 'none';
+      const arrow = document.getElementById('q-tip-arrow');
+      if (arrow) arrow.style.transform = 'rotate(0deg)';
+      tipOpenedForCurrentQuestion = false;
+
+      const currentTeamObj = (teams && teams[activeTeam]) ? teams[activeTeam] : null;
+      if (currentTeamObj) {
+        if (currentTeamObj.tipsLeft === undefined) currentTeamObj.tipsLeft = 2;
+        const countEl = document.getElementById('q-tip-count');
+        if (countEl) countEl.innerText = currentTeamObj.tipsLeft;
+      }
+      tipContainer.style.display = 'block';
+    } else {
+      tipContainer.style.display = 'none';
+    }
+  }
+
   document.getElementById('next-btn').style.display = 'none';
   document.getElementById('txt-cancel').style.display = 'none';
   document.getElementById('class-joker-container').style.display = 'none';
@@ -611,7 +637,8 @@ function initFlagsGame() {
   teams = [{
     name: "Spieler",
     score: 0,
-    jokers: { fiftyFifty: 0, class: 0, rescue: 0, swap: 0, revive: 0 }
+    jokers: { fiftyFifty: 0, class: 0, rescue: 0, swap: 0, revive: 0 },
+    tipsLeft: 2
   }];
   activeTeam = 0;
   
