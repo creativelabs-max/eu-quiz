@@ -749,9 +749,6 @@ function initFirebase() {
     if (!firebase.apps.length) {
       firebase.initializeApp(config);
     }
-    if (typeof firebase.analytics === 'function') {
-      firebase.analytics();
-    }
     mpDatabase = firebase.database();
     
     // Auto-Anonymous Sign In
@@ -1675,7 +1672,7 @@ function mpPlayerJoin() {
     const roomRef = mpDatabase.ref('rooms/' + code);
     const playerRef = roomRef.child('players/' + playerId);
     
-    // First, write the player slot in the database (this verifies the room code exists and auth matches player UID)
+    // 1. Write the player slot first (this puts us in the players list, granting us read permission under rules)
     return playerRef.set({
       name: name,
       score: 0,
@@ -1683,27 +1680,23 @@ function mpPlayerJoin() {
       answerTime: 0,
       lastCorrect: false
     }).then(() => {
-      // Successfully joined!
-      mpPlayerId = playerId;
-      mpRoomCode = code;
-      mpIsHost = false;
-      mpRoomRef = roomRef;
-      
-      playerRef.onDisconnect().remove();
-      
-      // Now read the room once to check the room type
-      roomRef.once('value', snapshot => {
-        if (!snapshot.exists()) {
-          err.innerText = "Dieser Raum existiert nicht mehr.";
-          err.style.display = 'block';
-          sounds.playError();
-          playerRef.remove();
-          return;
-        }
-        
+      // 2. Now read the room (which we now have permission to read)
+      return roomRef.once('value').then(snapshot => {
         const room = snapshot.val();
         
-        // CHECK FOR DUPLICATE NAME:
+        // 3. Verify if the room actually exists and has a host (if hostId is missing, it was a wrong code!)
+        if (!snapshot.exists() || !room || !room.hostId) {
+          playerRef.remove(); // Clean up the phantom room
+          throw new Error("ROOM_NOT_FOUND");
+        }
+        
+        // 4. Verify game state
+        if (room.state !== 'lobby') {
+          playerRef.remove();
+          throw new Error("GAME_ALREADY_STARTED");
+        }
+        
+        // 5. Check for duplicate name
         const playersMap = room.players || {};
         let nameExists = false;
         for (let pid in playersMap) {
@@ -1712,19 +1705,18 @@ function mpPlayerJoin() {
             break;
           }
         }
-        
         if (nameExists) {
           playerRef.remove();
-          mpPlayerId = null;
-          mpRoomCode = null;
-          mpIsHost = false;
-          mpRoomRef = null;
-          
-          err.innerText = "Dieser Name ist in diesem Raum bereits vergeben. Bitte wähle einen anderen Namen.";
-          err.style.display = 'block';
-          sounds.playError();
-          return;
+          throw new Error("DUPLICATE_NAME");
         }
+        
+        // Successfully joined!
+        mpPlayerId = playerId;
+        mpRoomCode = code;
+        mpIsHost = false;
+        mpRoomRef = roomRef;
+        
+        playerRef.onDisconnect().remove();
         
         document.getElementById('mp-player-lobby-name').innerText = name;
         document.getElementById('mp-player-lobby-code').innerText = code;
@@ -1743,7 +1735,15 @@ function mpPlayerJoin() {
     });
   }).catch(error => {
     console.error("Fehler beim Beitreten:", error);
-    err.innerText = "Beitritt verweigert. Code falsch, Raum voll oder Spiel läuft bereits.";
+    if (error.message === "ROOM_NOT_FOUND") {
+      err.innerText = "Dieser Raum existiert nicht. Bitte Code überprüfen.";
+    } else if (error.message === "GAME_ALREADY_STARTED") {
+      err.innerText = "Das Spiel in diesem Raum läuft bereits.";
+    } else if (error.message === "DUPLICATE_NAME") {
+      err.innerText = "Dieser Name ist in diesem Raum bereits vergeben.";
+    } else {
+      err.innerText = "Beitritt verweigert. Code falsch, Raum voll oder Verbindungsproblem.";
+    }
     err.style.display = 'block';
     sounds.playError();
   });
