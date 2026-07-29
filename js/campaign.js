@@ -637,24 +637,31 @@ function setupQuestionUI(qData, lvl) {
     }
   }
 
-  const team = teams[activeTeam];
+  const team = (teams && teams[activeTeam]) ? teams[activeTeam] : { name: "Team 1", jokers: { fiftyFifty: 0, class: 0, rescue: 0 } };
+  const jokers = (team && team.jokers) ? team.jokers : { fiftyFifty: 0, class: 0, rescue: 0 };
   const arsenal = document.getElementById('joker-arsenal');
-  const anyJoker = (allow50 && team.jokers.fiftyFifty > 0) || 
-                   (allowClass && team.jokers.class > 0) || 
-                   (allowRescue && team.jokers.rescue > 0);
-  arsenal.style.display = anyJoker ? 'flex' : 'none';
+  const anyJoker = (allow50 && jokers.fiftyFifty > 0) || 
+                   (allowClass && jokers.class > 0) || 
+                   (allowRescue && jokers.rescue > 0);
+  if (arsenal) arsenal.style.display = anyJoker ? 'flex' : 'none';
   
   const j50 = document.getElementById('joker-5050');
-  j50.style.display = (allow50 && team.jokers.fiftyFifty > 0) ? 'inline-flex' : 'none';
-  j50.innerText = `50:50 Joker (${team.jokers.fiftyFifty}x) (-1pt)`;
+  if (j50) {
+    j50.style.display = (allow50 && jokers.fiftyFifty > 0) ? 'inline-flex' : 'none';
+    j50.innerText = `50:50 Joker (${jokers.fiftyFifty || 0}x) (-1pt)`;
+  }
   
   const jcl = document.getElementById('joker-class');
-  jcl.style.display = (allowClass && team.jokers.class > 0) ? 'inline-flex' : 'none';
-  jcl.innerText = `Klassen-Umfrage (${team.jokers.class}x) (-1pt)`;
+  if (jcl) {
+    jcl.style.display = (allowClass && jokers.class > 0) ? 'inline-flex' : 'none';
+    jcl.innerText = `Klassen-Umfrage (${jokers.class || 0}x) (-1pt)`;
+  }
   
   const jre = document.getElementById('joker-rescue');
-  jre.style.display = (allowRescue && team.jokers.rescue > 0) ? 'inline-flex' : 'none';
-  jre.innerText = `Retter-Joker (${team.jokers.rescue}x) (-1pt)`;
+  if (jre) {
+    jre.style.display = (allowRescue && jokers.rescue > 0) ? 'inline-flex' : 'none';
+    jre.innerText = `Retter-Joker (${jokers.rescue || 0}x) (-1pt)`;
+  }
 
   // Alles oder Nichts visual indicator (Level III only)
   const riskContainer = document.getElementById('risk-container');
