@@ -787,10 +787,9 @@ function setUiLock(locked) {
 }
 
 window.addEventListener('load', () => {
-  // Check URL parameters for direct room code join
   const urlParams = new URLSearchParams(window.location.search);
   const roomCode = urlParams.get('room');
-  if (roomCode && roomCode.length === 6 && !isNaN(roomCode)) {
+  if (roomCode && roomCode.length >= 4 && roomCode.length <= 6 && !isNaN(roomCode)) {
     setTimeout(() => {
       if (typeof mpShowJoinScreenDirect === 'function') {
         mpShowJoinScreenDirect();
