@@ -43,6 +43,7 @@ function duelBackToModeSelect() {
 
 function duelStartGame() {
   sounds.init();
+  if (typeof trackLifetimeGameStarted === 'function') trackLifetimeGameStarted();
   
   if (duelModeType === 'mobile') {
     duelP1Name = (duelMobilePlayers.player1 && duelMobilePlayers.player1.name) || "Spieler 1";
@@ -160,13 +161,16 @@ function duelLoadQuestion() {
   document.getElementById('duel-status-banner').style.color = 'var(--accent)';
   
   const grid = document.getElementById('duel-options-grid');
-  grid.style.opacity = '0.5';
+  grid.style.opacity = '1';
   grid.style.pointerEvents = 'none';
   
   for (let i = 0; i < 4; i++) {
     const optDiv = document.getElementById('duel-opt-' + i);
-    optDiv.style.background = 'var(--card-bg)';
-    optDiv.style.borderColor = 'var(--card-border)';
+    if (optDiv) {
+      optDiv.classList.remove('correct', 'wrong');
+      optDiv.style.background = '';
+      optDiv.style.borderColor = '';
+    }
   }
   
   document.getElementById('duel-next-btn').style.display = 'none';
@@ -178,10 +182,10 @@ function duelLoadQuestion() {
   duelCurrentQuestion = shuffleQuestionOptions(rawQ);
   
   if (duelModeType === 'mobile') {
-    duelRoomRef.child('answerSubmitted').remove();
-    duelRoomRef.child('buzzerOwner').remove();
-    duelRoomRef.child('stealPossible').remove();
     duelRoomRef.update({
+      answerSubmitted: null,
+      buzzerOwner: null,
+      stealPossible: null,
       currentQuestion: {
         categoryName: mpGetCategoryName(rawQ.category),
         q: duelCurrentQuestion.q,
@@ -443,13 +447,12 @@ function duelEvaluateAnswer(isCorrect, ansIdx) {
         const timeoutMsg = isBuzzerTimeout ? `⏳ Zeit abgelaufen! ${otherName} kann am Handy abstauben!` : `❌ Falsch! ${otherName} kann am Handy abstauben!`;
         document.getElementById('duel-status-banner').innerText = timeoutMsg;
         
-        duelRoomRef.child('buzzerOwner').remove();
-        duelRoomRef.child('answerSubmitted').remove();
         duelRoomRef.update({
+          buzzerOwner: otherPlayerId,
+          answerSubmitted: null,
           stealPossible: true,
           allowedPlayerId: otherPlayerId,
           answerStatus: 'steal',
-          buzzerOwner: otherPlayerId,
           'currentQuestion/buzzerOwner': otherPlayerId,
           'currentQuestion/stealPossible': true,
           'currentQuestion/allowedPlayerId': otherPlayerId,
@@ -534,12 +537,14 @@ function duelRevealAnswer(isTimeout) {
   // Highlight correct and wrong options
   for (let i = 0; i < 4; i++) {
     const optDiv = document.getElementById('duel-opt-' + i);
-    if (i === correctIdx) {
-      optDiv.style.background = 'rgba(16, 185, 129, 0.15)';
-      optDiv.style.borderColor = 'var(--success)';
-    } else {
-      optDiv.style.background = 'rgba(244, 63, 94, 0.05)';
-      optDiv.style.borderColor = 'rgba(244, 63, 94, 0.2)';
+    if (optDiv) {
+      if (i === correctIdx) {
+        optDiv.classList.add('correct');
+      } else {
+        optDiv.classList.add('wrong');
+      }
+      optDiv.style.background = '';
+      optDiv.style.borderColor = '';
     }
   }
   
@@ -718,14 +723,14 @@ let mpBotTimeout = null;
 
 function initFirebase() {
   if (mpDatabase) return true;
-  let configStr = localStorage.getItem('mp_firebase_config');
+  let configStr = safeLocalStorage.getItem('mp_firebase_config');
   let config = null;
   
   if (configStr) {
     try {
       config = JSON.parse(configStr);
     } catch (e) {
-      console.warn("Ungültige Firebase-Konfiguration im localStorage. Nutze Standard...");
+      console.warn("Ungültige Firebase-Konfiguration im safeLocalStorage. Nutze Standard...");
     }
   }
   
@@ -1009,7 +1014,7 @@ function mpBackToModeSelect() {
 
 function mpShowConfigModal() {
   sounds.playClick();
-  const config = localStorage.getItem('mp_firebase_config') || "";
+  const config = safeLocalStorage.getItem('mp_firebase_config') || "";
   document.getElementById('mp-config-input').value = config;
   document.getElementById('mp-config-status').style.display = 'none';
   document.getElementById('mp-config-modal').style.display = 'flex';
@@ -1027,7 +1032,7 @@ function mpSaveConfig() {
   status.style.display = 'block';
   
   if (input === "") {
-    localStorage.removeItem('mp_firebase_config');
+    safeLocalStorage.removeItem('mp_firebase_config');
     status.innerText = "Konfiguration gelöscht.";
     status.style.color = "var(--text-secondary)";
     setTimeout(mpCloseConfigModal, 1000);
@@ -1039,7 +1044,7 @@ function mpSaveConfig() {
     if (!config.databaseURL || !config.apiKey || !config.projectId) {
       throw new Error("Fehlende Pflichtfelder (apiKey, databaseURL, projectId).");
     }
-    localStorage.setItem('mp_firebase_config', JSON.stringify(config, null, 2));
+    safeLocalStorage.setItem('mp_firebase_config', JSON.stringify(config, null, 2));
     status.innerText = "Erfolgreich gespeichert! Firebase initialisiert.";
     status.style.color = "var(--success)";
     mpDatabase = null; // Force re-init on next call
@@ -1168,6 +1173,7 @@ function mpHostCancel() {
 
 function mpHostStartGame() {
   sounds.playSuccess();
+  if (typeof trackLifetimeGameStarted === 'function') trackLifetimeGameStarted();
   if (!mpRoomRef) return;
   
   // Read current settings from select fields
@@ -1237,9 +1243,12 @@ function mpHostLoadQuestion(index) {
       
       for (let i = 0; i < 4; i++) {
         const optDiv = document.getElementById('mp-host-opt-' + i);
-        optDiv.querySelector('.opt-text').innerText = qData.o[i];
-        optDiv.style.background = 'var(--card-bg)';
-        optDiv.style.borderColor = 'var(--card-border)';
+        if (optDiv) {
+          optDiv.querySelector('.opt-text').innerText = qData.o[i];
+          optDiv.classList.remove('correct', 'wrong');
+          optDiv.style.background = '';
+          optDiv.style.borderColor = '';
+        }
       }
       
       document.getElementById('mp-host-lobby-screen').style.display = 'none';
@@ -1373,12 +1382,14 @@ function mpHostRevealAnswer() {
   
   for (let i = 0; i < 4; i++) {
     const optDiv = document.getElementById('mp-host-opt-' + i);
-    if (i === correctIdx) {
-      optDiv.style.background = 'rgba(16, 185, 129, 0.15)';
-      optDiv.style.borderColor = 'var(--success)';
-    } else {
-      optDiv.style.background = 'rgba(244, 63, 94, 0.05)';
-      optDiv.style.borderColor = 'rgba(244, 63, 94, 0.2)';
+    if (optDiv) {
+      if (i === correctIdx) {
+        optDiv.classList.add('correct');
+      } else {
+        optDiv.classList.add('wrong');
+      }
+      optDiv.style.background = '';
+      optDiv.style.borderColor = '';
     }
   }
   
@@ -1993,17 +2004,110 @@ let speechUtterance = null;
 
 function openAccessibilityPanel() {
   sounds.playClick();
-  document.getElementById('accessibility-modal').style.display = 'flex';
+  const modal = document.getElementById('accessibility-modal');
+  if (modal) {
+    const btn = document.getElementById('accessibility-toggle-btn');
+    const panel = modal.querySelector('.control-center-panel');
+    if (btn && panel) {
+      const btnRect = btn.getBoundingClientRect();
+      
+      // Temporarily display flex to measure the panel's client coordinates accurately
+      modal.style.display = 'flex';
+      const panelRect = panel.getBoundingClientRect();
+      
+      // Calculate coordinates of the button relative to the panel
+      const clickX = btnRect.left + (btnRect.width / 2);
+      const clickY = btnRect.top + (btnRect.height / 2);
+      
+      const relX = clickX - panelRect.left;
+      const relY = clickY - panelRect.top;
+      
+      panel.style.transformOrigin = `${relX}px ${relY}px`;
+    }
+    
+    modal.classList.remove('cc-overlay-animate-out');
+    modal.classList.add('cc-overlay-animate-in');
+    modal.style.display = 'flex';
+    
+    if (panel) {
+      panel.classList.remove('cc-panel-zoom-out');
+      panel.classList.add('cc-panel-zoom-in');
+    }
+  }
+  
   document.getElementById('access-tts-toggle').checked = accessibilityTTSActive;
   document.getElementById('access-contrast-toggle').checked = accessibilityContrastActive;
   document.getElementById('access-text-size').value = accessibilityTextSize;
+  
+  // Sync Theme Toggle
+  const themeToggle = document.getElementById('access-theme-toggle');
+  if (themeToggle) themeToggle.checked = document.body.classList.contains('dark-mode');
+  
+  // Sync Music Toggle
+  const modalBtn = document.getElementById('modal-music-btn');
+  if (modalBtn) {
+    if (sounds.musicMuted) {
+      modalBtn.innerText = "Musik stumm";
+      modalBtn.style.background = "rgba(244,63,94,0.1)";
+      modalBtn.style.borderColor = "rgba(244,63,94,0.3)";
+      modalBtn.style.color = "var(--error)";
+    } else {
+      modalBtn.innerText = "Musik an";
+      modalBtn.style.background = "rgba(16,185,129,0.1)";
+      modalBtn.style.borderColor = "rgba(16,185,129,0.3)";
+      modalBtn.style.color = "var(--success)";
+    }
+  }
+
+  // Sync Motion Toggle
+  const motionToggle = document.getElementById('access-motion-toggle');
+  if (motionToggle) motionToggle.checked = safeLocalStorage.getItem('reduceMotion') === 'true';
+
+  // Sync Timer Toggle
+  const timerToggle = document.getElementById('access-timer-toggle');
+  if (timerToggle) timerToggle.checked = safeLocalStorage.getItem('disableTimers') === 'true';
+}
+
+function toggleAccessibilityMotion() {
+  sounds.playClick();
+  const active = document.getElementById('access-motion-toggle').checked;
+  safeLocalStorage.setItem('reduceMotion', active ? 'true' : 'false');
+  if (active) {
+    document.body.classList.add('reduce-motion');
+  } else {
+    document.body.classList.remove('reduce-motion');
+  }
+}
+
+function toggleAccessibilityTimer() {
+  sounds.playClick();
+  const active = document.getElementById('access-timer-toggle').checked;
+  safeLocalStorage.setItem('disableTimers', active ? 'true' : 'false');
 }
 
 function closeAccessibilityPanel() {
   sounds.playClick();
-  document.getElementById('accessibility-modal').style.display = 'none';
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel();
+  const modal = document.getElementById('accessibility-modal');
+  if (modal) {
+    modal.classList.remove('cc-overlay-animate-in');
+    modal.classList.add('cc-overlay-animate-out');
+    
+    const panel = modal.querySelector('.control-center-panel');
+    if (panel) {
+      panel.classList.remove('cc-panel-zoom-in');
+      panel.classList.add('cc-panel-zoom-out');
+    }
+    
+    setTimeout(() => {
+      modal.style.display = 'none';
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }, 300);
+  } else {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
   }
 }
 
