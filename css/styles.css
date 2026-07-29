@@ -218,13 +218,82 @@
     justify-content: center; 
     padding: 100px 20px 40px; 
     box-sizing: border-box;
-    animation: fadeIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: fadeInSubtle 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.97) translateY(15px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
+  @keyframes fadeInSubtle {
+    from { 
+      opacity: 0; 
+      transform: scale(0.97) translateY(12px); 
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
   }
+
+  /* Custom iOS Zoom-out from specific click locations */
+  .ios-app-open-left {
+    transform-origin: 25% 30%;
+    animation: iosAppOpen 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  .ios-app-open-right {
+    transform-origin: 75% 30%;
+    animation: iosAppOpen 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  .ios-app-open-center {
+    transform-origin: center center;
+    animation: iosAppOpen 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+
+  @keyframes iosAppOpen {
+    from { 
+      opacity: 0; 
+      transform: scale(0.05) translateY(100px); 
+      filter: blur(15px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  /* Custom iOS Zoom-in (closing) back to specific click locations */
+  .ios-app-close-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transform-origin: 25% 30%;
+    animation: iosAppClose 0.4s cubic-bezier(0.32, 1, 0.32, 1) forwards !important;
+    pointer-events: none;
+  }
+  .ios-app-close-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transform-origin: 75% 30%;
+    animation: iosAppClose 0.4s cubic-bezier(0.32, 1, 0.32, 1) forwards !important;
+    pointer-events: none;
+  }
+
+  @keyframes iosAppClose {
+    from {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+      filter: blur(0);
+    }
+    to {
+      transform: scale(0.05) translateY(100px);
+      opacity: 0;
+      filter: blur(10px);
+    }
+  }
+
 
   .card-box { 
     background: var(--card-bg); 
@@ -1551,4 +1620,510 @@
   }
   .modal-animate-in {
     animation: modalScaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .feedback-star:hover {
+    transform: scale(1.3) !important;
+  }
+
+  /* iOS Dialog Pop Animation */
+  dialog[open] {
+    animation: iosDialogPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+  @keyframes iosDialogPop {
+    from {
+      transform: scale(0.85) translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Modal Styles (Datenschutz / Impressum / Version) matching Maintenance design */
+  #legalModal {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(15, 23, 42, 0.4); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow-y: auto;
+  }
+
+  body.dark-mode #legalModal {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    background: #ffffff;
+    color: #0f172a;
+    margin: 80px auto; 
+    padding: 40px; 
+    border: 1px solid rgba(15, 23, 42, 0.08); 
+    width: 90%; 
+    max-width: 750px; 
+    border-radius: 24px; 
+    position: relative; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    text-align: left; 
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+    animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  body.dark-mode .modal-content {
+    background: #11101d;
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Modal Headings styling matching the dynamic theme */
+  .modal-content h2, .modal-content h3 {
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  @keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .close-modal {
+    position: absolute; 
+    right: 25px; 
+    top: 20px; 
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #94a3b8; 
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .close-modal:hover {
+    color: #0f172a;
+  }
+
+  body.dark-mode .close-modal:hover {
+    color: #f8fafc;
+  }
+
+  /* Smooth Roadmap Expand Animation */
+  details[open] .roadmap-content {
+    animation: iosRoadmapExpand 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes iosRoadmapExpand {
+    from {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      max-height: 500px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* smooth iOS homescreen fade/scale transition when app closes */
+  .ios-home-fade-in {
+    animation: iosHomeFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes iosHomeFade {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+      filter: blur(2px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+      filter: blur(0);
+    }
+  }
+
+  /* 3D Container perspective for achievements timeline */
+  .legal-timeline {
+    perspective: 1000px;
+  }
+
+  /* Fan-out/unroll card animation */
+  .timeline-item-animate {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px) rotateX(-20deg);
+    filter: blur(5px);
+    animation: timelineFanOut 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+
+  @keyframes timelineFanOut {
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0) rotateX(0);
+      filter: blur(0);
+    }
+  }
+
+  /* Smooth daily fact reveal text animation */
+  .fact-text-animate {
+    animation: factFadeReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes factFadeReveal {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+      filter: blur(1px);
+    }
+    to {
+      opacity: 0.85;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  /* Control Center Modal & Widgets (iOS style Settings) */
+  .control-center-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 23, 42, 0.4); 
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .cc-overlay-animate-in {
+    animation: ccOverlayFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .cc-overlay-animate-out {
+    animation: ccOverlayFadeOut 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .control-center-panel {
+    background: rgba(255, 255, 255, 0.8);
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+    border-radius: 30px;
+    padding: 30px;
+    width: 95%;
+    max-width: 480px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .cc-panel-zoom-in {
+    animation: ccPanelZoomIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  .cc-panel-zoom-out {
+    animation: ccPanelZoomOut 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  body.dark-mode .control-center-panel {
+    background: rgba(30, 41, 59, 0.7);
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  }
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  }
+
+  @keyframes ccOverlayFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes ccOverlayFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes ccPanelZoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.05);
+      filter: blur(5px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes ccPanelZoomOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+      filter: blur(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.05);
+      filter: blur(5px);
+    }
+  }
+
+  /* Control Center grid widgets */
+  .cc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .cc-widget {
+    background: rgba(15, 23, 42, 0.04);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 110px;
+    box-sizing: border-box;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  body.dark-mode .cc-widget {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.06);
+  }
+
+  .cc-widget-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    opacity: 0.9;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .cc-widget-control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* ACCESSIBILITY: Reduce motion configuration override */
+  body.reduce-motion * {
+    animation-duration: 0.01s !important;
+    transition-duration: 0.01s !important;
+  }
+
+  /* ==========================================
+     TRUE RESPONSIVENESS & FLUID LAYOUT SCALING
+     ========================================== */
+
+  /* Base dynamic text scaling */
+  html {
+    font-size: 16px;
+  }
+
+  /* 1. Mobile phone layouts (e.g., iPhone, Android, compact windows) */
+  @media (max-width: 576px) {
+    html {
+      font-size: 13.5px;
+    }
+    .screen {
+      padding: 75px 12px 25px !important;
+    }
+    .card-box {
+      padding: 25px 16px !important;
+      border-radius: 18px !important;
+    }
+    .top-bar {
+      padding: 8px 12px !important;
+    }
+    .brand {
+      font-size: 1.05rem !important;
+      letter-spacing: 1px !important;
+    }
+    .brand svg {
+      width: 18px !important;
+      height: 18px !important;
+    }
+    .top-controls {
+      gap: 6px !important;
+    }
+    .btn-main {
+      padding: 8px 14px !important;
+      font-size: 0.8rem !important;
+      border-radius: 10px !important;
+    }
+    #accessibility-toggle-btn span, 
+    #fullscreen-toggle-btn span {
+      display: none !important; /* Hide button text on mobile to save space, show only icons/emojis */
+    }
+    #accessibility-toggle-btn {
+      padding: 6px 10px !important;
+    }
+    #fullscreen-toggle-btn {
+      padding: 6px 10px !important;
+    }
+    /* Control Center Grid adjustment on mobile */
+    .cc-grid {
+      grid-template-columns: 1fr !important; /* Stack widgets vertically on small screens */
+      gap: 12px !important;
+    }
+    .cc-widget {
+      min-height: 90px !important;
+      padding: 12px !important;
+    }
+    .cc-widget[style*="grid-column: span 2"] {
+      grid-column: span 1 !important;
+    }
+    .control-center-panel {
+      padding: 20px 15px !important;
+      border-radius: 24px !important;
+    }
+    .hero-title {
+      font-size: 2.2rem !important;
+    }
+  }
+
+  /* 2. Tablets and Medium screens (e.g. iPad, small laptops) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    html {
+      font-size: 15px;
+    }
+    .screen {
+      padding: 90px 20px 30px !important;
+    }
+    .card-box {
+      padding: 35px 30px !important;
+    }
+  }
+
+  /* 3. Large Desktop Monitors (e.g., iMac, large 1080p, 1440p screens) */
+  @media (min-width: 1400px) {
+    html {
+      font-size: 18px;
+    }
+    .card-box {
+      max-width: 750px !important;
+      padding: 50px !important;
+    }
+    #start-screen .card-box {
+      max-width: 950px !important;
+    }
+    /* Larger control center panel */
+    .control-center-panel {
+      max-width: 580px !important;
+      padding: 40px !important;
+    }
+    .cc-grid {
+      gap: 20px !important;
+    }
+  }
+
+  /* 4. Ultra-wide or 4K Desktop Monitors */
+  @media (min-width: 1900px) {
+    html {
+      font-size: 20px;
+    }
+    .card-box {
+      max-width: 900px !important;
+      padding: 60px !important;
+    }
+    #start-screen .card-box {
+      max-width: 1150px !important;
+    }
+    .control-center-panel {
+      max-width: 660px !important;
+      padding: 50px !important;
+    }
+  }
+
+  /* iOS style Alert Dialog for Feedback */
+  dialog#feedback-dialog {
+    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 460px;
+    width: 90%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background: rgba(255, 255, 255, 0.85);
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  body.dark-mode dialog#feedback-dialog {
+    background: rgba(26, 26, 26, 0.85);
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Animations for dialog opening and closing */
+  .dialog-zoom-in {
+    animation: ccPanelZoomIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+
+  .dialog-zoom-out {
+    animation: ccPanelZoomOut 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* Comment text area styles */
+  #feedback-comment {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    background: rgba(15, 23, 42, 0.04);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    color: #0f172a;
+  }
+
+  body.dark-mode #feedback-comment {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+  }
+
+  /* Abbrechen button default overrides inside feedback */
+  #feedback-dialog .btn-main:first-of-type {
+    background: rgba(15, 23, 42, 0.05);
+    color: var(--text-primary);
+    border-color: rgba(15, 23, 42, 0.15);
+  }
+
+  body.dark-mode #feedback-dialog .btn-main:first-of-type {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.15);
   }
