@@ -1,13 +1,23 @@
 function advanceFromSPInstructions() {
-  sounds.playClick();
-  document.getElementById('sp-instr-screen').style.display = 'none';
+  try { sounds.playClick(); } catch (e) {}
+  const instr = document.getElementById('instr-screen');
+  if (instr) instr.style.display = 'none';
+  const spInstr = document.getElementById('sp-instr-screen');
+  if (spInstr) spInstr.style.display = 'none';
+
   if (gameMode === 'timeattack') {
-    document.getElementById('time-select-screen').style.display = 'flex';
+    const timeSelect = document.getElementById('time-select-screen');
+    if (timeSelect) timeSelect.style.display = 'flex';
   } else if (gameMode === 'flags') {
-    initFlagsGame();
+    if (typeof initFlagsGame === 'function') initFlagsGame();
+  } else if (gameMode === 'suddendeath') {
+    if (typeof showCategorySelectForCurrentTeam === 'function') {
+      showCategorySelectForCurrentTeam();
+    } else if (typeof showCategorySelect === 'function') {
+      showCategorySelect();
+    }
   } else {
-    document.getElementById('setup-screen').style.display = 'flex';
-    configureSetupScreenForSP();
+    if (typeof showCategorySelect === 'function') showCategorySelect();
   }
 }
 
