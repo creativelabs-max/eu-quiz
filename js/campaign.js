@@ -6,49 +6,15 @@ function selectCategory(catNum) {
   
   // Highlight indicator
   const ind = document.getElementById('category-indicator');
-  ind.style.display = 'block';
-  ind.innerText = categoryNames[catNum];
+  if (ind) {
+    ind.style.display = 'block';
+    ind.innerText = categoryNames[catNum] || ("Kategorie " + catNum);
+  }
   
-  document.getElementById('category-screen').style.display = 'none';
+  const catScreen = document.getElementById('category-screen');
+  if (catScreen) catScreen.style.display = 'none';
   
-  if (gameMode === 'campaign') {
-    document.getElementById('setup-screen').style.display = 'flex';
-    document.getElementById('campaign-settings').style.display = 'block';
-    
-    let hadBot = false;
-    let botDiff = 'easy';
-    let botSimulate = true;
-    
-    const humanTeams = (teams && teams.length > 0) ? teams.filter(t => {
-      if (t.isBot) {
-        hadBot = true;
-        botDiff = t.difficulty || 'easy';
-        botSimulate = (t.simulate !== false);
-        return false;
-      }
-      return true;
-    }) : [];
-    
-    document.getElementById('setup-enable-bot').checked = hadBot;
-    document.getElementById('setup-bot-settings-group').style.display = hadBot ? 'block' : 'none';
-    document.getElementById('setup-bot-difficulty').value = botDiff;
-    document.getElementById('setup-bot-simulate').checked = botSimulate;
-    
-    const container = document.getElementById('team-list-container');
-    container.innerHTML = "";
-    if (humanTeams.length > 0) {
-      humanTeams.forEach(t => {
-        const div = document.createElement('div');
-        div.className = "team-input-row";
-        div.innerHTML = `<input type="text" class="team-name-input" value="${t.name}" placeholder="Name des Teams..."> 
-                         <button class="btn-main btn-danger" style="padding:10px 15px;" onclick="sounds.playClick(); this.parentElement.remove(); document.getElementById('setup-err').style.display='none';" title="Team entfernen">✕</button>`;
-        container.appendChild(div);
-      });
-    } else {
-      addTeamField(); 
-      addTeamField(); 
-    }
-  } else if (gameMode === 'timeattack') {
+  if (gameMode === 'timeattack') {
     playedCategories.add(catNum);
     spTurnActive = true;
     singlePlayerScore = 0;
@@ -66,23 +32,73 @@ function selectCategory(catNum) {
     currentStreak = 0;
     rapidFireQuestions = prepareRapidFireQuestions(activeCategory);
     openRapidFireQuestion();
+  } else {
+    // Default to campaign / setup mode if gameMode is empty or campaign
+    gameMode = 'campaign';
+    const setupScreen = document.getElementById('setup-screen');
+    const campaignSettings = document.getElementById('campaign-settings');
+    if (setupScreen) setupScreen.style.display = 'flex';
+    if (campaignSettings) campaignSettings.style.display = 'block';
+    
+    let hadBot = false;
+    let botDiff = 'easy';
+    let botSimulate = true;
+    
+    const humanTeams = (teams && teams.length > 0) ? teams.filter(t => {
+      if (t.isBot) {
+        hadBot = true;
+        botDiff = t.difficulty || 'easy';
+        botSimulate = (t.simulate !== false);
+        return false;
+      }
+      return true;
+    }) : [];
+    
+    const botEnableEl = document.getElementById('setup-enable-bot');
+    if (botEnableEl) botEnableEl.checked = hadBot;
+    const botSettingsEl = document.getElementById('setup-bot-settings-group');
+    if (botSettingsEl) botSettingsEl.style.display = hadBot ? 'block' : 'none';
+    const botDiffEl = document.getElementById('setup-bot-difficulty');
+    if (botDiffEl) botDiffEl.value = botDiff;
+    const botSimEl = document.getElementById('setup-bot-simulate');
+    if (botSimEl) botSimEl.checked = botSimulate;
+    
+    const container = document.getElementById('team-list-container');
+    if (container) {
+      container.innerHTML = "";
+      if (humanTeams.length > 0) {
+        humanTeams.forEach(t => {
+          const div = document.createElement('div');
+          div.className = "team-input-row";
+          div.innerHTML = `<input type="text" class="team-name-input" value="${t.name}" placeholder="Name des Teams..."> 
+                           <button class="btn-main btn-danger" style="padding:10px 15px;" onclick="sounds.playClick(); this.parentElement.remove(); document.getElementById('setup-err').style.display='none';" title="Team entfernen">✕</button>`;
+          container.appendChild(div);
+        });
+      } else {
+        addTeamField(); 
+        addTeamField(); 
+      }
+    }
   }
 }
 
 function addTeamField() {
     const container = document.getElementById('team-list-container');
+    if (!container) return;
+    const currentCount = container.querySelectorAll('.team-input-row').length + 1;
     const maxLimit = gameMode === 'campaign' ? 15 : 5;
-    if (container.querySelectorAll('.team-input-row').length >= maxLimit) {
+    if (currentCount > maxLimit) {
         const err = document.getElementById('setup-err');
-        err.innerText = `Maximal ${maxLimit} Teams sind erlaubt!`;
-        err.style.display = 'block';
+        if (err) {
+          err.innerText = `Maximal ${maxLimit} Teams sind erlaubt!`;
+          err.style.display = 'block';
+        }
         sounds.playError();
         return;
     }
-    sounds.playClick();
     const div = document.createElement('div');
     div.className = "team-input-row";
-    div.innerHTML = `<input type="text" class="team-name-input" placeholder="Name des Teams..."> 
+    div.innerHTML = `<input type="text" class="team-name-input" value="Team ${currentCount}" placeholder="Name des Teams..."> 
                      <button class="btn-main btn-danger" style="padding:10px 15px;" onclick="sounds.playClick(); this.parentElement.remove(); document.getElementById('setup-err').style.display='none';" title="Team entfernen">✕</button>`;
     container.appendChild(div);
 }
@@ -163,6 +179,7 @@ function initGame() {
     }
 
     sounds.playSuccess();
+    if (typeof trackLifetimeGameStarted === 'function') trackLifetimeGameStarted();
     document.getElementById('setup-screen').style.display = 'none';
     document.getElementById('end-game-btn').style.display = 'block';
     
@@ -279,6 +296,7 @@ function cancelQuestion() {
 }
 
 function startTimer() {
+  if (safeLocalStorage.getItem('disableTimers') === 'true') return;
   if (timerDuration === 0) return;
   timeLeft = timerDuration;
   const bar = document.getElementById('timer-bar');
@@ -766,6 +784,7 @@ function check(idx) {
     stopTimer();
     opts.forEach(o => o.style.pointerEvents = 'none');
     sounds.playSuccess();
+    if (typeof trackLifetimeAnswer === 'function') trackLifetimeAnswer(true);
     opts[idx].classList.add('correct');
     if (typeof statsCategoryAnswers !== 'undefined' && statsCategoryAnswers[activeCategory]) statsCategoryAnswers[activeCategory].c++;
     
@@ -820,6 +839,7 @@ function check(idx) {
       stopTimer();
       opts.forEach(o => o.style.pointerEvents = 'none');
       sounds.playError();
+      if (typeof trackLifetimeAnswer === 'function') trackLifetimeAnswer(false);
       opts[idx].classList.add('wrong');
       opts[correctAnswer].classList.add('correct');
       
