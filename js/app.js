@@ -196,9 +196,13 @@ function showInstr() {
 }
 
 function showCategorySelect() {
-  sounds.playClick();
-  document.getElementById('instr-screen').style.display='none'; 
-  document.getElementById('category-screen').style.display='flex'; 
+  try { sounds.playClick(); } catch (e) {}
+  const instr = document.getElementById('instr-screen');
+  if (instr) instr.style.display = 'none';
+  const spInstr = document.getElementById('sp-instr-screen');
+  if (spInstr) spInstr.style.display = 'none';
+  const catScreen = document.getElementById('category-screen');
+  if (catScreen) catScreen.style.display = 'flex';
 }
 
 function goBackFromRules() {
