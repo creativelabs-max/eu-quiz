@@ -491,19 +491,35 @@ function openRapidFireQuestion() {
       clearInterval(timeAttackTimerInterval);
       timeAttackTimerInterval = null;
     }
-    teams[activeTeam].score = singlePlayerScore;
-    document.getElementById('quiz-dialog').close();
+    if (teams && teams[activeTeam]) teams[activeTeam].score = singlePlayerScore;
+    const dialog = document.getElementById('quiz-dialog');
+    if (dialog) {
+      try { dialog.close(); } catch(e) { dialog.style.display = 'none'; }
+    }
     advanceSPMultiplayerTurn();
     return;
   }
   
-  if (rapidFireIndex >= rapidFireQuestions.length) {
+  if (!rapidFireQuestions || rapidFireIndex >= rapidFireQuestions.length) {
     rapidFireQuestions = prepareRapidFireQuestions(activeCategory);
     rapidFireIndex = 0;
   }
   
-  const rawQ = rapidFireQuestions[rapidFireIndex];
-  if (typeof playedSessionQuestions !== 'undefined') playedSessionQuestions.add(rawQ.q);
+  // Fallback if questions list is empty: try category 1 as fallback pool
+  if (!rapidFireQuestions || rapidFireQuestions.length === 0) {
+    rapidFireQuestions = prepareRapidFireQuestions(1);
+    rapidFireIndex = 0;
+  }
+  
+  const rawQ = (rapidFireQuestions && rapidFireQuestions[rapidFireIndex]) ? rapidFireQuestions[rapidFireIndex] : null;
+  if (!rawQ) {
+    alert("Hinweis: Es konnten keine Fragen geladen werden.");
+    return;
+  }
+  
+  if (typeof playedSessionQuestions !== 'undefined' && rawQ.q) {
+    playedSessionQuestions.add(rawQ.q);
+  }
   currentQuestionData = shuffleQuestionOptions(rawQ);
   const qData = currentQuestionData;
   correctAnswer = qData.a;
@@ -512,19 +528,33 @@ function openRapidFireQuestion() {
   riskActive = false;
   
   const dialog = document.getElementById('quiz-dialog');
-  if (!dialog.open) {
-    dialog.showModal();
+  if (dialog) {
+    if (!dialog.open) {
+      if (typeof dialog.showModal === 'function') {
+        try { dialog.showModal(); } catch (e) { dialog.style.display = 'block'; }
+      } else {
+        dialog.style.display = 'block';
+      }
+    }
   }
   
-  document.getElementById('q-title').innerText = `${qData.country} (Level ${qData.lvl})`;
+  const qTitle = document.getElementById('q-title');
+  if (qTitle) qTitle.innerText = `${qData.country || 'EU'} (Level ${qData.lvl || 1})`;
   
   let modeLabel = gameMode === 'timeattack' ? "⏱️ Zeit-Angriff" : "💀 Sudden Death";
-  document.getElementById('txt-turn-info').innerText = `${modeLabel} • Punkte: ${singlePlayerScore} • Thema: ${categoryNames[activeCategory]}`;
-  document.getElementById('txt-turn-info').style.color = 'var(--accent)';
+  const catName = categoryNames[activeCategory] || ("Kategorie " + activeCategory);
+  const turnInfo = document.getElementById('txt-turn-info');
+  if (turnInfo) {
+    turnInfo.innerText = `${modeLabel} • Punkte: ${singlePlayerScore} • Thema: ${catName}`;
+    turnInfo.style.color = 'var(--accent)';
+  }
   
-  document.getElementById('diff-buttons').style.display = 'none';
-  document.getElementById('q-area').style.display = 'block';
-  document.getElementById('q-text').innerText = qData.q;
+  const diffBtns = document.getElementById('diff-buttons');
+  if (diffBtns) diffBtns.style.display = 'none';
+  const qArea = document.getElementById('q-area');
+  if (qArea) qArea.style.display = 'block';
+  const qText = document.getElementById('q-text');
+  if (qText) qText.innerText = qData.q;
 
   // Handle Dropdown Hint Menu for Level 2 & 3
   const tipContainer = document.getElementById('q-tip-container');
