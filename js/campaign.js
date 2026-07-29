@@ -262,25 +262,48 @@ function openQ(idx) {
   // Open the dialog after a brief delay for transition to feel smooth
   setTimeout(() => {
     const dialog = document.getElementById('quiz-dialog');
-    dialog.showModal();
-    document.getElementById('q-title').innerText = countries[idx].n;
-    document.getElementById('txt-turn-info').innerText = "Team am Zug: " + teams[activeTeam].name + " • Kategorie: " + categoryNames[activeCategory];
-    document.getElementById('txt-turn-info').style.color = 'var(--accent)';
-    document.getElementById('diff-buttons').style.display = 'block';
-    document.getElementById('q-area').style.display = 'none';
-    document.getElementById('txt-cancel').style.display = 'inline-block';
-    document.getElementById('timer-bar-container').style.display = 'none';
-    document.getElementById('class-joker-container').style.display = 'none';
-    for(let i=1; i<=3; i++) {
+    if (dialog) {
+      if (typeof dialog.showModal === 'function') {
+        try { dialog.showModal(); } catch (e) { dialog.style.display = 'block'; }
+      } else {
+        dialog.style.display = 'block';
+      }
+    }
+    const qTitle = document.getElementById('q-title');
+    if (qTitle) qTitle.innerText = countries[idx].n;
+    
+    const turnInfo = document.getElementById('txt-turn-info');
+    if (turnInfo) {
+      const currentTeamName = (teams && teams[activeTeam]) ? teams[activeTeam].name : "Team 1";
+      const catName = categoryNames[activeCategory] || "Kategorie " + activeCategory;
+      turnInfo.innerText = "Team am Zug: " + currentTeamName + " • Kategorie: " + catName;
+      turnInfo.style.color = 'var(--accent)';
+    }
+    
+    const diffBtns = document.getElementById('diff-buttons');
+    if (diffBtns) diffBtns.style.display = 'block';
+    const qArea = document.getElementById('q-area');
+    if (qArea) qArea.style.display = 'none';
+    const txtCancel = document.getElementById('txt-cancel');
+    if (txtCancel) txtCancel.style.display = 'inline-block';
+    const timerBarCont = document.getElementById('timer-bar-container');
+    if (timerBarCont) timerBarCont.style.display = 'none';
+    const classJokerCont = document.getElementById('class-joker-container');
+    if (classJokerCont) classJokerCont.style.display = 'none';
+    
+    for (let i = 1; i <= 3; i++) {
       const btn = document.getElementById(`btn-lvl-${i}`);
-      btn.disabled = countries[idx].p[i];
-      btn.style.borderColor = '';
-      btn.style.boxShadow = '';
-      btn.style.transform = '';
+      if (btn) {
+        btn.disabled = !!(countries[idx] && countries[idx].p && countries[idx].p[i]);
+        btn.style.borderColor = '';
+        btn.style.boxShadow = '';
+        btn.style.transform = '';
+      }
     }
     
     // Reset risk prompt visibility
-    document.getElementById('risk-prompt-area').style.display = 'none';
+    const riskPrompt = document.getElementById('risk-prompt-area');
+    if (riskPrompt) riskPrompt.style.display = 'none';
   }, 150);
 }
 
