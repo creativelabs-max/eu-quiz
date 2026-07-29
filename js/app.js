@@ -1,3 +1,5 @@
+// safeLocalStorage is defined globally in the head of index.html
+
 class ConfettiCelebration {
   constructor(canvasId) {
     this.canvas = document.getElementById(canvasId);
@@ -113,6 +115,7 @@ let singlePlayerScore = 0;
 let timeAttackTimerInterval = null;
 let timeAttackTimeLeft = 60;
 let currentStreak = 0;
+let currentStreakNoJoker = 0;
 let riskStreak = 0;
 let flagQuestions = [];
 let flagQuestionIndex = 0;
@@ -120,11 +123,12 @@ let currentFlagQuestion = null;
 let statsCategoryAnswers = { 1: { c: 0, w: 0 }, 2: { c: 0, w: 0 }, 3: { c: 0, w: 0 }, 4: { c: 0, w: 0 }, 5: { c: 0, w: 0 } };
 
 let achievements = {
-  diplomat: { id: "diplomat", name: "Der Diplomat", desc: "10 Institutionen & Politik Fragen richtig beantwortet", unlocked: false },
-  weltenbummler: { id: "weltenbummler", name: "Weltenbummler", desc: "Fragen zu allen 27 EU-Ländern gespielt (Klassisch)", unlocked: false },
-  millionaire: { id: "millionaire", name: "Euro-Millionär", desc: "Erreiche 30+ Punkte in einem Einzelspieler-Spiel", unlocked: false },
-  streak: { id: "streak", name: "Unschlagbar", desc: "10 richtige Antworten in Folge erzielt", unlocked: false },
-  riskTaker: { id: "riskTaker", name: "Risikoträger", desc: "3 Risiko-Fragen in Folge richtig beantwortet", unlocked: false }
+  eubuerger: { id: "eubuerger", name: "EU-Bürger", desc: "Beantworte deine allererste Frage richtig", unlocked: false },
+  stimmzettel: { id: "stimmzettel", name: "Der Stimmzettel", desc: "Beantworte 10 Fragen im Mehrspieler-Modus richtig", unlocked: false },
+  president: { id: "president", name: "Europarats-Präsident", desc: "Beantworte 10 Fragen in Folge richtig, ohne einen Joker zu benutzen", unlocked: false },
+  schengen: { id: "schengen", name: "Schengen-Grenzgänger", desc: "Beantworte Fragen zu 15 verschiedenen Ländern der EU richtig", unlocked: false },
+  blitz: { id: "blitz", name: "Blitz-Demokrat", desc: "Beantworte eine Frage in unter 3 Sekunden richtig", unlocked: false },
+  grossherzog: { id: "grossherzog", name: "Großherzog von Luxemburg", desc: "Erreiche eine Punktzahl von über 40 Punkten in einer Spielrunde", unlocked: false }
 };
 
 // --- Version 5.0 Mobile Duel State Variables ---
@@ -177,6 +181,11 @@ let mapTargetCountry = "";
   // STATIC QUESTIONS AND MAP DATA MOVED TO js/questions.js
 function toggleTheme() { 
   document.body.classList.toggle('dark-mode'); 
+  const isDark = document.body.classList.contains('dark-mode');
+  const toggle1 = document.getElementById('theme-toggle');
+  const toggle2 = document.getElementById('access-theme-toggle');
+  if (toggle1) toggle1.checked = isDark;
+  if (toggle2) toggle2.checked = isDark;
   sounds.playClick();
 }
 
@@ -232,14 +241,32 @@ function toggleMusic() {
   sounds.musicMuted = !sounds.musicMuted;
   const btn = document.getElementById('music-toggle-btn');
   const icon = document.getElementById('music-icon');
+  const modalBtn = document.getElementById('modal-music-btn');
+  
   if (sounds.musicMuted) {
-    btn.style.borderColor = 'rgba(244,63,94,0.5)';
-    btn.style.color = 'var(--error)';
-    icon.innerHTML = `<line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>`;
+    if (btn) {
+      btn.style.borderColor = 'rgba(244,63,94,0.5)';
+      btn.style.color = 'var(--error)';
+    }
+    if (icon) icon.innerHTML = `<line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>`;
+    if (modalBtn) {
+      modalBtn.innerText = "Musik stumm";
+      modalBtn.style.background = "rgba(244,63,94,0.1)";
+      modalBtn.style.borderColor = "rgba(244,63,94,0.3)";
+      modalBtn.style.color = "var(--error)";
+    }
   } else {
-    btn.style.borderColor = 'var(--success)';
-    btn.style.color = 'var(--success)';
-    icon.innerHTML = `<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>`;
+    if (btn) {
+      btn.style.borderColor = 'var(--success)';
+      btn.style.color = 'var(--success)';
+    }
+    if (icon) icon.innerHTML = `<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>`;
+    if (modalBtn) {
+      modalBtn.innerText = "Musik an";
+      modalBtn.style.background = "rgba(16,185,129,0.1)";
+      modalBtn.style.borderColor = "rgba(16,185,129,0.3)";
+      modalBtn.style.color = "var(--success)";
+    }
     sounds.playClick();
   }
 }
@@ -432,14 +459,50 @@ function showModeSelect() {
 
 function backToStart() {
   sounds.playClick();
-  document.getElementById('mode-screen').style.display = 'none';
-  document.getElementById('start-screen').style.display = 'flex';
+  
+  const spScreen = document.getElementById('singleplayer-menu-screen');
+  const mpScreen = document.getElementById('multiplayer-menu-screen');
+  const modeScreen = document.getElementById('mode-screen');
+  const startScreen = document.getElementById('start-screen');
+  
+  function executeBack() {
+    if (modeScreen) modeScreen.style.display = 'none';
+    if (spScreen) {
+      spScreen.style.display = 'none';
+      spScreen.classList.remove('ios-app-close-left');
+    }
+    if (mpScreen) {
+      mpScreen.style.display = 'none';
+      mpScreen.classList.remove('ios-app-close-right');
+    }
+  }
+
+  // Show homescreen (start-screen) immediately so there is ZERO delay or blank ladezeit
+  if (startScreen) {
+    startScreen.classList.remove('ios-app-open-center', 'ios-home-fade-in');
+    void startScreen.offsetWidth; // force reflow
+    startScreen.classList.add('ios-home-fade-in');
+    startScreen.style.display = 'flex';
+  }
+  if (typeof refreshStartScreenStats === 'function') refreshStartScreenStats();
+
+  if (spScreen && spScreen.style.display === 'flex') {
+    spScreen.classList.add('ios-app-close-left');
+    setTimeout(executeBack, 380);
+  } else if (mpScreen && mpScreen.style.display === 'flex') {
+    mpScreen.classList.add('ios-app-close-right');
+    setTimeout(executeBack, 380);
+  } else {
+    executeBack();
+  }
 }
 
 function selectMode(mode) {
   sounds.playSuccess();
   gameMode = mode;
   document.getElementById('mode-screen').style.display = 'none';
+  document.getElementById('singleplayer-menu-screen').style.display = 'none';
+  document.getElementById('multiplayer-menu-screen').style.display = 'none';
   
   if (mode === 'campaign') {
     document.getElementById('instr-screen').style.display = 'flex';
@@ -480,40 +543,46 @@ function selectMode(mode) {
   }
 }
 
-// Global variables for Duel mode
 function checkInGameAchievements(qData) {
-  if (activeCategory === 3) {
-    let diplomatCorrectCount = statsCategoryAnswers[3].c;
-    if (diplomatCorrectCount >= 10 && !achievements.diplomat.unlocked) {
-      achievements.diplomat.unlocked = true;
-      showAchievementUnlockedToast(achievements.diplomat);
+  // 1. EU-Bürger (Allererste richtige Antwort)
+  let totalCorrect = parseInt(safeLocalStorage.getItem('stats_correct_answers') || '0', 10);
+  if (totalCorrect >= 1 && !achievements.eubuerger.unlocked && safeLocalStorage.getItem('ach_eubuerger') !== 'true') {
+    achievements.eubuerger.unlocked = true;
+    safeLocalStorage.setItem('ach_eubuerger', 'true');
+    showAchievementUnlockedToast(achievements.eubuerger);
+  }
+
+  // 2. Der Stimmzettel (10 Mehrspieler-Fragen richtig)
+  let mpCorrect = parseInt(safeLocalStorage.getItem('stats_mp_correct_answers') || '0', 10);
+  if (mpCorrect >= 10 && !achievements.stimmzettel.unlocked && safeLocalStorage.getItem('ach_stimmzettel') !== 'true') {
+    achievements.stimmzettel.unlocked = true;
+    safeLocalStorage.setItem('ach_stimmzettel', 'true');
+    showAchievementUnlockedToast(achievements.stimmzettel);
+  }
+  
+  // 3. Europarats-Präsident (10 richtige Antworten in Folge ohne Joker)
+  if (typeof currentStreakNoJoker !== 'undefined' && currentStreakNoJoker >= 10 && !achievements.president.unlocked && safeLocalStorage.getItem('ach_president') !== 'true') {
+    achievements.president.unlocked = true;
+    safeLocalStorage.setItem('ach_president', 'true');
+    showAchievementUnlockedToast(achievements.president);
+  }
+  
+  // 4. Schengen-Grenzgänger (15 verschiedene Länder richtig)
+  if (typeof countries !== 'undefined') {
+    let correctCountriesCount = countries.filter(c => c.correct && (c.correct[1] || c.correct[2] || c.correct[3])).length;
+    if (correctCountriesCount >= 15 && !achievements.schengen.unlocked && safeLocalStorage.getItem('ach_schengen') !== 'true') {
+      achievements.schengen.unlocked = true;
+      safeLocalStorage.setItem('ach_schengen', 'true');
+      showAchievementUnlockedToast(achievements.schengen);
     }
   }
   
-  if (currentStreak >= 10 && !achievements.streak.unlocked) {
-    achievements.streak.unlocked = true;
-    showAchievementUnlockedToast(achievements.streak);
-  }
-  
-  let playedCount = countries.filter(c => c.p[1] || c.p[2] || c.p[3]).length;
-  if (playedCount >= 27 && !achievements.weltenbummler.unlocked) {
-    achievements.weltenbummler.unlocked = true;
-    showAchievementUnlockedToast(achievements.weltenbummler);
-  }
+  // 5. Großherzog von Luxemburg (über 40 Punkte in einer Spielrunde)
   let highestScore = Math.max(singlePlayerScore, ...teams.map(t => t.score || 0), 0);
-  if (highestScore >= 30 && !achievements.millionaire.unlocked) {
-    achievements.millionaire.unlocked = true;
-    showAchievementUnlockedToast(achievements.millionaire);
-  }
-  
-  if (riskActive) {
-    riskStreak++;
-    if (riskStreak >= 3 && !achievements.riskTaker.unlocked) {
-      achievements.riskTaker.unlocked = true;
-      showAchievementUnlockedToast(achievements.riskTaker);
-    }
-  } else {
-    riskStreak = 0;
+  if (highestScore > 40 && !achievements.grossherzog.unlocked && safeLocalStorage.getItem('ach_grossherzog') !== 'true') {
+    achievements.grossherzog.unlocked = true;
+    safeLocalStorage.setItem('ach_grossherzog', 'true');
+    showAchievementUnlockedToast(achievements.grossherzog);
   }
 }
 
@@ -554,7 +623,7 @@ function showAchievementUnlockedToast(ach) {
 
 function saveAchievements() {
   try {
-    localStorage.setItem('eu_quiz_achievements', JSON.stringify(achievements));
+    safeLocalStorage.setItem('eu_quiz_achievements', JSON.stringify(achievements));
   } catch (e) {
     console.error("Could not save achievements", e);
   }
@@ -562,7 +631,7 @@ function saveAchievements() {
 
 function loadAchievements() {
   try {
-    const saved = localStorage.getItem('eu_quiz_achievements');
+    const saved = safeLocalStorage.getItem('eu_quiz_achievements');
     if (saved) {
       const parsed = JSON.parse(saved);
       for (let key in parsed) {
@@ -608,7 +677,7 @@ function getExplanation(qText, correctAnswerText) {
 
 // Die Texte als Variablen speichern
 const impressumText = `
-    <h2 style="color: #fff; margin-top: 0;">Impressum</h2>
+    <h2 style="margin-top: 0;">Impressum</h2>
     <p><strong>Diensteanbieter & Medieninhaber:</strong><br>
     Leading Developer: Thiemo Greger<br>
     Manager of Content: David Schwarz<br>
@@ -621,43 +690,42 @@ const impressumText = `
 `;
 
 const datenschutzText = `
-    <h2 style="color: #fff; margin-top: 0;">Datenschutzerklärung</h2>
-    <h3 style="color: #fff;">1. Allgemeine Hinweise</h3>
+    <h2 style="margin-top: 0;">Datenschutzerklärung</h2>
+    <h3>1. Allgemeine Hinweise</h3>
     <p>Verantwortlich für die Datenverarbeitung auf dieser Website sind die im Impressum genannten Personen. Diese Website richtet sich ausschließlich an Nutzer mit Wohnsitz oder Aufenthalt in Europa.</p>
-    <h3 style="color: #fff;">2. Hosting durch GitHub Pages</h3>
+    <h3>2. Hosting durch GitHub Pages</h3>
     <p>Diese Website wird auf Servern von GitHub Inc. (USA) bereitgestellt. GitHub erfasst automatisch Logfiles (u.a. IP-Adresse, Browsertyp, Datum/Uhrzeit des Zugriffs). Dies ist technisch erforderlich. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
-    <h3 style="color: #fff;">3. Cookiebot & Google Analytics 4</h3>
+    <h3>3. Cookiebot & Google Analytics 4</h3>
     <p>Diese Website nutzt Google Analytics 4 der Google Ireland Limited zur statistischen Analyse der Nutzung. Die Datenverarbeitung erfolgt nur nach Ihrer Einwilligung über das Cookiebot-Banner. Ihre IP-Adresse wird anonymisiert übertragen. Sie können Ihre Einstellungen jederzeit über das Cookie-Symbol unten links anpassen.</p>
-    <h3 style="color: #fff;">4. Firebase Services (Database & Auth)</h3>
+    <h3>4. Firebase Services (Database & Auth)</h3>
     <p>Für die Multiplayer-Funktionalität nutzen wir Firebase-Dienste der Google Ireland Limited:</p>
     <ul>
         <li><strong>Realtime Database:</strong> Dient der Echtzeit-Übertragung von Spielständen, Antworten und selbst gewählten Spitznamen. Alle Daten werden nach dem Verlassen des Raums gelöscht.</li>
         <li><strong>Anonymous Authentication:</strong> Meldet Sie beim Beitreten eines Multiplayer-Raums anonym an. Dabei wird eine temporäre, zufällige ID (UID) erzeugt. Es werden keine personenbezogenen Daten (wie E-Mail-Adressen, Namen oder Passwörter) erfasst oder gespeichert.</li>
+        <li><strong>Feedback-Funktion:</strong> Wenn Sie freiwillig eine Bewertung abgeben, werden Ihre Sternebewertung, Ihr optionaler Textkommentar, ein Zeitstempel sowie technische Metadaten Ihres Browsers (User-Agent) in der Datenbank gespeichert, um das Quiz stetig zu verbessern.</li>
     </ul>
-    <h3 style="color: #fff;">5. Lokaler Speicher (localStorage)</h3>
+    <h3>5. Lokaler Speicher (localStorage)</h3>
     <p>Um das Spielerlebnis komfortabel zu gestalten, werden bestimmte Daten lokal in Ihrem Browser (localStorage) gespeichert: z.B. Ihre freigeschalteten Erfolge (Achievements) sowie Ihre persönlichen Spiel-Einstellungen. Diese Daten verbleiben vollständig auf Ihrem Endgerät, werden nicht an Server übertragen und können von Ihnen jederzeit über die Browsereinstellungen gelöscht werden.</p>
-    <h3 style="color: #fff;">6. Ihre Rechte</h3>
+    <h3>6. Ihre Rechte</h3>
     <p>Ihnen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Beschwerden können an die österreichische Datenschutzbehörde (DSB) gerichtet werden.</p>
 `;
 
 // HIER KANNST DU DEINE VERSIONS-TEXTE ANPASSEN
 const versionText = `
-    <h2 style="color: #fff; margin-top: 0;">Versionshinweise (v5.0)</h2>
+    <h2 style="margin-top: 0;">Versionshinweise (v5.3)</h2>
     <hr style="border: 0; border-top: 1px solid #444; margin-bottom: 15px;">
     
-    <h3 style="color: #00bcd4; margin-bottom: 5px;">Aktuelle Version 5.0</h3>
+    <h3 style="color: var(--accent); margin-bottom: 5px;">Aktuelle Version 5.3</h3>
     <p style="margin-top: 0;">
-        - **⚔️ Smartphone-Controller im Buzzer-Duell**: Nutzt eure Handys als kabellose Buzzer über QR-Code-Scannen.<br>
-        - **🤖 Bot Klaus als Gegner**: Spielt gegen den cleveren Bot Klaus mit wählbaren Schwierigkeitsgraden (Einfach bis Elite).<br>
-        - **🔄 Direktes Abstauben & Auslassen**: Staubt Punkte beim Gegner direkt ab oder überspringt schwierige Fragen straffrei mit der Passen-Taste.<br>
-        - **⏱️ Einstellbare Zeitlimits**: Bestimmt selbst die Bedenkzeit pro Frage (15s, 30s, 45s, 60s oder unbegrenzt).<br>
-        - **📉 Spannende Negativ-Scores**: Falsche Antworten können euren Score jetzt auch unter Null sinken lassen.<br>
+        - **📊 Startseiten-Dashboard**: Integriertes „Fakt des Tages“-Modul, Lebenszeit-Statistiken und Roadmap direkt beim Laden.<br>
+        - **🕹️ Saubere Menüführung**: Trennung der Spielmodi in übersichtliche Einzelspieler- und Mehrspieler-Untermenüs.<br>
+        - **🏆 Spiel-Highlights**: Detaillierte Leistungsstatistiken nach Kategorien und Analyse eurer herausfordernden Länder am Spielende.<br>
+        - **💬 Integriertes Feedback**: Spieler können das Spiel direkt mit Sternen und Kommentaren anonym über Firebase bewerten.<br>
     </p>
     
-    <h3 style="color: #28a745; margin-top: 20px; margin-bottom: 5px;">Zukünftige Updates</h3>
+    <h3 style="color: var(--text-secondary); margin-top: 20px; margin-bottom: 5px;">Zukünftige Updates</h3>
     <p style="margin-top: 0;">
         - Wir arbeiten ständig an neuen Features und Verbesserungen.<br>
-        - Für Vorschläge und Verbesserungen gerne eine Nachricht an eine der beiden E-Mails.
     </p>
 `;
 
@@ -680,12 +748,7 @@ document.getElementById("openDatenschutz").addEventListener("click", function(e)
     modal.style.display = "block";
 });
 
-// Event Listener für Klicks (Version)
-document.getElementById("openVersion").addEventListener("click", function(e) {
-    e.preventDefault();
-    legalContent.innerHTML = versionText;
-    modal.style.display = "block";
-});
+
 
 // Schließen bei Klick auf das X
 closeModal.addEventListener("click", function() {
@@ -799,3 +862,455 @@ function toggleQuestionTip() {
     countEl.innerText = currentTeamObj.tipsLeft;
   }
 }
+
+// --- Version 5.3 Dashboard & Navigation Features ---
+
+const euFacts = [
+  "Die Europäische Union hat 24 offizielle Amtssprachen. Alle Gesetze werden in all diese Sprachen übersetzt.",
+  "Die EU hat keine offizielle Hauptstadt. Die wichtigsten Institutionen befinden sich in Brüssel, Straßburg und Luxemburg.",
+  "Das kleinste EU-Land ist Malta mit einer Fläche von nur 316 Quadratkilometern – das ist kleiner als Wien.",
+  "Die Europäische Flagge hat immer 12 Sterne. Die Zahl 12 steht für Vollkommenheit und Einheit, nicht für die Anzahl der Länder.",
+  "Der Euro ist die offizielle Währung in 20 der 27 EU-Mitgliedstaaten (Eurozone).",
+  "Bulgarien verwendet das kyrillische Alphabet. Seit dem EU-Beitritt Bulgariens ist Kyrillisch neben Lateinisch und Griechisch die dritte offizielle Schrift der EU.",
+  "Die EU wurde 2012 mit dem Friedensnobelpreis ausgezeichnet für ihren Beitrag zur Förderung von Frieden und Versöhnung.",
+  "Das Schengener Abkommen ermöglicht es über 400 Millionen Menschen, ohne Grenzkontrollen zwischen den meisten EU-Ländern zu reisen.",
+  "Der höchste Berg der EU ist der Mont Blanc an der Grenze zwischen Frankreich und Italien mit einer Höhe von 4.805 Metern.",
+  "Das Erasmus+-Programm hat seit 1987 Millionen von Studierenden und Jugendlichen geholfen, im Ausland zu lernen und zu arbeiten.",
+  "Das Europäische Parlament ist das einzige direkt gewählte Organ der EU. Die Abgeordneten werden alle 5 Jahre gewählt.",
+  "Die EU-Hymne basiert auf der Melodie von Beethovens 'Ode an die Freude' und hat bewusst keinen Text, um keine Sprache zu bevorzugen.",
+  "Das waldreichste Land der EU ist Schweden (fast 70% der Fläche), während Malta fast keine Wälder hat.",
+  "In der EU gibt es über 150 verschiedene Regionalkäsesorten, die gesetzlich geschützt sind (z.B. Feta aus Griechenland oder Parmigiano Reggiano).",
+  "Österreich trat der EU am 1. Jänner 1995 bei, zusammen mit Schweden und Finnland.",
+  "Das Europäische Parlament tagt an zwei Orten: Die Ausschüsse arbeiten in Brüssel, die Plenarsitzungen finden in Straßburg statt.",
+  "Die älteste Demokratie der Welt, Griechenland, ist seit 1981 Mitglied der EU.",
+  "Der geografische Mittelpunkt der EU befindet sich heute in einem kleinen Dorf namens Gadheim in Bayern, Deutschland.",
+  "Die EU-Richtlinie zum Roaming sorgt dafür, dass du in jedem EU-Land ohne zusätzliche Gebühren telefonieren und surfen kannst.",
+  "Das am dünnsten besiedelte EU-Land ist Finnland mit nur etwa 18 Einwohnern pro Quadratkilometer."
+];
+
+
+
+function refreshStartScreenStats() {
+  const totalAnswersEl = document.getElementById('stats-total-answers');
+  const unlockedAchievementsEl = document.getElementById('stats-unlocked-achievements');
+  
+  if (totalAnswersEl) {
+    totalAnswersEl.innerText = safeLocalStorage.getItem('stats_total_answers') || '0';
+  }
+  
+  if (unlockedAchievementsEl) {
+    let unlocked = 0;
+    if (typeof achievements !== 'undefined') {
+      for (let key in achievements) {
+        if (achievements[key].unlocked || safeLocalStorage.getItem('ach_' + key) === 'true') unlocked++;
+      }
+    } else {
+      const achKeys = ['eubuerger', 'stimmzettel', 'president', 'schengen', 'blitz', 'grossherzog'];
+      achKeys.forEach(k => {
+        if (safeLocalStorage.getItem('ach_' + k) === 'true') unlocked++;
+      });
+    }
+    unlockedAchievementsEl.innerText = `${unlocked}/6`;
+  }
+}
+
+function openAchievementsModal() {
+  sounds.playClick();
+  const legalContent = document.getElementById("legalContent");
+  const modal = document.getElementById("legalModal");
+  if (!legalContent || !modal) return;
+  
+  let html = `<h2 style="margin-top: 0; font-family: 'Space Grotesk', sans-serif;">🏆 Deine Erfolgs-Roadmap</h2>`;
+  html += `<p style="opacity: 0.7; margin-bottom: 30px; font-size: 0.9rem;">Schließe spielerische Herausforderungen ab, um Erfolge freizuschalten.</p>`;
+  
+  html += `<div class="legal-timeline" style="position: relative; padding-left: 35px; margin-left: 20px; border-left: 2px solid rgba(0, 188, 212, 0.15); display: flex; flex-direction: column; gap: 25px; text-align: left;">`;
+  
+  const order = ['eubuerger', 'stimmzettel', 'president', 'schengen', 'blitz', 'grossherzog'];
+  const difficultyColors = {
+    eubuerger: '#4caf50',
+    stimmzettel: '#03a9f4',
+    president: '#ff9800',
+    schengen: '#ff5722',
+    blitz: '#9c27b0',
+    grossherzog: '#fbbf24'
+  };
+  
+  order.forEach((key, index) => {
+    const ach = achievements[key];
+    if (!ach) return;
+    
+    const isUnlocked = ach.unlocked || safeLocalStorage.getItem('ach_' + key) === 'true';
+    const badgeColor = difficultyColors[key];
+    const delay = (index * 0.08).toFixed(2);
+    
+    html += `
+      <div class="timeline-item-animate" style="position: relative; opacity: ${isUnlocked ? '1' : '0.55'}; animation-delay: ${delay}s;">
+        <!-- Milestone circle on the timeline path -->
+        <span style="position: absolute; left: -46px; top: 4px; width: 20px; height: 20px; border-radius: 50%; background: ${isUnlocked ? badgeColor : '#334155'}; border: 4px solid ${isUnlocked ? '#ffffff' : '#1e293b'}; box-shadow: ${isUnlocked ? '0 0 10px ' + badgeColor : 'none'}; transition: all 0.3s ease;"></span>
+        
+        <div style="background: ${isUnlocked ? 'rgba(255, 255, 255, 0.02)' : 'transparent'}; border: 1px solid ${isUnlocked ? 'rgba(255,255,255,0.06)' : 'transparent'}; padding: ${isUnlocked ? '12px 18px' : '0 18px'}; border-radius: 16px;">
+          <h4 style="margin: 0; font-family: 'Space Grotesk', sans-serif; color: ${isUnlocked ? 'var(--text-primary)' : 'var(--text-secondary)'}; font-size: 1.05rem;">
+            <span>${isUnlocked ? '🏆' : '🔒'} ${ach.name}</span>
+          </h4>
+          <p style="margin: 5px 0 0 0; font-size: 0.85rem; opacity: 0.8; color: var(--text-primary);">${ach.desc}</p>
+        </div>
+      </div>
+    `;
+  });
+  
+  html += `</div>`;
+  
+  legalContent.innerHTML = html;
+  modal.style.display = "block";
+}
+
+function showSingleplayerMenu(isBackNav = false) {
+  sounds.playClick();
+  const startScreen = document.getElementById('start-screen');
+  const spScreen = document.getElementById('singleplayer-menu-screen');
+  if (startScreen) startScreen.style.display = 'none';
+  if (spScreen) {
+    spScreen.classList.remove('ios-app-close-left', 'ios-app-open-left');
+    void spScreen.offsetWidth; // force reflow
+    if (!isBackNav) {
+      spScreen.classList.add('ios-app-open-left');
+    }
+    spScreen.style.display = 'flex';
+  }
+}
+
+function showMultiplayerMenu(isBackNav = false) {
+  sounds.playClick();
+  const startScreen = document.getElementById('start-screen');
+  const mpScreen = document.getElementById('multiplayer-menu-screen');
+  if (startScreen) startScreen.style.display = 'none';
+  if (mpScreen) {
+    mpScreen.classList.remove('ios-app-close-right', 'ios-app-open-right');
+    void mpScreen.offsetWidth; // force reflow
+    if (!isBackNav) {
+      mpScreen.classList.add('ios-app-open-right');
+    }
+    mpScreen.style.display = 'flex';
+  }
+}
+
+// MutationObserver to track when a new question is loaded to support the Blitz-Demokrat achievement
+let questionStartTime = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const qTextEl = document.getElementById('q-text');
+  if (qTextEl) {
+    const observer = new MutationObserver(() => {
+      if (qTextEl.innerText.trim().length > 0) {
+        questionStartTime = Date.now();
+      }
+    });
+    observer.observe(qTextEl, { childList: true, characterData: true, subtree: true });
+  }
+});
+
+// Centralized statistics trackers
+function trackLifetimeAnswer(isCorrect) {
+  let answered = parseInt(safeLocalStorage.getItem('stats_total_answers') || '0', 10);
+  answered++;
+  safeLocalStorage.setItem('stats_total_answers', answered.toString());
+  
+  if (isCorrect) {
+    let correct = parseInt(safeLocalStorage.getItem('stats_correct_answers') || '0', 10);
+    correct++;
+    safeLocalStorage.setItem('stats_correct_answers', correct.toString());
+    
+    // Check Blitz-Demokrat (under 3 seconds)
+    let secondsTaken = (Date.now() - questionStartTime) / 1000;
+    if (secondsTaken < 3 && questionStartTime > 0 && safeLocalStorage.getItem('ach_blitz') !== 'true') {
+      achievements.blitz.unlocked = true;
+      safeLocalStorage.setItem('ach_blitz', 'true');
+      showAchievementUnlockedToast(achievements.blitz);
+    }
+
+    if (typeof currentStreakNoJoker !== 'undefined') {
+      if (!jokerUsed) {
+        currentStreakNoJoker++;
+      } else {
+        currentStreakNoJoker = 0;
+      }
+    }
+    currentStreak++;
+  } else {
+    currentStreak = 0;
+    if (typeof currentStreakNoJoker !== 'undefined') {
+      currentStreakNoJoker = 0;
+    }
+    jokerUsed = false; // Reset streak and joker use on wrong answer
+  }
+
+  // Increment multiplayer answers if in MP modes
+  if (gameMode === 'campaign' || gameMode === 'multiplayer' || gameMode === 'duel') {
+    let mpCount = parseInt(safeLocalStorage.getItem('stats_mp_answers') || '0', 10) + 1;
+    safeLocalStorage.setItem('stats_mp_answers', mpCount.toString());
+    if (isCorrect) {
+      let mpCorrectCount = parseInt(safeLocalStorage.getItem('stats_mp_correct_answers') || '0', 10) + 1;
+      safeLocalStorage.setItem('stats_mp_correct_answers', mpCorrectCount.toString());
+    }
+  }
+
+  // Run general achievement check
+  if (typeof checkInGameAchievements === 'function') {
+    checkInGameAchievements();
+  }
+}
+
+function trackLifetimeGameStarted() {
+  let games = parseInt(safeLocalStorage.getItem('stats_games_played') || '0', 10);
+  games++;
+  safeLocalStorage.setItem('stats_games_played', games.toString());
+}
+
+// In-Game Feedback modal management
+let currentFeedbackRating = 0;
+function setFeedbackRating(rating) {
+  sounds.playClick();
+  currentFeedbackRating = rating;
+  const stars = document.querySelectorAll('.feedback-star');
+  stars.forEach((star, index) => {
+    if (index < rating) {
+      star.style.filter = 'none';
+      star.style.opacity = '1';
+      star.style.transform = 'scale(1.2)';
+    } else {
+      star.style.filter = 'grayscale(1)';
+      star.style.opacity = '0.4';
+      star.style.transform = 'scale(1)';
+    }
+  });
+  const errEl = document.getElementById('feedback-err');
+  if (errEl) errEl.style.display = 'none';
+}
+
+function openFeedbackModal() {
+  sounds.playClick();
+  currentFeedbackRating = 0;
+  const commentEl = document.getElementById('feedback-comment');
+  if (commentEl) commentEl.value = "";
+  const errEl = document.getElementById('feedback-err');
+  if (errEl) errEl.style.display = 'none';
+  const stars = document.querySelectorAll('.feedback-star');
+  stars.forEach(star => {
+    star.style.filter = 'grayscale(1)';
+    star.style.opacity = '0.4';
+    star.style.transform = 'scale(1)';
+  });
+  const diag = document.getElementById('feedback-dialog');
+  if (diag && typeof diag.showModal === 'function') {
+    diag.classList.remove('dialog-zoom-out');
+    diag.classList.add('dialog-zoom-in');
+    diag.showModal();
+  }
+}
+
+function closeFeedbackModal() {
+  sounds.playClick();
+  const diag = document.getElementById('feedback-dialog');
+  if (diag) {
+    diag.classList.remove('dialog-zoom-in');
+    diag.classList.add('dialog-zoom-out');
+    setTimeout(() => {
+      if (typeof diag.close === 'function') diag.close();
+      diag.classList.remove('dialog-zoom-out');
+    }, 280);
+  }
+}
+
+function submitFeedback() {
+  if (currentFeedbackRating === 0) {
+    const errEl = document.getElementById('feedback-err');
+    if (errEl) errEl.style.display = 'block';
+    sounds.playError();
+    return;
+  }
+  
+  sounds.playSuccess();
+  const commentEl = document.getElementById('feedback-comment');
+  const comment = commentEl ? commentEl.value.trim() : "";
+  const submitBtn = document.getElementById('btn-submit-feedback');
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Wird gesendet...";
+  }
+  
+  function finishSubmit() {
+    safeLocalStorage.setItem('feedback_submitted', 'true');
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Bewertung absenden";
+    }
+    const diag = document.getElementById('feedback-dialog');
+    if (diag && typeof diag.close === 'function') diag.close();
+    alert("Vielen Dank für dein Feedback! ❤️");
+  }
+
+  if (typeof initFirebase === 'function') {
+    initFirebase();
+  }
+
+  if (typeof firebase !== 'undefined' && firebase.apps && firebase.apps.length) {
+    try {
+      const db = firebase.database();
+      
+      function pushData() {
+        db.ref('feedback').push({
+          rating: currentFeedbackRating,
+          comment: comment,
+          timestamp: Date.now(),
+          userAgent: navigator.userAgent
+        }).then(() => {
+          finishSubmit();
+        }).catch(err => {
+          console.error("Firebase feedback failed:", err);
+          finishSubmit();
+        });
+      }
+
+      if (firebase.auth && firebase.auth() && !firebase.auth().currentUser) {
+        firebase.auth().signInAnonymously()
+          .then(() => {
+            pushData();
+          })
+          .catch(err => {
+            console.error("Auth failed for feedback:", err);
+            finishSubmit();
+          });
+      } else {
+        pushData();
+      }
+    } catch(e) {
+      console.error(e);
+      finishSubmit();
+    }
+  } else {
+    finishSubmit();
+  }
+}
+
+// Extra Stats Calculations for Winner Screen
+function renderExtraStats() {
+  const container = document.getElementById('extra-stats-content');
+  const section = document.getElementById('extra-stats-section');
+  if (!container || !section) return;
+  
+  let html = "";
+  let hasData = false;
+  
+  // 1. Category master calculation
+  let bestCatId = -1;
+  let bestPct = -1;
+  for (let catId = 1; catId <= 5; catId++) {
+    if (typeof statsCategoryAnswers !== 'undefined' && statsCategoryAnswers[catId]) {
+      const stats = statsCategoryAnswers[catId];
+      const total = stats.c + stats.w;
+      if (total > 0) {
+        const pct = stats.c / total;
+        if (pct > bestPct) {
+          bestPct = pct;
+          bestCatId = catId;
+        }
+      }
+    }
+  }
+  
+  if (bestCatId !== -1 && bestPct > 0) {
+    hasData = true;
+    html += `<div style="margin-bottom: 10px;">🌟 <strong>Kategorie-Meister:</strong> Eure stärkste Kategorie war <strong>${categoryNames[bestCatId]}</strong> (${Math.round(bestPct * 100)}% richtige Antworten).</div>`;
+  }
+  
+  // 2. Mistakes analysis (Top missed countries)
+  if (gameMode === 'campaign' && typeof countries !== 'undefined') {
+    let missedCountries = countries
+      .filter(c => {
+        return (c.p[1] && !c.correct[1]) || (c.p[2] && !c.correct[2]) || (c.p[3] && !c.correct[3]);
+      })
+      .map(c => {
+        let errors = 0;
+        if (c.p[1] && !c.correct[1]) errors++;
+        if (c.p[2] && !c.correct[2]) errors++;
+        if (c.p[3] && !c.correct[3]) errors++;
+        return { name: c.n, flag: c.f, errors: errors };
+      })
+      .sort((a,b) => b.errors - a.errors);
+      
+    if (missedCountries.length > 0) {
+      hasData = true;
+      const top3 = missedCountries.slice(0, 3).map(c => `${c.flag} ${c.name}`).join(', ');
+      html += `<div style="margin-bottom: 10px;">⚠️ <strong>Herausfordernde Länder:</strong> Bei diesen Ländern gab es die meisten Fehler: <strong>${top3}</strong>.</div>`;
+    }
+  }
+  
+  container.innerHTML = html;
+  section.style.display = hasData ? 'block' : 'none';
+  
+  // Trigger Auto-Feedback if not already done in this session
+  if (safeLocalStorage.getItem('feedback_submitted') !== 'true') {
+    setTimeout(() => {
+      openFeedbackModal();
+    }, 1500);
+  }
+}
+
+// Getter/Setter Interceptor on #mode-screen display to reroute to correct sub-menus
+document.addEventListener("DOMContentLoaded", () => {
+  // Select a stable daily fact based on the current date seed (changes automatically every day)
+  const today = new Date();
+  const dateSeed = today.getFullYear() * 1000 + (today.getMonth() + 1) * 100 + today.getDate();
+  const dailyIdx = dateSeed % euFacts.length;
+  const textEl = document.getElementById('daily-fact-text');
+  if (textEl) {
+    textEl.innerText = euFacts[dailyIdx];
+    // Force trigger text reveal animation on load
+    textEl.classList.remove('fact-text-animate');
+    void textEl.offsetWidth; // force reflow
+    textEl.classList.add('fact-text-animate');
+  }
+  
+  // Apply reduce-motion configuration from localStorage on load
+  if (safeLocalStorage.getItem('reduceMotion') === 'true') {
+    document.body.classList.add('reduce-motion');
+  }
+  
+  // Refresh stats
+  refreshStartScreenStats();
+  
+  const modeScreen = document.getElementById('mode-screen');
+  if (modeScreen) {
+    Object.defineProperty(modeScreen.style, 'display', {
+      get: function() { return this._display || 'none'; },
+      set: function(val) {
+        this._display = val;
+        if (val === 'flex') {
+          modeScreen.style.display = 'none';
+          if (gameMode === 'campaign' || gameMode === 'multiplayer' || gameMode === 'duel') {
+            showMultiplayerMenu(true);
+          } else if (gameMode === 'timeattack' || gameMode === 'suddendeath' || gameMode === 'flags') {
+            showSingleplayerMenu(true);
+          } else {
+            backToStart();
+          }
+        }
+      },
+      configurable: true
+    });
+  }
+
+  // Remove intro animation classes after they finish, so they don't re-trigger when returning to start screen
+  setTimeout(() => {
+    const slogan = document.querySelector('.ios-slogan-intro');
+    const hero = document.querySelector('.ios-hero-intro');
+    const topBar = document.querySelector('.ios-top-bar-animate');
+    const staggered = document.querySelectorAll('.ios-entrance-animate');
+
+    if (slogan) slogan.classList.remove('ios-slogan-intro');
+    if (hero) hero.classList.remove('ios-hero-intro');
+    if (topBar) topBar.classList.remove('ios-top-bar-animate');
+    staggered.forEach(el => {
+      el.classList.remove('ios-entrance-animate', 'delay-sp', 'delay-mp', 'delay-fact', 'delay-stats', 'delay-feedback', 'delay-roadmap');
+    });
+  }, 2600);
+});
