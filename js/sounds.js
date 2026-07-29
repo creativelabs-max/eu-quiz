@@ -8,10 +8,17 @@ class SoundEngine {
 
   init() {
     if (!this.ctx) {
-      this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      try {
+        this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      } catch (e) {
+        console.warn("AudioContext init warning:", e);
+      }
     }
-    if (this.ctx.state === 'suspended') {
-      this.ctx.resume();
+    if (this.ctx && this.ctx.state === 'suspended') {
+      try {
+        const p = this.ctx.resume();
+        if (p && typeof p.catch === 'function') p.catch(() => {});
+      } catch (e) {}
     }
     if (!this.musicInterval) {
       this.startMusic();
