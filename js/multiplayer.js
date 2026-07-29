@@ -931,7 +931,7 @@ function mpStartMatchmaking() {
       
     } else {
       // 2. Create new room as Host
-      const code = Math.floor(1000 + Math.random() * 9000).toString();
+      const code = Math.floor(100000 + Math.random() * 900000).toString();
       mpRoomCode = code;
       mpIsHost = true;
       mpPlayerId = 'host_player';
@@ -1654,8 +1654,8 @@ function mpPlayerJoin() {
   const name = document.getElementById('mp-join-name').value.trim();
   const err = document.getElementById('mp-join-err');
   
-  if (code.length !== 6 || isNaN(code)) {
-    err.innerText = "Bitte einen gültigen 6-stelligen Raumcode eingeben.";
+  if (code.length < 4 || code.length > 6 || isNaN(code)) {
+    err.innerText = "Bitte einen gültigen Raumcode (4-6 Stellen) eingeben.";
     err.style.display = 'block';
     sounds.playError();
     return;
