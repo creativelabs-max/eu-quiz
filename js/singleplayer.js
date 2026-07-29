@@ -3,6 +3,8 @@ function advanceFromSPInstructions() {
   document.getElementById('sp-instr-screen').style.display = 'none';
   if (gameMode === 'timeattack') {
     document.getElementById('time-select-screen').style.display = 'flex';
+  } else if (gameMode === 'flags') {
+    initFlagsGame();
   } else {
     document.getElementById('setup-screen').style.display = 'flex';
     configureSetupScreenForSP();
@@ -399,6 +401,7 @@ function initSinglePlayerGame() {
   sounds.init();
   sounds.setMusicState('question');
   if (typeof playedSessionQuestions !== 'undefined') playedSessionQuestions.clear();
+  if (typeof trackLifetimeGameStarted === 'function') trackLifetimeGameStarted();
   
   singlePlayerScore = 0;
   rapidFireIndex = 0;
@@ -624,6 +627,7 @@ function initFlagsGame() {
   sounds.init();
   sounds.setMusicState('question');
   if (typeof playedSessionQuestions !== 'undefined') playedSessionQuestions.clear();
+  if (typeof trackLifetimeGameStarted === 'function') trackLifetimeGameStarted();
   
   singlePlayerScore = 0;
   flagQuestionIndex = 0;
@@ -733,6 +737,7 @@ function checkRapidFire(idx) {
   
   if (idx === correctAnswer) {
     sounds.playSuccess();
+    if (typeof trackLifetimeAnswer === 'function') trackLifetimeAnswer(true);
     opts[idx].classList.add('correct');
     opts.forEach(o => o.style.pointerEvents = 'none');
     
@@ -753,6 +758,7 @@ function checkRapidFire(idx) {
     
   } else {
     sounds.playError();
+    if (typeof trackLifetimeAnswer === 'function') trackLifetimeAnswer(false);
     opts[idx].classList.add('wrong');
     opts[correctAnswer].classList.add('correct');
     opts.forEach(o => o.style.pointerEvents = 'none');
