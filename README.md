@@ -41,7 +41,7 @@ Ein modernes, interaktives und performantes Web-Quiz über die Europäische Unio
 ## 📜 Europapass & Nutzerprofil
 
 * 🏆 **Leveling & XP-System**: Verdiene XP für richtige Antworten und beendete Runden.
-* 🔥 **Tages-Streak**: Behalte deine tägliche Spiel-Streak mit einer beeindruckenden, mehrschichtigen animierten SVG-Flamme.
+* 🔥 **Tages-Streak**: Behalte deine tägliche Spiel-Streak im Auge
 * 🎭 **3D-Avatare**: Schalte Diplomaten-, Wissenschaftler- und Astronauten-Avatare frei.
 * 🔐 **Cloud-Synchronisation & Auth**: Melde dich per **Google Sign-In**, E-Mail/Passwort an oder spiele im anonymen Gast-Modus.
 
